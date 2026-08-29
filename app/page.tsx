@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-2 text-slate-400">
-            Das Partyspiel für 3 Spieler
+            Partyspiele für 2–3 Spieler
           </p>
         </div>
 
@@ -33,10 +33,17 @@ export default function Home() {
             ⚽ Deal or No Deal
           </Link>
 
+          <Link
+            href="/bid"
+            className="block w-full rounded-2xl bg-violet-500 px-6 py-5 text-center text-lg font-bold text-white transition hover:scale-[1.02]"
+          >
+            💰 Bieterkrieg
+          </Link>
+
         </div>
 
         <p className="mt-8 text-center text-sm text-slate-500">
-          3 Spieler · Online · Kostenlos
+          2–3 Spieler · Online · Kostenlos
         </p>
 
       </div>
