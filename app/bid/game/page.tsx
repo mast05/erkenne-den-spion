@@ -59,6 +59,12 @@ const categoryNames: Record<string, string> = {
   dc: "🦇 DC",
   "fluch-der-karibik": "🏴‍☠️ Fluch der Karibik",
   "game-of-thrones": "⚔️ Game of Thrones",
+
+  "herr-der-ringe": "💍 Herr der Ringe",
+  hobbit: "🏔️ Der Hobbit",
+  "the-boys": "🩸 The Boys",
+  "the-walking-dead": "🧟 The Walking Dead",
+  jurassic: "🦖 Jurassic Park / World",
 };
 
 function getCharacterImage(

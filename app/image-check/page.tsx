@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { dealCharacters } from "../lib/dealData";
 
 type ImageStatus = "loading" | "loaded" | "error";
 
@@ -10,199 +11,65 @@ type Category = {
   characters: string[];
 };
 
-const categories: Category[] = [
+const categoryInfo = [
   {
     id: "star-wars",
     name: "⭐ Star Wars",
-    characters: [
-      "Luke Skywalker",
-      "Darth Vader",
-      "Yoda",
-      "Obi-Wan Kenobi",
-      "Leia Organa",
-      "Han Solo",
-      "Chewbacca",
-      "Anakin Skywalker",
-      "R2-D2",
-      "C-3PO",
-      "Palpatine",
-      "Boba Fett",
-      "Mandalorian",
-      "Grogu",
-      "Ahsoka Tano",
-      "Mace Windu",
-      "Kylo Ren",
-      "Rey",
-      "Finn",
-      "Jabba the Hutt",
-      "Count Dooku",
-      "General Grievous",
-      "Padmé Amidala",
-      "Qui-Gon Jinn",
-      "Lando Calrissian",
-    ],
   },
-
   {
     id: "marvel",
     name: "🦸 Marvel",
-    characters: [
-      "Spider-Man",
-      "Iron Man",
-      "Thor",
-      "Hulk",
-      "Captain America",
-      "Black Widow",
-      "Hawkeye",
-      "Doctor Strange",
-      "Black Panther",
-      "Scarlet Witch",
-      "Vision",
-      "Ant-Man",
-      "Captain Marvel",
-      "Deadpool",
-      "Wolverine",
-      "Loki",
-      "Thanos",
-      "Star-Lord",
-      "Groot",
-      "Rocket",
-      "Gamora",
-      "Drax",
-      "Venom",
-      "Moon Knight",
-      "Daredevil",
-    ],
   },
-
   {
     id: "harry-potter",
     name: "🪄 Harry Potter",
-    characters: [
-      "Harry Potter",
-      "Hermine Granger",
-      "Ron Weasley",
-      "Albus Dumbledore",
-      "Severus Snape",
-      "Lord Voldemort",
-      "Draco Malfoy",
-      "Rubeus Hagrid",
-      "Sirius Black",
-      "Remus Lupin",
-      "Minerva McGonagall",
-      "Dobby",
-      "Neville Longbottom",
-      "Luna Lovegood",
-      "Ginny Weasley",
-      "Fred Weasley",
-      "George Weasley",
-      "Bellatrix Lestrange",
-      "Cedric Diggory",
-      "Peter Pettigrew",
-      "Dolores Umbridge",
-      "Lucius Malfoy",
-      "Arthur Weasley",
-      "Molly Weasley",
-      "Viktor Krum",
-    ],
   },
-
   {
     id: "dc",
     name: "🦇 DC",
-    characters: [
-      "Batman",
-      "Superman",
-      "Wonder Woman",
-      "Joker",
-      "The Flash",
-      "Aquaman",
-      "Green Lantern",
-      "Cyborg",
-      "Harley Quinn",
-      "Catwoman",
-      "Supergirl",
-      "Robin",
-      "Nightwing",
-      "Batgirl",
-      "Lex Luthor",
-      "The Riddler",
-      "Penguin",
-      "Poison Ivy",
-      "Shazam",
-      "Darkseid",
-      "Green Arrow",
-      "Black Canary",
-      "Deathstroke",
-      "Bane",
-      "Mr. Freeze",
-    ],
   },
-
   {
     id: "fluch-der-karibik",
     name: "🏴‍☠️ Fluch der Karibik",
-    characters: [
-      "Jack Sparrow",
-      "Will Turner",
-      "Elizabeth Swann",
-      "Barbossa",
-      "Davy Jones",
-      "Bootstrap Bill",
-      "James Norrington",
-      "Joshamee Gibbs",
-      "Cutler Beckett",
-      "Tia Dalma",
-      "Weatherby Swann",
-      "Blackbeard",
-      "Angelica",
-      "Philip Swift",
-      "Syrena",
-      "Marty",
-      "Cotton",
-      "Pintel",
-      "Ragetti",
-      "Giselle",
-      "Ian Mercer",
-      "Lieutenant Theodore Groves",
-      "Captain Teague",
-      "Scrum",
-      "Tamara",
-    ],
   },
-
   {
     id: "game-of-thrones",
     name: "⚔️ Game of Thrones",
-    characters: [
-      "Jon Snow",
-      "Daenerys Targaryen",
-      "Tyrion Lannister",
-      "Arya Stark",
-      "Sansa Stark",
-      "Bran Stark",
-      "Cersei Lannister",
-      "Jaime Lannister",
-      "Ned Stark",
-      "Robb Stark",
-      "Catelyn Stark",
-      "Theon Greyjoy",
-      "Brienne von Tarth",
-      "Samwell Tarly",
-      "Davos Seaworth",
-      "Petyr Baelish",
-      "Varys",
-      "Sandor Clegane",
-      "Gregor Clegane",
-      "Jorah Mormont",
-      "Margaery Tyrell",
-      "Olenna Tyrell",
-      "Melisandre",
-      "Tormund",
-      "Gendry",
-    ],
+  },
+  {
+    id: "herr-der-ringe",
+    name: "💍 Herr der Ringe",
+  },
+  {
+    id: "hobbit",
+    name: "🏔️ Der Hobbit",
+  },
+  {
+    id: "the-boys",
+    name: "🩸 The Boys",
+  },
+  {
+    id: "the-walking-dead",
+    name: "🧟 The Walking Dead",
+  },
+  {
+    id: "jurassic",
+    name: "🦖 Jurassic Park / World",
   },
 ];
+
+const categories: Category[] = categoryInfo.map(
+  (category) => ({
+    id: category.id,
+    name: category.name,
+    characters: dealCharacters
+      .filter(
+        (character) =>
+          character.category === category.id
+      )
+      .map((character) => character.name),
+  })
+);
 
 function getCharacterImage(
   character: string,

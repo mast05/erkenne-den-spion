@@ -2,14 +2,48 @@
 
 import { useState } from "react";
 import { supabase } from "../lib/supabase";
+import { dealCharacters } from "../lib/dealData";
 
 const categories = [
   { id: "star-wars", name: "Star Wars", emoji: "⭐" },
   { id: "marvel", name: "Marvel", emoji: "🦸" },
   { id: "harry-potter", name: "Harry Potter", emoji: "🪄" },
   { id: "dc", name: "DC", emoji: "🦇" },
-  { id: "fluch-der-karibik", name: "Fluch der Karibik", emoji: "🏴‍☠️" },
-  { id: "game-of-thrones", name: "Game of Thrones", emoji: "⚔️" },
+  {
+    id: "fluch-der-karibik",
+    name: "Fluch der Karibik",
+    emoji: "🏴‍☠️",
+  },
+  {
+    id: "game-of-thrones",
+    name: "Game of Thrones",
+    emoji: "⚔️",
+  },
+  {
+    id: "herr-der-ringe",
+    name: "Herr der Ringe",
+    emoji: "💍",
+  },
+  {
+    id: "hobbit",
+    name: "Der Hobbit",
+    emoji: "🏔️",
+  },
+  {
+    id: "the-boys",
+    name: "The Boys",
+    emoji: "🩸",
+  },
+  {
+    id: "the-walking-dead",
+    name: "The Walking Dead",
+    emoji: "🧟",
+  },
+  {
+    id: "jurassic",
+    name: "Jurassic Park / World",
+    emoji: "🦖",
+  },
 ];
 
 type Character = {
@@ -186,6 +220,29 @@ const characters: Record<string, Character[]> = {
     { name: "Gendry", tip: "Wirkt eher ruhig." },
   ],
 };
+
+const allSpyCategories = [
+  "star-wars",
+  "marvel",
+  "harry-potter",
+  "dc",
+  "fluch-der-karibik",
+  "game-of-thrones",
+  "herr-der-ringe",
+  "hobbit",
+  "the-boys",
+  "the-walking-dead",
+  "jurassic",
+] as const;
+
+allSpyCategories.forEach((categoryId) => {
+  characters[categoryId] = dealCharacters
+    .filter((character) => character.category === categoryId)
+    .map((character) => ({
+      name: character.name,
+      tip: "",
+    }));
+});
 
 export default function CategoryPage() {
 
@@ -409,8 +466,8 @@ export default function CategoryPage() {
                 </p>
 
                 <p className="mt-1 text-xs text-slate-500">
-                  25 mögliche Figuren
-                </p>
+  {characters[category.id]?.length ?? 0} mögliche Figuren
+</p>
               </div>
             </div>
 
@@ -435,7 +492,7 @@ export default function CategoryPage() {
 
       <div className="mt-8 text-center">
         <p className="text-xs text-slate-600">
-          6 Kategorien · 150 Figuren
+          11 Kategorien · 295 Figuren
         </p>
       </div>
     </div>

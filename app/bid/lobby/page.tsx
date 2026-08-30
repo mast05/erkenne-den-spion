@@ -43,6 +43,26 @@ const categories = [
     id: "game-of-thrones",
     label: "⚔️ Game of Thrones",
   },
+  {
+    id: "herr-der-ringe",
+    label: "💍 Herr der Ringe",
+  },
+  {
+    id: "hobbit",
+    label: "🏔️ Der Hobbit",
+  },
+  {
+    id: "the-boys",
+    label: "🩸 The Boys",
+  },
+  {
+    id: "the-walking-dead",
+    label: "🧟 The Walking Dead",
+  },
+  {
+    id: "jurassic",
+    label: "🦖 Jurassic Park / World",
+  },
 ];
 
 export default function BidLobbyPage() {

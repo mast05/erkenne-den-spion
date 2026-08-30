@@ -39,6 +39,12 @@ const categoryNames: Record<string, string> = {
   dc: "🦇 DC",
   "fluch-der-karibik": "🏴‍☠️ Fluch der Karibik",
   "game-of-thrones": "⚔️ Game of Thrones",
+
+  "herr-der-ringe": "💍 Herr der Ringe",
+  hobbit: "🏔️ Der Hobbit",
+  "the-boys": "🩸 The Boys",
+  "the-walking-dead": "🧟 The Walking Dead",
+  jurassic: "🦖 Jurassic Park / World",
 };
 
 const characterTips: Record<string, string[]> = {
@@ -965,7 +971,908 @@ const characterTips: Record<string, string[]> = {
     "Ist an harte Arbeit gewöhnt.",
     "Ist seinen Freunden gegenüber ziemlich loyal.",
   ],
+
+    // =========================
+  // HERR DER RINGE
+  // =========================
+
+  "Frodo Baggins": [
+    "Wirkt eher zurückhaltend.",
+    "Trägt lange eine große Verantwortung.",
+    "Ist seinen Freunden sehr verbunden.",
+  ],
+
+  "Samwise Gamgee": [
+    "Ist außergewöhnlich loyal.",
+    "Gibt andere Menschen nicht schnell auf.",
+    "Wirkt bodenständig und zuverlässig.",
+  ],
+
+  Gandalf: [
+    "Wirkt meistens sehr ruhig.",
+    "Hat enorm viel Erfahrung.",
+    "Verrät anderen nicht immer sofort alles, was er weiß.",
+  ],
+
+  Aragorn: [
+    "Wirkt meist ruhig und kontrolliert.",
+    "Übernimmt nur ungern Verantwortung für seinen eigenen Vorteil.",
+    "Ist seinen Verbündeten sehr loyal.",
+  ],
+
+  Legolas: [
+    "Wirkt meistens sehr gelassen.",
+    "Ist ausgesprochen aufmerksam.",
+    "Bleibt auch in gefährlichen Situationen häufig ruhig.",
+  ],
+
+  Gimli: [
+    "Spricht häufig ziemlich direkt.",
+    "Ist stolz auf seine Herkunft.",
+    "Kann anderen gegenüber überraschend loyal werden.",
+  ],
+
+  Boromir: [
+    "Wirkt selbstbewusst.",
+    "Trägt starken Druck durch seine Verantwortung.",
+    "Lässt sich teilweise von seinen eigenen Sorgen beeinflussen.",
+  ],
+
+  Merry: [
+    "Wirkt oft ziemlich locker.",
+    "Ist neugieriger, als es zunächst scheint.",
+    "Zeigt in wichtigen Situationen überraschend viel Mut.",
+  ],
+
+  Pippin: [
+    "Wirkt häufig etwas unbeschwert.",
+    "Ist ziemlich neugierig.",
+    "Muss im Laufe der Zeit viel dazulernen.",
+  ],
+
+  Gollum: [
+    "Ist für andere nur schwer einzuschätzen.",
+    "Wird stark von einem bestimmten Wunsch beeinflusst.",
+    "Hat große innere Konflikte.",
+  ],
+
+  Sauron: [
+    "Ist extrem auf Macht fokussiert.",
+    "Arbeitet häufig indirekt auf seine Ziele hin.",
+    "Möchte möglichst viel Kontrolle besitzen.",
+  ],
+
+  Saruman: [
+    "Wirkt sehr selbstsicher.",
+    "Hält viel von seinem eigenen Wissen.",
+    "Ist stark von Macht und Einfluss geprägt.",
+  ],
+
+  Galadriel: [
+    "Wirkt meistens sehr ruhig.",
+    "Hat außergewöhnlich viel Erfahrung.",
+    "Kann andere Menschen sehr gut einschätzen.",
+  ],
+
+  Elrond: [
+    "Wirkt sehr kontrolliert.",
+    "Denkt häufig langfristig.",
+    "Ist stark von vergangenen Erfahrungen geprägt.",
+  ],
+
+  Arwen: [
+    "Wirkt eher ruhig.",
+    "Ist bestimmten Menschen sehr loyal.",
+    "Ist bereit, für persönliche Entscheidungen viel aufzugeben.",
+  ],
+
+  "Éowyn": [
+    "Wirkt entschlossen.",
+    "Möchte nicht unterschätzt werden.",
+    "Ist bereit, große Risiken einzugehen.",
+  ],
+
+  "Théoden": [
+    "Trägt viel Verantwortung.",
+    "Verändert sich im Laufe der Geschichte deutlich.",
+    "Ist seinem Volk stark verbunden.",
+  ],
+
+  Faramir: [
+    "Wirkt eher ruhig.",
+    "Denkt häufig vernünftiger als andere.",
+    "Ist stark von seiner Familie und seiner Pflicht geprägt.",
+  ],
+
+  Denethor: [
+    "Wirkt meistens sehr ernst.",
+    "Steht unter enormem Druck.",
+    "Lässt sich stark von seinen Sorgen beeinflussen.",
+  ],
+
+  "Éomer": [
+    "Wirkt sehr selbstbewusst.",
+    "Ist ausgesprochen loyal.",
+    "Handelt in gefährlichen Situationen entschlossen.",
+  ],
+
+  Treebeard: [
+    "Lässt sich mit Entscheidungen viel Zeit.",
+    "Wirkt meistens sehr ruhig.",
+    "Ist stark mit seiner Heimat verbunden.",
+  ],
+
+  "Witch-king of Angmar": [
+    "Wirkt sehr einschüchternd.",
+    "Ist stark auf ein bestimmtes Ziel fokussiert.",
+    "Zeigt kaum persönliche Gefühle.",
+  ],
+
+  "Gríma Wormtongue": [
+    "Wirkt eher unsicher.",
+    "Arbeitet lieber über Einfluss als über direkte Konfrontation.",
+    "Ist nicht immer offen mit seinen Absichten.",
+  ],
+
+    Haldir: [
+    "Wirkt meistens sehr kontrolliert.",
+    "Ist seiner Heimat und seinen Verbündeten stark verbunden.",
+    "Handelt in gefährlichen Situationen ausgesprochen entschlossen.",
+  ],
+
+  "Bilbo Baggins": [
+    "Wirkt zunächst eher gemütlich.",
+    "Ist neugieriger, als er selbst erwartet.",
+    "Wächst an ungewöhnlichen Erfahrungen.",
+  ],
+
+  // =========================
+  // DER HOBBIT
+  // =========================
+
+  "Thorin Oakenshield": [
+    "Wirkt sehr stolz.",
+    "Fühlt sich stark seiner Herkunft verpflichtet.",
+    "Kann sich sehr stark auf ein bestimmtes Ziel konzentrieren.",
+  ],
+
+  Balin: [
+    "Wirkt meistens ruhig.",
+    "Hat viel Erfahrung.",
+    "Versucht häufig vernünftig auf andere einzuwirken.",
+  ],
+
+  Dwalin: [
+    "Wirkt sehr entschlossen.",
+    "Ist seinen Verbündeten ausgesprochen loyal.",
+    "Geht in gefährlichen Situationen eher direkt vor.",
+  ],
+
+  "Fíli": [
+    "Wirkt selbstbewusst.",
+    "Ist seiner Familie sehr verbunden.",
+    "Zeigt in gefährlichen Situationen viel Mut.",
+  ],
+
+  "Kíli": [
+    "Wirkt häufig ziemlich locker.",
+    "Ist seiner Familie sehr loyal.",
+    "Handelt manchmal stärker nach seinen Gefühlen.",
+  ],
+
+  Bofur: [
+    "Wirkt meistens ziemlich freundlich.",
+    "Kann auch in schwierigen Situationen locker bleiben.",
+    "Ist seiner Gruppe sehr verbunden.",
+  ],
+
+  Bombur: [
+    "Wirkt häufig eher gemütlich.",
+    "Ist seinen Begleitern gegenüber loyal.",
+    "Steht selten freiwillig im Mittelpunkt.",
+  ],
+
+  Bifur: [
+    "Wirkt eher zurückhaltend.",
+    "Ist seiner Gruppe gegenüber zuverlässig.",
+    "Handelt in gefährlichen Situationen entschlossener, als es zunächst wirkt.",
+  ],
+
+  "Óin": [
+    "Wirkt meistens vernünftig.",
+    "Hat innerhalb seiner Gruppe viel Erfahrung.",
+    "Ist seinen Begleitern sehr verbunden.",
+  ],
+
+  "Glóin": [
+    "Wirkt selbstbewusst.",
+    "Ist stolz auf seine Herkunft.",
+    "Kann ziemlich direkt seine Meinung sagen.",
+  ],
+
+  Nori: [
+    "Wirkt etwas verschmitzt.",
+    "Passt sich schnell an ungewöhnliche Situationen an.",
+    "Ist innerhalb seiner Gruppe dennoch sehr loyal.",
+  ],
+
+  Dori: [
+    "Wirkt verantwortungsbewusst.",
+    "Kümmert sich häufig um andere.",
+    "Ist seiner Familie besonders verbunden.",
+  ],
+
+  Ori: [
+    "Wirkt eher ruhig.",
+    "Beobachtet seine Umgebung aufmerksam.",
+    "Ist weniger kampferfahren als einige seiner Begleiter.",
+  ],
+
+  Bard: [
+    "Wirkt meistens ernst.",
+    "Übernimmt Verantwortung für andere.",
+    "Denkt häufig zuerst an die Sicherheit seiner Mitmenschen.",
+  ],
+
+  Thranduil: [
+    "Wirkt sehr selbstsicher.",
+    "Denkt häufig langfristig.",
+    "Ist Fremden gegenüber zunächst eher vorsichtig.",
+  ],
+
+  Tauriel: [
+    "Wirkt sehr entschlossen.",
+    "Handelt teilweise gegen Erwartungen anderer.",
+    "Ist Menschen, die ihr wichtig sind, sehr loyal.",
+  ],
+
+  Azog: [
+    "Wirkt äußerst entschlossen.",
+    "Verfolgt seine Ziele sehr hartnäckig.",
+    "Kann außergewöhnlich rachsüchtig sein.",
+  ],
+
+  Bolg: [
+    "Wirkt sehr aggressiv.",
+    "Geht meist direkt gegen seine Gegner vor.",
+    "Lässt sich nur schwer von seinem Ziel abbringen.",
+  ],
+
+  Smaug: [
+    "Wirkt extrem selbstsicher.",
+    "Hält sehr viel von der eigenen Stärke.",
+    "Lässt sich gerne auf Gespräche ein, wenn er sich überlegen fühlt.",
+  ],
+
+  Beorn: [
+    "Wirkt eher zurückhaltend.",
+    "Ist Fremden gegenüber zunächst vorsichtig.",
+    "Kann in wichtigen Situationen außergewöhnlich entschlossen handeln.",
+  ],
+
+  Radagast: [
+    "Wirkt manchmal etwas eigenwillig.",
+    "Ist stark mit der Natur verbunden.",
+    "Unterschätzt Gefahren nicht so leicht, wie es zunächst wirkt.",
+  ],
+
+  "Master of Lake-town": [
+    "Legt großen Wert auf seinen eigenen Einfluss.",
+    "Denkt häufig zuerst an den persönlichen Vorteil.",
+    "Wirkt nach außen selbstsicherer, als die Lage manchmal erlaubt.",
+  ],
+
+  Alfrid: [
+    "Denkt häufig zuerst an sich selbst.",
+    "Versucht gerne, sich mächtigeren Personen anzupassen.",
+    "Geht gefährlichen Situationen lieber aus dem Weg.",
+  ],
+
+  "Dáin Ironfoot": [
+    "Wirkt sehr selbstbewusst.",
+    "Ist seiner Familie und seinem Volk stark verbunden.",
+    "Geht Konflikten nicht besonders gerne aus dem Weg.",
+  ],
+
+  Necromancer: [
+    "Arbeitet lange eher aus dem Verborgenen.",
+    "Ist stark auf Macht und Kontrolle ausgerichtet.",
+    "Zeigt anderen seine wahren Absichten nicht sofort.",
+  ],
+
+  // =========================
+  // THE BOYS
+  // =========================
+
+  Homelander: [
+    "Wirkt extrem selbstsicher.",
+    "Möchte von anderen bewundert werden.",
+    "Reagiert empfindlich darauf, Kontrolle zu verlieren.",
+  ],
+
+  "Billy Butcher": [
+    "Wirkt sehr entschlossen.",
+    "Verfolgt persönliche Ziele extrem hartnäckig.",
+    "Vertraut anderen nur schwer.",
+  ],
+
+  "Hughie Campbell": [
+    "Wirkt eher zurückhaltend.",
+    "Muss im Laufe der Zeit deutlich mutiger werden.",
+    "Ist Menschen, die ihm wichtig sind, sehr loyal.",
+  ],
+
+  Starlight: [
+    "Wirkt selbstbewusst.",
+    "Hat starke moralische Vorstellungen.",
+    "Lässt sich zunehmend weniger von anderen kontrollieren.",
+  ],
+
+  "Queen Maeve": [
+    "Wirkt oft eher distanziert.",
+    "Hat viel Erfahrung mit öffentlichem Druck.",
+    "Zeigt in wichtigen Situationen großen Mut.",
+  ],
+
+  "A-Train": [
+    "Wirkt sehr selbstsicher.",
+    "Ist stark von Anerkennung und Erfolg geprägt.",
+    "Trifft unter Druck teilweise egoistische Entscheidungen.",
+  ],
+
+  "The Deep": [
+    "Möchte unbedingt ernst genommen werden.",
+    "Passt sich häufig stärkeren Personen an.",
+    "Wirkt selbstbewusster, als er tatsächlich ist.",
+  ],
+
+  "Black Noir": [
+    "Wirkt extrem ruhig.",
+    "Spricht nur sehr wenig.",
+    "Ist bei seinen Aufgaben ausgesprochen konsequent.",
+  ],
+
+  "Soldier Boy": [
+    "Wirkt extrem selbstsicher.",
+    "Ist stark von seiner Vergangenheit geprägt.",
+    "Geht mit Konflikten häufig sehr direkt um.",
+  ],
+
+  Stormfront: [
+    "Wirkt nach außen sehr selbstbewusst.",
+    "Kann andere Menschen gezielt beeinflussen.",
+    "Verbirgt lange wichtige Seiten ihrer Vergangenheit.",
+  ],
+
+  Kimiko: [
+    "Wirkt eher zurückhaltend.",
+    "Ist bestimmten Menschen ausgesprochen loyal.",
+    "Kann in gefährlichen Situationen sehr entschlossen handeln.",
+  ],
+
+  Frenchie: [
+    "Wirkt häufig ziemlich locker.",
+    "Ist technisch und praktisch sehr einfallsreich.",
+    "Ist seinen engsten Freunden stark verbunden.",
+  ],
+
+  "Mother's Milk": [
+    "Wirkt verantwortungsbewusst.",
+    "Versucht innerhalb seiner Gruppe Struktur zu bewahren.",
+    "Ist stark von persönlichen Erfahrungen geprägt.",
+  ],
+
+  "Victoria Neuman": [
+    "Wirkt nach außen sehr kontrolliert.",
+    "Kann ihre wahren Absichten lange verbergen.",
+    "Denkt häufig mehrere Schritte voraus.",
+  ],
+
+  "Ashley Barrett": [
+    "Wirkt häufig angespannt.",
+    "Steht stark unter dem Einfluss mächtigerer Personen.",
+    "Versucht vor allem, ihre eigene Position zu sichern.",
+  ],
+
+  "Stan Edgar": [
+    "Wirkt fast immer sehr ruhig.",
+    "Lässt sich nur schwer einschüchtern.",
+    "Denkt ausgesprochen strategisch.",
+  ],
+
+  Ryan: [
+    "Wirkt häufig unsicher.",
+    "Wird stark von seinem Umfeld beeinflusst.",
+    "Muss erst lernen, mit außergewöhnlicher Verantwortung umzugehen.",
+  ],
+
+  Lamplighter: [
+    "Wirkt eher zynisch.",
+    "Ist stark von vergangenen Entscheidungen belastet.",
+    "Ist nicht immer so gleichgültig, wie er zunächst wirkt.",
+  ],
+
+  Translucent: [
+    "Wirkt sehr selbstsicher.",
+    "Verlässt sich stark auf seine besonderen Fähigkeiten.",
+    "Unterschätzt seine Gegner teilweise.",
+  ],
+
+  Mesmer: [
+    "Wirkt eher unsicher.",
+    "Möchte wieder mehr Anerkennung bekommen.",
+    "Ist bereit, Informationen zu seinem eigenen Vorteil zu nutzen.",
+  ],
+
+  Firecracker: [
+    "Wirkt sehr selbstbewusst.",
+    "Sucht stark die Aufmerksamkeit anderer.",
+    "Kann persönliche Konflikte lange mit sich herumtragen.",
+  ],
+
+  "Sister Sage": [
+    "Wirkt meistens sehr kontrolliert.",
+    "Denkt außergewöhnlich strategisch.",
+    "Plant deutlich weiter voraus als die meisten anderen.",
+  ],
+
+  "Tek Knight": [
+    "Wirkt extrem selbstsicher.",
+    "Beobachtet seine Umgebung sehr genau.",
+    "Hält sehr viel von seinen eigenen Fähigkeiten.",
+  ],
+
+  Popclaw: [
+    "Wirkt teilweise unsicher.",
+    "Steht stark unter persönlichem und öffentlichem Druck.",
+    "Lässt sich von ihren Gefühlen beeinflussen.",
+  ],
+
+  "Love Sausage": [
+    "Wirkt ziemlich selbstbewusst.",
+    "Nimmt ungewöhnliche Situationen vergleichsweise locker.",
+    "Ist für andere nicht immer leicht einzuschätzen.",
+  ],
+
+  // =========================
+  // THE WALKING DEAD
+  // =========================
+
+  "Rick Grimes": [
+    "Übernimmt häufig Verantwortung für andere.",
+    "Wird stark von seinen Erfahrungen verändert.",
+    "Kann in schwierigen Situationen sehr entschlossen handeln.",
+  ],
+
+  "Daryl Dixon": [
+    "Wirkt eher zurückhaltend.",
+    "Ist Menschen, denen er vertraut, außergewöhnlich loyal.",
+    "Kommt auch mit schwierigen Situationen gut zurecht.",
+  ],
+
+  Michonne: [
+    "Wirkt meistens sehr kontrolliert.",
+    "Vertraut anderen zunächst nur langsam.",
+    "Ist ihren engsten Verbündeten sehr loyal.",
+  ],
+
+  Negan: [
+    "Wirkt extrem selbstsicher.",
+    "Kann sehr charismatisch auftreten.",
+    "Versucht häufig, andere durch Einschüchterung zu kontrollieren.",
+  ],
+
+  "Glenn Rhee": [
+    "Wirkt grundsätzlich freundlich.",
+    "Denkt auch unter Druck häufig schnell.",
+    "Ist seinen Freunden und seiner Familie sehr loyal.",
+  ],
+
+  "Maggie Greene": [
+    "Wirkt sehr entschlossen.",
+    "Übernimmt zunehmend Verantwortung.",
+    "Ist stark von ihrer Familie und ihren Erfahrungen geprägt.",
+  ],
+
+  "Carol Peletier": [
+    "Wirkt nach außen häufig ruhig.",
+    "Verändert sich im Laufe der Zeit außergewöhnlich stark.",
+    "Kann schwierige Entscheidungen sehr konsequent treffen.",
+  ],
+
+  "Carl Grimes": [
+    "Muss sehr früh mit schwierigen Situationen umgehen.",
+    "Wird stark durch sein Umfeld geprägt.",
+    "Entwickelt mit der Zeit deutlich mehr Selbstständigkeit.",
+  ],
+
+  "Shane Walsh": [
+    "Wirkt sehr selbstbewusst.",
+    "Handelt häufig impulsiver als andere.",
+    "Lässt sich stark von persönlichen Konflikten beeinflussen.",
+  ],
+
+  "Hershel Greene": [
+    "Wirkt meistens sehr ruhig.",
+    "Versucht auch in schwierigen Zeiten an seinen Prinzipien festzuhalten.",
+    "Gibt anderen häufig vernünftigen Rat.",
+  ],
+
+  "The Governor": [
+    "Wirkt nach außen oft kontrolliert.",
+    "Möchte seine Umgebung stark kontrollieren.",
+    "Kann seine wahren Absichten lange verbergen.",
+  ],
+
+  "Abraham Ford": [
+    "Spricht häufig sehr direkt.",
+    "Wirkt ausgesprochen entschlossen.",
+    "Ist stark von einem bestimmten Ziel angetrieben.",
+  ],
+
+  "Rosita Espinosa": [
+    "Wirkt sehr selbstbewusst.",
+    "Kann gut für sich selbst sorgen.",
+    "Lässt sich nur schwer einschüchtern.",
+  ],
+
+  "Eugene Porter": [
+    "Verlässt sich stark auf seinen Verstand.",
+    "Wirkt in gefährlichen Situationen manchmal unsicher.",
+    "Kann sich sprachlich sehr ausführlich ausdrücken.",
+  ],
+
+  "Sasha Williams": [
+    "Wirkt meistens ernst.",
+    "Ist ausgesprochen selbstständig.",
+    "Wird stark von persönlichen Verlusten geprägt.",
+  ],
+
+  "Tyreese Williams": [
+    "Wirkt körperlich sehr selbstbewusst.",
+    "Hat trotz schwieriger Umstände starke moralische Grenzen.",
+    "Ist Menschen, die ihm wichtig sind, sehr loyal.",
+  ],
+
+  "Morgan Jones": [
+    "Wirkt häufig sehr nachdenklich.",
+    "Verändert seine Einstellung im Laufe der Zeit mehrfach.",
+    "Hat mit vergangenen Erfahrungen stark zu kämpfen.",
+  ],
+
+  "Gabriel Stokes": [
+    "Wirkt anfangs eher unsicher.",
+    "Wird stark von Schuld und persönlichen Überzeugungen geprägt.",
+    "Entwickelt im Laufe der Zeit deutlich mehr Mut.",
+  ],
+
+  Aaron: [
+    "Wirkt grundsätzlich freundlich.",
+    "Versucht neue Menschen zunächst genau einzuschätzen.",
+    "Ist seiner Gemeinschaft stark verbunden.",
+  ],
+
+  Jesus: [
+    "Wirkt häufig ziemlich gelassen.",
+    "Ist ausgesprochen geschickt und aufmerksam.",
+    "Versucht Konflikte nicht immer sofort mit Gewalt zu lösen.",
+  ],
+
+  Ezekiel: [
+    "Tritt sehr selbstbewusst auf.",
+    "Kann andere Menschen gut motivieren.",
+    "Zeigt hinter seiner öffentlichen Rolle eine deutlich persönlichere Seite.",
+  ],
+
+  Alpha: [
+    "Wirkt sehr kontrolliert.",
+    "Ist stark von ihren eigenen Regeln geprägt.",
+    "Versucht andere durch Angst und Konsequenz zu führen.",
+  ],
+
+  Beta: [
+    "Wirkt sehr einschüchternd.",
+    "Ist einer bestimmten Person außergewöhnlich loyal.",
+    "Zeigt nur selten persönliche Gefühle.",
+  ],
+
+  "Merle Dixon": [
+    "Spricht häufig sehr direkt.",
+    "Kann schnell aggressiv reagieren.",
+    "Ist komplizierter, als sein Auftreten zunächst vermuten lässt.",
+  ],
+
+  Andrea: [
+    "Wirkt zunehmend selbstbewusst.",
+    "Möchte auch in schwierigen Situationen unabhängig bleiben.",
+    "Trifft Entscheidungen teilweise sehr stark nach eigener Einschätzung.",
+  ],
+
+  // =========================
+  // JURASSIC PARK / WORLD
+  // =========================
+
+  "Alan Grant": [
+    "Wirkt meistens eher ruhig.",
+    "Verlässt sich stark auf Erfahrung und Beobachtung.",
+    "Ist in gefährlichen Situationen ziemlich besonnen.",
+  ],
+
+  "Ellie Sattler": [
+    "Wirkt sehr selbstbewusst.",
+    "Ist ausgesprochen neugierig und aufmerksam.",
+    "Lässt sich auch in gefährlichen Situationen nicht leicht einschüchtern.",
+  ],
+
+  "Ian Malcolm": [
+    "Wirkt sehr selbstsicher.",
+    "Hinterfragt Entscheidungen anderer häufig kritisch.",
+    "Drückt sich gerne etwas auffälliger aus.",
+  ],
+
+  "John Hammond": [
+    "Ist von seinen eigenen Ideen stark begeistert.",
+    "Denkt häufig sehr groß.",
+    "Unterschätzt mögliche Probleme manchmal.",
+  ],
+
+  "Lex Murphy": [
+    "Wirkt anfangs eher unsicher.",
+    "Kann mit Technik überraschend gut umgehen.",
+    "Zeigt in gefährlichen Situationen viel Mut.",
+  ],
+
+  "Tim Murphy": [
+    "Ist ausgesprochen neugierig.",
+    "Interessiert sich stark für seine Umgebung.",
+    "Bleibt auch nach schwierigen Erlebnissen aufmerksam.",
+  ],
+
+  "Dennis Nedry": [
+    "Wirkt häufig etwas gereizt.",
+    "Denkt stark an den eigenen Vorteil.",
+    "Hält seine Fähigkeiten für besonders wichtig.",
+  ],
+
+  "Robert Muldoon": [
+    "Wirkt sehr ernst.",
+    "Nimmt Gefahren deutlich ernster als viele andere.",
+    "Verlässt sich stark auf Erfahrung.",
+  ],
+
+  "Henry Wu": [
+    "Wirkt sehr kontrolliert.",
+    "Verlässt sich stark auf sein wissenschaftliches Wissen.",
+    "Ist von den Möglichkeiten seiner Arbeit sehr überzeugt.",
+  ],
+
+  "Ray Arnold": [
+    "Wirkt meistens sehr professionell.",
+    "Versucht technische Probleme möglichst rational zu lösen.",
+    "Bleibt auch unter Druck vergleichsweise fokussiert.",
+  ],
+
+  "Donald Gennaro": [
+    "Denkt häufig zuerst an wirtschaftliche Konsequenzen.",
+    "Wirkt in gefährlichen Situationen schnell nervös.",
+    "Ist weniger abenteuerlustig als andere.",
+  ],
+
+  "Owen Grady": [
+    "Wirkt ausgesprochen selbstbewusst.",
+    "Verlässt sich stark auf Erfahrung und Instinkt.",
+    "Bleibt in gefährlichen Situationen meist sehr entschlossen.",
+  ],
+
+  "Claire Dearing": [
+    "Wirkt sehr organisiert.",
+    "Übernimmt im Laufe der Zeit zunehmend persönliche Verantwortung.",
+    "Kann sich schnell an gefährliche Situationen anpassen.",
+  ],
+
+  "Maisie Lockwood": [
+    "Ist ziemlich neugierig.",
+    "Hinterfragt ihre eigene Herkunft und ihr Umfeld.",
+    "Zeigt in gefährlichen Situationen überraschend viel Mut.",
+  ],
+
+  "Zach Mitchell": [
+    "Wirkt zunächst eher unbekümmert.",
+    "Interessiert sich nicht sofort für alles um ihn herum.",
+    "Übernimmt in gefährlichen Situationen mehr Verantwortung.",
+  ],
+
+  "Gray Mitchell": [
+    "Ist ausgesprochen neugierig.",
+    "Beobachtet seine Umgebung sehr aufmerksam.",
+    "Kennt sich mit vielen Details seines Interessengebiets aus.",
+  ],
+
+  "Barry Sembène": [
+    "Wirkt meistens ruhig.",
+    "Geht mit gefährlichen Situationen professionell um.",
+    "Ist seinen Kollegen gegenüber loyal.",
+  ],
+
+  "Simon Masrani": [
+    "Wirkt sehr selbstbewusst.",
+    "Ist von großen Projekten und Ideen begeistert.",
+    "Unterschätzt Risiken teilweise.",
+  ],
+
+  "Vic Hoskins": [
+    "Wirkt ausgesprochen selbstsicher.",
+    "Sieht in ungewöhnlichen Situationen schnell einen praktischen Nutzen.",
+    "Ist stark von Kontrolle und Einfluss geprägt.",
+  ],
+
+  "Franklin Webb": [
+    "Wirkt in gefährlichen Situationen schnell nervös.",
+    "Verlässt sich lieber auf Technik als auf körperliche Stärke.",
+    "Ist seinen Begleitern dennoch loyal.",
+  ],
+
+  "Zia Rodriguez": [
+    "Wirkt selbstbewusst.",
+    "Spricht häufig ziemlich direkt.",
+    "Bleibt in schwierigen Situationen vergleichsweise ruhig.",
+  ],
+
+  "Eli Mills": [
+    "Wirkt nach außen sehr kontrolliert.",
+    "Denkt stark an den eigenen Vorteil.",
+    "Verbirgt seine tatsächlichen Absichten lange.",
+  ],
+
+  "Benjamin Lockwood": [
+    "Wirkt meistens ruhig und ernst.",
+    "Ist stark von seiner Vergangenheit geprägt.",
+    "Trägt lange persönliche Geheimnisse mit sich herum.",
+  ],
+
+  "Kayla Watts": [
+    "Wirkt sehr selbstbewusst.",
+    "Kann sich schnell an gefährliche Situationen anpassen.",
+    "Geht viele Probleme eher praktisch an.",
+  ],
+
+  "Ramsay Cole": [
+    "Wirkt meistens kontrolliert.",
+    "Beobachtet sein Umfeld aufmerksam.",
+    "Zeigt seine tatsächlichen Absichten nicht sofort.",
+  ],
+
+    // =========================
+  // STAR WARS – NEUE FIGUREN
+  // =========================
+
+  "Darth Maul": [
+    "Wirkt ausgesprochen entschlossen.",
+    "Wird stark von persönlichen Konflikten angetrieben.",
+    "Gibt ein einmal gesetztes Ziel nur schwer auf.",
+  ],
+
+  "Jango Fett": [
+    "Wirkt sehr kontrolliert.",
+    "Geht bei seinen Aufgaben professionell vor.",
+    "Verlässt sich stark auf Erfahrung und Ausrüstung.",
+  ],
+
+  "Cad Bane": [
+    "Wirkt extrem selbstsicher.",
+    "Bleibt auch in gefährlichen Situationen meistens ruhig.",
+    "Denkt häufig zuerst an den eigenen Vorteil.",
+  ],
+
+  "Bo-Katan Kryze": [
+    "Wirkt sehr entschlossen.",
+    "Ist stark von ihrer Herkunft geprägt.",
+    "Übernimmt häufig Verantwortung für andere.",
+  ],
+
+  "Poe Dameron": [
+    "Wirkt ziemlich selbstbewusst.",
+    "Handelt manchmal etwas zu spontan.",
+    "Ist seinen Verbündeten ausgesprochen loyal.",
+  ],
+
+  "Captain Phasma": [
+    "Wirkt sehr kontrolliert.",
+    "Legt großen Wert auf Disziplin.",
+    "Denkt in gefährlichen Situationen stark an das eigene Überleben.",
+  ],
+
+  "Grand Moff Tarkin": [
+    "Wirkt fast immer sehr ruhig.",
+    "Denkt ausgesprochen strategisch.",
+    "Möchte andere durch Kontrolle und Autorität beeinflussen.",
+  ],
+
+  "Admiral Ackbar": [
+    "Wirkt meistens ruhig.",
+    "Hat viel Erfahrung mit schwierigen Situationen.",
+    "Denkt bei Entscheidungen häufig taktisch.",
+  ],
+
+  "Asajj Ventress": [
+    "Wirkt sehr selbstbewusst.",
+    "Ist stark von ihrer schwierigen Vergangenheit geprägt.",
+    "Geht im Laufe der Zeit zunehmend ihren eigenen Weg.",
+  ],
+
+  "Kit Fisto": [
+    "Wirkt meistens ziemlich gelassen.",
+    "Bleibt auch unter Druck oft ruhig.",
+    "Tritt anderen gegenüber häufig freundlich und selbstbewusst auf.",
+  ],
+
+  // =========================
+  // MARVEL – NEUE FIGUREN
+  // =========================
+
+  "Winter Soldier": [
+    "Wirkt meistens eher zurückhaltend.",
+    "Ist stark von seiner Vergangenheit geprägt.",
+    "Hat Schwierigkeiten, anderen vollständig zu vertrauen.",
+  ],
+
+  Falcon: [
+    "Wirkt ziemlich selbstbewusst.",
+    "Ist seinen Verbündeten sehr loyal.",
+    "Übernimmt zunehmend Verantwortung für andere.",
+  ],
+
+  "War Machine": [
+    "Wirkt sehr pflichtbewusst.",
+    "Verlässt sich stark auf Erfahrung und Ausrüstung.",
+    "Bleibt auch in gefährlichen Situationen meist professionell.",
+  ],
+
+  "Nick Fury": [
+    "Wirkt fast immer sehr kontrolliert.",
+    "Verrät anderen nur selten alles, was er weiß.",
+    "Denkt häufig mehrere Schritte voraus.",
+  ],
+
+  Mysterio: [
+    "Wirkt sehr selbstsicher.",
+    "Legt großen Wert auf die Wahrnehmung anderer.",
+    "Versucht häufig, Situationen zu seinen Gunsten zu inszenieren.",
+  ],
+
+  "Green Goblin": [
+    "Wirkt teilweise extrem selbstsicher.",
+    "Ist für andere nicht immer leicht einzuschätzen.",
+    "Kann sehr impulsiv und gefährlich reagieren.",
+  ],
+
+  "Doctor Octopus": [
+    "Verlässt sich stark auf seinen Verstand.",
+    "Ist von den eigenen Fähigkeiten sehr überzeugt.",
+    "Kann sich extrem auf ein bestimmtes Ziel konzentrieren.",
+  ],
+
+  Magneto: [
+    "Wirkt ausgesprochen selbstbewusst.",
+    "Ist stark von seiner Vergangenheit und seinen Überzeugungen geprägt.",
+    "Lässt sich nur schwer von seinem Ziel abbringen.",
+  ],
+
+  "Professor X": [
+    "Wirkt meistens sehr ruhig.",
+    "Versucht Konflikte häufig mit Verständnis zu lösen.",
+    "Denkt langfristig und übernimmt viel Verantwortung.",
+  ],
+
+  "Silver Surfer": [
+    "Wirkt meistens sehr ruhig.",
+    "Ist stark von vergangenen Entscheidungen geprägt.",
+    "Denkt häufig über größere Zusammenhänge nach.",
+  ],
+
 };
+
+
 
 function getRandomTip(character: string) {
   const tips = characterTips[character];
