@@ -1870,6 +1870,100 @@ const characterTips: Record<string, string[]> = {
     "Denkt häufig über größere Zusammenhänge nach.",
   ],
 
+  // =========================
+  // STAR WARS – WEITERE FIGUREN
+  // =========================
+
+  "Captain Rex": [
+    "Wirkt sehr pflichtbewusst.",
+    "Ist seinen Verbündeten ausgesprochen loyal.",
+    "Denkt auch unter Druck häufig sehr taktisch.",
+  ],
+
+  "Commander Cody": [
+    "Wirkt sehr diszipliniert.",
+    "Nimmt Befehle und Verantwortung ernst.",
+    "Bleibt in schwierigen Situationen meist professionell.",
+  ],
+
+  "Grand Admiral Thrawn": [
+    "Wirkt fast immer sehr ruhig.",
+    "Analysiert andere Menschen und Situationen sehr genau.",
+    "Denkt außergewöhnlich strategisch.",
+  ],
+
+  "Moff Gideon": [
+    "Wirkt sehr kontrolliert.",
+    "Möchte möglichst viel Kontrolle über seine Umgebung behalten.",
+    "Plant häufig mehrere Schritte voraus.",
+  ],
+
+  "Fennec Shand": [
+    "Wirkt meistens sehr ruhig.",
+    "Geht bei ihren Aufgaben ausgesprochen professionell vor.",
+    "Vertraut stark auf Erfahrung und Geduld.",
+  ],
+
+  "Kanan Jarrus": [
+    "Wirkt häufig ziemlich gelassen.",
+    "Übernimmt viel Verantwortung für andere.",
+    "Ist stark von früheren Erfahrungen geprägt.",
+  ],
+
+  "Ezra Bridger": [
+    "Ist ziemlich neugierig.",
+    "Handelt manchmal impulsiv.",
+    "Entwickelt mit der Zeit deutlich mehr Verantwortung.",
+  ],
+
+  "Sabine Wren": [
+    "Wirkt sehr selbstbewusst.",
+    "Ist ausgesprochen kreativ.",
+    "Ist stark von ihrer Familie und Vergangenheit geprägt.",
+  ],
+
+  "Hera Syndulla": [
+    "Wirkt sehr ruhig und organisiert.",
+    "Übernimmt häufig Verantwortung für eine ganze Gruppe.",
+    "Denkt auch unter Druck meistens vernünftig.",
+  ],
+
+  "Plo Koon": [
+    "Wirkt meistens sehr ruhig.",
+    "Behandelt andere häufig mit Respekt.",
+    "Ist stark von Pflicht und Verantwortung geprägt.",
+  ],
+
+  "Aayla Secura": [
+    "Wirkt sehr selbstbewusst.",
+    "Bleibt auch in gefährlichen Situationen konzentriert.",
+    "Ist ihren Verbündeten gegenüber sehr loyal.",
+  ],
+
+  "Savage Opress": [
+    "Wirkt ausgesprochen einschüchternd.",
+    "Geht Konflikte meistens sehr direkt an.",
+    "Wird stark von anderen Personen beeinflusst.",
+  ],
+
+  "Pre Vizsla": [
+    "Wirkt extrem selbstbewusst.",
+    "Ist stark von seinen Vorstellungen über Tradition geprägt.",
+    "Möchte sich anderen gegenüber häufig beweisen.",
+  ],
+
+  "Nute Gunray": [
+    "Wirkt in gefährlichen Situationen schnell nervös.",
+    "Denkt häufig zuerst an den eigenen Vorteil.",
+    "Verlässt sich lieber auf andere als auf direkte Konfrontation.",
+  ],
+
+  "Wedge Antilles": [
+    "Wirkt meistens eher ruhig.",
+    "Ist ausgesprochen zuverlässig.",
+    "Bleibt auch in gefährlichen Situationen konzentriert.",
+  ],
+
 };
 
 
