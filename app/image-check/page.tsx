@@ -56,6 +56,14 @@ const categoryInfo = [
     id: "jurassic",
     name: "🦖 Jurassic Park / World",
   },
+  {
+  id: "schauspielerinnen",
+  name: "💃 Schauspielerinnen",
+},
+{
+  id: "schauspieler",
+  name: "🎬 Schauspieler",
+},
 ];
 
 const categories: Category[] = categoryInfo.map(

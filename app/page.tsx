@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,7 +7,15 @@ export default function Home() {
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-10">
 
         <div className="mb-10 text-center">
-          <div className="mb-4 text-6xl">🎮</div>
+
+          <Image
+  src="/logo.jpeg"
+  alt="Logo"
+  width={120}
+  height={120}
+  priority
+  className="mx-auto mb-4 rounded-2xl"
+/>
 
           <h1 className="text-4xl font-black tracking-tight">
             SPION
