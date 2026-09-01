@@ -1964,6 +1964,100 @@ const characterTips: Record<string, string[]> = {
     "Bleibt auch in gefährlichen Situationen konzentriert.",
   ],
 
+  // =========================
+  // MARVEL – WEITERE FIGUREN
+  // =========================
+
+  Punisher: [
+    "Wirkt meistens sehr ernst.",
+    "Verfolgt seine Ziele extrem konsequent.",
+    "Vertraut nur wenigen Menschen wirklich.",
+  ],
+
+  Blade: [
+    "Wirkt eher zurückhaltend.",
+    "Ist stark von seiner Vergangenheit geprägt.",
+    "Geht gefährliche Situationen sehr direkt an.",
+  ],
+
+  "Ghost Rider": [
+    "Wirkt sehr einschüchternd.",
+    "Ist stark mit Schuld und Konsequenzen verbunden.",
+    "Zeigt nur selten eine lockere Seite.",
+  ],
+
+  "Shang-Chi": [
+    "Wirkt meistens ruhig.",
+    "Ist sehr diszipliniert.",
+    "Ist stark von seiner Familie und Vergangenheit geprägt.",
+  ],
+
+  Wasp: [
+    "Wirkt sehr selbstbewusst.",
+    "Denkt schnell und praktisch.",
+    "Übernimmt häufig Verantwortung.",
+  ],
+
+  Nebula: [
+    "Wirkt meistens eher kühl.",
+    "Ist stark von ihrer Familie und Vergangenheit geprägt.",
+    "Zeigt Loyalität oft weniger offen als andere.",
+  ],
+
+  Ultron: [
+    "Wirkt extrem rational.",
+    "Hält sehr viel von der eigenen Überlegenheit.",
+    "Ist stark auf ein bestimmtes Ziel fokussiert.",
+  ],
+
+  "Red Skull": [
+    "Wirkt sehr selbstsicher.",
+    "Ist stark von Macht und Kontrolle geprägt.",
+    "Lässt sich nur schwer von seinen Überzeugungen abbringen.",
+  ],
+
+  Hela: [
+    "Wirkt extrem selbstbewusst.",
+    "Ist sich ihrer eigenen Stärke sehr bewusst.",
+    "Hat große Schwierigkeiten damit, Macht abzugeben.",
+  ],
+
+  Kingpin: [
+    "Wirkt meistens sehr kontrolliert.",
+    "Plant häufig langfristig.",
+    "Kann bei persönlichen Konflikten sehr emotional reagieren.",
+  ],
+
+  Cyclops: [
+    "Wirkt sehr pflichtbewusst.",
+    "Übernimmt häufig Verantwortung für andere.",
+    "Ist stark von Disziplin geprägt.",
+  ],
+
+  Storm: [
+    "Wirkt meistens sehr ruhig.",
+    "Übernimmt selbstverständlich Verantwortung.",
+    "Lässt sich auch in schwierigen Situationen kaum einschüchtern.",
+  ],
+
+  "Jean Grey": [
+    "Wirkt häufig eher ruhig.",
+    "Ist stark von inneren Konflikten geprägt.",
+    "Besitzt außergewöhnlich viel Verantwortung und Macht.",
+  ],
+
+  Beast: [
+    "Wirkt sehr gebildet.",
+    "Verlässt sich stark auf Wissen und Analyse.",
+    "Versucht Konflikte häufig vernünftig zu lösen.",
+  ],
+
+  "Adam Warlock": [
+    "Wirkt manchmal etwas distanziert.",
+    "Muss vieles über sich und seine Umgebung erst lernen.",
+    "Besitzt großes Selbstvertrauen in die eigenen Fähigkeiten.",
+  ],
+
 };
 
 
