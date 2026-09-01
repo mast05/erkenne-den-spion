@@ -48,2014 +48,1998 @@ const categoryNames: Record<string, string> = {
 };
 
 const characterTips: Record<string, string[]> = {
-  // =========================
+    // =========================
   // STAR WARS
   // =========================
 
-  "Luke Skywalker": [
-    "Ist grundsätzlich eher gutherzig.",
-    "Muss im Laufe der Zeit viel dazulernen.",
-    "Kann manchmal etwas impulsiv handeln.",
-  ],
-
-  "Darth Vader": [
-    "Wirkt meistens sehr kontrolliert.",
-    "Hat eine schwierige Vergangenheit.",
-    "Ist von starken inneren Konflikten geprägt.",
-  ],
-
-  Yoda: [
-    "Wirkt meistens ruhig.",
-    "Hat sehr viel Erfahrung.",
-    "Denkt häufig länger über Entscheidungen nach.",
-  ],
-
-  "Obi-Wan Kenobi": [
-    "Wirkt meistens gelassen.",
-    "Übernimmt oft Verantwortung für andere.",
-    "Versucht auch unter Druck vernünftig zu bleiben.",
-  ],
-
-  "Leia Organa": [
-    "Wirkt sehr selbstbewusst.",
-    "Übernimmt gerne Verantwortung.",
-    "Gibt auch in schwierigen Situationen nicht schnell auf.",
-  ],
-
-  "Han Solo": [
-    "Wirkt ziemlich selbstsicher.",
-    "Handelt manchmal spontan.",
-    "Ist loyaler, als es zunächst wirkt.",
-  ],
-
-  Chewbacca: [
-    "Ist seinen Freunden sehr loyal.",
-    "Kann schnell emotional reagieren.",
-    "Ist oft verlässlicher, als man zunächst erwartet.",
+  "Ahsoka Tano": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt meistens eher praktische als schwere Kleidung.",
+    "Ihr Kopfbereich fällt stärker auf als ihre restliche Ausrüstung.",
   ],
 
   "Anakin Skywalker": [
-    "Ist sehr ehrgeizig.",
-    "Lässt sich stark von seinen Gefühlen beeinflussen.",
-    "Trifft manchmal impulsive Entscheidungen.",
-  ],
-
-  "R2-D2": [
-    "Wirkt ziemlich neugierig.",
-    "Hilft anderen häufig im richtigen Moment.",
-    "Bleibt auch in schwierigen Situationen zuverlässig.",
-  ],
-
-  "C-3PO": [
-    "Wirkt häufig etwas unsicher.",
-    "Macht sich schnell Sorgen.",
-    "Versucht gefährliche Situationen eher zu vermeiden.",
-  ],
-
-  Palpatine: [
-    "Wirkt nach außen oft ruhig.",
-    "Plant gerne langfristig.",
-    "Zeigt anderen nicht sofort seine wahren Absichten.",
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig mehrere dunkle Kleidungsschichten.",
+    "Hat meistens relativ wenig schwere Ausrüstung am Körper.",
   ],
 
   "Boba Fett": [
-    "Wirkt eher zurückhaltend.",
-    "Geht meistens sehr zielgerichtet vor.",
-    "Zeigt seine Gefühle nur selten.",
+    "Ein großer Teil seines Körpers ist von Ausrüstung bedeckt.",
+    "Seine Kleidung wirkt eher robust als bequem.",
+    "Das Gesicht ist häufig nicht sichtbar.",
   ],
 
-  Mandalorian: [
-    "Wirkt eher zurückhaltend.",
-    "Nimmt seine Aufgaben sehr ernst.",
-    "Ist Menschen gegenüber zunächst eher vorsichtig.",
+  "C-3PO": [
+    "Sein Körper wirkt eher schmal gebaut.",
+    "Die Oberfläche seines Körpers wirkt hart und glatt.",
+    "Normale Kleidung ist bei ihm kaum zu erkennen.",
   ],
 
-  Grogu: [
-    "Wirkt eher ruhig.",
-    "Ist seinen Begleitern sehr verbunden.",
-    "Kann in wichtigen Momenten überraschend mutig sein.",
-  ],
-
-  "Ahsoka Tano": [
-    "Wirkt selbstbewusst.",
-    "Denkt gerne selbstständig.",
-    "Hat aus schwierigen Erfahrungen viel gelernt.",
-  ],
-
-  "Mace Windu": [
-    "Wirkt sehr kontrolliert.",
-    "Ist stark von seinen Prinzipien geprägt.",
-    "Nimmt seine Verantwortung sehr ernst.",
-  ],
-
-  "Kylo Ren": [
-    "Wirkt emotional.",
-    "Hat mit inneren Konflikten zu kämpfen.",
-    "Möchte häufig stärker wirken, als er sich fühlt.",
-  ],
-
-  Rey: [
-    "Ist ziemlich neugierig.",
-    "Lernt schnell aus neuen Erfahrungen.",
-    "Sucht lange nach ihrem eigenen Platz.",
-  ],
-
-  Finn: [
-    "Wirkt grundsätzlich freundlich.",
-    "Muss einige schwierige Entscheidungen treffen.",
-    "Zeigt oft mehr Mut, als er selbst erwartet.",
-  ],
-
-  "Jabba the Hutt": [
-    "Wirkt ziemlich selbstsicher.",
-    "Ist an Einfluss und Macht gewöhnt.",
-    "Denkt häufig zuerst an den eigenen Vorteil.",
+  "Chewbacca": [
+    "Ist deutlich größer als ein durchschnittlicher Mensch.",
+    "Seine Körperoberfläche wirkt ungewöhnlich dicht.",
+    "Trägt vergleichsweise wenig sichtbare Kleidung.",
   ],
 
   "Count Dooku": [
-    "Wirkt sehr kontrolliert.",
-    "Ist von seinen eigenen Ansichten stark überzeugt.",
-    "Tritt meistens ziemlich selbstsicher auf.",
+    "Wirkt eher groß und schlank.",
+    "Trägt meistens dunkle und eher ordentliche Kleidung.",
+    "Hat vergleichsweise wenig sichtbare Ausrüstung.",
+  ],
+
+  "Darth Vader": [
+    "Wirkt körperlich eher groß und schwer.",
+    "Trägt fast ausschließlich dunkle Materialien.",
+    "Das Gesicht ist meistens vollständig verdeckt.",
+  ],
+
+  "Finn": [
+    "Hat eine eher durchschnittliche menschliche Statur.",
+    "Trägt häufig eher praktische Kleidung.",
+    "Seine Ausrüstung wirkt nicht besonders schwer.",
   ],
 
   "General Grievous": [
-    "Wirkt sehr entschlossen.",
-    "Kann schnell aggressiv reagieren.",
-    "Ist stark auf das Erreichen seiner Ziele fokussiert.",
+    "Wirkt deutlich größer als ein durchschnittlicher Mensch.",
+    "Sein Körper besteht sichtbar aus vielen harten Elementen.",
+    "Seine Statur wirkt eher schmal und kantig.",
   ],
 
-  "Padmé Amidala": [
-    "Wirkt sehr selbstbewusst.",
-    "Übernimmt früh viel Verantwortung.",
-    "Versucht Konflikte häufig vernünftig zu lösen.",
+  "Grogu": [
+    "Ist körperlich sehr klein.",
+    "Trägt eher lockere als körpernahe Kleidung.",
+    "Seine Ohren verändern die Silhouette des Kopfes deutlich.",
   ],
 
-  "Qui-Gon Jinn": [
-    "Wirkt meistens ruhig.",
-    "Vertraut stark auf die eigene Einschätzung.",
-    "Geht manchmal bewusst seinen eigenen Weg.",
+  "Han Solo": [
+    "Hat eine ziemlich durchschnittliche menschliche Statur.",
+    "Trägt meistens eher einfache und praktische Kleidung.",
+    "Hat häufig nur wenig Ausrüstung direkt am Körper.",
+  ],
+
+  "Jabba the Hutt": [
+    "Seine Körperform unterscheidet sich stark von einem Menschen.",
+    "Wirkt körperlich eher schwer als beweglich.",
+    "Trägt kaum erkennbare normale Kleidung.",
+  ],
+
+  "Kylo Ren": [
+    "Wirkt eher groß und schlank.",
+    "Trägt überwiegend dunkle Kleidung.",
+    "Sein Gesicht ist zumindest zeitweise verdeckt.",
   ],
 
   "Lando Calrissian": [
-    "Wirkt ziemlich selbstsicher.",
-    "Kann sehr charmant auftreten.",
-    "Passt sich schnell an neue Situationen an.",
+    "Wirkt körperlich eher durchschnittlich gebaut.",
+    "Seine Kleidung wirkt oft etwas gepflegter als bei anderen.",
+    "Trägt meist wenig schwere Ausrüstung.",
   ],
 
-  // =========================
-  // MARVEL
-  // =========================
-
-  "Spider-Man": [
-    "Wirkt häufig ziemlich locker.",
-    "Übernimmt Verantwortung, obwohl es ihm nicht immer leichtfällt.",
-    "Versucht meistens das Richtige zu tun.",
-  ],
-
-  "Iron Man": [
-    "Wirkt sehr selbstsicher.",
-    "Verlässt sich stark auf seine eigenen Fähigkeiten.",
-    "Kann manchmal ziemlich impulsiv handeln.",
-  ],
-
-  Thor: [
-    "Wirkt sehr selbstbewusst.",
-    "Ist stark von Loyalität geprägt.",
-    "Muss im Laufe der Zeit einiges dazulernen.",
-  ],
-
-  Hulk: [
-    "Hat Schwierigkeiten, seine Gefühle immer zu kontrollieren.",
-    "Ist seinen Freunden grundsätzlich loyal.",
-    "Kann sehr unterschiedlich auf Stress reagieren.",
-  ],
-
-  "Captain America": [
-    "Wirkt sehr zuverlässig.",
-    "Hat klare Vorstellungen von richtig und falsch.",
-    "Übernimmt häufig Verantwortung für andere.",
-  ],
-
-  "Black Widow": [
-    "Wirkt sehr kontrolliert.",
-    "Beobachtet andere Menschen genau.",
-    "Spricht nicht gerne über ihre Vergangenheit.",
-  ],
-
-  Hawkeye: [
-    "Wirkt eher ruhig.",
-    "Ist seinen Freunden sehr loyal.",
-    "Verlässt sich stark auf Erfahrung und Konzentration.",
-  ],
-
-  "Doctor Strange": [
-    "Wirkt ziemlich selbstsicher.",
-    "Musste seine Sicht auf vieles verändern.",
-    "Verlässt sich stark auf sein eigenes Wissen.",
-  ],
-
-  "Black Panther": [
-    "Wirkt meistens ruhig.",
-    "Trägt viel Verantwortung.",
-    "Ist stark von Pflicht und Loyalität geprägt.",
-  ],
-
-  "Scarlet Witch": [
-    "Wirkt häufig eher zurückhaltend.",
-    "Hat eine sehr schwierige Vergangenheit.",
-    "Lässt sich teilweise stark von Gefühlen beeinflussen.",
-  ],
-
-  Vision: [
-    "Wirkt meistens sehr ruhig.",
-    "Denkt häufig sehr rational.",
-    "Versucht andere Menschen besser zu verstehen.",
-  ],
-
-  "Ant-Man": [
-    "Wirkt ziemlich locker.",
-    "Ist seinen Angehörigen sehr verbunden.",
-    "Unterschätzt sich manchmal selbst.",
-  ],
-
-  "Captain Marvel": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist ziemlich unabhängig.",
-    "Lässt sich nur schwer einschüchtern.",
-  ],
-
-  Deadpool: [
-    "Wirkt sehr locker.",
-    "Handelt häufig impulsiv.",
-    "Nimmt viele Situationen weniger ernst als andere.",
-  ],
-
-  Wolverine: [
-    "Wirkt oft eher grimmig.",
-    "Hat schon sehr viel erlebt.",
-    "Ist bestimmten Menschen gegenüber extrem loyal.",
-  ],
-
-  Loki: [
-    "Wirkt sehr selbstsicher.",
-    "Ist nicht immer leicht einzuschätzen.",
-    "Hat ein kompliziertes Verhältnis zu seiner Vergangenheit.",
-  ],
-
-  Thanos: [
-    "Wirkt meistens sehr ruhig.",
-    "Ist von seinem eigenen Ziel stark überzeugt.",
-    "Lässt sich nur schwer von seiner Meinung abbringen.",
-  ],
-
-  "Star-Lord": [
-    "Wirkt ziemlich locker.",
-    "Handelt häufiger spontan.",
-    "Ist seinen Freunden stärker verbunden, als er manchmal zeigt.",
-  ],
-
-  Groot: [
-    "Wirkt eher ruhig.",
-    "Ist seinen Freunden sehr loyal.",
-    "Kann in wichtigen Momenten überraschend mutig sein.",
-  ],
-
-  Rocket: [
-    "Wirkt ziemlich selbstsicher.",
-    "Kann schnell gereizt reagieren.",
-    "Ist seinen Freunden stärker verbunden, als er zugibt.",
-  ],
-
-  Gamora: [
-    "Wirkt meistens ernst.",
-    "Ist sehr diszipliniert.",
-    "Hat eine schwierige Vergangenheit hinter sich.",
-  ],
-
-  Drax: [
-    "Wirkt sehr direkt.",
-    "Ist seinen Freunden stark verbunden.",
-    "Kann manchmal impulsiv handeln.",
-  ],
-
-  Venom: [
-    "Kann sehr impulsiv reagieren.",
-    "Ist nicht immer leicht einzuschätzen.",
-    "Entwickelt mit der Zeit stärkere Bindungen zu anderen.",
-  ],
-
-  "Moon Knight": [
-    "Wirkt häufig eher ernst.",
-    "Hat mit persönlichen Konflikten zu kämpfen.",
-    "Ist für andere nicht immer leicht einzuschätzen.",
-  ],
-
-  Daredevil: [
-    "Wirkt meistens ernst.",
-    "Hat einen starken Sinn für Gerechtigkeit.",
-    "Geht trotz persönlicher Probleme seinen Weg weiter.",
-  ],
-
-  // =========================
-  // HARRY POTTER
-  // =========================
-
-  "Harry Potter": [
-    "Ist seinen Freunden sehr loyal.",
-    "Handelt manchmal ziemlich impulsiv.",
-    "Übernimmt Verantwortung, obwohl er sie nicht immer möchte.",
-  ],
-
-  "Hermine Granger": [
-    "Ist sehr ehrgeizig.",
-    "Bereitet sich gerne gut vor.",
-    "Hilft ihren Freunden auch in schwierigen Situationen.",
-  ],
-
-  "Ron Weasley": [
-    "Wirkt häufig ziemlich locker.",
-    "Ist seinen Freunden sehr loyal.",
-    "Kann manchmal etwas unsicher sein.",
-  ],
-
-  "Albus Dumbledore": [
-    "Wirkt meistens sehr ruhig.",
-    "Hat sehr viel Erfahrung.",
-    "Verrät anderen nicht immer sofort alles, was er weiß.",
-  ],
-
-  "Severus Snape": [
-    "Wirkt meistens sehr ernst.",
-    "Zeigt seine Gefühle nur selten offen.",
-    "Hat eine komplizierte Vergangenheit.",
-  ],
-
-  "Lord Voldemort": [
-    "Ist sehr stark auf seine Ziele fokussiert.",
-    "Lässt sich nur schwer von seiner Meinung abbringen.",
-    "Hat große Schwierigkeiten mit Vertrauen.",
-  ],
-
-  "Draco Malfoy": [
-    "Wirkt oft sehr selbstsicher.",
-    "Ist stark von seinem Umfeld geprägt.",
-    "Ist innerlich unsicherer, als er nach außen wirkt.",
-  ],
-
-  "Rubeus Hagrid": [
-    "Wirkt grundsätzlich sehr freundlich.",
-    "Ist seinen Freunden extrem loyal.",
-    "Lässt sich manchmal von Begeisterung mitreißen.",
-  ],
-
-  "Sirius Black": [
-    "Wirkt ziemlich selbstsicher.",
-    "Ist seinen Freunden sehr loyal.",
-    "Handelt manchmal impulsiv.",
-  ],
-
-  "Remus Lupin": [
-    "Wirkt meistens ruhig.",
-    "Ist anderen gegenüber verständnisvoll.",
-    "Trägt lange persönliche Probleme mit sich herum.",
-  ],
-
-  "Minerva McGonagall": [
-    "Wirkt sehr streng.",
-    "Nimmt ihre Verantwortung ernst.",
-    "Ist anderen gegenüber loyaler, als sie zunächst wirkt.",
-  ],
-
-  Dobby: [
-    "Ist sehr loyal.",
-    "Kann ziemlich emotional reagieren.",
-    "Ist bereit, für andere große Risiken einzugehen.",
-  ],
-
-  "Neville Longbottom": [
-    "Wirkt anfangs eher unsicher.",
-    "Entwickelt mit der Zeit deutlich mehr Selbstvertrauen.",
-    "Zeigt in wichtigen Situationen viel Mut.",
-  ],
-
-  "Luna Lovegood": [
-    "Wirkt meistens ziemlich ruhig.",
-    "Lässt sich von anderen Meinungen wenig beeinflussen.",
-    "Behandelt andere Menschen häufig sehr freundlich.",
-  ],
-
-  "Ginny Weasley": [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist ihren Freunden und ihrer Familie sehr loyal.",
-    "Lässt sich nicht leicht einschüchtern.",
-  ],
-
-  "Fred Weasley": [
-    "Wirkt ziemlich locker.",
-    "Nimmt Regeln nicht immer besonders ernst.",
-    "Ist seiner Familie sehr verbunden.",
-  ],
-
-  "George Weasley": [
-    "Wirkt ziemlich locker.",
-    "Hat einen ausgeprägten Sinn für Humor.",
-    "Ist seiner Familie sehr verbunden.",
-  ],
-
-  "Bellatrix Lestrange": [
-    "Kann sehr impulsiv reagieren.",
-    "Ist extrem von ihren Überzeugungen geprägt.",
-    "Ist bestimmten Personen gegenüber außergewöhnlich loyal.",
-  ],
-
-  "Cedric Diggory": [
-    "Wirkt selbstbewusst.",
-    "Behandelt andere meistens fair.",
-    "Wird von vielen Menschen respektiert.",
-  ],
-
-  "Peter Pettigrew": [
-    "Wirkt häufig unsicher.",
-    "Sucht Schutz bei stärkeren Personen.",
-    "Denkt in gefährlichen Situationen zuerst an sich selbst.",
-  ],
-
-  "Dolores Umbridge": [
-    "Wirkt nach außen sehr kontrolliert.",
-    "Legt großen Wert auf Regeln und Ordnung.",
-    "Möchte gerne Kontrolle über andere haben.",
-  ],
-
-  "Lucius Malfoy": [
-    "Wirkt sehr selbstsicher.",
-    "Legt großen Wert auf seinen gesellschaftlichen Einfluss.",
-    "Denkt häufig strategisch.",
-  ],
-
-  "Arthur Weasley": [
-    "Wirkt ziemlich freundlich.",
-    "Ist seiner Familie sehr verbunden.",
-    "Interessiert sich stark für neue Dinge.",
-  ],
-
-  "Molly Weasley": [
-    "Ist sehr fürsorglich.",
-    "Beschützt ihre Familie stark.",
-    "Kann in wichtigen Situationen sehr entschlossen sein.",
-  ],
-
-  "Viktor Krum": [
-    "Wirkt eher ruhig.",
-    "Ist in seinem Bereich sehr talentiert.",
-    "Steht teilweise im Mittelpunkt, obwohl er eher zurückhaltend ist.",
-  ],
-
-  // =========================
-  // DC
-  // =========================
-
-  Batman: [
-    "Wirkt eher zurückhaltend.",
-    "Plant gerne im Voraus.",
-    "Hat Schwierigkeiten, anderen vollständig zu vertrauen.",
-  ],
-
-  Superman: [
-    "Wirkt sehr selbstbewusst.",
-    "Hat einen starken Sinn für Gerechtigkeit.",
-    "Versucht meistens das Gute in anderen zu sehen.",
-  ],
-
-  "Wonder Woman": [
-    "Wirkt sehr entschlossen.",
-    "Hat starke moralische Überzeugungen.",
-    "Ist ihren Verbündeten sehr loyal.",
-  ],
-
-  Joker: [
-    "Ist schwer vorhersehbar.",
-    "Handelt häufig impulsiv.",
-    "Nimmt ernste Situationen oft anders wahr als andere.",
-  ],
-
-  "The Flash": [
-    "Wirkt ziemlich locker.",
-    "Versucht häufig optimistisch zu bleiben.",
-    "Ist seinen Freunden sehr verbunden.",
-  ],
-
-  Aquaman: [
-    "Wirkt selbstbewusst.",
-    "Trägt viel Verantwortung.",
-    "Ist stark von seiner Herkunft geprägt.",
-  ],
-
-  "Green Lantern": [
-    "Wirkt ziemlich selbstsicher.",
-    "Muss häufig eigene Ängste überwinden.",
-    "Übernimmt große Verantwortung.",
-  ],
-
-  Cyborg: [
-    "Wirkt eher ruhig.",
-    "Hat sich an große Veränderungen gewöhnen müssen.",
-    "Ist seinen Freunden sehr loyal.",
-  ],
-
-  "Harley Quinn": [
-    "Wirkt ziemlich locker.",
-    "Handelt häufig sehr spontan.",
-    "Ist emotional nicht immer leicht einzuschätzen.",
-  ],
-
-  Catwoman: [
-    "Wirkt sehr selbstsicher.",
-    "Geht häufig ihren eigenen Weg.",
-    "Ist nicht immer eindeutig auf einer Seite.",
-  ],
-
-  Supergirl: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist stark von ihrer Vergangenheit geprägt.",
-    "Versucht ihren eigenen Platz zu finden.",
-  ],
-
-  Robin: [
-    "Ist ziemlich ehrgeizig.",
-    "Möchte sich häufig beweisen.",
-    "Ist Menschen, denen er vertraut, sehr loyal.",
-  ],
-
-  Nightwing: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist sehr unabhängig.",
-    "Hat gelernt, seinen eigenen Weg zu gehen.",
-  ],
-
-  Batgirl: [
-    "Wirkt selbstbewusst.",
-    "Ist sehr zielstrebig.",
-    "Verlässt sich stark auf ihren Verstand.",
-  ],
-
-  "Lex Luthor": [
-    "Wirkt extrem selbstsicher.",
-    "Hält sehr viel von den eigenen Fähigkeiten.",
-    "Plant gerne mehrere Schritte voraus.",
-  ],
-
-  "The Riddler": [
-    "Wirkt ziemlich selbstsicher.",
-    "Möchte anderen seine Überlegenheit beweisen.",
-    "Ist stark von Anerkennung geprägt.",
-  ],
-
-  Penguin: [
-    "Wirkt ziemlich selbstsicher.",
-    "Legt großen Wert auf Einfluss.",
-    "Denkt häufig zuerst an den eigenen Vorteil.",
-  ],
-
-  "Poison Ivy": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist stark von ihren Überzeugungen geprägt.",
-    "Kann gegenüber bestimmten Personen sehr loyal sein.",
+  "Leia Organa": [
+    "Ist eher klein und schlank gebaut.",
+    "Ihre Kleidung wirkt oft leichter als die vieler Kämpfer.",
+    "Ihr Haar fällt je nach Erscheinung stärker auf als ihre Ausrüstung.",
   ],
 
-  Shazam: [
-    "Wirkt häufig ziemlich locker.",
-    "Muss erst lernen, mit Verantwortung umzugehen.",
-    "Kann manchmal ziemlich impulsiv handeln.",
+  "Luke Skywalker": [
+    "Wirkt eher schlank als besonders kräftig.",
+    "Trägt häufig relativ einfache Kleidung.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
   ],
 
-  Darkseid: [
-    "Wirkt meistens sehr ruhig.",
-    "Ist extrem auf Macht und Kontrolle fokussiert.",
-    "Lässt sich kaum von seinem Ziel abbringen.",
+  "Mace Windu": [
+    "Wirkt groß und eher kräftig gebaut.",
+    "Trägt meistens mehrere lockere Kleidungsschichten.",
+    "Seine Kleidung wirkt kaum technisch.",
   ],
 
-  "Green Arrow": [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist stark von seinen Überzeugungen geprägt.",
-    "Kann manchmal ziemlich direkt sein.",
+  "Mandalorian": [
+    "Ein großer Teil des Körpers ist von fester Ausrüstung bedeckt.",
+    "Das Gesicht ist meistens nicht sichtbar.",
+    "Seine Kleidung besteht aus mehreren unterschiedlichen Materialien.",
   ],
 
-  "Black Canary": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist ausgesprochen entschlossen.",
-    "Ist ihren Verbündeten sehr loyal.",
+  "Obi-Wan Kenobi": [
+    "Hat eine eher durchschnittliche bis große Statur.",
+    "Trägt häufig mehrere lockere Kleidungsschichten.",
+    "Sein Outfit wirkt eher traditionell als technisch.",
   ],
 
-  Deathstroke: [
-    "Wirkt sehr kontrolliert.",
-    "Geht meist strategisch vor.",
-    "Lässt sich nur schwer von seinem Ziel abbringen.",
+  "Padmé Amidala": [
+    "Ist eher schlank gebaut.",
+    "Ihre Kleidung kann deutlich aufwendiger wirken als bei vielen anderen.",
+    "Trägt vergleichsweise selten schwere Ausrüstung.",
   ],
 
-  Bane: [
-    "Wirkt sehr selbstsicher.",
-    "Plant häufig strategisch.",
-    "Will anderen seine Stärke beweisen.",
+  "Palpatine": [
+    "Wirkt körperlich eher schmal.",
+    "Trägt häufig sehr lockere und dunkle Kleidung.",
+    "Seine Kleidung verdeckt einen großen Teil seiner Körperform.",
   ],
 
-  "Mr. Freeze": [
-    "Wirkt meistens sehr ruhig.",
-    "Wird stark von einem persönlichen Ziel angetrieben.",
-    "Zeigt seine Gefühle nur selten offen.",
+  "Qui-Gon Jinn": [
+    "Ist eher groß und schlank gebaut.",
+    "Trägt meistens mehrere lockere Stoffschichten.",
+    "Seine Kleidung wirkt wenig technisch.",
   ],
 
-  // =========================
-  // FLUCH DER KARIBIK
-  // =========================
-
-  "Jack Sparrow": [
-    "Wirkt sehr selbstsicher.",
-    "Handelt häufig spontan.",
-    "Kommt durch Improvisation oft überraschend weit.",
-  ],
-
-  "Will Turner": [
-    "Wirkt eher ernst.",
-    "Ist bestimmten Menschen sehr loyal.",
-    "Lässt sich stark von persönlichen Zielen antreiben.",
-  ],
-
-  "Elizabeth Swann": [
-    "Wirkt sehr selbstbewusst.",
-    "Passt sich schnell an schwierige Situationen an.",
-    "Lässt sich nicht leicht einschüchtern.",
-  ],
-
-  Barbossa: [
-    "Wirkt sehr selbstsicher.",
-    "Hat viel Erfahrung.",
-    "Denkt häufig zuerst an den eigenen Vorteil.",
-  ],
-
-  "Davy Jones": [
-    "Wirkt häufig sehr ernst.",
-    "Ist stark von seiner Vergangenheit geprägt.",
-    "Kann sehr nachtragend sein.",
-  ],
-
-  "Bootstrap Bill": [
-    "Wirkt eher ernst.",
-    "Ist seiner Familie stark verbunden.",
-    "Trägt lange an vergangenen Entscheidungen.",
-  ],
-
-  "James Norrington": [
-    "Wirkt sehr kontrolliert.",
-    "Legt großen Wert auf Pflicht.",
-    "Hat hohe Ansprüche an sich selbst.",
-  ],
-
-  "Joshamee Gibbs": [
-    "Wirkt ziemlich locker.",
-    "Ist seinen Freunden sehr loyal.",
-    "Hat schon sehr viele ungewöhnliche Situationen erlebt.",
-  ],
-
-  "Cutler Beckett": [
-    "Wirkt sehr kontrolliert.",
-    "Plant gerne langfristig.",
-    "Möchte möglichst viel Einfluss besitzen.",
-  ],
-
-  "Tia Dalma": [
-    "Wirkt meistens ruhig.",
-    "Ist für andere nicht leicht einzuschätzen.",
-    "Verrät häufig nicht alles, was sie weiß.",
-  ],
-
-  "Weatherby Swann": [
-    "Wirkt eher ernst.",
-    "Ist seiner Familie sehr verbunden.",
-    "Versucht schwierige Situationen eher vernünftig zu lösen.",
-  ],
-
-  Blackbeard: [
-    "Wirkt sehr selbstsicher.",
-    "Kann ziemlich einschüchternd auftreten.",
-    "Denkt stark an das eigene Überleben.",
+  "R2-D2": [
+    "Ist deutlich kleiner als die meisten Figuren.",
+    "Seine Körperform ist eher kompakt als menschlich.",
+    "Normale Kleidung ist nicht erkennbar.",
   ],
 
-  Angelica: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist nicht immer leicht einzuschätzen.",
-    "Kann andere Menschen gut überzeugen.",
+  "Rey": [
+    "Wirkt eher schlank und beweglich.",
+    "Ihre Kleidung ist meistens leicht und praktisch.",
+    "Trägt häufig mehrere dünne Stoffschichten.",
   ],
 
-  "Philip Swift": [
-    "Wirkt eher ruhig.",
-    "Ist stark von seinen Überzeugungen geprägt.",
-    "Versucht anderen gegenüber mitfühlend zu bleiben.",
+  "Yoda": [
+    "Ist körperlich sehr klein.",
+    "Trägt meistens lockere und eher einfache Kleidung.",
+    "Seine Ohren beeinflussen die Kopfform deutlich.",
   ],
-
-  Syrena: [
-    "Wirkt eher zurückhaltend.",
-    "Vertraut anderen nur langsam.",
-    "Zeigt bestimmten Personen gegenüber starke Loyalität.",
-  ],
-
-  Marty: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist seiner Gruppe gegenüber loyal.",
-    "Lässt sich von gefährlichen Situationen nicht leicht abschrecken.",
-  ],
-
-  Cotton: [
-    "Wirkt eher ruhig.",
-    "Ist ein verlässlicher Teil seiner Gruppe.",
-    "Steht meistens nicht im Mittelpunkt.",
-  ],
-
-  Pintel: [
-    "Wirkt eher locker.",
-    "Handelt nicht immer besonders überlegt.",
-    "Ist seinen Verbündeten meistens treu.",
-  ],
-
-  Ragetti: [
-    "Wirkt manchmal etwas unsicher.",
-    "Lässt sich relativ leicht beeinflussen.",
-    "Hat gelegentlich überraschend kluge Momente.",
-  ],
-
-  Giselle: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Sagt häufig direkt, was sie denkt.",
-    "Lässt sich nicht gerne täuschen.",
-  ],
-
-  "Ian Mercer": [
-    "Wirkt sehr kontrolliert.",
-    "Geht meistens zielgerichtet vor.",
-    "Arbeitet lieber im Hintergrund.",
-  ],
-
-  "Lieutenant Theodore Groves": [
-    "Wirkt sehr pflichtbewusst.",
-    "Bleibt meistens professionell.",
-    "Zeigt auch gegenüber anderen Respekt.",
-  ],
-
-  "Captain Teague": [
-    "Wirkt sehr selbstsicher.",
-    "Hat sehr viel Erfahrung.",
-    "Wird von anderen ernst genommen.",
-  ],
-
-  Scrum: [
-    "Wirkt ziemlich locker.",
-    "Passt sich schnell an neue Gruppen an.",
-    "Handelt manchmal etwas chaotisch.",
-  ],
-
-  Tamara: [
-    "Wirkt zunächst eher ruhig.",
-    "Ist für andere nicht leicht einzuschätzen.",
-    "Kann überraschend entschlossen handeln.",
-  ],
-
-  // =========================
-  // GAME OF THRONES
-  // =========================
 
-  "Jon Snow": [
-    "Wirkt meistens sehr ernst.",
-    "Stellt Verantwortung oft über den eigenen Vorteil.",
-    "Ist seinen Verbündeten sehr loyal.",
+  "Darth Maul": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt überwiegend dunkle Kleidung.",
+    "Sein Gesicht weist auffälligere Merkmale auf als seine Kleidung.",
   ],
 
-  "Daenerys Targaryen": [
-    "Wirkt sehr entschlossen.",
-    "Hat große Ziele.",
-    "Ist stark von ihrer Vergangenheit und Herkunft geprägt.",
+  "Jango Fett": [
+    "Trägt viel feste Ausrüstung direkt am Körper.",
+    "Sein Gesicht ist häufig vollständig verdeckt.",
+    "Sein Outfit wirkt eher funktional als bequem.",
   ],
 
-  "Tyrion Lannister": [
-    "Wirkt sehr selbstbewusst.",
-    "Verlässt sich stark auf seinen Verstand.",
-    "Kann mit schwierigen Situationen erstaunlich gut umgehen.",
+  "Cad Bane": [
+    "Wirkt eher groß und sehr schlank.",
+    "Trägt Kleidung, die nicht besonders modern wirkt.",
+    "Sein Kopfbereich ist häufig teilweise bedeckt.",
   ],
 
-  "Arya Stark": [
-    "Wirkt eher zurückhaltend.",
-    "Ist sehr zielstrebig.",
-    "Hat gelernt, sich an schwierige Situationen anzupassen.",
+  "Bo-Katan Kryze": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig feste Ausrüstung über der Kleidung.",
+    "Das Gesicht ist je nach Situation nicht sichtbar.",
   ],
 
-  "Sansa Stark": [
-    "Wirkt zunehmend selbstbewusst.",
-    "Beobachtet andere Menschen sehr genau.",
-    "Hat sich durch schwierige Erfahrungen stark verändert.",
+  "Poe Dameron": [
+    "Ist eher durchschnittlich groß und schlank.",
+    "Trägt oft funktionale Kleidung mit mehreren Details.",
+    "Sein Outfit wirkt eher für Bewegung als Schutz gedacht.",
   ],
 
-  "Bran Stark": [
-    "Wirkt meistens sehr ruhig.",
-    "Ist häufig sehr nachdenklich.",
-    "Verändert sich im Laufe der Zeit stark.",
+  "Captain Phasma": [
+    "Ist deutlich größer als viele andere Figuren.",
+    "Fast der gesamte Körper ist von fester Ausrüstung bedeckt.",
+    "Das Gesicht ist normalerweise nicht sichtbar.",
   ],
 
-  "Cersei Lannister": [
-    "Wirkt extrem selbstbewusst.",
-    "Ist ihrer Familie stark verbunden.",
-    "Möchte Kontrolle nur ungern abgeben.",
+  "Grand Moff Tarkin": [
+    "Wirkt eher schlank als kräftig.",
+    "Trägt meistens sehr ordentliche Kleidung.",
+    "Sein Outfit wirkt stärker formell als kampforientiert.",
   ],
 
-  "Jaime Lannister": [
-    "Wirkt ziemlich selbstsicher.",
-    "Hat eine komplizierte Vergangenheit.",
-    "Verändert seine Sicht auf manches im Laufe der Zeit.",
+  "Admiral Ackbar": [
+    "Sein Kopf unterscheidet sich deutlich von einem menschlichen.",
+    "Trägt meistens eher formelle Kleidung.",
+    "Seine Statur wirkt ansonsten relativ durchschnittlich.",
   ],
 
-  "Ned Stark": [
-    "Wirkt sehr ernst.",
-    "Hat starke moralische Prinzipien.",
-    "Ist seiner Familie sehr verbunden.",
+  "Asajj Ventress": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt meistens körpernahe Kleidung.",
+    "Ihr Kopfbereich wirkt meist eher glatt als stark bedeckt.",
   ],
 
-  "Robb Stark": [
-    "Wirkt selbstbewusst.",
-    "Übernimmt früh große Verantwortung.",
-    "Lässt sich teilweise stark von seinen Gefühlen beeinflussen.",
+  "Kit Fisto": [
+    "Ist eher groß und athletisch gebaut.",
+    "Sein Kopfbereich besitzt mehrere ungewöhnliche Formen.",
+    "Trägt meistens eher lockere als technische Kleidung.",
   ],
 
-  "Catelyn Stark": [
-    "Wirkt meistens ernst.",
-    "Ist ihrer Familie extrem verbunden.",
-    "Trifft viele Entscheidungen aus Sorge um andere.",
+  "Captain Rex": [
+    "Trägt häufig feste Ausrüstung über fast dem ganzen Körper.",
+    "Sein Erscheinungsbild wirkt stark militärisch.",
+    "Das Gesicht ist während Einsätzen häufig nicht sichtbar.",
   ],
 
-  "Theon Greyjoy": [
-    "Wirkt teilweise sehr selbstbewusst.",
-    "Sucht stark nach Anerkennung.",
-    "Hat große Probleme damit, seinen eigenen Platz zu finden.",
+  "Commander Cody": [
+    "Trägt meistens relativ schwere Schutzkleidung.",
+    "Sein Outfit besteht überwiegend aus festen Materialien.",
+    "Die Körperform bleibt trotz Ausrüstung ziemlich menschlich.",
   ],
 
-  "Brienne von Tarth": [
-    "Wirkt sehr ernst.",
-    "Ist ausgesprochen loyal.",
-    "Nimmt eigene Versprechen sehr ernst.",
+  "Grand Admiral Thrawn": [
+    "Wirkt eher groß und schlank.",
+    "Trägt meistens sehr ordentliche und formelle Kleidung.",
+    "Sein Gesicht fällt stärker auf als seine Ausrüstung.",
   ],
 
-  "Samwell Tarly": [
-    "Wirkt anfangs eher unsicher.",
-    "Verlässt sich stark auf Wissen.",
-    "Zeigt in wichtigen Situationen überraschend viel Mut.",
+  "Moff Gideon": [
+    "Ist eher durchschnittlich groß.",
+    "Trägt häufig dunkle und relativ feste Kleidung.",
+    "Sein Outfit wirkt eher ordentlich als improvisiert.",
   ],
 
-  "Davos Seaworth": [
-    "Wirkt meistens ruhig.",
-    "Ist sehr loyal.",
-    "Versucht häufig vernünftige Entscheidungen zu treffen.",
+  "Fennec Shand": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt überwiegend dunkle und funktionale Kleidung.",
+    "Hat häufig mehrere kleinere Ausrüstungsteile am Körper.",
   ],
 
-  "Petyr Baelish": [
-    "Wirkt sehr selbstsicher.",
-    "Plant gerne mehrere Schritte voraus.",
-    "Verfolgt seine Ziele häufig indirekt.",
+  "Kanan Jarrus": [
+    "Wirkt eher groß und schlank.",
+    "Trägt meist praktische Kleidung mit mehreren Schichten.",
+    "Seine Kleidung wirkt kaum schwer gepanzert.",
   ],
 
-  Varys: [
-    "Wirkt meistens ruhig.",
-    "Beobachtet andere Menschen genau.",
-    "Arbeitet lieber mit Informationen als mit direkter Konfrontation.",
+  "Ezra Bridger": [
+    "Ist eher schlank und durchschnittlich groß.",
+    "Trägt häufig relativ leichte Kleidung.",
+    "Seine Ausrüstung wirkt insgesamt eher kompakt.",
   ],
 
-  "Sandor Clegane": [
-    "Wirkt oft ziemlich grimmig.",
-    "Spricht meistens sehr direkt.",
-    "Zeigt seine Gefühle nur selten offen.",
+  "Sabine Wren": [
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt häufig feste Elemente über der Kleidung.",
+    "Ihr äußeres Erscheinungsbild besitzt mehrere auffällige Details.",
   ],
 
-  "Gregor Clegane": [
-    "Wirkt sehr einschüchternd.",
-    "Ist nicht für viel Mitgefühl bekannt.",
-    "Geht häufig sehr direkt vor.",
+  "Hera Syndulla": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt meistens praktische und relativ leichte Kleidung.",
+    "Ihr Kopfbereich unterscheidet sich deutlich von einem Menschen.",
   ],
 
-  "Jorah Mormont": [
-    "Wirkt meistens ernst.",
-    "Ist bestimmten Menschen extrem loyal.",
-    "Versucht Fehler aus seiner Vergangenheit wiedergutzumachen.",
+  "Plo Koon": [
+    "Ist eher groß gebaut.",
+    "Sein Gesicht ist meistens teilweise von Ausrüstung bedeckt.",
+    "Trägt eher lockere als schwere Kleidung.",
   ],
 
-  "Margaery Tyrell": [
-    "Wirkt sehr selbstbewusst.",
-    "Kann sehr charmant auftreten.",
-    "Versteht gut, wie sie auf andere Menschen wirkt.",
+  "Aayla Secura": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt vergleichsweise leichte Kleidung.",
+    "Ihr Kopfbereich besitzt Merkmale, die Menschen nicht haben.",
   ],
 
-  "Olenna Tyrell": [
-    "Wirkt extrem selbstsicher.",
-    "Sagt häufig sehr direkt, was sie denkt.",
-    "Hat sehr viel Erfahrung im Umgang mit anderen.",
+  "Savage Opress": [
+    "Ist deutlich größer und kräftiger als viele andere.",
+    "Seine Körperform wirkt sehr breit.",
+    "Sein Gesicht und Kopf besitzen mehrere auffällige Strukturen.",
   ],
 
-  Melisandre: [
-    "Wirkt meistens ruhig.",
-    "Ist stark von ihren Überzeugungen geprägt.",
-    "Ist für andere nicht immer leicht einzuschätzen.",
+  "Pre Vizsla": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig feste Ausrüstung über der Kleidung.",
+    "Sein Gesicht ist während Kämpfen oft verdeckt.",
   ],
 
-  Tormund: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Spricht häufig sehr direkt.",
-    "Ist seinen Verbündeten gegenüber sehr loyal.",
+  "Nute Gunray": [
+    "Wirkt eher groß und schmal.",
+    "Trägt häufig lockere und aufwendige Kleidung.",
+    "Seine Kopfform unterscheidet sich von einem Menschen.",
   ],
 
-  Gendry: [
-    "Wirkt eher ruhig.",
-    "Ist an harte Arbeit gewöhnt.",
-    "Ist seinen Freunden gegenüber ziemlich loyal.",
+  "Wedge Antilles": [
+    "Ist eher durchschnittlich groß und schlank.",
+    "Trägt häufig funktionale Kleidung.",
+    "Seine Ausrüstung wirkt eher leicht als stark gepanzert.",
   ],
 
     // =========================
+  // MARVEL
+  // =========================
+
+  "Ant-Man": [
+    "Wirkt körperlich eher durchschnittlich gebaut.",
+    "Trägt häufig eng anliegende technische Kleidung.",
+    "Sein Gesicht ist bei Einsätzen oft teilweise verdeckt.",
+  ],
+
+  "Black Panther": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt meist sehr körpernahe Kleidung.",
+    "Sein Gesicht ist während Einsätzen häufig nicht sichtbar.",
+  ],
+
+  "Black Widow": [
+    "Ist eher klein bis durchschnittlich groß.",
+    "Trägt häufig dunkle und praktische Kleidung.",
+    "Ihre Ausrüstung liegt meist relativ nah am Körper.",
+  ],
+
+  "Captain America": [
+    "Wirkt groß und deutlich athletisch gebaut.",
+    "Trägt meist körpernahe Schutzkleidung.",
+    "Sein Outfit wirkt eher funktional als alltäglich.",
+  ],
+
+  "Captain Marvel": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig körpernahe Kleidung.",
+    "Hat vergleichsweise wenig lose Ausrüstung am Körper.",
+  ],
+
+  "Daredevil": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt meistens körpernahe Kleidung.",
+    "Ein Teil seines Gesichts ist häufig verdeckt.",
+  ],
+
+  "Deadpool": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt fast vollständig körperbedeckende Kleidung.",
+    "Hat häufig mehrere Ausrüstungsteile direkt am Körper.",
+  ],
+
+  "Doctor Strange": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt meist mehrere auffällige Kleidungsschichten.",
+    "Seine Kleidung wirkt weniger technisch als bei vielen anderen.",
+  ],
+
+  "Drax": [
+    "Ist groß und sehr kräftig gebaut.",
+    "Trägt vergleichsweise wenig Kleidung.",
+    "Seine Körperoberfläche besitzt mehrere auffällige Merkmale.",
+  ],
+
+  "Gamora": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt häufig dunkle oder praktische Kleidung.",
+    "Ihr äußeres Erscheinungsbild wirkt nicht vollständig menschlich.",
+  ],
+
+  "Groot": [
+    "Ist deutlich größer als ein durchschnittlicher Mensch.",
+    "Seine Körperoberfläche wirkt sehr ungleichmäßig.",
+    "Normale Kleidung ist bei ihm kaum zu erkennen.",
+  ],
+
+  "Hawkeye": [
+    "Wirkt eher durchschnittlich groß und athletisch.",
+    "Trägt meistens praktische Kleidung.",
+    "Hat häufig mehrere kleinere Ausrüstungsteile am Körper.",
+  ],
+
+  "Hulk": [
+    "Ist deutlich größer und breiter als die meisten Figuren.",
+    "Seine Körperform wirkt extrem kräftig.",
+    "Trägt meist deutlich weniger Kleidung als andere.",
+  ],
+
+  "Iron Man": [
+    "Seine Kleidung verändert seine Körperform deutlich.",
+    "Fast der gesamte Körper kann von festen Materialien bedeckt sein.",
+    "Das Gesicht ist während Einsätzen oft nicht sichtbar.",
+  ],
+
+  "Loki": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig mehrere auffällige Kleidungsschichten.",
+    "Sein Outfit wirkt eher aufwendig als praktisch.",
+  ],
+
+  "Moon Knight": [
+    "Wirkt groß und eher athletisch.",
+    "Trägt häufig mehrere helle Kleidungsschichten.",
+    "Das Gesicht ist bei Einsätzen meist verdeckt.",
+  ],
+
+  "Rocket": [
+    "Ist deutlich kleiner als die meisten anderen Figuren.",
+    "Seine Körperform entspricht keinem Menschen.",
+    "Trägt häufig funktionale Kleidung oder Ausrüstung.",
+  ],
+
+  "Scarlet Witch": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig dunkle oder auffällige Kleidung.",
+    "Ihre Ausrüstung wirkt insgesamt eher leicht.",
+  ],
+
+  "Spider-Man": [
+    "Wirkt eher schlank und sehr beweglich.",
+    "Trägt fast vollständig körpernahe Kleidung.",
+    "Sein Gesicht ist während Einsätzen häufig verdeckt.",
+  ],
+
+  "Star-Lord": [
+    "Wirkt eher groß und durchschnittlich athletisch.",
+    "Trägt meist praktische Kleidung mit mehreren Schichten.",
+    "Sein Gesicht kann durch Ausrüstung verdeckt sein.",
+  ],
+
+  "Thanos": [
+    "Ist deutlich größer und kräftiger als ein Mensch.",
+    "Seine Körperform wirkt sehr breit und schwer.",
+    "Trägt häufig feste Elemente über Teilen des Körpers.",
+  ],
+
+  "Thor": [
+    "Ist eher groß und kräftig gebaut.",
+    "Trägt häufig mehrere schwere Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher robust als unauffällig.",
+  ],
+
+  "Venom": [
+    "Ist deutlich größer als ein durchschnittlicher Mensch.",
+    "Seine Körperform wirkt sehr kräftig.",
+    "Normale Kleidung ist äußerlich kaum zu erkennen.",
+  ],
+
+  "Vision": [
+    "Wirkt eher groß und schlank.",
+    "Seine Körperoberfläche wirkt nicht vollständig natürlich.",
+    "Trägt meist wenig zusätzliche Ausrüstung.",
+  ],
+
+  "Wolverine": [
+    "Wirkt eher kompakt und kräftig gebaut.",
+    "Trägt häufig robuste oder körpernahe Kleidung.",
+    "Sein Körperbau wirkt breiter als bei vielen anderen.",
+  ],
+
+  "Winter Soldier": [
+    "Wirkt groß und athletisch gebaut.",
+    "Trägt häufig dunkle und praktische Kleidung.",
+    "Ein Teil seines Körpers wirkt anders als der Rest.",
+  ],
+
+  "Falcon": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig technische Ausrüstung am Oberkörper.",
+    "Sein Outfit wirkt stark auf Bewegung ausgelegt.",
+  ],
+
+  "War Machine": [
+    "Wirkt mit seiner Ausrüstung deutlich breiter als ein normaler Mensch.",
+    "Der Körper ist während Einsätzen fast vollständig bedeckt.",
+    "Sein Outfit besteht größtenteils aus festen Materialien.",
+  ],
+
+  "Nick Fury": [
+    "Wirkt körperlich eher durchschnittlich gebaut.",
+    "Trägt häufig dunkle und eher praktische Kleidung.",
+    "Im Gesichtsbereich gibt es ein wiederkehrendes auffälliges Detail.",
+  ],
+
+  "Mysterio": [
+    "Wirkt eher durchschnittlich groß.",
+    "Trägt vergleichsweise aufwendige Kleidung.",
+    "Der Kopfbereich kann stark von seiner normalen Form abweichen.",
+  ],
+
+  "Green Goblin": [
+    "Wirkt eher schlank bis durchschnittlich gebaut.",
+    "Trägt häufig feste Schutzkleidung.",
+    "Sein Gesicht ist teilweise oder vollständig verdeckt.",
+  ],
+
+  "Doctor Octopus": [
+    "Hat eine eher durchschnittliche menschliche Statur.",
+    "Trägt meistens relativ normale Kleidung.",
+    "Seine äußere Silhouette kann deutlich größer wirken als sein Körper.",
+  ],
+
+  "Magneto": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig auffällige oder körpernahe Kleidung.",
+    "Sein Kopfbereich ist oft teilweise bedeckt.",
+  ],
+
+  "Professor X": [
+    "Wirkt körperlich eher schlank.",
+    "Trägt häufig normale oder eher formelle Kleidung.",
+    "Seine äußere Erscheinung wirkt weniger kampforientiert als bei vielen anderen.",
+  ],
+
+  "Silver Surfer": [
+    "Wirkt groß, schlank und sehr gleichmäßig gebaut.",
+    "Normale Kleidung ist äußerlich kaum erkennbar.",
+    "Seine Körperoberfläche wirkt ungewöhnlich glatt.",
+  ],
+
+  "Punisher": [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt meistens dunkle und praktische Kleidung.",
+    "Hat häufig mehrere Ausrüstungsteile direkt am Körper.",
+  ],
+
+  "Blade": [
+    "Wirkt groß und athletisch gebaut.",
+    "Trägt überwiegend dunkle Kleidung.",
+    "Seine Kleidung wirkt eher robust als leicht.",
+  ],
+
+  "Ghost Rider": [
+    "Wirkt eher groß und kräftig.",
+    "Trägt häufig dunkle und robuste Kleidung.",
+    "Sein gesamtes Erscheinungsbild wirkt eher ungewöhnlich.",
+  ],
+
+  "Shang-Chi": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt Kleidung mit relativ viel Bewegungsfreiheit.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
+  ],
+
+  "Wasp": [
+    "Ist eher klein und schlank gebaut.",
+    "Trägt häufig eng anliegende technische Kleidung.",
+    "Ihr Gesicht kann während Einsätzen teilweise verdeckt sein.",
+  ],
+
+  "Nebula": [
+    "Wirkt eher schlank und athletisch.",
+    "Ihre Körperoberfläche besitzt mehrere ungewöhnliche Details.",
+    "Trägt meistens eher funktionale Kleidung.",
+  ],
+
+  "Ultron": [
+    "Ist deutlich größer als ein durchschnittlicher Mensch.",
+    "Sein Körper wirkt vollständig aus festen Materialien aufgebaut.",
+    "Normale Kleidung ist nicht erkennbar.",
+  ],
+
+  "Red Skull": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig formelle oder militärisch wirkende Kleidung.",
+    "Sein Gesicht besitzt deutlich ungewöhnlichere Merkmale als sein Körper.",
+  ],
+
+  "Hela": [
+    "Wirkt eher groß und sehr schlank.",
+    "Trägt meistens dunkle und körpernahe Kleidung.",
+    "Ihre Kopfform kann je nach Erscheinung deutlich auffälliger wirken.",
+  ],
+
+  "Kingpin": [
+    "Ist sehr groß und außergewöhnlich breit gebaut.",
+    "Trägt häufig eher elegante Kleidung.",
+    "Seine Körperform wirkt deutlich schwerer als bei vielen anderen.",
+  ],
+
+  "Cyclops": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig körpernahe Kleidung.",
+    "Im Bereich des Gesichts trägt er meistens ein auffälliges Element.",
+  ],
+
+  "Storm": [
+    "Wirkt eher groß und schlank.",
+    "Ihr Haar kann stärker auffallen als ihre Ausrüstung.",
+    "Trägt häufig körpernahe oder auffällige Kleidung.",
+  ],
+
+  "Jean Grey": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig relativ körpernahe Kleidung.",
+    "Hat meist wenig sichtbare technische Ausrüstung.",
+  ],
+
+  "Beast": [
+    "Ist eher groß und kräftig gebaut.",
+    "Seine Körperoberfläche unterscheidet sich deutlich von einem normalen Menschen.",
+    "Wirkt trotz seiner breiten Statur relativ beweglich.",
+  ],
+
+  "Adam Warlock": [
+    "Wirkt groß und athletisch gebaut.",
+    "Seine Körperoberfläche wirkt nicht ganz menschlich.",
+    "Trägt häufig eher auffällige als alltägliche Kleidung.",
+  ],
+
+    // =========================
+  // HARRY POTTER
+  // =========================
+
+  "Albus Dumbledore": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig lange und lockere Kleidung.",
+    "Sein Haar fällt stärker auf als seine Ausrüstung.",
+  ],
+
+  "Arthur Weasley": [
+    "Wirkt eher groß und schlank.",
+    "Trägt meist eher alltägliche oder formelle Kleidung.",
+    "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
+  ],
+
+  "Bellatrix Lestrange": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt häufig dunkle Kleidung.",
+    "Ihr Haar wirkt oft eher wild als ordentlich.",
+  ],
+
+  "Cedric Diggory": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig relativ einheitliche Kleidung.",
+    "Sein Erscheinungsbild wirkt insgesamt eher gepflegt.",
+  ],
+
+  Dobby: [
+    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
+    "Trägt sehr wenig und eher einfache Kleidung.",
+    "Seine Kopfform fällt stärker auf als sein Körper.",
+  ],
+
+  "Dolores Umbridge": [
+    "Ist eher klein gebaut.",
+    "Trägt häufig sehr ordentliche Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher weich als sportlich.",
+  ],
+
+  "Draco Malfoy": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig sehr ordentliche Kleidung.",
+    "Sein Haar wirkt meist auffällig hell und gepflegt.",
+  ],
+
+  "Fred Weasley": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig einfache oder einheitliche Kleidung.",
+    "Sein Erscheinungsbild ähnelt stark dem einer anderen Figur.",
+  ],
+
+  "George Weasley": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig einfache oder einheitliche Kleidung.",
+    "Sein Erscheinungsbild ähnelt stark dem einer anderen Figur.",
+  ],
+
+  "Ginny Weasley": [
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt meist relativ einfache Kleidung.",
+    "Ihr Haar fällt stärker auf als ihre Ausrüstung.",
+  ],
+
+  "Harry Potter": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig relativ einheitliche oder einfache Kleidung.",
+    "Im Gesichtsbereich gibt es ein wiederkehrendes auffälliges Detail.",
+  ],
+
+  "Hermine Granger": [
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt häufig eher ordentliche Kleidung.",
+    "Ihr Haar wirkt oft auffälliger als ihre Ausrüstung.",
+  ],
+
+  "Lord Voldemort": [
+    "Wirkt eher groß und sehr schlank.",
+    "Trägt meistens lange und dunkle Kleidung.",
+    "Sein Gesicht unterscheidet sich deutlich von einem normalen Menschen.",
+  ],
+
+  "Lucius Malfoy": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig sehr gepflegte und formelle Kleidung.",
+    "Sein Haar ist meist auffällig lang und hell.",
+  ],
+
+  "Luna Lovegood": [
+    "Wirkt eher klein und schlank.",
+    "Trägt häufig etwas ungewöhnlichere Kleidung.",
+    "Ihr Erscheinungsbild wirkt weniger streng als bei vielen anderen.",
+  ],
+
+  "Minerva McGonagall": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig lange und eher formelle Kleidung.",
+    "Ihr Haar wirkt meistens sehr ordentlich.",
+  ],
+
+  "Molly Weasley": [
+    "Ist eher klein bis durchschnittlich groß.",
+    "Trägt meist praktische und eher alltägliche Kleidung.",
+    "Ihr Erscheinungsbild wirkt weniger kampforientiert.",
+  ],
+
+  "Neville Longbottom": [
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt häufig relativ einheitliche Kleidung.",
+    "Hat meist wenig auffällige Ausrüstung am Körper.",
+  ],
+
+  "Peter Pettigrew": [
+    "Wirkt eher klein und schmal gebaut.",
+    "Trägt meist unauffällige Kleidung.",
+    "Sein Erscheinungsbild wirkt eher unscheinbar.",
+  ],
+
+  "Remus Lupin": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig eher schlichte Kleidung.",
+    "Sein äußeres Erscheinungsbild wirkt oft etwas mitgenommen.",
+  ],
+
+  "Ron Weasley": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig relativ einfache Kleidung.",
+    "Sein Haar fällt stärker auf als seine Ausrüstung.",
+  ],
+
+  "Rubeus Hagrid": [
+    "Ist deutlich größer und breiter als fast alle anderen.",
+    "Trägt meistens schwere oder robuste Kleidung.",
+    "Sein Haar und Bart verdecken einen großen Teil des Gesichts.",
+  ],
+
+  "Severus Snape": [
+    "Wirkt eher groß und schlank.",
+    "Trägt fast ausschließlich dunkle Kleidung.",
+    "Sein Haar wirkt meist eher glatt und wenig aufwendig.",
+  ],
+
+  "Sirius Black": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig dunkle und eher lockere Kleidung.",
+    "Sein Haar wirkt oft länger und weniger ordentlich.",
+  ],
+
+  "Viktor Krum": [
+    "Wirkt eher groß und athletisch gebaut.",
+    "Trägt häufig eher robuste oder einheitliche Kleidung.",
+    "Sein Erscheinungsbild wirkt sportlicher als bei vielen anderen.",
+  ],
+
+    // =========================
+  // DC
+  // =========================
+
+  Aquaman: [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig auffällige oder robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher körperlich als technisch geprägt.",
+  ],
+
+  Bane: [
+    "Ist deutlich größer und kräftiger als viele andere.",
+    "Trägt häufig schwere oder funktionale Kleidung.",
+    "Ein Teil seines Gesichts ist oft verdeckt.",
+  ],
+
+  Batgirl: [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt häufig körpernahe Schutzkleidung.",
+    "Ihr Gesicht ist teilweise verdeckt.",
+  ],
+
+  Batman: [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt fast ausschließlich dunkle Kleidung.",
+    "Ein großer Teil seines Körpers ist von fester Ausrüstung bedeckt.",
+  ],
+
+  "Black Canary": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig dunkle oder körpernahe Kleidung.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
+  ],
+
+  Catwoman: [
+    "Wirkt eher schlank und sehr beweglich.",
+    "Trägt häufig eng anliegende Kleidung.",
+    "Ein Teil ihres Kopfes kann bedeckt sein.",
+  ],
+
+  Cyborg: [
+    "Ist eher groß und kräftig gebaut.",
+    "Ein großer Teil seines Körpers wirkt nicht natürlich.",
+    "Seine Körperoberfläche besteht sichtbar aus festen Materialien.",
+  ],
+
+  Darkseid: [
+    "Ist deutlich größer und breiter als ein normaler Mensch.",
+    "Seine Körperform wirkt sehr massiv.",
+    "Seine Oberfläche wirkt eher hart als weich.",
+  ],
+
+  Deathstroke: [
+    "Wirkt groß und athletisch gebaut.",
+    "Trägt häufig relativ schwere Schutzkleidung.",
+    "Sein Gesicht ist bei Einsätzen meistens verdeckt.",
+  ],
+
+  "Green Arrow": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt meist praktische Kleidung.",
+    "Hat häufig mehrere kleinere Ausrüstungsteile am Körper.",
+  ],
+
+  "Green Lantern": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig sehr körpernahe Kleidung.",
+    "Sein Outfit wirkt insgesamt eher leicht als schwer gepanzert.",
+  ],
+
+  "Harley Quinn": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt häufig auffällige Kleidung.",
+    "Ihr Haar oder Kopfbereich fällt oft stärker auf als ihre Ausrüstung.",
+  ],
+
+  Joker: [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig auffällig ordentliche Kleidung.",
+    "Sein Gesicht besitzt meist mehrere markante Details.",
+  ],
+
+  "Lex Luthor": [
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt häufig formelle Kleidung.",
+    "Sein Kopfbereich wirkt meist sehr schlicht.",
+  ],
+
+  "Mr. Freeze": [
+    "Wirkt mit seiner Ausrüstung eher breit und schwer.",
+    "Trägt häufig feste Schutzkleidung.",
+    "Der Kopfbereich ist oft teilweise von Ausrüstung umgeben.",
+  ],
+
+  Nightwing: [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt meist dunkle und sehr körpernahe Kleidung.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
+  ],
+
+  Penguin: [
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt häufig sehr formelle Kleidung.",
+    "Sein Erscheinungsbild wirkt weniger sportlich als bei vielen anderen.",
+  ],
+
+  "Poison Ivy": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig auffällige oder körpernahe Kleidung.",
+    "Ihr Haar fällt oft stärker auf als ihre Ausrüstung.",
+  ],
+
+  Robin: [
+    "Ist eher klein und schlank gebaut.",
+    "Trägt häufig körpernahe und leichte Kleidung.",
+    "Sein Outfit besitzt meist mehrere auffällige Details.",
+  ],
+
+  Shazam: [
+    "Wirkt groß und kräftig gebaut.",
+    "Trägt häufig auffällige körpernahe Kleidung.",
+    "Sein Outfit wirkt eher klassisch als technisch.",
+  ],
+
+  Supergirl: [
+    "Wirkt eher klein bis durchschnittlich groß und schlank.",
+    "Trägt häufig auffällige körpernahe Kleidung.",
+    "Hat meist wenig sichtbare Ausrüstung am Körper.",
+  ],
+
+  Superman: [
+    "Wirkt groß und deutlich athletisch gebaut.",
+    "Trägt häufig sehr körpernahe Kleidung.",
+    "Hat vergleichsweise wenig zusätzliche Ausrüstung.",
+  ],
+
+  "The Flash": [
+    "Wirkt eher schlank und athletisch.",
+    "Trägt fast vollständig körpernahe Kleidung.",
+    "Das Gesicht ist teilweise bedeckt.",
+  ],
+
+  "The Riddler": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig eher auffällige Kleidung.",
+    "Sein Erscheinungsbild wirkt weniger körperlich geschützt als bei vielen anderen.",
+  ],
+
+  "Wonder Woman": [
+    "Wirkt eher groß und athletisch gebaut.",
+    "Trägt meist relativ leichte Schutzkleidung.",
+    "Mehrere feste Elemente sind direkt am Körper sichtbar.",
+  ],
+
+    // =========================
+  // FLUCH DER KARIBIK
+  // =========================
+
+  "Angelica": [
+    "Wirkt eher schlank und beweglich.",
+    "Trägt meist praktische Kleidung mit mehreren Schichten.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
+  ],
+
+  "Barbossa": [
+    "Wirkt eher groß und durchschnittlich kräftig.",
+    "Trägt häufig mehrere robuste Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher rau als gepflegt.",
+  ],
+
+  "Blackbeard": [
+    "Wirkt groß und eher kräftig gebaut.",
+    "Trägt überwiegend dunkle und schwere Kleidung.",
+    "Sein Haar- und Bartbereich fällt stärker auf als seine Ausrüstung.",
+  ],
+
+  "Bootstrap Bill": [
+    "Wirkt eher groß und schlank.",
+    "Trägt meist deutlich abgenutzte Kleidung.",
+    "Sein äußeres Erscheinungsbild wirkt eher mitgenommen.",
+  ],
+
+  "Captain Teague": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt mehrere dunkle und robuste Kleidungsschichten.",
+    "Sein Gesicht wirkt durch Haare und Kopfbedeckung teilweise verdeckt.",
+  ],
+
+  "Cotton": [
+    "Wirkt eher durchschnittlich groß und schlank.",
+    "Trägt einfache und eher abgenutzte Kleidung.",
+    "Im Gesichtsbereich gibt es ein auffälliges Detail.",
+  ],
+
+  "Cutler Beckett": [
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt meistens sehr ordentliche und formelle Kleidung.",
+    "Sein Erscheinungsbild wirkt kaum körperlich geschützt.",
+  ],
+
+  "Davy Jones": [
+    "Wirkt eher groß und kräftig.",
+    "Seine Körperoberfläche besitzt mehrere ungewöhnliche Strukturen.",
+    "Sein Gesicht unterscheidet sich stark von einem normalen Menschen.",
+  ],
+
+  "Elizabeth Swann": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Ihre Kleidung kann sowohl leicht als auch deutlich aufwendiger wirken.",
+    "Trägt meist wenig feste Ausrüstung am Körper.",
+  ],
+
+  "Giselle": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig auffälligere Kleidung.",
+    "Ihr Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
+  ],
+
+  "Ian Mercer": [
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt meistens eher ordentliche Kleidung.",
+    "Seine Ausrüstung wirkt funktional, aber nicht besonders schwer.",
+  ],
+
+  "Jack Sparrow": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt sehr viele unterschiedliche Kleidungsschichten.",
+    "Haare und kleinere Accessoires prägen sein Erscheinungsbild stark.",
+  ],
+
+  "James Norrington": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig sehr ordentliche oder einheitliche Kleidung.",
+    "Sein Erscheinungsbild wirkt strukturierter als bei vielen anderen.",
+  ],
+
+  "Joshamee Gibbs": [
+    "Wirkt eher durchschnittlich groß und kräftig.",
+    "Trägt meist lockere und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher praktisch als gepflegt.",
+  ],
+
+  "Lieutenant Theodore Groves": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig sehr einheitliche und ordentliche Kleidung.",
+    "Hat meist wenig auffällige persönliche Ausrüstung.",
+  ],
+
+  "Marty": [
+    "Ist deutlich kleiner als fast alle anderen Figuren.",
+    "Trägt überwiegend einfache und praktische Kleidung.",
+    "Seine Körperproportionen fallen stärker auf als seine Ausrüstung.",
+  ],
+
+  "Philip Swift": [
+    "Wirkt eher groß und schlank.",
+    "Trägt meist schlichte und eher ordentliche Kleidung.",
+    "Hat vergleichsweise wenig sichtbare Ausrüstung.",
+  ],
+
+  "Pintel": [
+    "Wirkt eher durchschnittlich groß und kräftig.",
+    "Trägt meist abgenutzte und praktische Kleidung.",
+    "Sein Erscheinungsbild wirkt eher grob als gepflegt.",
+  ],
+
+  "Ragetti": [
+    "Wirkt eher groß und sehr schlank.",
+    "Trägt einfache und eher abgenutzte Kleidung.",
+    "Im Gesichtsbereich gibt es ein auffälliges körperliches Detail.",
+  ],
+
+  "Scrum": [
+    "Wirkt eher durchschnittlich groß und kräftig.",
+    "Trägt meist mehrere lockere Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt wenig gepflegt.",
+  ],
+
+  "Syrena": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt vergleichsweise wenig schwere Kleidung.",
+    "Ihr Erscheinungsbild wirkt weniger robust als bei vielen anderen.",
+  ],
+
+  "Tamara": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt eher leichte als schwere Kleidung.",
+    "Ihr äußeres Erscheinungsbild wirkt zunächst relativ unauffällig.",
+  ],
+
+  "Tia Dalma": [
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt häufig mehrere lockere und ungewöhnliche Kleidungsschichten.",
+    "Haare und kleinere Details prägen ihr Erscheinungsbild stark.",
+  ],
+
+  "Weatherby Swann": [
+    "Wirkt eher groß und schlank.",
+    "Trägt meistens sehr ordentliche und formelle Kleidung.",
+    "Sein Erscheinungsbild wirkt kaum für körperliche Auseinandersetzungen ausgelegt.",
+  ],
+
+  "Will Turner": [
+    "Wirkt eher groß und schlank-athletisch.",
+    "Trägt meistens praktische Kleidung mit mehreren Schichten.",
+    "Hat vergleichsweise wenig schwere Schutzkleidung am Körper.",
+  ],
+
+    // =========================
+  // GAME OF THRONES
+  // =========================
+
+  "Arya Stark": [
+    "Ist eher klein und schlank gebaut.",
+    "Trägt häufig praktische und eher unauffällige Kleidung.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
+  ],
+
+  "Bran Stark": [
+    "Wirkt eher schlank gebaut.",
+    "Trägt meistens einfache und eher warme Kleidung.",
+    "Sein Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
+  ],
+
+  "Brienne von Tarth": [
+    "Ist deutlich größer als viele andere Figuren.",
+    "Wirkt körperlich kräftig und athletisch.",
+    "Trägt häufig relativ schwere Schutzkleidung.",
+  ],
+
+  "Catelyn Stark": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig lange Kleidung mit mehreren Schichten.",
+    "Hat meist wenig sichtbare Ausrüstung am Körper.",
+  ],
+
+  "Cersei Lannister": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr aufwendige und gepflegte Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher elegant als praktisch.",
+  ],
+
+  "Daenerys Targaryen": [
+    "Ist eher klein und schlank gebaut.",
+    "Trägt häufig leichte Kleidung mit mehreren Schichten.",
+    "Ihr Haar fällt meist stärker auf als ihre Ausrüstung.",
+  ],
+
+  "Davos Seaworth": [
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt häufig robuste und eher schlichte Kleidung.",
+    "Sein Erscheinungsbild wirkt insgesamt eher praktisch.",
+  ],
+
+  Gendry: [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig einfache und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt stärker körperlich als elegant.",
+  ],
+
+  "Gregor Clegane": [
+    "Ist außergewöhnlich groß und breit gebaut.",
+    "Trägt häufig sehr schwere Schutzkleidung.",
+    "Seine Silhouette wirkt deutlich massiver als bei fast allen anderen.",
+  ],
+
+  "Jaime Lannister": [
+    "Wirkt eher groß und athletisch gebaut.",
+    "Trägt häufig ordentliche oder feste Kleidung.",
+    "Sein äußeres Erscheinungsbild kann sich im Laufe der Zeit deutlich verändern.",
+  ],
+
+  "Jon Snow": [
+    "Wirkt eher durchschnittlich groß und athletisch.",
+    "Trägt häufig dunkle und schwere Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher robust als elegant.",
+  ],
+
+  "Jorah Mormont": [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig feste oder robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt deutlich kampferprobt.",
+  ],
+
+  "Margaery Tyrell": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr gepflegte und aufwendige Kleidung.",
+    "Hat normalerweise wenig sichtbare Ausrüstung am Körper.",
+  ],
+
+  Melisandre: [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig lange Kleidung in ähnlichen Farbtönen.",
+    "Ihr Erscheinungsbild wirkt eher elegant als praktisch.",
+  ],
+
+  "Ned Stark": [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig schwere und eher schlichte Kleidung.",
+    "Sein Erscheinungsbild wirkt insgesamt wenig auffällig.",
+  ],
+
+  "Olenna Tyrell": [
+    "Wirkt eher schmal gebaut.",
+    "Trägt häufig sehr ordentliche und aufwendige Kleidung.",
+    "Ihr Kopfbereich ist teilweise von Kleidung oder Schmuck umgeben.",
+  ],
+
+  "Petyr Baelish": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr ordentliche Kleidung.",
+    "Hat normalerweise kaum schwere Ausrüstung am Körper.",
+  ],
+
+  "Robb Stark": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig robuste Kleidung mit mehreren Schichten.",
+    "Sein Erscheinungsbild wirkt eher praktisch als auffällig.",
+  ],
+
+  "Samwell Tarly": [
+    "Wirkt körperlich eher kräftig als athletisch.",
+    "Trägt häufig dunkle und schwere Kleidungsschichten.",
+    "Seine Ausrüstung wirkt meist weniger umfangreich als bei anderen Kämpfern.",
+  ],
+
+  "Sandor Clegane": [
+    "Ist deutlich größer und kräftiger als viele andere.",
+    "Trägt häufig schwere und robuste Kleidung.",
+    "Im Gesichtsbereich gibt es ein auffälliges körperliches Merkmal.",
+  ],
+
+  "Sansa Stark": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig lange und sehr gepflegte Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher elegant als kampforientiert.",
+  ],
+
+  "Theon Greyjoy": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig dunkle und praktische Kleidung.",
+    "Sein äußeres Erscheinungsbild verändert sich im Laufe der Zeit deutlich.",
+  ],
+
+  Tormund: [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig schwere und robuste Kleidung.",
+    "Haare und Bart prägen sein Erscheinungsbild stärker als seine Ausrüstung.",
+  ],
+
+  "Tyrion Lannister": [
+    "Ist deutlich kleiner als die meisten anderen Figuren.",
+    "Trägt häufig eher ordentliche Kleidung.",
+    "Seine Körpergröße fällt stärker auf als seine Ausrüstung.",
+  ],
+
+  Varys: [
+    "Wirkt körperlich eher durchschnittlich gebaut.",
+    "Trägt häufig lange und lockere Kleidung.",
+    "Sein Kopfbereich wirkt meist sehr schlicht.",
+  ],
+
+      // =========================
   // HERR DER RINGE
   // =========================
 
   "Frodo Baggins": [
-    "Wirkt eher zurückhaltend.",
-    "Trägt lange eine große Verantwortung.",
-    "Ist seinen Freunden sehr verbunden.",
+    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
+    "Trägt meistens einfache und praktische Kleidung.",
+    "Wirkt körperlich eher schmal als kräftig.",
   ],
 
   "Samwise Gamgee": [
-    "Ist außergewöhnlich loyal.",
-    "Gibt andere Menschen nicht schnell auf.",
-    "Wirkt bodenständig und zuverlässig.",
+    "Ist eher klein und etwas kräftiger gebaut.",
+    "Trägt meistens robuste und einfache Kleidung.",
+    "Hat häufig mehrere kleinere Dinge bei sich.",
   ],
 
-  Gandalf: [
-    "Wirkt meistens sehr ruhig.",
-    "Hat enorm viel Erfahrung.",
-    "Verrät anderen nicht immer sofort alles, was er weiß.",
+  "Gandalf": [
+    "Ist eher groß und schlank gebaut.",
+    "Trägt meistens lange und lockere Kleidung.",
+    "Haare und Bart prägen sein Erscheinungsbild stark.",
   ],
 
-  Aragorn: [
-    "Wirkt meist ruhig und kontrolliert.",
-    "Übernimmt nur ungern Verantwortung für seinen eigenen Vorteil.",
-    "Ist seinen Verbündeten sehr loyal.",
+  "Aragorn": [
+    "Wirkt eher groß und athletisch.",
+    "Trägt häufig dunkle und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher praktisch als gepflegt.",
   ],
 
-  Legolas: [
-    "Wirkt meistens sehr gelassen.",
-    "Ist ausgesprochen aufmerksam.",
-    "Bleibt auch in gefährlichen Situationen häufig ruhig.",
+  "Legolas": [
+    "Ist eher groß und sehr schlank gebaut.",
+    "Trägt meist leichte Kleidung mit viel Bewegungsfreiheit.",
+    "Sein Haar fällt stärker auf als seine Schutzkleidung.",
   ],
 
-  Gimli: [
-    "Spricht häufig ziemlich direkt.",
-    "Ist stolz auf seine Herkunft.",
-    "Kann anderen gegenüber überraschend loyal werden.",
+  "Gimli": [
+    "Ist deutlich kleiner und breiter als viele andere.",
+    "Trägt häufig schwere und robuste Kleidung.",
+    "Bart und Haare verdecken einen großen Teil seines Gesichts.",
   ],
 
-  Boromir: [
-    "Wirkt selbstbewusst.",
-    "Trägt starken Druck durch seine Verantwortung.",
-    "Lässt sich teilweise von seinen eigenen Sorgen beeinflussen.",
+  "Boromir": [
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig mehrere feste Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher schwer als leicht.",
   ],
 
-  Merry: [
-    "Wirkt oft ziemlich locker.",
-    "Ist neugieriger, als es zunächst scheint.",
-    "Zeigt in wichtigen Situationen überraschend viel Mut.",
+  "Merry": [
+    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
+    "Trägt meistens einfache Kleidung.",
+    "Wirkt körperlich eher schmal und leicht.",
   ],
 
-  Pippin: [
-    "Wirkt häufig etwas unbeschwert.",
-    "Ist ziemlich neugierig.",
-    "Muss im Laufe der Zeit viel dazulernen.",
+  "Pippin": [
+    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
+    "Trägt meist eher einfache und lockere Kleidung.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
   ],
 
-  Gollum: [
-    "Ist für andere nur schwer einzuschätzen.",
-    "Wird stark von einem bestimmten Wunsch beeinflusst.",
-    "Hat große innere Konflikte.",
+  "Gollum": [
+    "Ist eher klein und sehr schmal gebaut.",
+    "Trägt nur sehr wenig sichtbare Kleidung.",
+    "Seine Körperhaltung wirkt häufig ungewöhnlich.",
   ],
 
-  Sauron: [
-    "Ist extrem auf Macht fokussiert.",
-    "Arbeitet häufig indirekt auf seine Ziele hin.",
-    "Möchte möglichst viel Kontrolle besitzen.",
+  "Sauron": [
+    "Wirkt deutlich größer und massiver als ein normaler Mensch.",
+    "Der Körper ist größtenteils von festen Materialien bedeckt.",
+    "Das Gesicht ist kaum oder gar nicht sichtbar.",
   ],
 
-  Saruman: [
-    "Wirkt sehr selbstsicher.",
-    "Hält viel von seinem eigenen Wissen.",
-    "Ist stark von Macht und Einfluss geprägt.",
+  "Saruman": [
+    "Ist eher groß und schlank.",
+    "Trägt meistens lange und lockere Kleidung.",
+    "Sein Haar und Bart sind auffälliger als seine Ausrüstung.",
   ],
 
-  Galadriel: [
-    "Wirkt meistens sehr ruhig.",
-    "Hat außergewöhnlich viel Erfahrung.",
-    "Kann andere Menschen sehr gut einschätzen.",
+  "Galadriel": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig lange und sehr leichte Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher elegant als robust.",
   ],
 
-  Elrond: [
-    "Wirkt sehr kontrolliert.",
-    "Denkt häufig langfristig.",
-    "Ist stark von vergangenen Erfahrungen geprägt.",
+  "Elrond": [
+    "Wirkt eher groß und schlank gebaut.",
+    "Trägt häufig lange und sehr ordentliche Kleidung.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
   ],
 
-  Arwen: [
-    "Wirkt eher ruhig.",
-    "Ist bestimmten Menschen sehr loyal.",
-    "Ist bereit, für persönliche Entscheidungen viel aufzugeben.",
+  "Arwen": [
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig lange und aufwendige Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher leicht als kampforientiert.",
   ],
 
   "Éowyn": [
-    "Wirkt entschlossen.",
-    "Möchte nicht unterschätzt werden.",
-    "Ist bereit, große Risiken einzugehen.",
+    "Wirkt eher schlank und beweglich.",
+    "Trägt je nach Situation leichte oder festere Kleidung.",
+    "Ihr Haar fällt häufig stärker auf als ihre Ausrüstung.",
   ],
 
   "Théoden": [
-    "Trägt viel Verantwortung.",
-    "Verändert sich im Laufe der Geschichte deutlich.",
-    "Ist seinem Volk stark verbunden.",
+    "Wirkt eher groß und durchschnittlich kräftig.",
+    "Trägt häufig mehrere schwere Kleidungsschichten.",
+    "Sein Haar- und Bartbereich fällt deutlich auf.",
   ],
 
-  Faramir: [
-    "Wirkt eher ruhig.",
-    "Denkt häufig vernünftiger als andere.",
-    "Ist stark von seiner Familie und seiner Pflicht geprägt.",
+  "Faramir": [
+    "Wirkt eher groß und athletisch gebaut.",
+    "Trägt häufig robuste und eher unauffällige Kleidung.",
+    "Sein Outfit ist stärker auf Bewegung als auf Eleganz ausgelegt.",
   ],
 
-  Denethor: [
-    "Wirkt meistens sehr ernst.",
-    "Steht unter enormem Druck.",
-    "Lässt sich stark von seinen Sorgen beeinflussen.",
+  "Denethor": [
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig lange und eher formelle Kleidung.",
+    "Hat meistens wenig sichtbare körperliche Ausrüstung.",
   ],
 
   "Éomer": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist ausgesprochen loyal.",
-    "Handelt in gefährlichen Situationen entschlossen.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig feste und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt deutlich kampforientiert.",
   ],
 
-  Treebeard: [
-    "Lässt sich mit Entscheidungen viel Zeit.",
-    "Wirkt meistens sehr ruhig.",
-    "Ist stark mit seiner Heimat verbunden.",
+  "Treebeard": [
+    "Ist deutlich größer als fast alle anderen Figuren.",
+    "Seine Oberfläche wirkt sehr ungleichmäßig.",
+    "Normale Kleidung ist äußerlich kaum erkennbar.",
   ],
 
   "Witch-king of Angmar": [
-    "Wirkt sehr einschüchternd.",
-    "Ist stark auf ein bestimmtes Ziel fokussiert.",
-    "Zeigt kaum persönliche Gefühle.",
+    "Wirkt eher groß und breit.",
+    "Der Körper ist fast vollständig von dunklen Materialien bedeckt.",
+    "Das Gesicht ist normalerweise nicht sichtbar.",
   ],
 
   "Gríma Wormtongue": [
-    "Wirkt eher unsicher.",
-    "Arbeitet lieber über Einfluss als über direkte Konfrontation.",
-    "Ist nicht immer offen mit seinen Absichten.",
+    "Wirkt eher schlank und wenig kräftig.",
+    "Trägt häufig dunkle und lange Kleidung.",
+    "Sein Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
   ],
 
-    Haldir: [
-    "Wirkt meistens sehr kontrolliert.",
-    "Ist seiner Heimat und seinen Verbündeten stark verbunden.",
-    "Handelt in gefährlichen Situationen ausgesprochen entschlossen.",
+  "Haldir": [
+    "Wirkt eher groß und schlank.",
+    "Trägt leichte, aber teilweise feste Kleidung.",
+    "Sein Erscheinungsbild wirkt insgesamt sehr ordentlich.",
   ],
 
   "Bilbo Baggins": [
-    "Wirkt zunächst eher gemütlich.",
-    "Ist neugieriger, als er selbst erwartet.",
-    "Wächst an ungewöhnlichen Erfahrungen.",
+    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
+    "Trägt meistens eher ordentliche und einfache Kleidung.",
+    "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
   ],
 
-  // =========================
+    // =========================
   // DER HOBBIT
   // =========================
 
   "Thorin Oakenshield": [
-    "Wirkt sehr stolz.",
-    "Fühlt sich stark seiner Herkunft verpflichtet.",
-    "Kann sich sehr stark auf ein bestimmtes Ziel konzentrieren.",
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt häufig mehrere robuste Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher schwer als leicht.",
   ],
 
   Balin: [
-    "Wirkt meistens ruhig.",
-    "Hat viel Erfahrung.",
-    "Versucht häufig vernünftig auf andere einzuwirken.",
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt häufig warme und robuste Kleidung.",
+    "Haare und Bart prägen sein Erscheinungsbild stark.",
   ],
 
   Dwalin: [
-    "Wirkt sehr entschlossen.",
-    "Ist seinen Verbündeten ausgesprochen loyal.",
-    "Geht in gefährlichen Situationen eher direkt vor.",
+    "Ist eher klein, aber sehr breit gebaut.",
+    "Trägt häufig schwere und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt deutlich kräftiger als bei vielen anderen.",
   ],
 
   "Fíli": [
-    "Wirkt selbstbewusst.",
-    "Ist seiner Familie sehr verbunden.",
-    "Zeigt in gefährlichen Situationen viel Mut.",
+    "Ist eher klein und athletisch gebaut.",
+    "Trägt meist praktische Kleidung mit mehreren Schichten.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
   ],
 
   "Kíli": [
-    "Wirkt häufig ziemlich locker.",
-    "Ist seiner Familie sehr loyal.",
-    "Handelt manchmal stärker nach seinen Gefühlen.",
+    "Ist eher klein und schlank-athletisch.",
+    "Trägt häufig eher leichte und praktische Kleidung.",
+    "Sein Erscheinungsbild wirkt beweglicher als bei vielen anderen.",
   ],
 
   Bofur: [
-    "Wirkt meistens ziemlich freundlich.",
-    "Kann auch in schwierigen Situationen locker bleiben.",
-    "Ist seiner Gruppe sehr verbunden.",
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt meist robuste und eher lockere Kleidung.",
+    "Sein Kopfbereich ist häufig teilweise bedeckt.",
   ],
 
   Bombur: [
-    "Wirkt häufig eher gemütlich.",
-    "Ist seinen Begleitern gegenüber loyal.",
-    "Steht selten freiwillig im Mittelpunkt.",
+    "Ist eher klein und sehr breit gebaut.",
+    "Trägt häufig mehrere schwere Kleidungsschichten.",
+    "Seine Körperform fällt stärker auf als seine Ausrüstung.",
   ],
 
   Bifur: [
-    "Wirkt eher zurückhaltend.",
-    "Ist seiner Gruppe gegenüber zuverlässig.",
-    "Handelt in gefährlichen Situationen entschlossener, als es zunächst wirkt.",
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt häufig robuste und einfache Kleidung.",
+    "Im Kopfbereich gibt es ein auffälliges Detail.",
   ],
 
   "Óin": [
-    "Wirkt meistens vernünftig.",
-    "Hat innerhalb seiner Gruppe viel Erfahrung.",
-    "Ist seinen Begleitern sehr verbunden.",
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt meistens mehrere warme Kleidungsschichten.",
+    "Bart und Haare prägen sein Erscheinungsbild stark.",
   ],
 
   "Glóin": [
-    "Wirkt selbstbewusst.",
-    "Ist stolz auf seine Herkunft.",
-    "Kann ziemlich direkt seine Meinung sagen.",
+    "Ist eher klein und breit gebaut.",
+    "Trägt häufig schwere und robuste Kleidung.",
+    "Sein Bart fällt stärker auf als seine Ausrüstung.",
   ],
 
   Nori: [
-    "Wirkt etwas verschmitzt.",
-    "Passt sich schnell an ungewöhnliche Situationen an.",
-    "Ist innerhalb seiner Gruppe dennoch sehr loyal.",
+    "Ist eher klein und schlank gebaut.",
+    "Trägt häufig mehrere praktische Kleidungsschichten.",
+    "Sein Haar wirkt auffälliger als bei vielen anderen.",
   ],
 
   Dori: [
-    "Wirkt verantwortungsbewusst.",
-    "Kümmert sich häufig um andere.",
-    "Ist seiner Familie besonders verbunden.",
+    "Ist eher klein und kräftig gebaut.",
+    "Trägt meist mehrere ordentliche Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher gepflegt als rau.",
   ],
 
   Ori: [
-    "Wirkt eher ruhig.",
-    "Beobachtet seine Umgebung aufmerksam.",
-    "Ist weniger kampferfahren als einige seiner Begleiter.",
+    "Ist eher klein und schmal gebaut.",
+    "Trägt meist eher leichte und einfache Kleidung.",
+    "Wirkt körperlich weniger kräftig als viele andere.",
   ],
 
   Bard: [
-    "Wirkt meistens ernst.",
-    "Übernimmt Verantwortung für andere.",
-    "Denkt häufig zuerst an die Sicherheit seiner Mitmenschen.",
+    "Wirkt eher groß und schlank-athletisch.",
+    "Trägt häufig robuste und eher unauffällige Kleidung.",
+    "Sein Erscheinungsbild wirkt eher praktisch als auffällig.",
   ],
 
   Thranduil: [
-    "Wirkt sehr selbstsicher.",
-    "Denkt häufig langfristig.",
-    "Ist Fremden gegenüber zunächst eher vorsichtig.",
+    "Wirkt eher groß und sehr schlank.",
+    "Trägt häufig lange und aufwendige Kleidung.",
+    "Sein Erscheinungsbild wirkt deutlich eleganter als bei vielen anderen.",
   ],
 
   Tauriel: [
-    "Wirkt sehr entschlossen.",
-    "Handelt teilweise gegen Erwartungen anderer.",
-    "Ist Menschen, die ihr wichtig sind, sehr loyal.",
+    "Wirkt eher schlank und sehr beweglich.",
+    "Trägt meist leichte und körpernahe Kleidung.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
   ],
 
   Azog: [
-    "Wirkt äußerst entschlossen.",
-    "Verfolgt seine Ziele sehr hartnäckig.",
-    "Kann außergewöhnlich rachsüchtig sein.",
+    "Ist deutlich größer und kräftiger als viele andere.",
+    "Sein Körper wirkt sehr breit und robust.",
+    "Seine Körperoberfläche besitzt mehrere auffällige Merkmale.",
   ],
 
   Bolg: [
-    "Wirkt sehr aggressiv.",
-    "Geht meist direkt gegen seine Gegner vor.",
-    "Lässt sich nur schwer von seinem Ziel abbringen.",
+    "Ist groß und sehr kräftig gebaut.",
+    "Trägt häufig schwere und grobe Ausrüstung.",
+    "Sein Erscheinungsbild wirkt insgesamt sehr massiv.",
   ],
 
   Smaug: [
-    "Wirkt extrem selbstsicher.",
-    "Hält sehr viel von der eigenen Stärke.",
-    "Lässt sich gerne auf Gespräche ein, wenn er sich überlegen fühlt.",
+    "Ist deutlich größer als fast alle anderen Figuren.",
+    "Seine Körperoberfläche wirkt hart und ungleichmäßig.",
+    "Normale Kleidung ist äußerlich nicht erkennbar.",
   ],
 
   Beorn: [
-    "Wirkt eher zurückhaltend.",
-    "Ist Fremden gegenüber zunächst vorsichtig.",
-    "Kann in wichtigen Situationen außergewöhnlich entschlossen handeln.",
+    "Ist eher groß und sehr kräftig gebaut.",
+    "Trägt meist eher einfache und robuste Kleidung.",
+    "Haare und Bart fallen stärker auf als seine Ausrüstung.",
   ],
 
   Radagast: [
-    "Wirkt manchmal etwas eigenwillig.",
-    "Ist stark mit der Natur verbunden.",
-    "Unterschätzt Gefahren nicht so leicht, wie es zunächst wirkt.",
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig mehrere lange und lockere Kleidungsschichten.",
+    "Sein Erscheinungsbild wirkt eher ungeordnet als gepflegt.",
   ],
 
   "Master of Lake-town": [
-    "Legt großen Wert auf seinen eigenen Einfluss.",
-    "Denkt häufig zuerst an den persönlichen Vorteil.",
-    "Wirkt nach außen selbstsicherer, als die Lage manchmal erlaubt.",
+    "Wirkt eher durchschnittlich groß und kräftig.",
+    "Trägt häufig auffällige und eher formelle Kleidung.",
+    "Sein Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
   ],
 
   Alfrid: [
-    "Denkt häufig zuerst an sich selbst.",
-    "Versucht gerne, sich mächtigeren Personen anzupassen.",
-    "Geht gefährlichen Situationen lieber aus dem Weg.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt meist eher ordentliche Kleidung.",
+    "Sein Erscheinungsbild wirkt körperlich wenig robust.",
   ],
 
   "Dáin Ironfoot": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist seiner Familie und seinem Volk stark verbunden.",
-    "Geht Konflikten nicht besonders gerne aus dem Weg.",
+    "Ist eher klein und sehr kräftig gebaut.",
+    "Trägt häufig schwere und feste Ausrüstung.",
+    "Seine Silhouette wirkt deutlich breiter als bei vielen anderen.",
   ],
 
   Necromancer: [
-    "Arbeitet lange eher aus dem Verborgenen.",
-    "Ist stark auf Macht und Kontrolle ausgerichtet.",
-    "Zeigt anderen seine wahren Absichten nicht sofort.",
+    "Wirkt eher groß und schlank.",
+    "Sein Körper ist häufig von dunklen Formen umgeben.",
+    "Normale Kleidung ist nur schwer eindeutig zu erkennen.",
   ],
 
-  // =========================
+    // =========================
   // THE BOYS
   // =========================
 
   Homelander: [
-    "Wirkt extrem selbstsicher.",
-    "Möchte von anderen bewundert werden.",
-    "Reagiert empfindlich darauf, Kontrolle zu verlieren.",
+    "Wirkt groß und athletisch gebaut.",
+    "Trägt häufig sehr körpernahe Kleidung.",
+    "Sein Erscheinungsbild wirkt eher sauber und auffällig.",
   ],
 
   "Billy Butcher": [
-    "Wirkt sehr entschlossen.",
-    "Verfolgt persönliche Ziele extrem hartnäckig.",
-    "Vertraut anderen nur schwer.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig dunkle und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher rau als gepflegt.",
   ],
 
   "Hughie Campbell": [
-    "Wirkt eher zurückhaltend.",
-    "Muss im Laufe der Zeit deutlich mutiger werden.",
-    "Ist Menschen, die ihm wichtig sind, sehr loyal.",
+    "Wirkt eher groß und schlank.",
+    "Trägt meistens eher alltägliche Kleidung.",
+    "Hat vergleichsweise wenig sichtbare Ausrüstung am Körper.",
   ],
 
   Starlight: [
-    "Wirkt selbstbewusst.",
-    "Hat starke moralische Vorstellungen.",
-    "Lässt sich zunehmend weniger von anderen kontrollieren.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig auffällige und körpernahe Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher hell als düster.",
   ],
 
   "Queen Maeve": [
-    "Wirkt oft eher distanziert.",
-    "Hat viel Erfahrung mit öffentlichem Druck.",
-    "Zeigt in wichtigen Situationen großen Mut.",
+    "Wirkt groß und athletisch gebaut.",
+    "Trägt häufig körpernahe Schutzkleidung.",
+    "Ihr Outfit wirkt eher fest als alltäglich.",
   ],
 
   "A-Train": [
-    "Wirkt sehr selbstsicher.",
-    "Ist stark von Anerkennung und Erfolg geprägt.",
-    "Trifft unter Druck teilweise egoistische Entscheidungen.",
+    "Wirkt eher schlank und sehr athletisch.",
+    "Trägt meist eng anliegende Kleidung.",
+    "Sein Outfit wirkt stark auf Beweglichkeit ausgelegt.",
   ],
 
   "The Deep": [
-    "Möchte unbedingt ernst genommen werden.",
-    "Passt sich häufig stärkeren Personen an.",
-    "Wirkt selbstbewusster, als er tatsächlich ist.",
+    "Wirkt groß und athletisch gebaut.",
+    "Trägt häufig sehr körpernahe Kleidung.",
+    "Sein äußeres Erscheinungsbild wirkt eher glatt als robust.",
   ],
 
   "Black Noir": [
-    "Wirkt extrem ruhig.",
-    "Spricht nur sehr wenig.",
-    "Ist bei seinen Aufgaben ausgesprochen konsequent.",
+    "Wirkt eher groß und athletisch.",
+    "Trägt fast ausschließlich dunkle Kleidung.",
+    "Das Gesicht ist normalerweise vollständig verdeckt.",
   ],
 
   "Soldier Boy": [
-    "Wirkt extrem selbstsicher.",
-    "Ist stark von seiner Vergangenheit geprägt.",
-    "Geht mit Konflikten häufig sehr direkt um.",
+    "Wirkt groß und kräftig gebaut.",
+    "Trägt häufig feste und eher robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher klassisch als modern.",
   ],
 
   Stormfront: [
-    "Wirkt nach außen sehr selbstbewusst.",
-    "Kann andere Menschen gezielt beeinflussen.",
-    "Verbirgt lange wichtige Seiten ihrer Vergangenheit.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig dunkle und körpernahe Kleidung.",
+    "Hat vergleichsweise wenig lose Ausrüstung am Körper.",
   ],
 
   Kimiko: [
-    "Wirkt eher zurückhaltend.",
-    "Ist bestimmten Menschen ausgesprochen loyal.",
-    "Kann in gefährlichen Situationen sehr entschlossen handeln.",
+    "Wirkt eher klein und schlank.",
+    "Trägt häufig einfache und praktische Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher unauffällig.",
   ],
 
   Frenchie: [
-    "Wirkt häufig ziemlich locker.",
-    "Ist technisch und praktisch sehr einfallsreich.",
-    "Ist seinen engsten Freunden stark verbunden.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig lockere oder dunkle Kleidung.",
+    "Sein Erscheinungsbild wirkt eher individuell als ordentlich.",
   ],
 
   "Mother's Milk": [
-    "Wirkt verantwortungsbewusst.",
-    "Versucht innerhalb seiner Gruppe Struktur zu bewahren.",
-    "Ist stark von persönlichen Erfahrungen geprägt.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt meistens praktische und relativ schlichte Kleidung.",
+    "Sein Erscheinungsbild wirkt insgesamt eher robust.",
   ],
 
   "Victoria Neuman": [
-    "Wirkt nach außen sehr kontrolliert.",
-    "Kann ihre wahren Absichten lange verbergen.",
-    "Denkt häufig mehrere Schritte voraus.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr ordentliche oder formelle Kleidung.",
+    "Hat meist wenig sichtbare Ausrüstung am Körper.",
   ],
 
   "Ashley Barrett": [
-    "Wirkt häufig angespannt.",
-    "Steht stark unter dem Einfluss mächtigerer Personen.",
-    "Versucht vor allem, ihre eigene Position zu sichern.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr gepflegte Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher geschäftlich als körperlich.",
   ],
 
   "Stan Edgar": [
-    "Wirkt fast immer sehr ruhig.",
-    "Lässt sich nur schwer einschüchtern.",
-    "Denkt ausgesprochen strategisch.",
+    "Wirkt eher durchschnittlich groß und schlank.",
+    "Trägt meistens sehr formelle Kleidung.",
+    "Sein Erscheinungsbild wirkt kaum kampforientiert.",
   ],
 
   Ryan: [
-    "Wirkt häufig unsicher.",
-    "Wird stark von seinem Umfeld beeinflusst.",
-    "Muss erst lernen, mit außergewöhnlicher Verantwortung umzugehen.",
+    "Ist kleiner und schmaler gebaut als viele andere Figuren.",
+    "Trägt überwiegend normale Alltagskleidung.",
+    "Hat meistens keinerlei schwere Ausrüstung am Körper.",
   ],
 
   Lamplighter: [
-    "Wirkt eher zynisch.",
-    "Ist stark von vergangenen Entscheidungen belastet.",
-    "Ist nicht immer so gleichgültig, wie er zunächst wirkt.",
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig dunkle Kleidung.",
+    "Sein Outfit wirkt eher funktional als auffällig.",
   ],
 
   Translucent: [
-    "Wirkt sehr selbstsicher.",
-    "Verlässt sich stark auf seine besonderen Fähigkeiten.",
-    "Unterschätzt seine Gegner teilweise.",
+    "Wirkt körperlich eher durchschnittlich gebaut.",
+    "Trägt meist wenig auffällige Kleidung oder Ausrüstung.",
+    "Sein äußeres Erscheinungsbild kann sich stark verändern.",
   ],
 
   Mesmer: [
-    "Wirkt eher unsicher.",
-    "Möchte wieder mehr Anerkennung bekommen.",
-    "Ist bereit, Informationen zu seinem eigenen Vorteil zu nutzen.",
+    "Wirkt eher durchschnittlich groß und gebaut.",
+    "Trägt meistens normale Alltagskleidung.",
+    "Sein Erscheinungsbild wirkt wenig kampforientiert.",
   ],
 
   Firecracker: [
-    "Wirkt sehr selbstbewusst.",
-    "Sucht stark die Aufmerksamkeit anderer.",
-    "Kann persönliche Konflikte lange mit sich herumtragen.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig auffällige und körpernahe Kleidung.",
+    "Ihr Outfit besitzt mehrere deutlich sichtbare Details.",
   ],
 
   "Sister Sage": [
-    "Wirkt meistens sehr kontrolliert.",
-    "Denkt außergewöhnlich strategisch.",
-    "Plant deutlich weiter voraus als die meisten anderen.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt meistens moderne oder eher ordentliche Kleidung.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
   ],
 
   "Tek Knight": [
-    "Wirkt extrem selbstsicher.",
-    "Beobachtet seine Umgebung sehr genau.",
-    "Hält sehr viel von seinen eigenen Fähigkeiten.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig sehr ordentliche oder auffällige Kleidung.",
+    "Sein Erscheinungsbild wirkt eher gepflegt als robust.",
   ],
 
   Popclaw: [
-    "Wirkt teilweise unsicher.",
-    "Steht stark unter persönlichem und öffentlichem Druck.",
-    "Lässt sich von ihren Gefühlen beeinflussen.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig körpernahe oder sportliche Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher leicht als schwer ausgerüstet.",
   ],
 
   "Love Sausage": [
-    "Wirkt ziemlich selbstbewusst.",
-    "Nimmt ungewöhnliche Situationen vergleichsweise locker.",
-    "Ist für andere nicht immer leicht einzuschätzen.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt meistens vergleichsweise einfache Kleidung.",
+    "Sein Erscheinungsbild wirkt körperlich auffälliger als seine Ausrüstung.",
   ],
 
-  // =========================
+    // =========================
   // THE WALKING DEAD
   // =========================
 
   "Rick Grimes": [
-    "Übernimmt häufig Verantwortung für andere.",
-    "Wird stark von seinen Erfahrungen verändert.",
-    "Kann in schwierigen Situationen sehr entschlossen handeln.",
+    "Wirkt eher groß und durchschnittlich kräftig.",
+    "Trägt häufig praktische und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher funktional als auffällig.",
   ],
 
   "Daryl Dixon": [
-    "Wirkt eher zurückhaltend.",
-    "Ist Menschen, denen er vertraut, außergewöhnlich loyal.",
-    "Kommt auch mit schwierigen Situationen gut zurecht.",
+    "Wirkt eher groß und schlank-athletisch.",
+    "Trägt häufig dunkle und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher rau als gepflegt.",
   ],
 
   Michonne: [
-    "Wirkt meistens sehr kontrolliert.",
-    "Vertraut anderen zunächst nur langsam.",
-    "Ist ihren engsten Verbündeten sehr loyal.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt meist praktische Kleidung mit viel Bewegungsfreiheit.",
+    "Hat häufig mehrere Ausrüstungsteile direkt am Körper.",
   ],
 
   Negan: [
-    "Wirkt extrem selbstsicher.",
-    "Kann sehr charismatisch auftreten.",
-    "Versucht häufig, andere durch Einschüchterung zu kontrollieren.",
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig dunkle und eher robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt meist ziemlich markant.",
   ],
 
   "Glenn Rhee": [
-    "Wirkt grundsätzlich freundlich.",
-    "Denkt auch unter Druck häufig schnell.",
-    "Ist seinen Freunden und seiner Familie sehr loyal.",
+    "Wirkt eher schlank und beweglich.",
+    "Trägt meistens leichte und praktische Kleidung.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
   ],
 
   "Maggie Greene": [
-    "Wirkt sehr entschlossen.",
-    "Übernimmt zunehmend Verantwortung.",
-    "Ist stark von ihrer Familie und ihren Erfahrungen geprägt.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig praktische und eher schlichte Kleidung.",
+    "Ihr Erscheinungsbild wirkt insgesamt eher funktional.",
   ],
 
   "Carol Peletier": [
-    "Wirkt nach außen häufig ruhig.",
-    "Verändert sich im Laufe der Zeit außergewöhnlich stark.",
-    "Kann schwierige Entscheidungen sehr konsequent treffen.",
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt meistens einfache und praktische Kleidung.",
+    "Hat vergleichsweise wenig auffällige Ausrüstung.",
   ],
 
   "Carl Grimes": [
-    "Muss sehr früh mit schwierigen Situationen umgehen.",
-    "Wird stark durch sein Umfeld geprägt.",
-    "Entwickelt mit der Zeit deutlich mehr Selbstständigkeit.",
+    "Ist eher klein und schmal gebaut.",
+    "Trägt häufig einfache und praktische Kleidung.",
+    "Sein Kopfbereich ist teilweise öfter bedeckt.",
   ],
 
   "Shane Walsh": [
-    "Wirkt sehr selbstbewusst.",
-    "Handelt häufig impulsiver als andere.",
-    "Lässt sich stark von persönlichen Konflikten beeinflussen.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig praktische Kleidung.",
+    "Sein Erscheinungsbild wirkt eher robust als elegant.",
   ],
 
   "Hershel Greene": [
-    "Wirkt meistens sehr ruhig.",
-    "Versucht auch in schwierigen Zeiten an seinen Prinzipien festzuhalten.",
-    "Gibt anderen häufig vernünftigen Rat.",
+    "Wirkt eher groß und schlank.",
+    "Trägt meistens einfache und eher klassische Kleidung.",
+    "Sein Haar- und Bartbereich fällt stärker auf als seine Ausrüstung.",
   ],
 
   "The Governor": [
-    "Wirkt nach außen oft kontrolliert.",
-    "Möchte seine Umgebung stark kontrollieren.",
-    "Kann seine wahren Absichten lange verbergen.",
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt häufig praktische oder eher ordentliche Kleidung.",
+    "Im Gesichtsbereich gibt es ein auffälliges Detail.",
   ],
 
   "Abraham Ford": [
-    "Spricht häufig sehr direkt.",
-    "Wirkt ausgesprochen entschlossen.",
-    "Ist stark von einem bestimmten Ziel angetrieben.",
+    "Wirkt groß und kräftig gebaut.",
+    "Trägt häufig robuste und funktionale Kleidung.",
+    "Sein Haar fällt oft stärker auf als seine Ausrüstung.",
   ],
 
   "Rosita Espinosa": [
-    "Wirkt sehr selbstbewusst.",
-    "Kann gut für sich selbst sorgen.",
-    "Lässt sich nur schwer einschüchtern.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig körpernahe oder praktische Kleidung.",
+    "Hat meist mehrere kleinere Ausrüstungsteile am Körper.",
   ],
 
   "Eugene Porter": [
-    "Verlässt sich stark auf seinen Verstand.",
-    "Wirkt in gefährlichen Situationen manchmal unsicher.",
-    "Kann sich sprachlich sehr ausführlich ausdrücken.",
+    "Wirkt eher durchschnittlich groß und kräftig.",
+    "Trägt meistens eher einfache Kleidung.",
+    "Sein Haar gehört zu den auffälligeren äußeren Merkmalen.",
   ],
 
   "Sasha Williams": [
-    "Wirkt meistens ernst.",
-    "Ist ausgesprochen selbstständig.",
-    "Wird stark von persönlichen Verlusten geprägt.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig praktische und eher dunkle Kleidung.",
+    "Hat meist wenig schwere Schutzkleidung am Körper.",
   ],
 
   "Tyreese Williams": [
-    "Wirkt körperlich sehr selbstbewusst.",
-    "Hat trotz schwieriger Umstände starke moralische Grenzen.",
-    "Ist Menschen, die ihm wichtig sind, sehr loyal.",
+    "Wirkt groß und deutlich kräftig gebaut.",
+    "Trägt meistens robuste und praktische Kleidung.",
+    "Seine Körperform fällt stärker auf als seine Ausrüstung.",
   ],
 
   "Morgan Jones": [
-    "Wirkt häufig sehr nachdenklich.",
-    "Verändert seine Einstellung im Laufe der Zeit mehrfach.",
-    "Hat mit vergangenen Erfahrungen stark zu kämpfen.",
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig praktische Kleidung mit mehreren Schichten.",
+    "Seine Ausrüstung wirkt insgesamt eher leicht.",
   ],
 
   "Gabriel Stokes": [
-    "Wirkt anfangs eher unsicher.",
-    "Wird stark von Schuld und persönlichen Überzeugungen geprägt.",
-    "Entwickelt im Laufe der Zeit deutlich mehr Mut.",
+    "Wirkt eher durchschnittlich groß und schlank.",
+    "Trägt teilweise deutlich ordentlichere Kleidung als andere.",
+    "Sein Erscheinungsbild wirkt nicht immer kampforientiert.",
   ],
 
   Aaron: [
-    "Wirkt grundsätzlich freundlich.",
-    "Versucht neue Menschen zunächst genau einzuschätzen.",
-    "Ist seiner Gemeinschaft stark verbunden.",
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt meistens praktische und relativ unauffällige Kleidung.",
+    "Sein äußeres Erscheinungsbild verändert sich im Laufe der Zeit etwas.",
   ],
 
   Jesus: [
-    "Wirkt häufig ziemlich gelassen.",
-    "Ist ausgesprochen geschickt und aufmerksam.",
-    "Versucht Konflikte nicht immer sofort mit Gewalt zu lösen.",
+    "Wirkt eher schlank und beweglich.",
+    "Trägt häufig mehrere lockere Kleidungsschichten.",
+    "Haare und Bart prägen sein Erscheinungsbild deutlich.",
   ],
 
   Ezekiel: [
-    "Tritt sehr selbstbewusst auf.",
-    "Kann andere Menschen gut motivieren.",
-    "Zeigt hinter seiner öffentlichen Rolle eine deutlich persönlichere Seite.",
+    "Wirkt eher groß und durchschnittlich kräftig.",
+    "Trägt häufig auffälligere Kleidung als viele andere.",
+    "Sein Haar fällt stark auf.",
   ],
 
   Alpha: [
-    "Wirkt sehr kontrolliert.",
-    "Ist stark von ihren eigenen Regeln geprägt.",
-    "Versucht andere durch Angst und Konsequenz zu führen.",
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt häufig einfache und eher dunkle Kleidung.",
+    "Ihr Kopfbereich wirkt meist sehr schlicht.",
   ],
 
   Beta: [
-    "Wirkt sehr einschüchternd.",
-    "Ist einer bestimmten Person außergewöhnlich loyal.",
-    "Zeigt nur selten persönliche Gefühle.",
+    "Ist deutlich größer und breiter als viele andere.",
+    "Trägt häufig schwere und dunkle Kleidung.",
+    "Sein Gesicht ist häufig teilweise oder vollständig verdeckt.",
   ],
 
   "Merle Dixon": [
-    "Spricht häufig sehr direkt.",
-    "Kann schnell aggressiv reagieren.",
-    "Ist komplizierter, als sein Auftreten zunächst vermuten lässt.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig robuste und eher abgenutzte Kleidung.",
+    "Ein Teil seines Körpers weist ein auffälliges Merkmal auf.",
   ],
 
   Andrea: [
-    "Wirkt zunehmend selbstbewusst.",
-    "Möchte auch in schwierigen Situationen unabhängig bleiben.",
-    "Trifft Entscheidungen teilweise sehr stark nach eigener Einschätzung.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig praktische und eher leichte Kleidung.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
   ],
 
-  // =========================
+    // =========================
   // JURASSIC PARK / WORLD
   // =========================
 
   "Alan Grant": [
-    "Wirkt meistens eher ruhig.",
-    "Verlässt sich stark auf Erfahrung und Beobachtung.",
-    "Ist in gefährlichen Situationen ziemlich besonnen.",
+    "Wirkt eher groß und schlank gebaut.",
+    "Trägt meistens praktische und eher leichte Kleidung.",
+    "Sein Erscheinungsbild wirkt eher funktional als auffällig.",
   ],
 
   "Ellie Sattler": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist ausgesprochen neugierig und aufmerksam.",
-    "Lässt sich auch in gefährlichen Situationen nicht leicht einschüchtern.",
+    "Wirkt eher schlank und beweglich.",
+    "Trägt meistens praktische und eher leichte Kleidung.",
+    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
   ],
 
   "Ian Malcolm": [
-    "Wirkt sehr selbstsicher.",
-    "Hinterfragt Entscheidungen anderer häufig kritisch.",
-    "Drückt sich gerne etwas auffälliger aus.",
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig dunkle und eher auffällige Kleidung.",
+    "Sein Erscheinungsbild wirkt gepflegter als bei vielen anderen.",
   ],
 
   "John Hammond": [
-    "Ist von seinen eigenen Ideen stark begeistert.",
-    "Denkt häufig sehr groß.",
-    "Unterschätzt mögliche Probleme manchmal.",
+    "Wirkt eher klein bis durchschnittlich groß.",
+    "Trägt häufig sehr ordentliche und helle Kleidung.",
+    "Sein Erscheinungsbild wirkt kaum körperlich belastbar.",
   ],
 
   "Lex Murphy": [
-    "Wirkt anfangs eher unsicher.",
-    "Kann mit Technik überraschend gut umgehen.",
-    "Zeigt in gefährlichen Situationen viel Mut.",
+    "Ist eher klein und schmal gebaut.",
+    "Trägt meistens einfache Alltagskleidung.",
+    "Hat kaum sichtbare Ausrüstung am Körper.",
   ],
 
   "Tim Murphy": [
-    "Ist ausgesprochen neugierig.",
-    "Interessiert sich stark für seine Umgebung.",
-    "Bleibt auch nach schwierigen Erlebnissen aufmerksam.",
+    "Ist eher klein und schmal gebaut.",
+    "Trägt meistens einfache Alltagskleidung.",
+    "Sein Erscheinungsbild wirkt wenig kampforientiert.",
   ],
 
   "Dennis Nedry": [
-    "Wirkt häufig etwas gereizt.",
-    "Denkt stark an den eigenen Vorteil.",
-    "Hält seine Fähigkeiten für besonders wichtig.",
+    "Wirkt eher kräftig gebaut.",
+    "Trägt meistens eher einfache und funktionale Kleidung.",
+    "Sein Erscheinungsbild wirkt weniger athletisch als bei vielen anderen.",
   ],
 
   "Robert Muldoon": [
-    "Wirkt sehr ernst.",
-    "Nimmt Gefahren deutlich ernster als viele andere.",
-    "Verlässt sich stark auf Erfahrung.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig robuste und praktische Kleidung.",
+    "Sein Erscheinungsbild wirkt deutlich einsatzorientiert.",
   ],
 
   "Henry Wu": [
-    "Wirkt sehr kontrolliert.",
-    "Verlässt sich stark auf sein wissenschaftliches Wissen.",
-    "Ist von den Möglichkeiten seiner Arbeit sehr überzeugt.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig ordentliche oder eher formelle Kleidung.",
+    "Hat meistens wenig sichtbare Ausrüstung am Körper.",
   ],
 
   "Ray Arnold": [
-    "Wirkt meistens sehr professionell.",
-    "Versucht technische Probleme möglichst rational zu lösen.",
-    "Bleibt auch unter Druck vergleichsweise fokussiert.",
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt meistens praktische und eher schlichte Kleidung.",
+    "Sein Erscheinungsbild wirkt eher technisch als körperlich geprägt.",
   ],
 
   "Donald Gennaro": [
-    "Denkt häufig zuerst an wirtschaftliche Konsequenzen.",
-    "Wirkt in gefährlichen Situationen schnell nervös.",
-    "Ist weniger abenteuerlustig als andere.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr formelle Kleidung.",
+    "Sein Erscheinungsbild wirkt wenig robust.",
   ],
 
   "Owen Grady": [
-    "Wirkt ausgesprochen selbstbewusst.",
-    "Verlässt sich stark auf Erfahrung und Instinkt.",
-    "Bleibt in gefährlichen Situationen meist sehr entschlossen.",
+    "Wirkt eher groß und athletisch gebaut.",
+    "Trägt häufig praktische und robuste Kleidung.",
+    "Hat meist mehrere kleinere Ausrüstungsteile am Körper.",
   ],
 
   "Claire Dearing": [
-    "Wirkt sehr organisiert.",
-    "Übernimmt im Laufe der Zeit zunehmend persönliche Verantwortung.",
-    "Kann sich schnell an gefährliche Situationen anpassen.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr ordentliche Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher gepflegt als robust.",
   ],
 
   "Maisie Lockwood": [
-    "Ist ziemlich neugierig.",
-    "Hinterfragt ihre eigene Herkunft und ihr Umfeld.",
-    "Zeigt in gefährlichen Situationen überraschend viel Mut.",
+    "Ist eher klein und schmal gebaut.",
+    "Trägt überwiegend normale Alltagskleidung.",
+    "Hat kaum auffällige Ausrüstung am Körper.",
   ],
 
   "Zach Mitchell": [
-    "Wirkt zunächst eher unbekümmert.",
-    "Interessiert sich nicht sofort für alles um ihn herum.",
-    "Übernimmt in gefährlichen Situationen mehr Verantwortung.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt meistens einfache Alltagskleidung.",
+    "Sein Erscheinungsbild wirkt eher unauffällig.",
   ],
 
   "Gray Mitchell": [
-    "Ist ausgesprochen neugierig.",
-    "Beobachtet seine Umgebung sehr aufmerksam.",
-    "Kennt sich mit vielen Details seines Interessengebiets aus.",
+    "Ist eher klein und schmal gebaut.",
+    "Trägt meistens einfache Alltagskleidung.",
+    "Hat vergleichsweise wenig auffällige äußere Merkmale.",
   ],
 
   "Barry Sembène": [
-    "Wirkt meistens ruhig.",
-    "Geht mit gefährlichen Situationen professionell um.",
-    "Ist seinen Kollegen gegenüber loyal.",
+    "Wirkt eher groß und athletisch gebaut.",
+    "Trägt meistens robuste und praktische Kleidung.",
+    "Sein Erscheinungsbild wirkt stark auf Bewegung ausgelegt.",
   ],
 
   "Simon Masrani": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist von großen Projekten und Ideen begeistert.",
-    "Unterschätzt Risiken teilweise.",
+    "Wirkt eher groß und schlank.",
+    "Trägt häufig sehr ordentliche oder elegante Kleidung.",
+    "Hat meistens wenig sichtbare Ausrüstung am Körper.",
   ],
 
   "Vic Hoskins": [
-    "Wirkt ausgesprochen selbstsicher.",
-    "Sieht in ungewöhnlichen Situationen schnell einen praktischen Nutzen.",
-    "Ist stark von Kontrolle und Einfluss geprägt.",
+    "Wirkt eher groß und kräftig gebaut.",
+    "Trägt häufig praktische und robuste Kleidung.",
+    "Sein Erscheinungsbild wirkt eher schwer als leicht.",
   ],
 
   "Franklin Webb": [
-    "Wirkt in gefährlichen Situationen schnell nervös.",
-    "Verlässt sich lieber auf Technik als auf körperliche Stärke.",
-    "Ist seinen Begleitern dennoch loyal.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt meistens praktische Alltagskleidung.",
+    "Sein Erscheinungsbild wirkt wenig kampforientiert.",
   ],
 
   "Zia Rodriguez": [
-    "Wirkt selbstbewusst.",
-    "Spricht häufig ziemlich direkt.",
-    "Bleibt in schwierigen Situationen vergleichsweise ruhig.",
+    "Wirkt eher schlank und beweglich.",
+    "Trägt häufig praktische und eher leichte Kleidung.",
+    "Hat meist wenig schwere Ausrüstung am Körper.",
   ],
 
   "Eli Mills": [
-    "Wirkt nach außen sehr kontrolliert.",
-    "Denkt stark an den eigenen Vorteil.",
-    "Verbirgt seine tatsächlichen Absichten lange.",
+    "Wirkt eher schlank und durchschnittlich groß.",
+    "Trägt häufig sehr ordentliche Kleidung.",
+    "Sein Erscheinungsbild wirkt eher geschäftlich als robust.",
   ],
 
   "Benjamin Lockwood": [
-    "Wirkt meistens ruhig und ernst.",
-    "Ist stark von seiner Vergangenheit geprägt.",
-    "Trägt lange persönliche Geheimnisse mit sich herum.",
+    "Wirkt eher schlank und körperlich wenig kräftig.",
+    "Trägt häufig klassische und ordentliche Kleidung.",
+    "Sein Erscheinungsbild wirkt kaum kampforientiert.",
   ],
 
   "Kayla Watts": [
-    "Wirkt sehr selbstbewusst.",
-    "Kann sich schnell an gefährliche Situationen anpassen.",
-    "Geht viele Probleme eher praktisch an.",
+    "Wirkt eher schlank und athletisch.",
+    "Trägt häufig praktische und relativ robuste Kleidung.",
+    "Ihr Erscheinungsbild wirkt eher funktional als elegant.",
   ],
 
   "Ramsay Cole": [
-    "Wirkt meistens kontrolliert.",
-    "Beobachtet sein Umfeld aufmerksam.",
-    "Zeigt seine tatsächlichen Absichten nicht sofort.",
-  ],
-
-    // =========================
-  // STAR WARS – NEUE FIGUREN
-  // =========================
-
-  "Darth Maul": [
-    "Wirkt ausgesprochen entschlossen.",
-    "Wird stark von persönlichen Konflikten angetrieben.",
-    "Gibt ein einmal gesetztes Ziel nur schwer auf.",
-  ],
-
-  "Jango Fett": [
-    "Wirkt sehr kontrolliert.",
-    "Geht bei seinen Aufgaben professionell vor.",
-    "Verlässt sich stark auf Erfahrung und Ausrüstung.",
-  ],
-
-  "Cad Bane": [
-    "Wirkt extrem selbstsicher.",
-    "Bleibt auch in gefährlichen Situationen meistens ruhig.",
-    "Denkt häufig zuerst an den eigenen Vorteil.",
-  ],
-
-  "Bo-Katan Kryze": [
-    "Wirkt sehr entschlossen.",
-    "Ist stark von ihrer Herkunft geprägt.",
-    "Übernimmt häufig Verantwortung für andere.",
-  ],
-
-  "Poe Dameron": [
-    "Wirkt ziemlich selbstbewusst.",
-    "Handelt manchmal etwas zu spontan.",
-    "Ist seinen Verbündeten ausgesprochen loyal.",
-  ],
-
-  "Captain Phasma": [
-    "Wirkt sehr kontrolliert.",
-    "Legt großen Wert auf Disziplin.",
-    "Denkt in gefährlichen Situationen stark an das eigene Überleben.",
-  ],
-
-  "Grand Moff Tarkin": [
-    "Wirkt fast immer sehr ruhig.",
-    "Denkt ausgesprochen strategisch.",
-    "Möchte andere durch Kontrolle und Autorität beeinflussen.",
-  ],
-
-  "Admiral Ackbar": [
-    "Wirkt meistens ruhig.",
-    "Hat viel Erfahrung mit schwierigen Situationen.",
-    "Denkt bei Entscheidungen häufig taktisch.",
-  ],
-
-  "Asajj Ventress": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist stark von ihrer schwierigen Vergangenheit geprägt.",
-    "Geht im Laufe der Zeit zunehmend ihren eigenen Weg.",
-  ],
-
-  "Kit Fisto": [
-    "Wirkt meistens ziemlich gelassen.",
-    "Bleibt auch unter Druck oft ruhig.",
-    "Tritt anderen gegenüber häufig freundlich und selbstbewusst auf.",
-  ],
-
-  // =========================
-  // MARVEL – NEUE FIGUREN
-  // =========================
-
-  "Winter Soldier": [
-    "Wirkt meistens eher zurückhaltend.",
-    "Ist stark von seiner Vergangenheit geprägt.",
-    "Hat Schwierigkeiten, anderen vollständig zu vertrauen.",
-  ],
-
-  Falcon: [
-    "Wirkt ziemlich selbstbewusst.",
-    "Ist seinen Verbündeten sehr loyal.",
-    "Übernimmt zunehmend Verantwortung für andere.",
-  ],
-
-  "War Machine": [
-    "Wirkt sehr pflichtbewusst.",
-    "Verlässt sich stark auf Erfahrung und Ausrüstung.",
-    "Bleibt auch in gefährlichen Situationen meist professionell.",
-  ],
-
-  "Nick Fury": [
-    "Wirkt fast immer sehr kontrolliert.",
-    "Verrät anderen nur selten alles, was er weiß.",
-    "Denkt häufig mehrere Schritte voraus.",
-  ],
-
-  Mysterio: [
-    "Wirkt sehr selbstsicher.",
-    "Legt großen Wert auf die Wahrnehmung anderer.",
-    "Versucht häufig, Situationen zu seinen Gunsten zu inszenieren.",
-  ],
-
-  "Green Goblin": [
-    "Wirkt teilweise extrem selbstsicher.",
-    "Ist für andere nicht immer leicht einzuschätzen.",
-    "Kann sehr impulsiv und gefährlich reagieren.",
-  ],
-
-  "Doctor Octopus": [
-    "Verlässt sich stark auf seinen Verstand.",
-    "Ist von den eigenen Fähigkeiten sehr überzeugt.",
-    "Kann sich extrem auf ein bestimmtes Ziel konzentrieren.",
-  ],
-
-  Magneto: [
-    "Wirkt ausgesprochen selbstbewusst.",
-    "Ist stark von seiner Vergangenheit und seinen Überzeugungen geprägt.",
-    "Lässt sich nur schwer von seinem Ziel abbringen.",
-  ],
-
-  "Professor X": [
-    "Wirkt meistens sehr ruhig.",
-    "Versucht Konflikte häufig mit Verständnis zu lösen.",
-    "Denkt langfristig und übernimmt viel Verantwortung.",
-  ],
-
-  "Silver Surfer": [
-    "Wirkt meistens sehr ruhig.",
-    "Ist stark von vergangenen Entscheidungen geprägt.",
-    "Denkt häufig über größere Zusammenhänge nach.",
-  ],
-
-  // =========================
-  // STAR WARS – WEITERE FIGUREN
-  // =========================
-
-  "Captain Rex": [
-    "Wirkt sehr pflichtbewusst.",
-    "Ist seinen Verbündeten ausgesprochen loyal.",
-    "Denkt auch unter Druck häufig sehr taktisch.",
-  ],
-
-  "Commander Cody": [
-    "Wirkt sehr diszipliniert.",
-    "Nimmt Befehle und Verantwortung ernst.",
-    "Bleibt in schwierigen Situationen meist professionell.",
-  ],
-
-  "Grand Admiral Thrawn": [
-    "Wirkt fast immer sehr ruhig.",
-    "Analysiert andere Menschen und Situationen sehr genau.",
-    "Denkt außergewöhnlich strategisch.",
-  ],
-
-  "Moff Gideon": [
-    "Wirkt sehr kontrolliert.",
-    "Möchte möglichst viel Kontrolle über seine Umgebung behalten.",
-    "Plant häufig mehrere Schritte voraus.",
-  ],
-
-  "Fennec Shand": [
-    "Wirkt meistens sehr ruhig.",
-    "Geht bei ihren Aufgaben ausgesprochen professionell vor.",
-    "Vertraut stark auf Erfahrung und Geduld.",
-  ],
-
-  "Kanan Jarrus": [
-    "Wirkt häufig ziemlich gelassen.",
-    "Übernimmt viel Verantwortung für andere.",
-    "Ist stark von früheren Erfahrungen geprägt.",
-  ],
-
-  "Ezra Bridger": [
-    "Ist ziemlich neugierig.",
-    "Handelt manchmal impulsiv.",
-    "Entwickelt mit der Zeit deutlich mehr Verantwortung.",
-  ],
-
-  "Sabine Wren": [
-    "Wirkt sehr selbstbewusst.",
-    "Ist ausgesprochen kreativ.",
-    "Ist stark von ihrer Familie und Vergangenheit geprägt.",
-  ],
-
-  "Hera Syndulla": [
-    "Wirkt sehr ruhig und organisiert.",
-    "Übernimmt häufig Verantwortung für eine ganze Gruppe.",
-    "Denkt auch unter Druck meistens vernünftig.",
-  ],
-
-  "Plo Koon": [
-    "Wirkt meistens sehr ruhig.",
-    "Behandelt andere häufig mit Respekt.",
-    "Ist stark von Pflicht und Verantwortung geprägt.",
-  ],
-
-  "Aayla Secura": [
-    "Wirkt sehr selbstbewusst.",
-    "Bleibt auch in gefährlichen Situationen konzentriert.",
-    "Ist ihren Verbündeten gegenüber sehr loyal.",
-  ],
-
-  "Savage Opress": [
-    "Wirkt ausgesprochen einschüchternd.",
-    "Geht Konflikte meistens sehr direkt an.",
-    "Wird stark von anderen Personen beeinflusst.",
-  ],
-
-  "Pre Vizsla": [
-    "Wirkt extrem selbstbewusst.",
-    "Ist stark von seinen Vorstellungen über Tradition geprägt.",
-    "Möchte sich anderen gegenüber häufig beweisen.",
-  ],
-
-  "Nute Gunray": [
-    "Wirkt in gefährlichen Situationen schnell nervös.",
-    "Denkt häufig zuerst an den eigenen Vorteil.",
-    "Verlässt sich lieber auf andere als auf direkte Konfrontation.",
-  ],
-
-  "Wedge Antilles": [
-    "Wirkt meistens eher ruhig.",
-    "Ist ausgesprochen zuverlässig.",
-    "Bleibt auch in gefährlichen Situationen konzentriert.",
-  ],
-
-  // =========================
-  // MARVEL – WEITERE FIGUREN
-  // =========================
-
-  Punisher: [
-    "Wirkt meistens sehr ernst.",
-    "Verfolgt seine Ziele extrem konsequent.",
-    "Vertraut nur wenigen Menschen wirklich.",
-  ],
-
-  Blade: [
-    "Wirkt eher zurückhaltend.",
-    "Ist stark von seiner Vergangenheit geprägt.",
-    "Geht gefährliche Situationen sehr direkt an.",
-  ],
-
-  "Ghost Rider": [
-    "Wirkt sehr einschüchternd.",
-    "Ist stark mit Schuld und Konsequenzen verbunden.",
-    "Zeigt nur selten eine lockere Seite.",
-  ],
-
-  "Shang-Chi": [
-    "Wirkt meistens ruhig.",
-    "Ist sehr diszipliniert.",
-    "Ist stark von seiner Familie und Vergangenheit geprägt.",
-  ],
-
-  Wasp: [
-    "Wirkt sehr selbstbewusst.",
-    "Denkt schnell und praktisch.",
-    "Übernimmt häufig Verantwortung.",
-  ],
-
-  Nebula: [
-    "Wirkt meistens eher kühl.",
-    "Ist stark von ihrer Familie und Vergangenheit geprägt.",
-    "Zeigt Loyalität oft weniger offen als andere.",
-  ],
-
-  Ultron: [
-    "Wirkt extrem rational.",
-    "Hält sehr viel von der eigenen Überlegenheit.",
-    "Ist stark auf ein bestimmtes Ziel fokussiert.",
-  ],
-
-  "Red Skull": [
-    "Wirkt sehr selbstsicher.",
-    "Ist stark von Macht und Kontrolle geprägt.",
-    "Lässt sich nur schwer von seinen Überzeugungen abbringen.",
-  ],
-
-  Hela: [
-    "Wirkt extrem selbstbewusst.",
-    "Ist sich ihrer eigenen Stärke sehr bewusst.",
-    "Hat große Schwierigkeiten damit, Macht abzugeben.",
-  ],
-
-  Kingpin: [
-    "Wirkt meistens sehr kontrolliert.",
-    "Plant häufig langfristig.",
-    "Kann bei persönlichen Konflikten sehr emotional reagieren.",
-  ],
-
-  Cyclops: [
-    "Wirkt sehr pflichtbewusst.",
-    "Übernimmt häufig Verantwortung für andere.",
-    "Ist stark von Disziplin geprägt.",
-  ],
-
-  Storm: [
-    "Wirkt meistens sehr ruhig.",
-    "Übernimmt selbstverständlich Verantwortung.",
-    "Lässt sich auch in schwierigen Situationen kaum einschüchtern.",
-  ],
-
-  "Jean Grey": [
-    "Wirkt häufig eher ruhig.",
-    "Ist stark von inneren Konflikten geprägt.",
-    "Besitzt außergewöhnlich viel Verantwortung und Macht.",
-  ],
-
-  Beast: [
-    "Wirkt sehr gebildet.",
-    "Verlässt sich stark auf Wissen und Analyse.",
-    "Versucht Konflikte häufig vernünftig zu lösen.",
-  ],
-
-  "Adam Warlock": [
-    "Wirkt manchmal etwas distanziert.",
-    "Muss vieles über sich und seine Umgebung erst lernen.",
-    "Besitzt großes Selbstvertrauen in die eigenen Fähigkeiten.",
+    "Wirkt eher groß und durchschnittlich gebaut.",
+    "Trägt häufig ordentliche und eher moderne Kleidung.",
+    "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
   ],
 
 };

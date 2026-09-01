@@ -492,7 +492,7 @@ export default function CategoryPage() {
 
       <div className="mt-8 text-center">
         <p className="text-xs text-slate-600">
-          11 Kategorien · 295 Figuren
+          11 Kategorien · {Object.values(characters).reduce((sum, list) => sum + list.length, 0)} Figuren
         </p>
       </div>
     </div>
