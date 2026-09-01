@@ -65,6 +65,8 @@ const categoryNames: Record<string, string> = {
   "the-boys": "🩸 The Boys",
   "the-walking-dead": "🧟 The Walking Dead",
   jurassic: "🦖 Jurassic Park / World",
+  "schauspielerinnen": "💃 Schauspielerinnen",
+"schauspieler": "🎬 Schauspieler",
 };
 
 function getCharacterImage(

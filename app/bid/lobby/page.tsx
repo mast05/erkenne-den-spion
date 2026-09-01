@@ -63,6 +63,14 @@ const categories = [
     id: "jurassic",
     label: "🦖 Jurassic Park / World",
   },
+    {
+    id: "schauspielerinnen",
+    label: "💃 Schauspielerinnen",
+  },
+  {
+    id: "schauspieler",
+    label: "🎬 Schauspieler",
+  },
 ];
 
 export default function BidLobbyPage() {
@@ -467,11 +475,17 @@ export default function BidLobbyPage() {
                   return (
                     <button
                       key={category.id}
-                      onClick={() =>
-                        setSelectedCategory(
-                          category.id
-                        )
-                      }
+                      onClick={() => {
+  setSelectedCategory(category.id);
+
+  if (
+    (category.id === "schauspielerinnen" ||
+      category.id === "schauspieler") &&
+    selectedMode === "kills"
+  ) {
+    setSelectedMode("attractiveness");
+  }
+}}
                       className={`rounded-2xl border px-4 py-4 text-left text-sm font-bold transition ${
                         selected
                           ? "border-violet-400 bg-violet-500/15 text-violet-300"
@@ -496,7 +510,16 @@ export default function BidLobbyPage() {
               </p>
 
               <div className="mt-4 space-y-2">
-                {dealGameModes.map((gameMode) => {
+                {dealGameModes
+  .filter(
+    (gameMode) =>
+      !(
+        (selectedCategory === "schauspielerinnen" ||
+          selectedCategory === "schauspieler") &&
+        gameMode.id === "kills"
+      )
+  )
+  .map((gameMode) => {
                   const selected =
                     selectedMode === gameMode.id;
 
