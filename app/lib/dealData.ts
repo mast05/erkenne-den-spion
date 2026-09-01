@@ -3966,6 +3966,17 @@ export const dealCharacters: DealCharacter[] = [
     fame: 94,
     attractiveness: 99,
   },
+  {
+  name: "Inde Navarrette",
+  category: "schauspielerinnen",
+  kills: null,
+  height: 152,
+  age: 25,
+  strength: 67,
+  intelligence: 86,
+  fame: 91,
+  attractiveness: 100,
+},
     // =========================
   // SCHAUSPIELER
   // =========================
@@ -4254,6 +4265,17 @@ export const dealCharacters: DealCharacter[] = [
   strength: 88,
   intelligence: 86,
   fame: 94,
-  attractiveness: 99,
+  attractiveness: 100,
+},
+{
+  name: "Paul Walker",
+  category: "schauspieler",
+  kills: null,
+  height: 188,
+  age: 40,
+  strength: 84,
+  intelligence: 86,
+  fame: 98,
+  attractiveness: 100,
 },
 ];
