@@ -4245,4 +4245,15 @@ export const dealCharacters: DealCharacter[] = [
     fame: 91,
     attractiveness: 99,
   },
+  {
+  name: "Tom Welling",
+  category: "schauspieler",
+  kills: null,
+  height: 190,
+  age: 49,
+  strength: 88,
+  intelligence: 86,
+  fame: 94,
+  attractiveness: 99,
+},
 ];
