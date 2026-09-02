@@ -1024,6 +1024,66 @@ const characterTips: Record<string, string[]> = {
     "Mehrere feste Elemente sind direkt am Körper sichtbar.",
   ],
 
+  "Martian Manhunter": [
+  "Wirkt eher groß und kräftig gebaut.",
+  "Sein äußeres Erscheinungsbild wirkt nicht vollständig menschlich.",
+  "Trägt meist eher körpernahe Kleidung.",
+],
+
+"John Constantine": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig eher alltägliche oder leicht ungepflegte Kleidung.",
+  "Hat meist wenig schwere Ausrüstung am Körper.",
+],
+
+"Raven": [
+  "Wirkt eher klein bis durchschnittlich groß und schlank.",
+  "Trägt häufig dunkle und eher lockere Kleidung.",
+  "Ihr Kopfbereich ist teilweise öfter bedeckt.",
+],
+
+"Starfire": [
+  "Wirkt eher groß und schlank-athletisch.",
+  "Trägt häufig auffällige und körpernahe Kleidung.",
+  "Ihr äußeres Erscheinungsbild wirkt nicht vollständig menschlich.",
+],
+
+"Beast Boy": [
+  "Wirkt eher klein bis durchschnittlich groß.",
+  "Trägt meist leichte und praktische Kleidung.",
+  "Sein äußeres Erscheinungsbild besitzt ein ungewöhnliches Merkmal.",
+],
+
+"Blue Beetle": [
+  "Wirkt eher schlank und athletisch.",
+  "Sein Körper kann fast vollständig von fester Ausrüstung bedeckt sein.",
+  "Das Gesicht ist bei Einsätzen häufig nicht sichtbar.",
+],
+
+"Black Adam": [
+  "Wirkt groß und sehr kräftig gebaut.",
+  "Trägt häufig dunkle und körpernahe Kleidung.",
+  "Hat vergleichsweise wenig lose Ausrüstung am Körper.",
+],
+
+"Lucifer Morningstar": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig sehr ordentliche oder elegante Kleidung.",
+  "Sein Erscheinungsbild wirkt meist weniger kampforientiert als seine tatsächliche Stärke.",
+],
+
+"Scarecrow": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig dunkle oder abgenutzte Kleidung.",
+  "Das Gesicht ist teilweise oder vollständig verdeckt.",
+],
+
+"Two-Face": [
+  "Wirkt eher groß und durchschnittlich gebaut.",
+  "Trägt häufig sehr formelle Kleidung.",
+  "Im Gesichtsbereich gibt es ein deutlich auffälliges Merkmal.",
+],
+
     // =========================
   // FLUCH DER KARIBIK
   // =========================
