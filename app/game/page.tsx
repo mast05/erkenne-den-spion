@@ -50,2237 +50,2237 @@ const categoryNames: Record<string, string> = {
 
 const characterTips: Record<string, string[]> = {
     // =========================
-  // STAR WARS
-  // =========================
+// STAR WARS
+// =========================
 
-  "Ahsoka Tano": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt meistens eher praktische als schwere Kleidung.",
-    "Ihr Kopfbereich fällt stärker auf als ihre restliche Ausrüstung.",
-  ],
+"Ahsoka Tano": [
+  "Schlanke Statur",
+  "Auffälliger Kopf",
+  "Leichte Kleidung",
+],
 
-  "Anakin Skywalker": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig mehrere dunkle Kleidungsschichten.",
-    "Hat meistens relativ wenig schwere Ausrüstung am Körper.",
-  ],
+"Anakin Skywalker": [
+  "Athletisch gebaut",
+  "Dunkle Kleidung",
+  "Menschlich",
+],
 
-  "Boba Fett": [
-    "Ein großer Teil seines Körpers ist von Ausrüstung bedeckt.",
-    "Seine Kleidung wirkt eher robust als bequem.",
-    "Das Gesicht ist häufig nicht sichtbar.",
-  ],
+"Boba Fett": [
+  "Gepanzert",
+  "Verdecktes Gesicht",
+  "Viel Ausrüstung",
+],
 
-  "C-3PO": [
-    "Sein Körper wirkt eher schmal gebaut.",
-    "Die Oberfläche seines Körpers wirkt hart und glatt.",
-    "Normale Kleidung ist bei ihm kaum zu erkennen.",
-  ],
+"C-3PO": [
+  "Schlanke Statur",
+  "Glänzende Oberfläche",
+  "Steife Haltung",
+],
 
-  "Chewbacca": [
-    "Ist deutlich größer als ein durchschnittlicher Mensch.",
-    "Seine Körperoberfläche wirkt ungewöhnlich dicht.",
-    "Trägt vergleichsweise wenig sichtbare Kleidung.",
-  ],
+"Chewbacca": [
+  "Sehr groß",
+  "Stark behaart",
+  "Breite Statur",
+],
 
-  "Count Dooku": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meistens dunkle und eher ordentliche Kleidung.",
-    "Hat vergleichsweise wenig sichtbare Ausrüstung.",
-  ],
+"Count Dooku": [
+  "Älter",
+  "Elegante Kleidung",
+  "Schlanke Statur",
+],
 
-  "Darth Vader": [
-    "Wirkt körperlich eher groß und schwer.",
-    "Trägt fast ausschließlich dunkle Materialien.",
-    "Das Gesicht ist meistens vollständig verdeckt.",
-  ],
+"Darth Vader": [
+  "Sehr groß",
+  "Dunkle Rüstung",
+  "Verdecktes Gesicht",
+],
 
-  "Finn": [
-    "Hat eine eher durchschnittliche menschliche Statur.",
-    "Trägt häufig eher praktische Kleidung.",
-    "Seine Ausrüstung wirkt nicht besonders schwer.",
-  ],
+"Finn": [
+  "Athletisch gebaut",
+  "Praktische Kleidung",
+  "Menschlich",
+],
 
-  "General Grievous": [
-    "Wirkt deutlich größer als ein durchschnittlicher Mensch.",
-    "Sein Körper besteht sichtbar aus vielen harten Elementen.",
-    "Seine Statur wirkt eher schmal und kantig.",
-  ],
+"General Grievous": [
+  "Sehr groß",
+  "Technischer Körper",
+  "Schmale Statur",
+],
 
-  "Grogu": [
-    "Ist körperlich sehr klein.",
-    "Trägt eher lockere als körpernahe Kleidung.",
-    "Seine Ohren verändern die Silhouette des Kopfes deutlich.",
-  ],
+"Grogu": [
+  "Sehr klein",
+  "Lockere Kleidung",
+  "Auffälliger Kopf",
+],
 
-  "Han Solo": [
-    "Hat eine ziemlich durchschnittliche menschliche Statur.",
-    "Trägt meistens eher einfache und praktische Kleidung.",
-    "Hat häufig nur wenig Ausrüstung direkt am Körper.",
-  ],
+"Han Solo": [
+  "Lässige Kleidung",
+  "Menschlich",
+  "Schlanke Statur",
+],
 
-  "Jabba the Hutt": [
-    "Seine Körperform unterscheidet sich stark von einem Menschen.",
-    "Wirkt körperlich eher schwer als beweglich.",
-    "Trägt kaum erkennbare normale Kleidung.",
-  ],
+"Jabba the Hutt": [
+  "Sehr breit",
+  "Ungewöhnlicher Körper",
+  "Kaum Kleidung",
+],
 
-  "Kylo Ren": [
-    "Wirkt eher groß und schlank.",
-    "Trägt überwiegend dunkle Kleidung.",
-    "Sein Gesicht ist zumindest zeitweise verdeckt.",
-  ],
+"Kylo Ren": [
+  "Groß",
+  "Dunkle Kleidung",
+  "Verdecktes Gesicht",
+],
 
-  "Lando Calrissian": [
-    "Wirkt körperlich eher durchschnittlich gebaut.",
-    "Seine Kleidung wirkt oft etwas gepflegter als bei anderen.",
-    "Trägt meist wenig schwere Ausrüstung.",
-  ],
+"Lando Calrissian": [
+  "Gepflegt",
+  "Elegante Kleidung",
+  "Menschlich",
+],
 
-  "Leia Organa": [
-    "Ist eher klein und schlank gebaut.",
-    "Ihre Kleidung wirkt oft leichter als die vieler Kämpfer.",
-    "Ihr Haar fällt je nach Erscheinung stärker auf als ihre Ausrüstung.",
-  ],
+"Leia Organa": [
+  "Kleine Statur",
+  "Gepflegte Kleidung",
+  "Auffällige Frisur",
+],
 
-  "Luke Skywalker": [
-    "Wirkt eher schlank als besonders kräftig.",
-    "Trägt häufig relativ einfache Kleidung.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Luke Skywalker": [
+  "Schlanke Statur",
+  "Einfache Kleidung",
+  "Menschlich",
+],
 
-  "Mace Windu": [
-    "Wirkt groß und eher kräftig gebaut.",
-    "Trägt meistens mehrere lockere Kleidungsschichten.",
-    "Seine Kleidung wirkt kaum technisch.",
-  ],
+"Mace Windu": [
+  "Kräftig gebaut",
+  "Schlichte Kleidung",
+  "Kahler Kopf",
+],
 
-  "Mandalorian": [
-    "Ein großer Teil des Körpers ist von fester Ausrüstung bedeckt.",
-    "Das Gesicht ist meistens nicht sichtbar.",
-    "Seine Kleidung besteht aus mehreren unterschiedlichen Materialien.",
-  ],
+"Mandalorian": [
+  "Gepanzert",
+  "Verdecktes Gesicht",
+  "Robuste Kleidung",
+],
 
-  "Obi-Wan Kenobi": [
-    "Hat eine eher durchschnittliche bis große Statur.",
-    "Trägt häufig mehrere lockere Kleidungsschichten.",
-    "Sein Outfit wirkt eher traditionell als technisch.",
-  ],
+"Obi-Wan Kenobi": [
+  "Mittlere Statur",
+  "Lockere Kleidung",
+  "Gepflegt",
+],
 
-  "Padmé Amidala": [
-    "Ist eher schlank gebaut.",
-    "Ihre Kleidung kann deutlich aufwendiger wirken als bei vielen anderen.",
-    "Trägt vergleichsweise selten schwere Ausrüstung.",
-  ],
+"Padmé Amidala": [
+  "Schlanke Statur",
+  "Aufwendige Kleidung",
+  "Gepflegt",
+],
 
-  "Palpatine": [
-    "Wirkt körperlich eher schmal.",
-    "Trägt häufig sehr lockere und dunkle Kleidung.",
-    "Seine Kleidung verdeckt einen großen Teil seiner Körperform.",
-  ],
+"Palpatine": [
+  "Sehr alt",
+  "Dunkle Kleidung",
+  "Blasses Gesicht",
+],
 
-  "Qui-Gon Jinn": [
-    "Ist eher groß und schlank gebaut.",
-    "Trägt meistens mehrere lockere Stoffschichten.",
-    "Seine Kleidung wirkt wenig technisch.",
-  ],
+"Qui-Gon Jinn": [
+  "Sehr groß",
+  "Lockere Kleidung",
+  "Lange Haare",
+],
 
-  "R2-D2": [
-    "Ist deutlich kleiner als die meisten Figuren.",
-    "Seine Körperform ist eher kompakt als menschlich.",
-    "Normale Kleidung ist nicht erkennbar.",
-  ],
+"R2-D2": [
+  "Sehr klein",
+  "Kompakte Form",
+  "Technisch",
+],
 
-  "Rey": [
-    "Wirkt eher schlank und beweglich.",
-    "Ihre Kleidung ist meistens leicht und praktisch.",
-    "Trägt häufig mehrere dünne Stoffschichten.",
-  ],
+"Rey": [
+  "Schlanke Statur",
+  "Helle Kleidung",
+  "Praktisch gekleidet",
+],
 
-  "Yoda": [
-    "Ist körperlich sehr klein.",
-    "Trägt meistens lockere und eher einfache Kleidung.",
-    "Seine Ohren beeinflussen die Kopfform deutlich.",
-  ],
+"Yoda": [
+  "Sehr klein",
+  "Sehr alt",
+  "Auffällige Ohren",
+],
 
-  "Darth Maul": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt überwiegend dunkle Kleidung.",
-    "Sein Gesicht weist auffälligere Merkmale auf als seine Kleidung.",
-  ],
+"Darth Maul": [
+  "Athletisch gebaut",
+  "Dunkle Kleidung",
+  "Auffälliges Gesicht",
+],
 
-  "Jango Fett": [
-    "Trägt viel feste Ausrüstung direkt am Körper.",
-    "Sein Gesicht ist häufig vollständig verdeckt.",
-    "Sein Outfit wirkt eher funktional als bequem.",
-  ],
+"Jango Fett": [
+  "Gepanzert",
+  "Verdecktes Gesicht",
+  "Athletisch gebaut",
+],
 
-  "Cad Bane": [
-    "Wirkt eher groß und sehr schlank.",
-    "Trägt Kleidung, die nicht besonders modern wirkt.",
-    "Sein Kopfbereich ist häufig teilweise bedeckt.",
-  ],
+"Cad Bane": [
+  "Sehr schlank",
+  "Dunkle Kleidung",
+  "Auffälliger Kopf",
+],
 
-  "Bo-Katan Kryze": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig feste Ausrüstung über der Kleidung.",
-    "Das Gesicht ist je nach Situation nicht sichtbar.",
-  ],
+"Bo-Katan Kryze": [
+  "Athletisch gebaut",
+  "Teilweise gepanzert",
+  "Praktische Kleidung",
+],
 
-  "Poe Dameron": [
-    "Ist eher durchschnittlich groß und schlank.",
-    "Trägt oft funktionale Kleidung mit mehreren Details.",
-    "Sein Outfit wirkt eher für Bewegung als Schutz gedacht.",
-  ],
+"Poe Dameron": [
+  "Schlanke Statur",
+  "Praktische Kleidung",
+  "Sportlich",
+],
 
-  "Captain Phasma": [
-    "Ist deutlich größer als viele andere Figuren.",
-    "Fast der gesamte Körper ist von fester Ausrüstung bedeckt.",
-    "Das Gesicht ist normalerweise nicht sichtbar.",
-  ],
+"Captain Phasma": [
+  "Sehr groß",
+  "Helle Rüstung",
+  "Verdecktes Gesicht",
+],
 
-  "Grand Moff Tarkin": [
-    "Wirkt eher schlank als kräftig.",
-    "Trägt meistens sehr ordentliche Kleidung.",
-    "Sein Outfit wirkt stärker formell als kampforientiert.",
-  ],
+"Grand Moff Tarkin": [
+  "Sehr schlank",
+  "Formelle Kleidung",
+  "Älter",
+],
 
-  "Admiral Ackbar": [
-    "Sein Kopf unterscheidet sich deutlich von einem menschlichen.",
-    "Trägt meistens eher formelle Kleidung.",
-    "Seine Statur wirkt ansonsten relativ durchschnittlich.",
-  ],
+"Admiral Ackbar": [
+  "Mittlere Statur",
+  "Formelle Kleidung",
+  "Ungewöhnliches Gesicht",
+],
 
-  "Asajj Ventress": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt meistens körpernahe Kleidung.",
-    "Ihr Kopfbereich wirkt meist eher glatt als stark bedeckt.",
-  ],
+"Asajj Ventress": [
+  "Schlanke Statur",
+  "Kahler Kopf",
+  "Dunkle Kleidung",
+],
 
-  "Kit Fisto": [
-    "Ist eher groß und athletisch gebaut.",
-    "Sein Kopfbereich besitzt mehrere ungewöhnliche Formen.",
-    "Trägt meistens eher lockere als technische Kleidung.",
-  ],
+"Kit Fisto": [
+  "Groß",
+  "Athletisch gebaut",
+  "Auffälliger Kopf",
+],
 
-  "Captain Rex": [
-    "Trägt häufig feste Ausrüstung über fast dem ganzen Körper.",
-    "Sein Erscheinungsbild wirkt stark militärisch.",
-    "Das Gesicht ist während Einsätzen häufig nicht sichtbar.",
-  ],
+"Captain Rex": [
+  "Gepanzert",
+  "Militärisch",
+  "Verdecktes Gesicht",
+],
 
-  "Commander Cody": [
-    "Trägt meistens relativ schwere Schutzkleidung.",
-    "Sein Outfit besteht überwiegend aus festen Materialien.",
-    "Die Körperform bleibt trotz Ausrüstung ziemlich menschlich.",
-  ],
+"Commander Cody": [
+  "Gepanzert",
+  "Robuste Kleidung",
+  "Militärisch",
+],
 
-  "Grand Admiral Thrawn": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meistens sehr ordentliche und formelle Kleidung.",
-    "Sein Gesicht fällt stärker auf als seine Ausrüstung.",
-  ],
+"Grand Admiral Thrawn": [
+  "Groß",
+  "Formelle Kleidung",
+  "Auffälliges Gesicht",
+],
 
-  "Moff Gideon": [
-    "Ist eher durchschnittlich groß.",
-    "Trägt häufig dunkle und relativ feste Kleidung.",
-    "Sein Outfit wirkt eher ordentlich als improvisiert.",
-  ],
+"Moff Gideon": [
+  "Mittlere Statur",
+  "Dunkle Kleidung",
+  "Gepflegt",
+],
 
-  "Fennec Shand": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt überwiegend dunkle und funktionale Kleidung.",
-    "Hat häufig mehrere kleinere Ausrüstungsteile am Körper.",
-  ],
+"Fennec Shand": [
+  "Schlanke Statur",
+  "Dunkle Kleidung",
+  "Viel Ausrüstung",
+],
 
-  "Kanan Jarrus": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meist praktische Kleidung mit mehreren Schichten.",
-    "Seine Kleidung wirkt kaum schwer gepanzert.",
-  ],
+"Kanan Jarrus": [
+  "Groß",
+  "Praktische Kleidung",
+  "Schlanke Statur",
+],
 
-  "Ezra Bridger": [
-    "Ist eher schlank und durchschnittlich groß.",
-    "Trägt häufig relativ leichte Kleidung.",
-    "Seine Ausrüstung wirkt insgesamt eher kompakt.",
-  ],
+"Ezra Bridger": [
+  "Schlanke Statur",
+  "Leichte Kleidung",
+  "Jung",
+],
 
-  "Sabine Wren": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt häufig feste Elemente über der Kleidung.",
-    "Ihr äußeres Erscheinungsbild besitzt mehrere auffällige Details.",
-  ],
+"Sabine Wren": [
+  "Kleine Statur",
+  "Teilweise gepanzert",
+  "Auffällige Kleidung",
+],
 
-  "Hera Syndulla": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt meistens praktische und relativ leichte Kleidung.",
-    "Ihr Kopfbereich unterscheidet sich deutlich von einem Menschen.",
-  ],
+"Hera Syndulla": [
+  "Schlanke Statur",
+  "Praktische Kleidung",
+  "Auffälliger Kopf",
+],
 
-  "Plo Koon": [
-    "Ist eher groß gebaut.",
-    "Sein Gesicht ist meistens teilweise von Ausrüstung bedeckt.",
-    "Trägt eher lockere als schwere Kleidung.",
-  ],
+"Plo Koon": [
+  "Groß",
+  "Verdecktes Gesicht",
+  "Lockere Kleidung",
+],
 
-  "Aayla Secura": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt vergleichsweise leichte Kleidung.",
-    "Ihr Kopfbereich besitzt Merkmale, die Menschen nicht haben.",
-  ],
+"Aayla Secura": [
+  "Schlanke Statur",
+  "Leichte Kleidung",
+  "Auffälliger Kopf",
+],
 
-  "Savage Opress": [
-    "Ist deutlich größer und kräftiger als viele andere.",
-    "Seine Körperform wirkt sehr breit.",
-    "Sein Gesicht und Kopf besitzen mehrere auffällige Strukturen.",
-  ],
+"Savage Opress": [
+  "Sehr groß",
+  "Sehr kräftig",
+  "Auffälliges Gesicht",
+],
 
-  "Pre Vizsla": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig feste Ausrüstung über der Kleidung.",
-    "Sein Gesicht ist während Kämpfen oft verdeckt.",
-  ],
+"Pre Vizsla": [
+  "Athletisch gebaut",
+  "Gepanzert",
+  "Verdecktes Gesicht",
+],
 
-  "Nute Gunray": [
-    "Wirkt eher groß und schmal.",
-    "Trägt häufig lockere und aufwendige Kleidung.",
-    "Seine Kopfform unterscheidet sich von einem Menschen.",
-  ],
+"Nute Gunray": [
+  "Schmale Statur",
+  "Aufwendige Kleidung",
+  "Ungewöhnliches Gesicht",
+],
 
-  "Wedge Antilles": [
-    "Ist eher durchschnittlich groß und schlank.",
-    "Trägt häufig funktionale Kleidung.",
-    "Seine Ausrüstung wirkt eher leicht als stark gepanzert.",
-  ],
+"Wedge Antilles": [
+  "Mittlere Statur",
+  "Praktische Kleidung",
+  "Menschlich",
+],
 
     // =========================
-  // MARVEL
-  // =========================
+// MARVEL
+// =========================
 
-  "Ant-Man": [
-    "Wirkt körperlich eher durchschnittlich gebaut.",
-    "Trägt häufig eng anliegende technische Kleidung.",
-    "Sein Gesicht ist bei Einsätzen oft teilweise verdeckt.",
-  ],
+"Ant-Man": [
+  "Mittlere Statur",
+  "Technischer Anzug",
+  "Verdecktes Gesicht",
+],
 
-  "Black Panther": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt meist sehr körpernahe Kleidung.",
-    "Sein Gesicht ist während Einsätzen häufig nicht sichtbar.",
-  ],
+"Black Panther": [
+  "Athletisch",
+  "Dunkler Anzug",
+  "Verdecktes Gesicht",
+],
 
-  "Black Widow": [
-    "Ist eher klein bis durchschnittlich groß.",
-    "Trägt häufig dunkle und praktische Kleidung.",
-    "Ihre Ausrüstung liegt meist relativ nah am Körper.",
-  ],
+"Black Widow": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Praktisch gekleidet",
+],
 
-  "Captain America": [
-    "Wirkt groß und deutlich athletisch gebaut.",
-    "Trägt meist körpernahe Schutzkleidung.",
-    "Sein Outfit wirkt eher funktional als alltäglich.",
-  ],
+"Captain America": [
+  "Kräftig gebaut",
+  "Körpernaher Anzug",
+  "Militärischer Look",
+],
 
-  "Captain Marvel": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig körpernahe Kleidung.",
-    "Hat vergleichsweise wenig lose Ausrüstung am Körper.",
-  ],
+"Captain Marvel": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Helle Haare",
+],
 
-  "Daredevil": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt meistens körpernahe Kleidung.",
-    "Ein Teil seines Gesichts ist häufig verdeckt.",
-  ],
+"Daredevil": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Teilweise maskiert",
+],
 
-  "Deadpool": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt fast vollständig körperbedeckende Kleidung.",
-    "Hat häufig mehrere Ausrüstungsteile direkt am Körper.",
-  ],
+"Deadpool": [
+  "Athletisch",
+  "Vollmaskiert",
+  "Viel Ausrüstung",
+],
 
-  "Doctor Strange": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt meist mehrere auffällige Kleidungsschichten.",
-    "Seine Kleidung wirkt weniger technisch als bei vielen anderen.",
-  ],
+"Doctor Strange": [
+  "Schlanke Statur",
+  "Mehrlagige Kleidung",
+  "Gepflegter Bart",
+],
 
-  "Drax": [
-    "Ist groß und sehr kräftig gebaut.",
-    "Trägt vergleichsweise wenig Kleidung.",
-    "Seine Körperoberfläche besitzt mehrere auffällige Merkmale.",
-  ],
+"Drax": [
+  "Sehr kräftig",
+  "Wenig Kleidung",
+  "Gemusterte Haut",
+],
 
-  "Gamora": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt häufig dunkle oder praktische Kleidung.",
-    "Ihr äußeres Erscheinungsbild wirkt nicht vollständig menschlich.",
-  ],
+"Gamora": [
+  "Schlank",
+  "Ungewöhnliche Haut",
+  "Dunkle Kleidung",
+],
 
-  "Groot": [
-    "Ist deutlich größer als ein durchschnittlicher Mensch.",
-    "Seine Körperoberfläche wirkt sehr ungleichmäßig.",
-    "Normale Kleidung ist bei ihm kaum zu erkennen.",
-  ],
+"Groot": [
+  "Sehr groß",
+  "Unebene Oberfläche",
+  "Keine Kleidung",
+],
 
-  "Hawkeye": [
-    "Wirkt eher durchschnittlich groß und athletisch.",
-    "Trägt meistens praktische Kleidung.",
-    "Hat häufig mehrere kleinere Ausrüstungsteile am Körper.",
-  ],
+"Hawkeye": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Viel Ausrüstung",
+],
 
-  "Hulk": [
-    "Ist deutlich größer und breiter als die meisten Figuren.",
-    "Seine Körperform wirkt extrem kräftig.",
-    "Trägt meist deutlich weniger Kleidung als andere.",
-  ],
+"Hulk": [
+  "Extrem groß",
+  "Extrem kräftig",
+  "Wenig Kleidung",
+],
 
-  "Iron Man": [
-    "Seine Kleidung verändert seine Körperform deutlich.",
-    "Fast der gesamte Körper kann von festen Materialien bedeckt sein.",
-    "Das Gesicht ist während Einsätzen oft nicht sichtbar.",
-  ],
+"Iron Man": [
+  "Ganzkörperrüstung",
+  "Glänzende Oberfläche",
+  "Verdecktes Gesicht",
+],
 
-  "Loki": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig mehrere auffällige Kleidungsschichten.",
-    "Sein Outfit wirkt eher aufwendig als praktisch.",
-  ],
+"Loki": [
+  "Schlank",
+  "Aufwendige Kleidung",
+  "Längere Haare",
+],
 
-  "Moon Knight": [
-    "Wirkt groß und eher athletisch.",
-    "Trägt häufig mehrere helle Kleidungsschichten.",
-    "Das Gesicht ist bei Einsätzen meist verdeckt.",
-  ],
+"Moon Knight": [
+  "Helle Kleidung",
+  "Verdecktes Gesicht",
+  "Mehrere Schichten",
+],
 
-  "Rocket": [
-    "Ist deutlich kleiner als die meisten anderen Figuren.",
-    "Seine Körperform entspricht keinem Menschen.",
-    "Trägt häufig funktionale Kleidung oder Ausrüstung.",
-  ],
+"Rocket": [
+  "Sehr klein",
+  "Stark behaart",
+  "Technische Ausrüstung",
+],
 
-  "Scarlet Witch": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig dunkle oder auffällige Kleidung.",
-    "Ihre Ausrüstung wirkt insgesamt eher leicht.",
-  ],
+"Scarlet Witch": [
+  "Schlank",
+  "Dunkelrote Kleidung",
+  "Lange Haare",
+],
 
-  "Spider-Man": [
-    "Wirkt eher schlank und sehr beweglich.",
-    "Trägt fast vollständig körpernahe Kleidung.",
-    "Sein Gesicht ist während Einsätzen häufig verdeckt.",
-  ],
+"Spider-Man": [
+  "Schlank",
+  "Körpernaher Anzug",
+  "Vollmaskiert",
+],
 
-  "Star-Lord": [
-    "Wirkt eher groß und durchschnittlich athletisch.",
-    "Trägt meist praktische Kleidung mit mehreren Schichten.",
-    "Sein Gesicht kann durch Ausrüstung verdeckt sein.",
-  ],
+"Star-Lord": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Teilweise maskiert",
+],
 
-  "Thanos": [
-    "Ist deutlich größer und kräftiger als ein Mensch.",
-    "Seine Körperform wirkt sehr breit und schwer.",
-    "Trägt häufig feste Elemente über Teilen des Körpers.",
-  ],
+"Thanos": [
+  "Sehr groß",
+  "Sehr massiv",
+  "Teilweise gepanzert",
+],
 
-  "Thor": [
-    "Ist eher groß und kräftig gebaut.",
-    "Trägt häufig mehrere schwere Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher robust als unauffällig.",
-  ],
+"Thor": [
+  "Sehr kräftig",
+  "Robuste Kleidung",
+  "Längere Haare",
+],
 
-  "Venom": [
-    "Ist deutlich größer als ein durchschnittlicher Mensch.",
-    "Seine Körperform wirkt sehr kräftig.",
-    "Normale Kleidung ist äußerlich kaum zu erkennen.",
-  ],
+"Venom": [
+  "Sehr groß",
+  "Dunkle Oberfläche",
+  "Unmenschliche Statur",
+],
 
-  "Vision": [
-    "Wirkt eher groß und schlank.",
-    "Seine Körperoberfläche wirkt nicht vollständig natürlich.",
-    "Trägt meist wenig zusätzliche Ausrüstung.",
-  ],
+"Vision": [
+  "Schlank",
+  "Glatte Oberfläche",
+  "Ungewöhnliche Haut",
+],
 
-  "Wolverine": [
-    "Wirkt eher kompakt und kräftig gebaut.",
-    "Trägt häufig robuste oder körpernahe Kleidung.",
-    "Sein Körperbau wirkt breiter als bei vielen anderen.",
-  ],
+"Wolverine": [
+  "Kompakte Statur",
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+],
 
-  "Winter Soldier": [
-    "Wirkt groß und athletisch gebaut.",
-    "Trägt häufig dunkle und praktische Kleidung.",
-    "Ein Teil seines Körpers wirkt anders als der Rest.",
-  ],
+"Winter Soldier": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Robuster Look",
+],
 
-  "Falcon": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig technische Ausrüstung am Oberkörper.",
-    "Sein Outfit wirkt stark auf Bewegung ausgelegt.",
-  ],
+"Falcon": [
+  "Athletisch",
+  "Technische Ausrüstung",
+  "Körpernaher Anzug",
+],
 
-  "War Machine": [
-    "Wirkt mit seiner Ausrüstung deutlich breiter als ein normaler Mensch.",
-    "Der Körper ist während Einsätzen fast vollständig bedeckt.",
-    "Sein Outfit besteht größtenteils aus festen Materialien.",
-  ],
+"War Machine": [
+  "Sehr gepanzert",
+  "Breite Statur",
+  "Verdecktes Gesicht",
+],
 
-  "Nick Fury": [
-    "Wirkt körperlich eher durchschnittlich gebaut.",
-    "Trägt häufig dunkle und eher praktische Kleidung.",
-    "Im Gesichtsbereich gibt es ein wiederkehrendes auffälliges Detail.",
-  ],
+"Nick Fury": [
+  "Mittlere Statur",
+  "Dunkle Kleidung",
+  "Auffälliges Auge",
+],
 
-  "Mysterio": [
-    "Wirkt eher durchschnittlich groß.",
-    "Trägt vergleichsweise aufwendige Kleidung.",
-    "Der Kopfbereich kann stark von seiner normalen Form abweichen.",
-  ],
+"Mysterio": [
+  "Aufwendige Kleidung",
+  "Auffälliger Kopf",
+  "Teilweise gepanzert",
+],
 
-  "Green Goblin": [
-    "Wirkt eher schlank bis durchschnittlich gebaut.",
-    "Trägt häufig feste Schutzkleidung.",
-    "Sein Gesicht ist teilweise oder vollständig verdeckt.",
-  ],
+"Green Goblin": [
+  "Schlanke Statur",
+  "Feste Rüstung",
+  "Verdecktes Gesicht",
+],
 
-  "Doctor Octopus": [
-    "Hat eine eher durchschnittliche menschliche Statur.",
-    "Trägt meistens relativ normale Kleidung.",
-    "Seine äußere Silhouette kann deutlich größer wirken als sein Körper.",
-  ],
+"Doctor Octopus": [
+  "Mittlere Statur",
+  "Normale Kleidung",
+  "Breite Silhouette",
+],
 
-  "Magneto": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig auffällige oder körpernahe Kleidung.",
-    "Sein Kopfbereich ist oft teilweise bedeckt.",
-  ],
+"Magneto": [
+  "Groß",
+  "Auffällige Kleidung",
+  "Bedeckter Kopf",
+],
 
-  "Professor X": [
-    "Wirkt körperlich eher schlank.",
-    "Trägt häufig normale oder eher formelle Kleidung.",
-    "Seine äußere Erscheinung wirkt weniger kampforientiert als bei vielen anderen.",
-  ],
+"Professor X": [
+  "Schlank",
+  "Formelle Kleidung",
+  "Kahler Kopf",
+],
 
-  "Silver Surfer": [
-    "Wirkt groß, schlank und sehr gleichmäßig gebaut.",
-    "Normale Kleidung ist äußerlich kaum erkennbar.",
-    "Seine Körperoberfläche wirkt ungewöhnlich glatt.",
-  ],
+"Silver Surfer": [
+  "Sehr schlank",
+  "Glatte Oberfläche",
+  "Keine Kleidung",
+],
 
-  "Punisher": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt meistens dunkle und praktische Kleidung.",
-    "Hat häufig mehrere Ausrüstungsteile direkt am Körper.",
-  ],
+"Punisher": [
+  "Kräftig gebaut",
+  "Dunkle Kleidung",
+  "Viel Ausrüstung",
+],
 
-  "Blade": [
-    "Wirkt groß und athletisch gebaut.",
-    "Trägt überwiegend dunkle Kleidung.",
-    "Seine Kleidung wirkt eher robust als leicht.",
-  ],
+"Blade": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Robuster Look",
+],
 
-  "Ghost Rider": [
-    "Wirkt eher groß und kräftig.",
-    "Trägt häufig dunkle und robuste Kleidung.",
-    "Sein gesamtes Erscheinungsbild wirkt eher ungewöhnlich.",
-  ],
+"Ghost Rider": [
+  "Kräftig gebaut",
+  "Dunkle Kleidung",
+  "Ungewöhnlicher Kopf",
+],
 
-  "Shang-Chi": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt Kleidung mit relativ viel Bewegungsfreiheit.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Shang-Chi": [
+  "Athletisch",
+  "Leichte Kleidung",
+  "Wenig Ausrüstung",
+],
 
-  "Wasp": [
-    "Ist eher klein und schlank gebaut.",
-    "Trägt häufig eng anliegende technische Kleidung.",
-    "Ihr Gesicht kann während Einsätzen teilweise verdeckt sein.",
-  ],
+"Wasp": [
+  "Kleine Statur",
+  "Technischer Anzug",
+  "Teilweise maskiert",
+],
 
-  "Nebula": [
-    "Wirkt eher schlank und athletisch.",
-    "Ihre Körperoberfläche besitzt mehrere ungewöhnliche Details.",
-    "Trägt meistens eher funktionale Kleidung.",
-  ],
+"Nebula": [
+  "Schlank",
+  "Ungewöhnliche Haut",
+  "Technischer Look",
+],
 
-  "Ultron": [
-    "Ist deutlich größer als ein durchschnittlicher Mensch.",
-    "Sein Körper wirkt vollständig aus festen Materialien aufgebaut.",
-    "Normale Kleidung ist nicht erkennbar.",
-  ],
+"Ultron": [
+  "Sehr groß",
+  "Metallischer Körper",
+  "Keine Kleidung",
+],
 
-  "Red Skull": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig formelle oder militärisch wirkende Kleidung.",
-    "Sein Gesicht besitzt deutlich ungewöhnlichere Merkmale als sein Körper.",
-  ],
+"Red Skull": [
+  "Schlank",
+  "Formelle Kleidung",
+  "Auffälliges Gesicht",
+],
 
-  "Hela": [
-    "Wirkt eher groß und sehr schlank.",
-    "Trägt meistens dunkle und körpernahe Kleidung.",
-    "Ihre Kopfform kann je nach Erscheinung deutlich auffälliger wirken.",
-  ],
+"Hela": [
+  "Sehr schlank",
+  "Dunkle Kleidung",
+  "Auffälliger Kopf",
+],
 
-  "Kingpin": [
-    "Ist sehr groß und außergewöhnlich breit gebaut.",
-    "Trägt häufig eher elegante Kleidung.",
-    "Seine Körperform wirkt deutlich schwerer als bei vielen anderen.",
-  ],
+"Kingpin": [
+  "Sehr breit",
+  "Sehr groß",
+  "Elegante Kleidung",
+],
 
-  "Cyclops": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig körpernahe Kleidung.",
-    "Im Bereich des Gesichts trägt er meistens ein auffälliges Element.",
-  ],
+"Cyclops": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Bedeckte Augen",
+],
 
-  "Storm": [
-    "Wirkt eher groß und schlank.",
-    "Ihr Haar kann stärker auffallen als ihre Ausrüstung.",
-    "Trägt häufig körpernahe oder auffällige Kleidung.",
-  ],
+"Storm": [
+  "Schlank",
+  "Helle Haare",
+  "Körpernahe Kleidung",
+],
 
-  "Jean Grey": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig relativ körpernahe Kleidung.",
-    "Hat meist wenig sichtbare technische Ausrüstung.",
-  ],
+"Jean Grey": [
+  "Schlank",
+  "Körpernahe Kleidung",
+  "Wenig Ausrüstung",
+],
 
-  "Beast": [
-    "Ist eher groß und kräftig gebaut.",
-    "Seine Körperoberfläche unterscheidet sich deutlich von einem normalen Menschen.",
-    "Wirkt trotz seiner breiten Statur relativ beweglich.",
-  ],
+"Beast": [
+  "Kräftig gebaut",
+  "Stark behaart",
+  "Ungewöhnliche Haut",
+],
 
-  "Adam Warlock": [
-    "Wirkt groß und athletisch gebaut.",
-    "Seine Körperoberfläche wirkt nicht ganz menschlich.",
-    "Trägt häufig eher auffällige als alltägliche Kleidung.",
-  ],
+"Adam Warlock": [
+  "Athletisch",
+  "Ungewöhnliche Haut",
+  "Auffällige Kleidung",
+],
 
     // =========================
-  // HARRY POTTER
-  // =========================
+// HARRY POTTER
+// =========================
 
-  "Albus Dumbledore": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig lange und lockere Kleidung.",
-    "Sein Haar fällt stärker auf als seine Ausrüstung.",
-  ],
+"Albus Dumbledore": [
+  "Sehr alt",
+  "Lange Kleidung",
+  "Langer Bart",
+],
 
-  "Arthur Weasley": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meist eher alltägliche oder formelle Kleidung.",
-    "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
-  ],
+"Arthur Weasley": [
+  "Schlanke Statur",
+  "Ordentliche Kleidung",
+  "Älter",
+],
 
-  "Bellatrix Lestrange": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt häufig dunkle Kleidung.",
-    "Ihr Haar wirkt oft eher wild als ordentlich.",
-  ],
+"Bellatrix Lestrange": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Wildes Haar",
+],
 
-  "Cedric Diggory": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig relativ einheitliche Kleidung.",
-    "Sein Erscheinungsbild wirkt insgesamt eher gepflegt.",
-  ],
+"Cedric Diggory": [
+  "Athletisch",
+  "Jung",
+  "Gepflegt",
+],
 
-  Dobby: [
-    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
-    "Trägt sehr wenig und eher einfache Kleidung.",
-    "Seine Kopfform fällt stärker auf als sein Körper.",
-  ],
+"Dobby": [
+  "Sehr klein",
+  "Wenig Kleidung",
+  "Auffällige Ohren",
+],
 
-  "Dolores Umbridge": [
-    "Ist eher klein gebaut.",
-    "Trägt häufig sehr ordentliche Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher weich als sportlich.",
-  ],
+"Dolores Umbridge": [
+  "Kleine Statur",
+  "Sehr gepflegt",
+  "Helle Kleidung",
+],
 
-  "Draco Malfoy": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig sehr ordentliche Kleidung.",
-    "Sein Haar wirkt meist auffällig hell und gepflegt.",
-  ],
+"Draco Malfoy": [
+  "Schlank",
+  "Helle Haare",
+  "Sehr gepflegt",
+],
 
-  "Fred Weasley": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig einfache oder einheitliche Kleidung.",
-    "Sein Erscheinungsbild ähnelt stark dem einer anderen Figur.",
-  ],
+"Fred Weasley": [
+  "Groß",
+  "Rötliche Haare",
+  "Schlanke Statur",
+],
 
-  "George Weasley": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig einfache oder einheitliche Kleidung.",
-    "Sein Erscheinungsbild ähnelt stark dem einer anderen Figur.",
-  ],
+"George Weasley": [
+  "Groß",
+  "Rötliche Haare",
+  "Schlanke Statur",
+],
 
-  "Ginny Weasley": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt meist relativ einfache Kleidung.",
-    "Ihr Haar fällt stärker auf als ihre Ausrüstung.",
-  ],
+"Ginny Weasley": [
+  "Schlank",
+  "Rötliche Haare",
+  "Einfache Kleidung",
+],
 
-  "Harry Potter": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig relativ einheitliche oder einfache Kleidung.",
-    "Im Gesichtsbereich gibt es ein wiederkehrendes auffälliges Detail.",
-  ],
+"Harry Potter": [
+  "Schlank",
+  "Dunkle Haare",
+  "Brille",
+],
 
-  "Hermine Granger": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt häufig eher ordentliche Kleidung.",
-    "Ihr Haar wirkt oft auffälliger als ihre Ausrüstung.",
-  ],
+"Hermine Granger": [
+  "Schlank",
+  "Dichtes Haar",
+  "Ordentliche Kleidung",
+],
 
-  "Lord Voldemort": [
-    "Wirkt eher groß und sehr schlank.",
-    "Trägt meistens lange und dunkle Kleidung.",
-    "Sein Gesicht unterscheidet sich deutlich von einem normalen Menschen.",
-  ],
+"Lord Voldemort": [
+  "Sehr schlank",
+  "Blasses Gesicht",
+  "Dunkle Robe",
+],
 
-  "Lucius Malfoy": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig sehr gepflegte und formelle Kleidung.",
-    "Sein Haar ist meist auffällig lang und hell.",
-  ],
+"Lucius Malfoy": [
+  "Groß",
+  "Lange Haare",
+  "Sehr gepflegt",
+],
 
-  "Luna Lovegood": [
-    "Wirkt eher klein und schlank.",
-    "Trägt häufig etwas ungewöhnlichere Kleidung.",
-    "Ihr Erscheinungsbild wirkt weniger streng als bei vielen anderen.",
-  ],
+"Luna Lovegood": [
+  "Schlank",
+  "Helle Haare",
+  "Ungewöhnlicher Stil",
+],
 
-  "Minerva McGonagall": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig lange und eher formelle Kleidung.",
-    "Ihr Haar wirkt meistens sehr ordentlich.",
-  ],
+"Minerva McGonagall": [
+  "Älter",
+  "Lange Kleidung",
+  "Sehr ordentlich",
+],
 
-  "Molly Weasley": [
-    "Ist eher klein bis durchschnittlich groß.",
-    "Trägt meist praktische und eher alltägliche Kleidung.",
-    "Ihr Erscheinungsbild wirkt weniger kampforientiert.",
-  ],
+"Molly Weasley": [
+  "Kräftigere Statur",
+  "Alltägliche Kleidung",
+  "Rötliche Haare",
+],
 
-  "Neville Longbottom": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt häufig relativ einheitliche Kleidung.",
-    "Hat meist wenig auffällige Ausrüstung am Körper.",
-  ],
+"Neville Longbottom": [
+  "Mittlere Statur",
+  "Ordentliche Kleidung",
+  "Jung",
+],
 
-  "Peter Pettigrew": [
-    "Wirkt eher klein und schmal gebaut.",
-    "Trägt meist unauffällige Kleidung.",
-    "Sein Erscheinungsbild wirkt eher unscheinbar.",
-  ],
+"Peter Pettigrew": [
+  "Kleine Statur",
+  "Unscheinbar",
+  "Ungepflegt",
+],
 
-  "Remus Lupin": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig eher schlichte Kleidung.",
-    "Sein äußeres Erscheinungsbild wirkt oft etwas mitgenommen.",
-  ],
+"Remus Lupin": [
+  "Schlank",
+  "Schlichte Kleidung",
+  "Mitgenommen",
+],
 
-  "Ron Weasley": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig relativ einfache Kleidung.",
-    "Sein Haar fällt stärker auf als seine Ausrüstung.",
-  ],
+"Ron Weasley": [
+  "Groß",
+  "Rötliche Haare",
+  "Schlanke Statur",
+],
 
-  "Rubeus Hagrid": [
-    "Ist deutlich größer und breiter als fast alle anderen.",
-    "Trägt meistens schwere oder robuste Kleidung.",
-    "Sein Haar und Bart verdecken einen großen Teil des Gesichts.",
-  ],
+"Rubeus Hagrid": [
+  "Extrem groß",
+  "Sehr breit",
+  "Viel Bart",
+],
 
-  "Severus Snape": [
-    "Wirkt eher groß und schlank.",
-    "Trägt fast ausschließlich dunkle Kleidung.",
-    "Sein Haar wirkt meist eher glatt und wenig aufwendig.",
-  ],
+"Severus Snape": [
+  "Sehr schlank",
+  "Dunkle Kleidung",
+  "Dunkle Haare",
+],
 
-  "Sirius Black": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig dunkle und eher lockere Kleidung.",
-    "Sein Haar wirkt oft länger und weniger ordentlich.",
-  ],
+"Sirius Black": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Längere Haare",
+],
 
-  "Viktor Krum": [
-    "Wirkt eher groß und athletisch gebaut.",
-    "Trägt häufig eher robuste oder einheitliche Kleidung.",
-    "Sein Erscheinungsbild wirkt sportlicher als bei vielen anderen.",
-  ],
+"Viktor Krum": [
+  "Athletisch",
+  "Kurze Haare",
+  "Sportlicher Look",
+],
 
-  "Alastor Moody": [
-  "Wirkt eher groß und kräftig gebaut.",
-  "Trägt häufig robuste und eher dunkle Kleidung.",
-  "Im Gesichtsbereich gibt es ein auffälliges Detail.",
+"Alastor Moody": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Auffälliges Auge",
 ],
 
 "Nymphadora Tonks": [
-  "Wirkt eher schlank und beweglich.",
-  "Trägt häufig praktische Kleidung.",
-  "Ihr äußeres Erscheinungsbild kann sich deutlich verändern.",
+  "Schlank",
+  "Praktische Kleidung",
+  "Auffällige Haare",
 ],
 
 "Kingsley Shacklebolt": [
-  "Wirkt eher groß und kräftig gebaut.",
-  "Trägt häufig sehr ordentliche Kleidung.",
-  "Sein Erscheinungsbild wirkt insgesamt eher ruhig und kontrolliert.",
+  "Groß",
+  "Kräftig gebaut",
+  "Sehr gepflegt",
 ],
 
 "Horace Slughorn": [
-  "Wirkt eher kräftig als athletisch gebaut.",
-  "Trägt häufig sehr ordentliche oder aufwendige Kleidung.",
-  "Sein Erscheinungsbild wirkt eher gepflegt als praktisch.",
+  "Kräftige Statur",
+  "Sehr gepflegt",
+  "Älter",
 ],
 
 "Gilderoy Lockhart": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig auffällig gepflegte Kleidung.",
-  "Sein äußeres Erscheinungsbild wirkt wichtiger als seine Ausrüstung.",
+  "Schlank",
+  "Sehr gepflegt",
+  "Auffällige Kleidung",
 ],
 
 "Fleur Delacour": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig sehr ordentliche Kleidung.",
-  "Ihr Erscheinungsbild wirkt eher leicht und elegant.",
+  "Schlank",
+  "Helle Haare",
+  "Eleganter Look",
 ],
 
 "Cho Chang": [
-  "Wirkt eher klein bis durchschnittlich groß.",
-  "Trägt häufig relativ einheitliche Kleidung.",
-  "Hat meist wenig auffällige Ausrüstung am Körper.",
+  "Schlank",
+  "Dunkle Haare",
+  "Ordentliche Kleidung",
 ],
 
 "Narcissa Malfoy": [
-  "Wirkt eher schlank und durchschnittlich groß.",
-  "Trägt häufig sehr gepflegte und formelle Kleidung.",
-  "Ihr Haar fällt stärker auf als ihre Ausrüstung.",
+  "Schlank",
+  "Sehr gepflegt",
+  "Helle Haare",
 ],
 
 "Barty Crouch Jr.": [
-  "Wirkt eher schlank und durchschnittlich groß.",
-  "Trägt meist relativ unauffällige Kleidung.",
-  "Sein äußeres Erscheinungsbild kann sehr unterschiedlich wirken.",
+  "Schlank",
+  "Unauffällige Kleidung",
+  "Dunkle Haare",
 ],
 
 "Fenrir Greyback": [
-  "Wirkt eher groß und kräftig gebaut.",
-  "Trägt häufig robuste und eher abgenutzte Kleidung.",
-  "Sein Gesicht wirkt auffälliger als seine Ausrüstung.",
+  "Kräftig gebaut",
+  "Abgenutzte Kleidung",
+  "Auffälliges Gesicht",
 ],
 
     // =========================
-  // DC
-  // =========================
+// DC
+// =========================
 
-  Aquaman: [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig auffällige oder robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher körperlich als technisch geprägt.",
-  ],
+"Aquaman": [
+  "Sehr kräftig",
+  "Längere Haare",
+  "Robuste Kleidung",
+],
 
-  Bane: [
-    "Ist deutlich größer und kräftiger als viele andere.",
-    "Trägt häufig schwere oder funktionale Kleidung.",
-    "Ein Teil seines Gesichts ist oft verdeckt.",
-  ],
+"Bane": [
+  "Extrem kräftig",
+  "Teilweise maskiert",
+  "Schwere Kleidung",
+],
 
-  Batgirl: [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt häufig körpernahe Schutzkleidung.",
-    "Ihr Gesicht ist teilweise verdeckt.",
-  ],
+"Batgirl": [
+  "Schlank",
+  "Körpernaher Anzug",
+  "Teilweise maskiert",
+],
 
-  Batman: [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt fast ausschließlich dunkle Kleidung.",
-    "Ein großer Teil seines Körpers ist von fester Ausrüstung bedeckt.",
-  ],
+"Batman": [
+  "Kräftig gebaut",
+  "Dunkle Rüstung",
+  "Teilweise maskiert",
+],
 
-  "Black Canary": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig dunkle oder körpernahe Kleidung.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Black Canary": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Helle Haare",
+],
 
-  Catwoman: [
-    "Wirkt eher schlank und sehr beweglich.",
-    "Trägt häufig eng anliegende Kleidung.",
-    "Ein Teil ihres Kopfes kann bedeckt sein.",
-  ],
+"Catwoman": [
+  "Sehr schlank",
+  "Körpernaher Anzug",
+  "Teilweise maskiert",
+],
 
-  Cyborg: [
-    "Ist eher groß und kräftig gebaut.",
-    "Ein großer Teil seines Körpers wirkt nicht natürlich.",
-    "Seine Körperoberfläche besteht sichtbar aus festen Materialien.",
-  ],
+"Cyborg": [
+  "Kräftig gebaut",
+  "Metallischer Körper",
+  "Technischer Look",
+],
 
-  Darkseid: [
-    "Ist deutlich größer und breiter als ein normaler Mensch.",
-    "Seine Körperform wirkt sehr massiv.",
-    "Seine Oberfläche wirkt eher hart als weich.",
-  ],
+"Darkseid": [
+  "Sehr groß",
+  "Sehr massiv",
+  "Harte Oberfläche",
+],
 
-  Deathstroke: [
-    "Wirkt groß und athletisch gebaut.",
-    "Trägt häufig relativ schwere Schutzkleidung.",
-    "Sein Gesicht ist bei Einsätzen meistens verdeckt.",
-  ],
+"Deathstroke": [
+  "Athletisch",
+  "Schwere Rüstung",
+  "Vollmaskiert",
+],
 
-  "Green Arrow": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt meist praktische Kleidung.",
-    "Hat häufig mehrere kleinere Ausrüstungsteile am Körper.",
-  ],
+"Green Arrow": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Viel Ausrüstung",
+],
 
-  "Green Lantern": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig sehr körpernahe Kleidung.",
-    "Sein Outfit wirkt insgesamt eher leicht als schwer gepanzert.",
-  ],
+"Green Lantern": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Leichte Ausrüstung",
+],
 
-  "Harley Quinn": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt häufig auffällige Kleidung.",
-    "Ihr Haar oder Kopfbereich fällt oft stärker auf als ihre Ausrüstung.",
-  ],
+"Harley Quinn": [
+  "Schlank",
+  "Auffällige Kleidung",
+  "Auffällige Haare",
+],
 
-  Joker: [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig auffällig ordentliche Kleidung.",
-    "Sein Gesicht besitzt meist mehrere markante Details.",
-  ],
+"Joker": [
+  "Sehr schlank",
+  "Elegante Kleidung",
+  "Auffälliges Gesicht",
+],
 
-  "Lex Luthor": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt häufig formelle Kleidung.",
-    "Sein Kopfbereich wirkt meist sehr schlicht.",
-  ],
+"Lex Luthor": [
+  "Groß",
+  "Formelle Kleidung",
+  "Kahler Kopf",
+],
 
-  "Mr. Freeze": [
-    "Wirkt mit seiner Ausrüstung eher breit und schwer.",
-    "Trägt häufig feste Schutzkleidung.",
-    "Der Kopfbereich ist oft teilweise von Ausrüstung umgeben.",
-  ],
+"Mr. Freeze": [
+  "Breite Statur",
+  "Schwere Rüstung",
+  "Bedeckter Kopf",
+],
 
-  Nightwing: [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt meist dunkle und sehr körpernahe Kleidung.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
+"Nightwing": [
+  "Athletisch",
+  "Dunkler Anzug",
+  "Schlanke Statur",
+],
 
-  Penguin: [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt häufig sehr formelle Kleidung.",
-    "Sein Erscheinungsbild wirkt weniger sportlich als bei vielen anderen.",
-  ],
+"Penguin": [
+  "Kleine Statur",
+  "Kräftig gebaut",
+  "Formelle Kleidung",
+],
 
-  "Poison Ivy": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig auffällige oder körpernahe Kleidung.",
-    "Ihr Haar fällt oft stärker auf als ihre Ausrüstung.",
-  ],
+"Poison Ivy": [
+  "Schlank",
+  "Auffällige Kleidung",
+  "Lange Haare",
+],
 
-  Robin: [
-    "Ist eher klein und schlank gebaut.",
-    "Trägt häufig körpernahe und leichte Kleidung.",
-    "Sein Outfit besitzt meist mehrere auffällige Details.",
-  ],
+"Robin": [
+  "Kleine Statur",
+  "Körpernaher Anzug",
+  "Leichte Kleidung",
+],
 
-  Shazam: [
-    "Wirkt groß und kräftig gebaut.",
-    "Trägt häufig auffällige körpernahe Kleidung.",
-    "Sein Outfit wirkt eher klassisch als technisch.",
-  ],
+"Shazam": [
+  "Sehr kräftig",
+  "Körpernaher Anzug",
+  "Auffällige Kleidung",
+],
 
-  Supergirl: [
-    "Wirkt eher klein bis durchschnittlich groß und schlank.",
-    "Trägt häufig auffällige körpernahe Kleidung.",
-    "Hat meist wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Supergirl": [
+  "Schlank",
+  "Helle Haare",
+  "Körpernaher Anzug",
+],
 
-  Superman: [
-    "Wirkt groß und deutlich athletisch gebaut.",
-    "Trägt häufig sehr körpernahe Kleidung.",
-    "Hat vergleichsweise wenig zusätzliche Ausrüstung.",
-  ],
+"Superman": [
+  "Sehr kräftig",
+  "Körpernaher Anzug",
+  "Dunkle Haare",
+],
 
-  "The Flash": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt fast vollständig körpernahe Kleidung.",
-    "Das Gesicht ist teilweise bedeckt.",
-  ],
+"The Flash": [
+  "Sehr schlank",
+  "Körpernaher Anzug",
+  "Teilweise maskiert",
+],
 
-  "The Riddler": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig eher auffällige Kleidung.",
-    "Sein Erscheinungsbild wirkt weniger körperlich geschützt als bei vielen anderen.",
-  ],
+"The Riddler": [
+  "Schlanke Statur",
+  "Auffällige Kleidung",
+  "Wenig Rüstung",
+],
 
-  "Wonder Woman": [
-    "Wirkt eher groß und athletisch gebaut.",
-    "Trägt meist relativ leichte Schutzkleidung.",
-    "Mehrere feste Elemente sind direkt am Körper sichtbar.",
-  ],
+"Wonder Woman": [
+  "Athletisch",
+  "Leichte Rüstung",
+  "Lange Haare",
+],
 
-  "Martian Manhunter": [
-  "Wirkt eher groß und kräftig gebaut.",
-  "Sein äußeres Erscheinungsbild wirkt nicht vollständig menschlich.",
-  "Trägt meist eher körpernahe Kleidung.",
+"Martian Manhunter": [
+  "Kräftig gebaut",
+  "Ungewöhnliche Haut",
+  "Körpernaher Anzug",
 ],
 
 "John Constantine": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig eher alltägliche oder leicht ungepflegte Kleidung.",
-  "Hat meist wenig schwere Ausrüstung am Körper.",
+  "Schlank",
+  "Alltägliche Kleidung",
+  "Ungepflegter Look",
 ],
 
 "Raven": [
-  "Wirkt eher klein bis durchschnittlich groß und schlank.",
-  "Trägt häufig dunkle und eher lockere Kleidung.",
-  "Ihr Kopfbereich ist teilweise öfter bedeckt.",
+  "Schlank",
+  "Dunkle Kleidung",
+  "Bedeckter Kopf",
 ],
 
 "Starfire": [
-  "Wirkt eher groß und schlank-athletisch.",
-  "Trägt häufig auffällige und körpernahe Kleidung.",
-  "Ihr äußeres Erscheinungsbild wirkt nicht vollständig menschlich.",
+  "Groß",
+  "Ungewöhnliche Haut",
+  "Körpernahe Kleidung",
 ],
 
 "Beast Boy": [
-  "Wirkt eher klein bis durchschnittlich groß.",
-  "Trägt meist leichte und praktische Kleidung.",
-  "Sein äußeres Erscheinungsbild besitzt ein ungewöhnliches Merkmal.",
+  "Schlank",
+  "Ungewöhnliche Haut",
+  "Leichte Kleidung",
 ],
 
 "Blue Beetle": [
-  "Wirkt eher schlank und athletisch.",
-  "Sein Körper kann fast vollständig von fester Ausrüstung bedeckt sein.",
-  "Das Gesicht ist bei Einsätzen häufig nicht sichtbar.",
+  "Athletisch",
+  "Ganzkörperrüstung",
+  "Verdecktes Gesicht",
 ],
 
 "Black Adam": [
-  "Wirkt groß und sehr kräftig gebaut.",
-  "Trägt häufig dunkle und körpernahe Kleidung.",
-  "Hat vergleichsweise wenig lose Ausrüstung am Körper.",
+  "Sehr kräftig",
+  "Dunkler Anzug",
+  "Kahler Kopf",
 ],
 
 "Lucifer Morningstar": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig sehr ordentliche oder elegante Kleidung.",
-  "Sein Erscheinungsbild wirkt meist weniger kampforientiert als seine tatsächliche Stärke.",
+  "Groß",
+  "Elegante Kleidung",
+  "Sehr gepflegt",
 ],
 
 "Scarecrow": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig dunkle oder abgenutzte Kleidung.",
-  "Das Gesicht ist teilweise oder vollständig verdeckt.",
+  "Sehr schlank",
+  "Abgenutzte Kleidung",
+  "Verdecktes Gesicht",
 ],
 
 "Two-Face": [
-  "Wirkt eher groß und durchschnittlich gebaut.",
-  "Trägt häufig sehr formelle Kleidung.",
-  "Im Gesichtsbereich gibt es ein deutlich auffälliges Merkmal.",
+  "Mittlere Statur",
+  "Formelle Kleidung",
+  "Auffälliges Gesicht",
 ],
 
     // =========================
-  // FLUCH DER KARIBIK
-  // =========================
+// FLUCH DER KARIBIK
+// =========================
 
-  "Angelica": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt meist praktische Kleidung mit mehreren Schichten.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
+"Angelica": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Dunkle Haare",
+],
 
-  "Barbossa": [
-    "Wirkt eher groß und durchschnittlich kräftig.",
-    "Trägt häufig mehrere robuste Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher rau als gepflegt.",
-  ],
+"Barbossa": [
+  "Kräftige Statur",
+  "Robuste Kleidung",
+  "Ungepflegter Look",
+],
 
-  "Blackbeard": [
-    "Wirkt groß und eher kräftig gebaut.",
-    "Trägt überwiegend dunkle und schwere Kleidung.",
-    "Sein Haar- und Bartbereich fällt stärker auf als seine Ausrüstung.",
-  ],
+"Blackbeard": [
+  "Kräftig gebaut",
+  "Dunkle Kleidung",
+  "Viel Bart",
+],
 
-  "Bootstrap Bill": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meist deutlich abgenutzte Kleidung.",
-    "Sein äußeres Erscheinungsbild wirkt eher mitgenommen.",
-  ],
+"Bootstrap Bill": [
+  "Schlank",
+  "Abgenutzte Kleidung",
+  "Mitgenommen",
+],
 
-  "Captain Teague": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt mehrere dunkle und robuste Kleidungsschichten.",
-    "Sein Gesicht wirkt durch Haare und Kopfbedeckung teilweise verdeckt.",
-  ],
+"Captain Teague": [
+  "Schlanke Statur",
+  "Dunkle Kleidung",
+  "Viel Haar",
+],
 
-  "Cotton": [
-    "Wirkt eher durchschnittlich groß und schlank.",
-    "Trägt einfache und eher abgenutzte Kleidung.",
-    "Im Gesichtsbereich gibt es ein auffälliges Detail.",
-  ],
+"Cotton": [
+  "Schlank",
+  "Abgenutzte Kleidung",
+  "Auffälliges Gesicht",
+],
 
-  "Cutler Beckett": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt meistens sehr ordentliche und formelle Kleidung.",
-    "Sein Erscheinungsbild wirkt kaum körperlich geschützt.",
-  ],
+"Cutler Beckett": [
+  "Kleine Statur",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Davy Jones": [
-    "Wirkt eher groß und kräftig.",
-    "Seine Körperoberfläche besitzt mehrere ungewöhnliche Strukturen.",
-    "Sein Gesicht unterscheidet sich stark von einem normalen Menschen.",
-  ],
+"Davy Jones": [
+  "Kräftig gebaut",
+  "Ungewöhnliche Haut",
+  "Auffälliges Gesicht",
+],
 
-  "Elizabeth Swann": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Ihre Kleidung kann sowohl leicht als auch deutlich aufwendiger wirken.",
-    "Trägt meist wenig feste Ausrüstung am Körper.",
-  ],
+"Elizabeth Swann": [
+  "Schlank",
+  "Aufwendige Kleidung",
+  "Wenig Ausrüstung",
+],
 
-  "Giselle": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig auffälligere Kleidung.",
-    "Ihr Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
-  ],
+"Giselle": [
+  "Schlank",
+  "Auffällige Kleidung",
+  "Gepflegter Look",
+],
 
-  "Ian Mercer": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt meistens eher ordentliche Kleidung.",
-    "Seine Ausrüstung wirkt funktional, aber nicht besonders schwer.",
-  ],
+"Ian Mercer": [
+  "Mittlere Statur",
+  "Ordentliche Kleidung",
+  "Praktische Ausrüstung",
+],
 
-  "Jack Sparrow": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt sehr viele unterschiedliche Kleidungsschichten.",
-    "Haare und kleinere Accessoires prägen sein Erscheinungsbild stark.",
-  ],
+"Jack Sparrow": [
+  "Schlank",
+  "Viele Schichten",
+  "Viele Accessoires",
+],
 
-  "James Norrington": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig sehr ordentliche oder einheitliche Kleidung.",
-    "Sein Erscheinungsbild wirkt strukturierter als bei vielen anderen.",
-  ],
+"James Norrington": [
+  "Groß",
+  "Ordentliche Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Joshamee Gibbs": [
-    "Wirkt eher durchschnittlich groß und kräftig.",
-    "Trägt meist lockere und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher praktisch als gepflegt.",
-  ],
+"Joshamee Gibbs": [
+  "Kräftige Statur",
+  "Robuste Kleidung",
+  "Ungepflegter Look",
+],
 
-  "Lieutenant Theodore Groves": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig sehr einheitliche und ordentliche Kleidung.",
-    "Hat meist wenig auffällige persönliche Ausrüstung.",
-  ],
+"Lieutenant Theodore Groves": [
+  "Schlank",
+  "Einheitliche Kleidung",
+  "Sehr ordentlich",
+],
 
-  "Marty": [
-    "Ist deutlich kleiner als fast alle anderen Figuren.",
-    "Trägt überwiegend einfache und praktische Kleidung.",
-    "Seine Körperproportionen fallen stärker auf als seine Ausrüstung.",
-  ],
+"Marty": [
+  "Sehr klein",
+  "Praktische Kleidung",
+  "Kompakte Statur",
+],
 
-  "Philip Swift": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meist schlichte und eher ordentliche Kleidung.",
-    "Hat vergleichsweise wenig sichtbare Ausrüstung.",
-  ],
+"Philip Swift": [
+  "Schlank",
+  "Schlichte Kleidung",
+  "Sehr ordentlich",
+],
 
-  "Pintel": [
-    "Wirkt eher durchschnittlich groß und kräftig.",
-    "Trägt meist abgenutzte und praktische Kleidung.",
-    "Sein Erscheinungsbild wirkt eher grob als gepflegt.",
-  ],
+"Pintel": [
+  "Kräftig gebaut",
+  "Abgenutzte Kleidung",
+  "Grober Look",
+],
 
-  "Ragetti": [
-    "Wirkt eher groß und sehr schlank.",
-    "Trägt einfache und eher abgenutzte Kleidung.",
-    "Im Gesichtsbereich gibt es ein auffälliges körperliches Detail.",
-  ],
+"Ragetti": [
+  "Sehr schlank",
+  "Abgenutzte Kleidung",
+  "Auffälliges Auge",
+],
 
-  "Scrum": [
-    "Wirkt eher durchschnittlich groß und kräftig.",
-    "Trägt meist mehrere lockere Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt wenig gepflegt.",
-  ],
+"Scrum": [
+  "Kräftige Statur",
+  "Lockere Kleidung",
+  "Ungepflegter Look",
+],
 
-  "Syrena": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt vergleichsweise wenig schwere Kleidung.",
-    "Ihr Erscheinungsbild wirkt weniger robust als bei vielen anderen.",
-  ],
+"Syrena": [
+  "Schlank",
+  "Leichte Kleidung",
+  "Helle Haut",
+],
 
-  "Tamara": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt eher leichte als schwere Kleidung.",
-    "Ihr äußeres Erscheinungsbild wirkt zunächst relativ unauffällig.",
-  ],
+"Tamara": [
+  "Schlank",
+  "Leichte Kleidung",
+  "Unauffälliger Look",
+],
 
-  "Tia Dalma": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt häufig mehrere lockere und ungewöhnliche Kleidungsschichten.",
-    "Haare und kleinere Details prägen ihr Erscheinungsbild stark.",
-  ],
+"Tia Dalma": [
+  "Schlank",
+  "Ungewöhnliche Kleidung",
+  "Wildes Haar",
+],
 
-  "Weatherby Swann": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meistens sehr ordentliche und formelle Kleidung.",
-    "Sein Erscheinungsbild wirkt kaum für körperliche Auseinandersetzungen ausgelegt.",
-  ],
+"Weatherby Swann": [
+  "Groß",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Will Turner": [
-    "Wirkt eher groß und schlank-athletisch.",
-    "Trägt meistens praktische Kleidung mit mehreren Schichten.",
-    "Hat vergleichsweise wenig schwere Schutzkleidung am Körper.",
-  ],
+"Will Turner": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Dunkle Haare",
+],
 
-  "Armando Salazar": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig dunkle und auffällige Kleidung.",
-  "Sein Gesicht wirkt ungewöhnlicher als seine Ausrüstung.",
+"Armando Salazar": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Auffälliges Gesicht",
 ],
 
 "Henry Turner": [
-  "Wirkt eher groß und schlank-athletisch.",
-  "Trägt meist praktische Kleidung mit mehreren Schichten.",
-  "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
+  "Athletisch",
+  "Praktische Kleidung",
+  "Jung",
 ],
 
 "Carina Smyth": [
-  "Wirkt eher schlank und durchschnittlich groß.",
-  "Trägt häufig ordentliche und eher leichte Kleidung.",
-  "Ihr Erscheinungsbild wirkt eher gepflegt als robust.",
+  "Schlank",
+  "Ordentliche Kleidung",
+  "Gepflegt",
 ],
 
 "Sao Feng": [
-  "Wirkt eher durchschnittlich groß und kräftig.",
-  "Trägt häufig mehrere aufwendige Kleidungsschichten.",
-  "Sein Erscheinungsbild wirkt eher kontrolliert als ungeordnet.",
+  "Kräftige Statur",
+  "Aufwendige Kleidung",
+  "Sehr gepflegt",
 ],
 
 "Maccus": [
-  "Wirkt groß und kräftig gebaut.",
-  "Trägt eher schwere und robuste Kleidung.",
-  "Sein äußeres Erscheinungsbild besitzt mehrere ungewöhnliche Merkmale.",
+  "Sehr kräftig",
+  "Schwere Kleidung",
+  "Ungewöhnliches Gesicht",
 ],
 
 "Mullroy": [
-  "Wirkt eher durchschnittlich groß und gebaut.",
-  "Trägt häufig einheitliche und ordentliche Kleidung.",
-  "Hat meist wenig auffällige persönliche Ausrüstung.",
+  "Mittlere Statur",
+  "Einheitliche Kleidung",
+  "Sehr ordentlich",
 ],
 
 "Murtogg": [
-  "Wirkt eher durchschnittlich groß und gebaut.",
-  "Trägt häufig einheitliche und praktische Kleidung.",
-  "Sein Erscheinungsbild wirkt eher schlicht.",
+  "Mittlere Statur",
+  "Einheitliche Kleidung",
+  "Schlichter Look",
 ],
 
 "Lieutenant Gillette": [
-  "Wirkt eher groß und schlank.",
-  "Trägt meistens sehr ordentliche und einheitliche Kleidung.",
-  "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
+  "Schlank",
+  "Einheitliche Kleidung",
+  "Sehr gepflegt",
 ],
 
 "Scarlett": [
-  "Wirkt eher schlank und durchschnittlich groß.",
-  "Trägt häufig auffällige und eher leichte Kleidung.",
-  "Ihr Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
+  "Schlank",
+  "Auffällige Kleidung",
+  "Gepflegter Look",
 ],
 
 "Jack the Monkey": [
-  "Ist deutlich kleiner als fast alle anderen Figuren.",
-  "Trägt nur sehr wenig sichtbare Kleidung oder Ausrüstung.",
-  "Seine Körperform unterscheidet sich deutlich von einem Menschen.",
+  "Extrem klein",
+  "Stark behaart",
+  "Kaum Kleidung",
 ],
 
     // =========================
-  // GAME OF THRONES
-  // =========================
+// GAME OF THRONES
+// =========================
 
-  "Arya Stark": [
-    "Ist eher klein und schlank gebaut.",
-    "Trägt häufig praktische und eher unauffällige Kleidung.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Arya Stark": [
+  "Kleine Statur",
+  "Praktische Kleidung",
+  "Schlank",
+],
 
-  "Bran Stark": [
-    "Wirkt eher schlank gebaut.",
-    "Trägt meistens einfache und eher warme Kleidung.",
-    "Sein Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
-  ],
+"Bran Stark": [
+  "Schlank",
+  "Warme Kleidung",
+  "Jung",
+],
 
-  "Brienne von Tarth": [
-    "Ist deutlich größer als viele andere Figuren.",
-    "Wirkt körperlich kräftig und athletisch.",
-    "Trägt häufig relativ schwere Schutzkleidung.",
-  ],
+"Brienne von Tarth": [
+  "Sehr groß",
+  "Kräftig gebaut",
+  "Schwere Rüstung",
+],
 
-  "Catelyn Stark": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig lange Kleidung mit mehreren Schichten.",
-    "Hat meist wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Catelyn Stark": [
+  "Schlank",
+  "Lange Kleidung",
+  "Wenig Ausrüstung",
+],
 
-  "Cersei Lannister": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr aufwendige und gepflegte Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher elegant als praktisch.",
-  ],
+"Cersei Lannister": [
+  "Schlank",
+  "Aufwendige Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Daenerys Targaryen": [
-    "Ist eher klein und schlank gebaut.",
-    "Trägt häufig leichte Kleidung mit mehreren Schichten.",
-    "Ihr Haar fällt meist stärker auf als ihre Ausrüstung.",
-  ],
+"Daenerys Targaryen": [
+  "Kleine Statur",
+  "Helle Haare",
+  "Leichte Kleidung",
+],
 
-  "Davos Seaworth": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt häufig robuste und eher schlichte Kleidung.",
-    "Sein Erscheinungsbild wirkt insgesamt eher praktisch.",
-  ],
+"Davos Seaworth": [
+  "Mittlere Statur",
+  "Robuste Kleidung",
+  "Schlichter Look",
+],
 
-  Gendry: [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig einfache und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt stärker körperlich als elegant.",
-  ],
+"Gendry": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Jüngerer Mann",
+],
 
-  "Gregor Clegane": [
-    "Ist außergewöhnlich groß und breit gebaut.",
-    "Trägt häufig sehr schwere Schutzkleidung.",
-    "Seine Silhouette wirkt deutlich massiver als bei fast allen anderen.",
-  ],
+"Gregor Clegane": [
+  "Extrem groß",
+  "Extrem breit",
+  "Schwere Rüstung",
+],
 
-  "Jaime Lannister": [
-    "Wirkt eher groß und athletisch gebaut.",
-    "Trägt häufig ordentliche oder feste Kleidung.",
-    "Sein äußeres Erscheinungsbild kann sich im Laufe der Zeit deutlich verändern.",
-  ],
+"Jaime Lannister": [
+  "Athletisch",
+  "Gepflegter Look",
+  "Helle Haare",
+],
 
-  "Jon Snow": [
-    "Wirkt eher durchschnittlich groß und athletisch.",
-    "Trägt häufig dunkle und schwere Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher robust als elegant.",
-  ],
+"Jon Snow": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Dunkle Haare",
+],
 
-  "Jorah Mormont": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig feste oder robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt deutlich kampferprobt.",
-  ],
+"Jorah Mormont": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Älter",
+],
 
-  "Margaery Tyrell": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr gepflegte und aufwendige Kleidung.",
-    "Hat normalerweise wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Margaery Tyrell": [
+  "Schlank",
+  "Aufwendige Kleidung",
+  "Sehr gepflegt",
+],
 
-  Melisandre: [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig lange Kleidung in ähnlichen Farbtönen.",
-    "Ihr Erscheinungsbild wirkt eher elegant als praktisch.",
-  ],
+"Melisandre": [
+  "Schlank",
+  "Lange Kleidung",
+  "Rötliche Haare",
+],
 
-  "Ned Stark": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig schwere und eher schlichte Kleidung.",
-    "Sein Erscheinungsbild wirkt insgesamt wenig auffällig.",
-  ],
+"Ned Stark": [
+  "Kräftig gebaut",
+  "Schwere Kleidung",
+  "Dunkle Haare",
+],
 
-  "Olenna Tyrell": [
-    "Wirkt eher schmal gebaut.",
-    "Trägt häufig sehr ordentliche und aufwendige Kleidung.",
-    "Ihr Kopfbereich ist teilweise von Kleidung oder Schmuck umgeben.",
-  ],
+"Olenna Tyrell": [
+  "Älter",
+  "Aufwendige Kleidung",
+  "Bedeckter Kopf",
+],
 
-  "Petyr Baelish": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr ordentliche Kleidung.",
-    "Hat normalerweise kaum schwere Ausrüstung am Körper.",
-  ],
+"Petyr Baelish": [
+  "Schlanke Statur",
+  "Ordentliche Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Robb Stark": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig robuste Kleidung mit mehreren Schichten.",
-    "Sein Erscheinungsbild wirkt eher praktisch als auffällig.",
-  ],
+"Robb Stark": [
+  "Athletisch",
+  "Robuste Kleidung",
+  "Dunkle Haare",
+],
 
-  "Samwell Tarly": [
-    "Wirkt körperlich eher kräftig als athletisch.",
-    "Trägt häufig dunkle und schwere Kleidungsschichten.",
-    "Seine Ausrüstung wirkt meist weniger umfangreich als bei anderen Kämpfern.",
-  ],
+"Samwell Tarly": [
+  "Kräftige Statur",
+  "Dunkle Kleidung",
+  "Wenig Rüstung",
+],
 
-  "Sandor Clegane": [
-    "Ist deutlich größer und kräftiger als viele andere.",
-    "Trägt häufig schwere und robuste Kleidung.",
-    "Im Gesichtsbereich gibt es ein auffälliges körperliches Merkmal.",
-  ],
+"Sandor Clegane": [
+  "Sehr groß",
+  "Kräftig gebaut",
+  "Auffälliges Gesicht",
+],
 
-  "Sansa Stark": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig lange und sehr gepflegte Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher elegant als kampforientiert.",
-  ],
+"Sansa Stark": [
+  "Groß",
+  "Lange Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Theon Greyjoy": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig dunkle und praktische Kleidung.",
-    "Sein äußeres Erscheinungsbild verändert sich im Laufe der Zeit deutlich.",
-  ],
+"Theon Greyjoy": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Mitgenommener Look",
+],
 
-  Tormund: [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig schwere und robuste Kleidung.",
-    "Haare und Bart prägen sein Erscheinungsbild stärker als seine Ausrüstung.",
-  ],
+"Tormund": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Rötlicher Bart",
+],
 
-  "Tyrion Lannister": [
-    "Ist deutlich kleiner als die meisten anderen Figuren.",
-    "Trägt häufig eher ordentliche Kleidung.",
-    "Seine Körpergröße fällt stärker auf als seine Ausrüstung.",
-  ],
+"Tyrion Lannister": [
+  "Sehr klein",
+  "Ordentliche Kleidung",
+  "Kräftige Statur",
+],
 
-  Varys: [
-    "Wirkt körperlich eher durchschnittlich gebaut.",
-    "Trägt häufig lange und lockere Kleidung.",
-    "Sein Kopfbereich wirkt meist sehr schlicht.",
-  ],
+"Varys": [
+  "Mittlere Statur",
+  "Lange Kleidung",
+  "Kahler Kopf",
+],
 
-  "Night King": [
-  "Wirkt eher groß und schlank.",
-  "Sein äußeres Erscheinungsbild wirkt nicht menschlich.",
-  "Trägt häufig dunkle und eher feste Kleidung.",
+"Night King": [
+  "Groß",
+  "Unmenschliche Haut",
+  "Dunkle Kleidung",
 ],
 
 "Ramsay Bolton": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig dunkle und praktische Kleidung.",
-  "Sein Erscheinungsbild wirkt eher unauffällig als auffällig.",
+  "Schlank",
+  "Dunkle Kleidung",
+  "Unauffälliger Look",
 ],
 
 "Tywin Lannister": [
-  "Wirkt eher groß und schlank.",
-  "Trägt häufig sehr ordentliche und aufwendige Kleidung.",
-  "Sein Erscheinungsbild wirkt eher formell als kampforientiert.",
+  "Groß",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
 ],
 
 "Bronn": [
-  "Wirkt eher groß und athletisch gebaut.",
-  "Trägt häufig praktische und robuste Kleidung.",
-  "Hat meist mehrere kleinere Ausrüstungsteile am Körper.",
+  "Athletisch",
+  "Robuste Kleidung",
+  "Viel Ausrüstung",
 ],
 
 "Stannis Baratheon": [
-  "Wirkt eher groß und kräftig gebaut.",
-  "Trägt häufig dunkle und eher feste Kleidung.",
-  "Sein Erscheinungsbild wirkt insgesamt eher streng und schlicht.",
+  "Kräftig gebaut",
+  "Dunkle Kleidung",
+  "Strenger Look",
 ],
 
 "Khal Drogo": [
-  "Ist eher groß und sehr kräftig gebaut.",
-  "Trägt vergleichsweise wenig schwere Kleidung.",
-  "Haare und Körperbau prägen sein Erscheinungsbild stark.",
+  "Sehr kräftig",
+  "Wenig Kleidung",
+  "Lange Haare",
 ],
 
 "Missandei": [
-  "Wirkt eher klein und schlank.",
-  "Trägt häufig leichte und eher elegante Kleidung.",
-  "Hat meistens kaum sichtbare Ausrüstung am Körper.",
+  "Kleine Statur",
+  "Leichte Kleidung",
+  "Sehr gepflegt",
 ],
 
 "Grey Worm": [
-  "Wirkt eher groß und athletisch gebaut.",
-  "Trägt häufig eher einheitliche und feste Kleidung.",
-  "Sein Erscheinungsbild wirkt stark auf Bewegung ausgelegt.",
+  "Athletisch",
+  "Einheitliche Kleidung",
+  "Leichte Rüstung",
 ],
 
 "Ygritte": [
-  "Wirkt eher schlank und beweglich.",
-  "Trägt häufig schwere und robuste Kleidungsschichten.",
-  "Ihr Erscheinungsbild wirkt eher praktisch als gepflegt.",
+  "Schlank",
+  "Robuste Kleidung",
+  "Rötliche Haare",
 ],
 
 "Hodor": [
-  "Ist deutlich größer und breiter als viele andere.",
-  "Trägt meist einfache und robuste Kleidung.",
-  "Seine Körpergröße fällt stärker auf als seine Ausrüstung.",
+  "Extrem groß",
+  "Sehr breit",
+  "Einfache Kleidung",
 ],
       // =========================
-  // HERR DER RINGE
-  // =========================
+// HERR DER RINGE
+// =========================
 
-  "Frodo Baggins": [
-    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
-    "Trägt meistens einfache und praktische Kleidung.",
-    "Wirkt körperlich eher schmal als kräftig.",
-  ],
+"Frodo Baggins": [
+  "Sehr klein",
+  "Schlanke Statur",
+  "Einfache Kleidung",
+],
 
-  "Samwise Gamgee": [
-    "Ist eher klein und etwas kräftiger gebaut.",
-    "Trägt meistens robuste und einfache Kleidung.",
-    "Hat häufig mehrere kleinere Dinge bei sich.",
-  ],
+"Samwise Gamgee": [
+  "Sehr klein",
+  "Kräftige Statur",
+  "Robuste Kleidung",
+],
 
-  "Gandalf": [
-    "Ist eher groß und schlank gebaut.",
-    "Trägt meistens lange und lockere Kleidung.",
-    "Haare und Bart prägen sein Erscheinungsbild stark.",
-  ],
+"Gandalf": [
+  "Sehr groß",
+  "Lange Kleidung",
+  "Langer Bart",
+],
 
-  "Aragorn": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt häufig dunkle und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher praktisch als gepflegt.",
-  ],
+"Aragorn": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Ungepflegter Look",
+],
 
-  "Legolas": [
-    "Ist eher groß und sehr schlank gebaut.",
-    "Trägt meist leichte Kleidung mit viel Bewegungsfreiheit.",
-    "Sein Haar fällt stärker auf als seine Schutzkleidung.",
-  ],
+"Legolas": [
+  "Sehr schlank",
+  "Helle Haare",
+  "Leichte Kleidung",
+],
 
-  "Gimli": [
-    "Ist deutlich kleiner und breiter als viele andere.",
-    "Trägt häufig schwere und robuste Kleidung.",
-    "Bart und Haare verdecken einen großen Teil seines Gesichts.",
-  ],
+"Gimli": [
+  "Sehr klein",
+  "Sehr breit",
+  "Viel Bart",
+],
 
-  "Boromir": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig mehrere feste Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher schwer als leicht.",
-  ],
+"Boromir": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Schwere Ausrüstung",
+],
 
-  "Merry": [
-    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
-    "Trägt meistens einfache Kleidung.",
-    "Wirkt körperlich eher schmal und leicht.",
-  ],
+"Merry": [
+  "Sehr klein",
+  "Schlank",
+  "Einfache Kleidung",
+],
 
-  "Pippin": [
-    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
-    "Trägt meist eher einfache und lockere Kleidung.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
+"Pippin": [
+  "Sehr klein",
+  "Schlank",
+  "Lockere Kleidung",
+],
 
-  "Gollum": [
-    "Ist eher klein und sehr schmal gebaut.",
-    "Trägt nur sehr wenig sichtbare Kleidung.",
-    "Seine Körperhaltung wirkt häufig ungewöhnlich.",
-  ],
+"Gollum": [
+  "Sehr schlank",
+  "Wenig Kleidung",
+  "Gebückte Haltung",
+],
 
-  "Sauron": [
-    "Wirkt deutlich größer und massiver als ein normaler Mensch.",
-    "Der Körper ist größtenteils von festen Materialien bedeckt.",
-    "Das Gesicht ist kaum oder gar nicht sichtbar.",
-  ],
+"Sauron": [
+  "Extrem groß",
+  "Schwere Rüstung",
+  "Verdecktes Gesicht",
+],
 
-  "Saruman": [
-    "Ist eher groß und schlank.",
-    "Trägt meistens lange und lockere Kleidung.",
-    "Sein Haar und Bart sind auffälliger als seine Ausrüstung.",
-  ],
+"Saruman": [
+  "Groß",
+  "Helle Kleidung",
+  "Langer Bart",
+],
 
-  "Galadriel": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig lange und sehr leichte Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher elegant als robust.",
-  ],
+"Galadriel": [
+  "Schlank",
+  "Helle Haare",
+  "Elegante Kleidung",
+],
 
-  "Elrond": [
-    "Wirkt eher groß und schlank gebaut.",
-    "Trägt häufig lange und sehr ordentliche Kleidung.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Elrond": [
+  "Schlank",
+  "Lange Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Arwen": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig lange und aufwendige Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher leicht als kampforientiert.",
-  ],
+"Arwen": [
+  "Schlank",
+  "Lange Kleidung",
+  "Dunkle Haare",
+],
 
-  "Éowyn": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt je nach Situation leichte oder festere Kleidung.",
-    "Ihr Haar fällt häufig stärker auf als ihre Ausrüstung.",
-  ],
+"Éowyn": [
+  "Schlank",
+  "Helle Haare",
+  "Leichte Kleidung",
+],
 
-  "Théoden": [
-    "Wirkt eher groß und durchschnittlich kräftig.",
-    "Trägt häufig mehrere schwere Kleidungsschichten.",
-    "Sein Haar- und Bartbereich fällt deutlich auf.",
-  ],
+"Théoden": [
+  "Älter",
+  "Kräftige Statur",
+  "Helle Haare",
+],
 
-  "Faramir": [
-    "Wirkt eher groß und athletisch gebaut.",
-    "Trägt häufig robuste und eher unauffällige Kleidung.",
-    "Sein Outfit ist stärker auf Bewegung als auf Eleganz ausgelegt.",
-  ],
+"Faramir": [
+  "Athletisch",
+  "Robuste Kleidung",
+  "Dunkle Haare",
+],
 
-  "Denethor": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig lange und eher formelle Kleidung.",
-    "Hat meistens wenig sichtbare körperliche Ausrüstung.",
-  ],
+"Denethor": [
+  "Schlank",
+  "Formelle Kleidung",
+  "Älter",
+],
 
-  "Éomer": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig feste und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt deutlich kampforientiert.",
-  ],
+"Éomer": [
+  "Kräftig gebaut",
+  "Robuste Rüstung",
+  "Längere Haare",
+],
 
-  "Treebeard": [
-    "Ist deutlich größer als fast alle anderen Figuren.",
-    "Seine Oberfläche wirkt sehr ungleichmäßig.",
-    "Normale Kleidung ist äußerlich kaum erkennbar.",
-  ],
+"Treebeard": [
+  "Extrem groß",
+  "Unebene Oberfläche",
+  "Keine Kleidung",
+],
 
-  "Witch-king of Angmar": [
-    "Wirkt eher groß und breit.",
-    "Der Körper ist fast vollständig von dunklen Materialien bedeckt.",
-    "Das Gesicht ist normalerweise nicht sichtbar.",
-  ],
+"Witch-king of Angmar": [
+  "Groß",
+  "Dunkle Rüstung",
+  "Verdecktes Gesicht",
+],
 
-  "Gríma Wormtongue": [
-    "Wirkt eher schlank und wenig kräftig.",
-    "Trägt häufig dunkle und lange Kleidung.",
-    "Sein Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
-  ],
+"Gríma Wormtongue": [
+  "Sehr schlank",
+  "Dunkle Kleidung",
+  "Blasser Look",
+],
 
-  "Haldir": [
-    "Wirkt eher groß und schlank.",
-    "Trägt leichte, aber teilweise feste Kleidung.",
-    "Sein Erscheinungsbild wirkt insgesamt sehr ordentlich.",
-  ],
+"Haldir": [
+  "Sehr schlank",
+  "Helle Haare",
+  "Ordentliche Kleidung",
+],
 
-  "Bilbo Baggins": [
-    "Ist deutlich kleiner als ein durchschnittlicher Mensch.",
-    "Trägt meistens eher ordentliche und einfache Kleidung.",
-    "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
-  ],
-
-    // =========================
-  // DER HOBBIT
-  // =========================
-
-  "Thorin Oakenshield": [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt häufig mehrere robuste Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher schwer als leicht.",
-  ],
-
-  Balin: [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt häufig warme und robuste Kleidung.",
-    "Haare und Bart prägen sein Erscheinungsbild stark.",
-  ],
-
-  Dwalin: [
-    "Ist eher klein, aber sehr breit gebaut.",
-    "Trägt häufig schwere und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt deutlich kräftiger als bei vielen anderen.",
-  ],
-
-  "Fíli": [
-    "Ist eher klein und athletisch gebaut.",
-    "Trägt meist praktische Kleidung mit mehreren Schichten.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
-
-  "Kíli": [
-    "Ist eher klein und schlank-athletisch.",
-    "Trägt häufig eher leichte und praktische Kleidung.",
-    "Sein Erscheinungsbild wirkt beweglicher als bei vielen anderen.",
-  ],
-
-  Bofur: [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt meist robuste und eher lockere Kleidung.",
-    "Sein Kopfbereich ist häufig teilweise bedeckt.",
-  ],
-
-  Bombur: [
-    "Ist eher klein und sehr breit gebaut.",
-    "Trägt häufig mehrere schwere Kleidungsschichten.",
-    "Seine Körperform fällt stärker auf als seine Ausrüstung.",
-  ],
-
-  Bifur: [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt häufig robuste und einfache Kleidung.",
-    "Im Kopfbereich gibt es ein auffälliges Detail.",
-  ],
-
-  "Óin": [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt meistens mehrere warme Kleidungsschichten.",
-    "Bart und Haare prägen sein Erscheinungsbild stark.",
-  ],
-
-  "Glóin": [
-    "Ist eher klein und breit gebaut.",
-    "Trägt häufig schwere und robuste Kleidung.",
-    "Sein Bart fällt stärker auf als seine Ausrüstung.",
-  ],
-
-  Nori: [
-    "Ist eher klein und schlank gebaut.",
-    "Trägt häufig mehrere praktische Kleidungsschichten.",
-    "Sein Haar wirkt auffälliger als bei vielen anderen.",
-  ],
-
-  Dori: [
-    "Ist eher klein und kräftig gebaut.",
-    "Trägt meist mehrere ordentliche Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher gepflegt als rau.",
-  ],
-
-  Ori: [
-    "Ist eher klein und schmal gebaut.",
-    "Trägt meist eher leichte und einfache Kleidung.",
-    "Wirkt körperlich weniger kräftig als viele andere.",
-  ],
-
-  Bard: [
-    "Wirkt eher groß und schlank-athletisch.",
-    "Trägt häufig robuste und eher unauffällige Kleidung.",
-    "Sein Erscheinungsbild wirkt eher praktisch als auffällig.",
-  ],
-
-  Thranduil: [
-    "Wirkt eher groß und sehr schlank.",
-    "Trägt häufig lange und aufwendige Kleidung.",
-    "Sein Erscheinungsbild wirkt deutlich eleganter als bei vielen anderen.",
-  ],
-
-  Tauriel: [
-    "Wirkt eher schlank und sehr beweglich.",
-    "Trägt meist leichte und körpernahe Kleidung.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
-
-  Azog: [
-    "Ist deutlich größer und kräftiger als viele andere.",
-    "Sein Körper wirkt sehr breit und robust.",
-    "Seine Körperoberfläche besitzt mehrere auffällige Merkmale.",
-  ],
-
-  Bolg: [
-    "Ist groß und sehr kräftig gebaut.",
-    "Trägt häufig schwere und grobe Ausrüstung.",
-    "Sein Erscheinungsbild wirkt insgesamt sehr massiv.",
-  ],
-
-  Smaug: [
-    "Ist deutlich größer als fast alle anderen Figuren.",
-    "Seine Körperoberfläche wirkt hart und ungleichmäßig.",
-    "Normale Kleidung ist äußerlich nicht erkennbar.",
-  ],
-
-  Beorn: [
-    "Ist eher groß und sehr kräftig gebaut.",
-    "Trägt meist eher einfache und robuste Kleidung.",
-    "Haare und Bart fallen stärker auf als seine Ausrüstung.",
-  ],
-
-  Radagast: [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig mehrere lange und lockere Kleidungsschichten.",
-    "Sein Erscheinungsbild wirkt eher ungeordnet als gepflegt.",
-  ],
-
-  "Master of Lake-town": [
-    "Wirkt eher durchschnittlich groß und kräftig.",
-    "Trägt häufig auffällige und eher formelle Kleidung.",
-    "Sein Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
-  ],
-
-  Alfrid: [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt meist eher ordentliche Kleidung.",
-    "Sein Erscheinungsbild wirkt körperlich wenig robust.",
-  ],
-
-  "Dáin Ironfoot": [
-    "Ist eher klein und sehr kräftig gebaut.",
-    "Trägt häufig schwere und feste Ausrüstung.",
-    "Seine Silhouette wirkt deutlich breiter als bei vielen anderen.",
-  ],
-
-  Necromancer: [
-    "Wirkt eher groß und schlank.",
-    "Sein Körper ist häufig von dunklen Formen umgeben.",
-    "Normale Kleidung ist nur schwer eindeutig zu erkennen.",
-  ],
+"Bilbo Baggins": [
+  "Sehr klein",
+  "Ordentliche Kleidung",
+  "Älter",
+],
 
     // =========================
-  // THE BOYS
-  // =========================
+// DER HOBBIT
+// =========================
 
-  Homelander: [
-    "Wirkt groß und athletisch gebaut.",
-    "Trägt häufig sehr körpernahe Kleidung.",
-    "Sein Erscheinungsbild wirkt eher sauber und auffällig.",
-  ],
+"Thorin Oakenshield": [
+  "Kleine Statur",
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+],
 
-  "Billy Butcher": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig dunkle und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher rau als gepflegt.",
-  ],
+"Balin": [
+  "Kleine Statur",
+  "Kräftig gebaut",
+  "Heller Bart",
+],
 
-  "Hughie Campbell": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meistens eher alltägliche Kleidung.",
-    "Hat vergleichsweise wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Dwalin": [
+  "Kleine Statur",
+  "Sehr breit",
+  "Kahler Kopf",
+],
 
-  Starlight: [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig auffällige und körpernahe Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher hell als düster.",
-  ],
+"Fíli": [
+  "Kleine Statur",
+  "Athletisch",
+  "Helle Haare",
+],
 
-  "Queen Maeve": [
-    "Wirkt groß und athletisch gebaut.",
-    "Trägt häufig körpernahe Schutzkleidung.",
-    "Ihr Outfit wirkt eher fest als alltäglich.",
-  ],
+"Kíli": [
+  "Kleine Statur",
+  "Schlank",
+  "Dunkle Haare",
+],
 
-  "A-Train": [
-    "Wirkt eher schlank und sehr athletisch.",
-    "Trägt meist eng anliegende Kleidung.",
-    "Sein Outfit wirkt stark auf Beweglichkeit ausgelegt.",
-  ],
+"Bofur": [
+  "Kleine Statur",
+  "Kräftig gebaut",
+  "Bedeckter Kopf",
+],
 
-  "The Deep": [
-    "Wirkt groß und athletisch gebaut.",
-    "Trägt häufig sehr körpernahe Kleidung.",
-    "Sein äußeres Erscheinungsbild wirkt eher glatt als robust.",
-  ],
+"Bombur": [
+  "Kleine Statur",
+  "Sehr breit",
+  "Kräftige Statur",
+],
 
-  "Black Noir": [
-    "Wirkt eher groß und athletisch.",
-    "Trägt fast ausschließlich dunkle Kleidung.",
-    "Das Gesicht ist normalerweise vollständig verdeckt.",
-  ],
+"Bifur": [
+  "Kleine Statur",
+  "Robuste Kleidung",
+  "Auffälliger Kopf",
+],
 
-  "Soldier Boy": [
-    "Wirkt groß und kräftig gebaut.",
-    "Trägt häufig feste und eher robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher klassisch als modern.",
-  ],
+"Óin": [
+  "Kleine Statur",
+  "Älter",
+  "Viel Bart",
+],
 
-  Stormfront: [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig dunkle und körpernahe Kleidung.",
-    "Hat vergleichsweise wenig lose Ausrüstung am Körper.",
-  ],
+"Glóin": [
+  "Kleine Statur",
+  "Sehr breit",
+  "Rötlicher Bart",
+],
 
-  Kimiko: [
-    "Wirkt eher klein und schlank.",
-    "Trägt häufig einfache und praktische Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher unauffällig.",
-  ],
+"Nori": [
+  "Kleine Statur",
+  "Schlank",
+  "Auffällige Haare",
+],
 
-  Frenchie: [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig lockere oder dunkle Kleidung.",
-    "Sein Erscheinungsbild wirkt eher individuell als ordentlich.",
-  ],
+"Dori": [
+  "Kleine Statur",
+  "Kräftig gebaut",
+  "Sehr gepflegt",
+],
 
-  "Mother's Milk": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt meistens praktische und relativ schlichte Kleidung.",
-    "Sein Erscheinungsbild wirkt insgesamt eher robust.",
-  ],
+"Ori": [
+  "Kleine Statur",
+  "Sehr schlank",
+  "Junger Look",
+],
 
-  "Victoria Neuman": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr ordentliche oder formelle Kleidung.",
-    "Hat meist wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Bard": [
+  "Athletisch",
+  "Robuste Kleidung",
+  "Dunkle Haare",
+],
 
-  "Ashley Barrett": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr gepflegte Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher geschäftlich als körperlich.",
-  ],
+"Thranduil": [
+  "Sehr schlank",
+  "Helle Haare",
+  "Elegante Kleidung",
+],
 
-  "Stan Edgar": [
-    "Wirkt eher durchschnittlich groß und schlank.",
-    "Trägt meistens sehr formelle Kleidung.",
-    "Sein Erscheinungsbild wirkt kaum kampforientiert.",
-  ],
+"Tauriel": [
+  "Sehr schlank",
+  "Leichte Kleidung",
+  "Rötliche Haare",
+],
 
-  Ryan: [
-    "Ist kleiner und schmaler gebaut als viele andere Figuren.",
-    "Trägt überwiegend normale Alltagskleidung.",
-    "Hat meistens keinerlei schwere Ausrüstung am Körper.",
-  ],
+"Azog": [
+  "Sehr groß",
+  "Sehr kräftig",
+  "Helle Haut",
+],
 
-  Lamplighter: [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig dunkle Kleidung.",
-    "Sein Outfit wirkt eher funktional als auffällig.",
-  ],
+"Bolg": [
+  "Sehr groß",
+  "Sehr kräftig",
+  "Schwere Ausrüstung",
+],
 
-  Translucent: [
-    "Wirkt körperlich eher durchschnittlich gebaut.",
-    "Trägt meist wenig auffällige Kleidung oder Ausrüstung.",
-    "Sein äußeres Erscheinungsbild kann sich stark verändern.",
-  ],
+"Smaug": [
+  "Extrem groß",
+  "Harte Oberfläche",
+  "Keine Kleidung",
+],
 
-  Mesmer: [
-    "Wirkt eher durchschnittlich groß und gebaut.",
-    "Trägt meistens normale Alltagskleidung.",
-    "Sein Erscheinungsbild wirkt wenig kampforientiert.",
-  ],
+"Beorn": [
+  "Sehr groß",
+  "Sehr kräftig",
+  "Viel Haar",
+],
 
-  Firecracker: [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig auffällige und körpernahe Kleidung.",
-    "Ihr Outfit besitzt mehrere deutlich sichtbare Details.",
-  ],
+"Radagast": [
+  "Schlank",
+  "Lange Kleidung",
+  "Ungepflegter Look",
+],
 
-  "Sister Sage": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt meistens moderne oder eher ordentliche Kleidung.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
+"Master of Lake-town": [
+  "Kräftige Statur",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Tek Knight": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig sehr ordentliche oder auffällige Kleidung.",
-    "Sein Erscheinungsbild wirkt eher gepflegt als robust.",
-  ],
+"Alfrid": [
+  "Schlanke Statur",
+  "Ordentliche Kleidung",
+  "Unauffälliger Look",
+],
 
-  Popclaw: [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig körpernahe oder sportliche Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher leicht als schwer ausgerüstet.",
-  ],
+"Dáin Ironfoot": [
+  "Kleine Statur",
+  "Sehr kräftig",
+  "Schwere Rüstung",
+],
 
-  "Love Sausage": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt meistens vergleichsweise einfache Kleidung.",
-    "Sein Erscheinungsbild wirkt körperlich auffälliger als seine Ausrüstung.",
-  ],
-
-    // =========================
-  // THE WALKING DEAD
-  // =========================
-
-  "Rick Grimes": [
-    "Wirkt eher groß und durchschnittlich kräftig.",
-    "Trägt häufig praktische und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher funktional als auffällig.",
-  ],
-
-  "Daryl Dixon": [
-    "Wirkt eher groß und schlank-athletisch.",
-    "Trägt häufig dunkle und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher rau als gepflegt.",
-  ],
-
-  Michonne: [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt meist praktische Kleidung mit viel Bewegungsfreiheit.",
-    "Hat häufig mehrere Ausrüstungsteile direkt am Körper.",
-  ],
-
-  Negan: [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig dunkle und eher robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt meist ziemlich markant.",
-  ],
-
-  "Glenn Rhee": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt meistens leichte und praktische Kleidung.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
-
-  "Maggie Greene": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig praktische und eher schlichte Kleidung.",
-    "Ihr Erscheinungsbild wirkt insgesamt eher funktional.",
-  ],
-
-  "Carol Peletier": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt meistens einfache und praktische Kleidung.",
-    "Hat vergleichsweise wenig auffällige Ausrüstung.",
-  ],
-
-  "Carl Grimes": [
-    "Ist eher klein und schmal gebaut.",
-    "Trägt häufig einfache und praktische Kleidung.",
-    "Sein Kopfbereich ist teilweise öfter bedeckt.",
-  ],
-
-  "Shane Walsh": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig praktische Kleidung.",
-    "Sein Erscheinungsbild wirkt eher robust als elegant.",
-  ],
-
-  "Hershel Greene": [
-    "Wirkt eher groß und schlank.",
-    "Trägt meistens einfache und eher klassische Kleidung.",
-    "Sein Haar- und Bartbereich fällt stärker auf als seine Ausrüstung.",
-  ],
-
-  "The Governor": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt häufig praktische oder eher ordentliche Kleidung.",
-    "Im Gesichtsbereich gibt es ein auffälliges Detail.",
-  ],
-
-  "Abraham Ford": [
-    "Wirkt groß und kräftig gebaut.",
-    "Trägt häufig robuste und funktionale Kleidung.",
-    "Sein Haar fällt oft stärker auf als seine Ausrüstung.",
-  ],
-
-  "Rosita Espinosa": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig körpernahe oder praktische Kleidung.",
-    "Hat meist mehrere kleinere Ausrüstungsteile am Körper.",
-  ],
-
-  "Eugene Porter": [
-    "Wirkt eher durchschnittlich groß und kräftig.",
-    "Trägt meistens eher einfache Kleidung.",
-    "Sein Haar gehört zu den auffälligeren äußeren Merkmalen.",
-  ],
-
-  "Sasha Williams": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig praktische und eher dunkle Kleidung.",
-    "Hat meist wenig schwere Schutzkleidung am Körper.",
-  ],
-
-  "Tyreese Williams": [
-    "Wirkt groß und deutlich kräftig gebaut.",
-    "Trägt meistens robuste und praktische Kleidung.",
-    "Seine Körperform fällt stärker auf als seine Ausrüstung.",
-  ],
-
-  "Morgan Jones": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig praktische Kleidung mit mehreren Schichten.",
-    "Seine Ausrüstung wirkt insgesamt eher leicht.",
-  ],
-
-  "Gabriel Stokes": [
-    "Wirkt eher durchschnittlich groß und schlank.",
-    "Trägt teilweise deutlich ordentlichere Kleidung als andere.",
-    "Sein Erscheinungsbild wirkt nicht immer kampforientiert.",
-  ],
-
-  Aaron: [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt meistens praktische und relativ unauffällige Kleidung.",
-    "Sein äußeres Erscheinungsbild verändert sich im Laufe der Zeit etwas.",
-  ],
-
-  Jesus: [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt häufig mehrere lockere Kleidungsschichten.",
-    "Haare und Bart prägen sein Erscheinungsbild deutlich.",
-  ],
-
-  Ezekiel: [
-    "Wirkt eher groß und durchschnittlich kräftig.",
-    "Trägt häufig auffälligere Kleidung als viele andere.",
-    "Sein Haar fällt stark auf.",
-  ],
-
-  Alpha: [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt häufig einfache und eher dunkle Kleidung.",
-    "Ihr Kopfbereich wirkt meist sehr schlicht.",
-  ],
-
-  Beta: [
-    "Ist deutlich größer und breiter als viele andere.",
-    "Trägt häufig schwere und dunkle Kleidung.",
-    "Sein Gesicht ist häufig teilweise oder vollständig verdeckt.",
-  ],
-
-  "Merle Dixon": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig robuste und eher abgenutzte Kleidung.",
-    "Ein Teil seines Körpers weist ein auffälliges Merkmal auf.",
-  ],
-
-  Andrea: [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig praktische und eher leichte Kleidung.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Necromancer": [
+  "Groß",
+  "Dunkle Gestalt",
+  "Schwer erkennbar",
+],
 
     // =========================
-  // JURASSIC PARK / WORLD
-  // =========================
+// THE BOYS
+// =========================
 
-  "Alan Grant": [
-    "Wirkt eher groß und schlank gebaut.",
-    "Trägt meistens praktische und eher leichte Kleidung.",
-    "Sein Erscheinungsbild wirkt eher funktional als auffällig.",
-  ],
+"Homelander": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Sehr gepflegt",
+],
 
-  "Ellie Sattler": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt meistens praktische und eher leichte Kleidung.",
-    "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
-  ],
+"Billy Butcher": [
+  "Kräftig gebaut",
+  "Dunkle Kleidung",
+  "Ungepflegter Look",
+],
 
-  "Ian Malcolm": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig dunkle und eher auffällige Kleidung.",
-    "Sein Erscheinungsbild wirkt gepflegter als bei vielen anderen.",
-  ],
+"Hughie Campbell": [
+  "Sehr schlank",
+  "Alltägliche Kleidung",
+  "Unauffälliger Look",
+],
 
-  "John Hammond": [
-    "Wirkt eher klein bis durchschnittlich groß.",
-    "Trägt häufig sehr ordentliche und helle Kleidung.",
-    "Sein Erscheinungsbild wirkt kaum körperlich belastbar.",
-  ],
+"Starlight": [
+  "Schlank",
+  "Helle Kleidung",
+  "Körpernaher Anzug",
+],
 
-  "Lex Murphy": [
-    "Ist eher klein und schmal gebaut.",
-    "Trägt meistens einfache Alltagskleidung.",
-    "Hat kaum sichtbare Ausrüstung am Körper.",
-  ],
+"Queen Maeve": [
+  "Athletisch",
+  "Feste Kleidung",
+  "Lange Haare",
+],
 
-  "Tim Murphy": [
-    "Ist eher klein und schmal gebaut.",
-    "Trägt meistens einfache Alltagskleidung.",
-    "Sein Erscheinungsbild wirkt wenig kampforientiert.",
-  ],
+"A-Train": [
+  "Sehr athletisch",
+  "Körpernaher Anzug",
+  "Schlanke Statur",
+],
 
-  "Dennis Nedry": [
-    "Wirkt eher kräftig gebaut.",
-    "Trägt meistens eher einfache und funktionale Kleidung.",
-    "Sein Erscheinungsbild wirkt weniger athletisch als bei vielen anderen.",
-  ],
+"The Deep": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Sehr gepflegt",
+],
 
-  "Robert Muldoon": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig robuste und praktische Kleidung.",
-    "Sein Erscheinungsbild wirkt deutlich einsatzorientiert.",
-  ],
+"Black Noir": [
+  "Athletisch",
+  "Komplett dunkel",
+  "Vollmaskiert",
+],
 
-  "Henry Wu": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig ordentliche oder eher formelle Kleidung.",
-    "Hat meistens wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Soldier Boy": [
+  "Sehr kräftig",
+  "Robuste Kleidung",
+  "Klassischer Look",
+],
 
-  "Ray Arnold": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt meistens praktische und eher schlichte Kleidung.",
-    "Sein Erscheinungsbild wirkt eher technisch als körperlich geprägt.",
-  ],
+"Stormfront": [
+  "Schlank",
+  "Dunkler Anzug",
+  "Lange Haare",
+],
 
-  "Donald Gennaro": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr formelle Kleidung.",
-    "Sein Erscheinungsbild wirkt wenig robust.",
-  ],
+"Kimiko": [
+  "Kleine Statur",
+  "Schlank",
+  "Einfache Kleidung",
+],
 
-  "Owen Grady": [
-    "Wirkt eher groß und athletisch gebaut.",
-    "Trägt häufig praktische und robuste Kleidung.",
-    "Hat meist mehrere kleinere Ausrüstungsteile am Körper.",
-  ],
+"Frenchie": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Individueller Look",
+],
 
-  "Claire Dearing": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr ordentliche Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher gepflegt als robust.",
-  ],
+"Mother's Milk": [
+  "Kräftig gebaut",
+  "Praktische Kleidung",
+  "Robuster Look",
+],
 
-  "Maisie Lockwood": [
-    "Ist eher klein und schmal gebaut.",
-    "Trägt überwiegend normale Alltagskleidung.",
-    "Hat kaum auffällige Ausrüstung am Körper.",
-  ],
+"Victoria Neuman": [
+  "Schlank",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Zach Mitchell": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt meistens einfache Alltagskleidung.",
-    "Sein Erscheinungsbild wirkt eher unauffällig.",
-  ],
+"Ashley Barrett": [
+  "Schlank",
+  "Geschäftliche Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Gray Mitchell": [
-    "Ist eher klein und schmal gebaut.",
-    "Trägt meistens einfache Alltagskleidung.",
-    "Hat vergleichsweise wenig auffällige äußere Merkmale.",
-  ],
+"Stan Edgar": [
+  "Schlank",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Barry Sembène": [
-    "Wirkt eher groß und athletisch gebaut.",
-    "Trägt meistens robuste und praktische Kleidung.",
-    "Sein Erscheinungsbild wirkt stark auf Bewegung ausgelegt.",
-  ],
+"Ryan": [
+  "Kleine Statur",
+  "Alltägliche Kleidung",
+  "Jung",
+],
 
-  "Simon Masrani": [
-    "Wirkt eher groß und schlank.",
-    "Trägt häufig sehr ordentliche oder elegante Kleidung.",
-    "Hat meistens wenig sichtbare Ausrüstung am Körper.",
-  ],
+"Lamplighter": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Funktionaler Look",
+],
 
-  "Vic Hoskins": [
-    "Wirkt eher groß und kräftig gebaut.",
-    "Trägt häufig praktische und robuste Kleidung.",
-    "Sein Erscheinungsbild wirkt eher schwer als leicht.",
-  ],
+"Translucent": [
+  "Mittlere Statur",
+  "Wenig Ausrüstung",
+  "Unauffälliger Look",
+],
 
-  "Franklin Webb": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt meistens praktische Alltagskleidung.",
-    "Sein Erscheinungsbild wirkt wenig kampforientiert.",
-  ],
+"Mesmer": [
+  "Mittlere Statur",
+  "Alltägliche Kleidung",
+  "Unauffällig",
+],
 
-  "Zia Rodriguez": [
-    "Wirkt eher schlank und beweglich.",
-    "Trägt häufig praktische und eher leichte Kleidung.",
-    "Hat meist wenig schwere Ausrüstung am Körper.",
-  ],
+"Firecracker": [
+  "Athletisch",
+  "Auffällige Kleidung",
+  "Körpernaher Anzug",
+],
 
-  "Eli Mills": [
-    "Wirkt eher schlank und durchschnittlich groß.",
-    "Trägt häufig sehr ordentliche Kleidung.",
-    "Sein Erscheinungsbild wirkt eher geschäftlich als robust.",
-  ],
+"Sister Sage": [
+  "Schlank",
+  "Moderne Kleidung",
+  "Sehr gepflegt",
+],
 
-  "Benjamin Lockwood": [
-    "Wirkt eher schlank und körperlich wenig kräftig.",
-    "Trägt häufig klassische und ordentliche Kleidung.",
-    "Sein Erscheinungsbild wirkt kaum kampforientiert.",
-  ],
+"Tek Knight": [
+  "Kräftig gebaut",
+  "Sehr gepflegt",
+  "Auffällige Kleidung",
+],
 
-  "Kayla Watts": [
-    "Wirkt eher schlank und athletisch.",
-    "Trägt häufig praktische und relativ robuste Kleidung.",
-    "Ihr Erscheinungsbild wirkt eher funktional als elegant.",
-  ],
+"Popclaw": [
+  "Athletisch",
+  "Sportliche Kleidung",
+  "Schlanke Statur",
+],
 
-  "Ramsay Cole": [
-    "Wirkt eher groß und durchschnittlich gebaut.",
-    "Trägt häufig ordentliche und eher moderne Kleidung.",
-    "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
-  ],
+"Love Sausage": [
+  "Sehr kräftig",
+  "Große Statur",
+  "Einfache Kleidung",
+],
+
+    // =========================
+// THE WALKING DEAD
+// =========================
+
+"Rick Grimes": [
+  "Mittlere Statur",
+  "Robuste Kleidung",
+  "Ungepflegter Look",
+],
+
+"Daryl Dixon": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Ungepflegter Look",
+],
+
+"Michonne": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Viel Ausrüstung",
+],
+
+"Negan": [
+  "Groß",
+  "Dunkle Kleidung",
+  "Sehr gepflegt",
+],
+
+"Glenn Rhee": [
+  "Schlank",
+  "Leichte Kleidung",
+  "Praktischer Look",
+],
+
+"Maggie Greene": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Dunkle Haare",
+],
+
+"Carol Peletier": [
+  "Kleine Statur",
+  "Einfache Kleidung",
+  "Kurze Haare",
+],
+
+"Carl Grimes": [
+  "Kleine Statur",
+  "Praktische Kleidung",
+  "Bedeckter Kopf",
+],
+
+"Shane Walsh": [
+  "Kräftig gebaut",
+  "Praktische Kleidung",
+  "Kurze Haare",
+],
+
+"Hershel Greene": [
+  "Älter",
+  "Schlichte Kleidung",
+  "Heller Bart",
+],
+
+"The Governor": [
+  "Mittlere Statur",
+  "Ordentliche Kleidung",
+  "Auffälliges Auge",
+],
+
+"Abraham Ford": [
+  "Sehr kräftig",
+  "Robuste Kleidung",
+  "Rötliche Haare",
+],
+
+"Rosita Espinosa": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Viel Ausrüstung",
+],
+
+"Eugene Porter": [
+  "Kräftige Statur",
+  "Einfache Kleidung",
+  "Auffällige Frisur",
+],
+
+"Sasha Williams": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Leichte Ausrüstung",
+],
+
+"Tyreese Williams": [
+  "Sehr kräftig",
+  "Große Statur",
+  "Robuste Kleidung",
+],
+
+"Morgan Jones": [
+  "Schlanke Statur",
+  "Praktische Kleidung",
+  "Leichte Ausrüstung",
+],
+
+"Gabriel Stokes": [
+  "Schlank",
+  "Ordentliche Kleidung",
+  "Dunkle Kleidung",
+],
+
+"Aaron": [
+  "Mittlere Statur",
+  "Praktische Kleidung",
+  "Unauffälliger Look",
+],
+
+"Jesus": [
+  "Schlank",
+  "Lange Haare",
+  "Viel Bart",
+],
+
+"Ezekiel": [
+  "Groß",
+  "Auffällige Haare",
+  "Auffällige Kleidung",
+],
+
+"Alpha": [
+  "Kleine Statur",
+  "Dunkle Kleidung",
+  "Kahler Kopf",
+],
+
+"Beta": [
+  "Extrem groß",
+  "Dunkle Kleidung",
+  "Verdecktes Gesicht",
+],
+
+"Merle Dixon": [
+  "Kräftig gebaut",
+  "Abgenutzte Kleidung",
+  "Auffälliger Arm",
+],
+
+"Andrea": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Helle Haare",
+],
+
+    // =========================
+// JURASSIC PARK / WORLD
+// =========================
+
+"Alan Grant": [
+  "Schlanke Statur",
+  "Praktische Kleidung",
+  "Bedeckter Kopf",
+],
+
+"Ellie Sattler": [
+  "Schlank",
+  "Leichte Kleidung",
+  "Helle Haare",
+],
+
+"Ian Malcolm": [
+  "Sehr schlank",
+  "Dunkle Kleidung",
+  "Sehr gepflegt",
+],
+
+"John Hammond": [
+  "Älter",
+  "Helle Kleidung",
+  "Sehr gepflegt",
+],
+
+"Lex Murphy": [
+  "Kleine Statur",
+  "Alltägliche Kleidung",
+  "Jung",
+],
+
+"Tim Murphy": [
+  "Sehr klein",
+  "Alltägliche Kleidung",
+  "Jung",
+],
+
+"Dennis Nedry": [
+  "Kräftige Statur",
+  "Praktische Kleidung",
+  "Wenig athletisch",
+],
+
+"Robert Muldoon": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Praktischer Look",
+],
+
+"Henry Wu": [
+  "Schlank",
+  "Ordentliche Kleidung",
+  "Sehr gepflegt",
+],
+
+"Ray Arnold": [
+  "Mittlere Statur",
+  "Praktische Kleidung",
+  "Technischer Look",
+],
+
+"Donald Gennaro": [
+  "Schlank",
+  "Formelle Kleidung",
+  "Sehr gepflegt",
+],
+
+"Owen Grady": [
+  "Athletisch",
+  "Robuste Kleidung",
+  "Praktischer Look",
+],
+
+"Claire Dearing": [
+  "Schlank",
+  "Ordentliche Kleidung",
+  "Sehr gepflegt",
+],
+
+"Maisie Lockwood": [
+  "Kleine Statur",
+  "Alltägliche Kleidung",
+  "Jung",
+],
+
+"Zach Mitchell": [
+  "Schlank",
+  "Alltägliche Kleidung",
+  "Jung",
+],
+
+"Gray Mitchell": [
+  "Kleine Statur",
+  "Alltägliche Kleidung",
+  "Jung",
+],
+
+"Barry Sembène": [
+  "Athletisch",
+  "Robuste Kleidung",
+  "Praktischer Look",
+],
+
+"Simon Masrani": [
+  "Schlank",
+  "Elegante Kleidung",
+  "Sehr gepflegt",
+],
+
+"Vic Hoskins": [
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+  "Große Statur",
+],
+
+"Franklin Webb": [
+  "Schlank",
+  "Alltägliche Kleidung",
+  "Unauffälliger Look",
+],
+
+"Zia Rodriguez": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Leichter Look",
+],
+
+"Eli Mills": [
+  "Schlank",
+  "Geschäftliche Kleidung",
+  "Sehr gepflegt",
+],
+
+"Benjamin Lockwood": [
+  "Älter",
+  "Klassische Kleidung",
+  "Schlanke Statur",
+],
+
+"Kayla Watts": [
+  "Athletisch",
+  "Praktische Kleidung",
+  "Robuster Look",
+],
+
+"Ramsay Cole": [
+  "Mittlere Statur",
+  "Moderne Kleidung",
+  "Sehr gepflegt",
+],
 
 };
 
