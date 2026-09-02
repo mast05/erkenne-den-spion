@@ -565,11 +565,14 @@ export default function DealGamePage() {
     {categoryNames[currentCategory] ?? currentCategory}
   </p>
 
-  {currentCategory === "fluch-der-karibik" && (
-    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
-      Fertig
-    </span>
-  )}
+  {(
+  currentCategory === "fluch-der-karibik" ||
+  currentCategory === "herr-der-ringe"
+) && (
+  <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+    Fertig
+  </span>
+)}
 </div>
 
           <div className="mt-4 border-t border-slate-800 pt-4">

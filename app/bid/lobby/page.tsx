@@ -495,11 +495,14 @@ export default function BidLobbyPage() {
                       <div className="flex items-center justify-between gap-2">
   <span>{category.label}</span>
 
-  {category.id === "fluch-der-karibik" && (
-    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
-      Fertig
-    </span>
-  )}
+  {(
+  category.id === "fluch-der-karibik" ||
+  category.id === "herr-der-ringe"
+) && (
+  <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+    Fertig
+  </span>
+)}
 </div>
                     </button>
                   );
