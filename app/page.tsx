@@ -55,6 +55,13 @@ export default function Home() {
           2–3 Spieler · Online · Kostenlos
         </p>
 
+<Link
+  href="/privacy"
+  className="mt-3 text-center text-xs text-slate-600 hover:text-slate-400"
+>
+  Datenschutz & Musik
+</Link>
+
       </div>
     </main>
   );
