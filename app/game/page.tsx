@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
+import { dealCharacters } from "../lib/dealData";
 
 type Role = {
   type: "character" | "imposter";
@@ -2352,6 +2353,17 @@ export default function GamePage() {
   const [submittingVote, setSubmittingVote] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
   const [roleRevealed, setRoleRevealed] = useState(false);
+  const [imposterGuess, setImposterGuess] = useState("");
+const [submittingGuess, setSubmittingGuess] = useState(false);
+const [imposterGuessResult, setImposterGuessResult] = useState<{
+  winner: "players" | "imposter";
+  guessedCharacter: string;
+} | null>(null);
+
+const availableCharacters = dealCharacters
+  .filter((character) => character.category === category)
+  .map((character) => character.name)
+  .sort((a, b) => a.localeCompare(b));
   const currentPlayer = players.find(
   (player) => player.id === playerId
 );
@@ -2576,6 +2588,56 @@ const isHost = currentPlayer?.is_host === true;
   }, []);
 
   useEffect(() => {
+  if (!roundId || imposterGuessResult) {
+    return;
+  }
+
+  let checking = false;
+
+  async function checkImposterGuess() {
+    if (checking) return;
+
+    checking = true;
+
+    try {
+      const { data, error: roundError } = await supabase
+        .from("rounds")
+        .select("status, finish_reason, winner_side, imposter_guess")
+        .eq("id", roundId)
+        .maybeSingle();
+
+      if (roundError) {
+        console.error("IMPOSTER GUESS CHECK ERROR:", roundError);
+        return;
+      }
+
+      if (
+        data?.status === "finished" &&
+        data.finish_reason === "imposter_guess" &&
+        (data.winner_side === "players" ||
+          data.winner_side === "imposter") &&
+        data.imposter_guess
+      ) {
+        setImposterGuessResult({
+          winner: data.winner_side,
+          guessedCharacter: data.imposter_guess,
+        });
+      }
+    } finally {
+      checking = false;
+    }
+  }
+
+  checkImposterGuess();
+
+  const interval = setInterval(checkImposterGuess, 1000);
+
+  return () => {
+    clearInterval(interval);
+  };
+}, [roundId, imposterGuessResult]);
+
+  useEffect(() => {
     if (
       !roundId ||
       !votingStarted ||
@@ -2747,6 +2809,70 @@ const voteDetails = Array.from(
   window.location.href = "/lobby";
 }
 
+async function submitImposterGuess() {
+  if (
+    !imposterGuess ||
+    !roundId ||
+    submittingGuess ||
+    role?.type !== "imposter"
+  ) {
+    return;
+  }
+
+  setSubmittingGuess(true);
+  setError("");
+
+  try {
+    const { data, error: guessError } =
+      await supabase.rpc("submit_imposter_guess", {
+        p_round_id: roundId,
+        p_guessed_character: imposterGuess,
+      });
+
+    if (guessError) {
+      console.error(
+        "IMPOSTER GUESS ERROR:",
+        guessError
+      );
+
+      setError(
+        "Dein Tipp konnte nicht gespeichert werden."
+      );
+
+      return;
+    }
+
+    const guessResult = data?.[0];
+
+    if (
+      !guessResult ||
+      (guessResult.winning_side !== "players" &&
+        guessResult.winning_side !== "imposter")
+    ) {
+      setError(
+        "Das Ergebnis des Tipps konnte nicht geladen werden."
+      );
+      return;
+    }
+
+    setImposterGuessResult({
+      winner: guessResult.winning_side,
+      guessedCharacter: imposterGuess,
+    });
+  } catch (err) {
+    console.error(
+      "SUBMIT IMPOSTER GUESS ERROR:",
+      err
+    );
+
+    setError(
+      "Dein Tipp konnte nicht gespeichert werden."
+    );
+  } finally {
+    setSubmittingGuess(false);
+  }
+}
+
   async function submitVote() {
     if (
       !selectedPlayer ||
@@ -2808,6 +2934,93 @@ const voteDetails = Array.from(
       </main>
     );
   }
+
+  if (imposterGuessResult) {
+    const realSpyName =
+  players.find((player) => player.id === spyPlayerId)?.name ||
+  "Unbekannt";
+
+  const imposterWon =
+    imposterGuessResult.winner === "imposter";
+
+  return (
+    <main className="min-h-screen bg-slate-950 text-white">
+      <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-10">
+        <div className="text-center">
+          <div className="text-7xl">
+            {imposterWon ? "🎯" : "❌"}
+          </div>
+
+          <h1 className="mt-6 text-3xl font-black">
+            {imposterWon
+              ? "Der Imposter gewinnt!"
+              : "Der Imposter lag falsch!"}
+          </h1>
+
+          <p className="mt-3 text-slate-400">
+            Der Imposter hat versucht, die Figur direkt zu erraten.
+          </p>
+        </div>
+
+        <div className="mt-8 rounded-3xl border border-red-900 bg-red-950/30 p-5 text-center">
+  <p className="text-xs uppercase tracking-widest text-red-400">
+    Der Imposter war
+  </p>
+
+  <p className="mt-2 text-2xl font-black text-white">
+    🕵️ {realSpyName}
+  </p>
+</div>
+
+<div className="mt-8 rounded-3xl border border-slate-800 bg-slate-900 p-5">
+  <p className="text-xs uppercase tracking-widest text-slate-500">
+    Getippt
+  </p>
+
+  <p className="mt-2 text-xl font-black text-red-400">
+    {imposterGuessResult.guessedCharacter}
+  </p>
+</div>
+
+        <div className="mt-4 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 p-5">
+          <p className="mb-4 text-xs uppercase tracking-widest text-slate-500">
+            Richtige Figur
+          </p>
+
+          <CharacterImage
+            character={secretCharacter}
+            category={category}
+          />
+
+          <p className="mt-4 text-center text-2xl font-black">
+            {secretCharacter}
+          </p>
+        </div>
+
+        <div
+          className={`mt-5 rounded-2xl p-5 text-center ${
+            imposterWon
+              ? "bg-red-950/40 text-red-300"
+              : "bg-emerald-950/40 text-emerald-300"
+          }`}
+        >
+          <p className="font-black">
+            {imposterWon
+              ? "🕵️ Imposter gewinnt die Runde"
+              : "👥 Die anderen Spieler gewinnen die Runde"}
+          </p>
+        </div>
+
+        <button
+          onClick={returnToLobby}
+          className="mt-8 w-full rounded-2xl bg-emerald-500 px-6 py-5 font-bold text-white transition hover:scale-[1.02]"
+        >
+          🏠 Zurück zur Lobby
+        </button>
+      </div>
+    </main>
+  );
+}
 
   if (error && !votingStarted) {
     return (
@@ -3026,6 +3239,38 @@ const voteDetails = Array.from(
                   {role.tip}
                 </p>
               </div>
+              <div className="mt-5 rounded-2xl border border-red-900 bg-red-950/20 p-5">
+  <p className="text-sm font-bold text-red-400">
+    🎯 Du kennst die Figur?
+  </p>
+
+  <p className="mt-2 text-xs text-slate-400">
+    Wenn du dir sicher bist, kannst du die Figur direkt erraten.
+  </p>
+
+  <select
+    value={imposterGuess}
+    onChange={(e) => setImposterGuess(e.target.value)}
+    className="mt-4 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white"
+  >
+    <option value="">Figur auswählen...</option>
+
+    {availableCharacters.map((character) => (
+      <option key={character} value={character}>
+        {character}
+      </option>
+    ))}
+  </select>
+  <button
+  onClick={submitImposterGuess}
+  disabled={!imposterGuess || submittingGuess}
+  className="mt-4 w-full rounded-xl bg-red-500 px-4 py-3 font-bold text-white transition hover:bg-red-400 disabled:cursor-not-allowed disabled:opacity-40"
+>
+  {submittingGuess
+    ? "Tipp wird geprüft..."
+    : "🎯 Figur einloggen"}
+</button>
+</div>
             </div>
           )}
 
