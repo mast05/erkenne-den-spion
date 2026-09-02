@@ -462,7 +462,15 @@ export default function CategoryPage() {
 
               <div className="ml-4">
                 <p className="text-lg font-black">
-                  {category.name}
+                  <div className="flex items-center justify-center gap-2">
+  <span>{category.name}</span>
+
+  {category.id === "fluch-der-karibik" && (
+    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+      Fertig
+    </span>
+  )}
+</div>
                 </p>
 
                 <p className="mt-1 text-xs text-slate-500">

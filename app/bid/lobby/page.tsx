@@ -492,7 +492,15 @@ export default function BidLobbyPage() {
                           : "border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-600"
                       }`}
                     >
-                      {category.label}
+                      <div className="flex items-center justify-between gap-2">
+  <span>{category.label}</span>
+
+  {category.id === "fluch-der-karibik" && (
+    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+      Fertig
+    </span>
+  )}
+</div>
                     </button>
                   );
                 })}

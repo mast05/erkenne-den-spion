@@ -560,10 +560,17 @@ export default function DealGamePage() {
             Aktuelle Welt
           </p>
 
-          <p className="mt-2 text-xl font-black">
-            {categoryNames[currentCategory] ??
-              currentCategory}
-          </p>
+          <div className="mt-2 flex items-center gap-2">
+  <p className="text-xl font-black">
+    {categoryNames[currentCategory] ?? currentCategory}
+  </p>
+
+  {currentCategory === "fluch-der-karibik" && (
+    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+      Fertig
+    </span>
+  )}
+</div>
 
           <div className="mt-4 border-t border-slate-800 pt-4">
             <p className="text-sm text-slate-400">

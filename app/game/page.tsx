@@ -1238,6 +1238,66 @@ const characterTips: Record<string, string[]> = {
     "Hat vergleichsweise wenig schwere Schutzkleidung am Körper.",
   ],
 
+  "Armando Salazar": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig dunkle und auffällige Kleidung.",
+  "Sein Gesicht wirkt ungewöhnlicher als seine Ausrüstung.",
+],
+
+"Henry Turner": [
+  "Wirkt eher groß und schlank-athletisch.",
+  "Trägt meist praktische Kleidung mit mehreren Schichten.",
+  "Hat vergleichsweise wenig schwere Ausrüstung am Körper.",
+],
+
+"Carina Smyth": [
+  "Wirkt eher schlank und durchschnittlich groß.",
+  "Trägt häufig ordentliche und eher leichte Kleidung.",
+  "Ihr Erscheinungsbild wirkt eher gepflegt als robust.",
+],
+
+"Sao Feng": [
+  "Wirkt eher durchschnittlich groß und kräftig.",
+  "Trägt häufig mehrere aufwendige Kleidungsschichten.",
+  "Sein Erscheinungsbild wirkt eher kontrolliert als ungeordnet.",
+],
+
+"Maccus": [
+  "Wirkt groß und kräftig gebaut.",
+  "Trägt eher schwere und robuste Kleidung.",
+  "Sein äußeres Erscheinungsbild besitzt mehrere ungewöhnliche Merkmale.",
+],
+
+"Mullroy": [
+  "Wirkt eher durchschnittlich groß und gebaut.",
+  "Trägt häufig einheitliche und ordentliche Kleidung.",
+  "Hat meist wenig auffällige persönliche Ausrüstung.",
+],
+
+"Murtogg": [
+  "Wirkt eher durchschnittlich groß und gebaut.",
+  "Trägt häufig einheitliche und praktische Kleidung.",
+  "Sein Erscheinungsbild wirkt eher schlicht.",
+],
+
+"Lieutenant Gillette": [
+  "Wirkt eher groß und schlank.",
+  "Trägt meistens sehr ordentliche und einheitliche Kleidung.",
+  "Hat vergleichsweise wenig auffällige Ausrüstung am Körper.",
+],
+
+"Scarlett": [
+  "Wirkt eher schlank und durchschnittlich groß.",
+  "Trägt häufig auffällige und eher leichte Kleidung.",
+  "Ihr Erscheinungsbild wirkt weniger kampforientiert als bei vielen anderen.",
+],
+
+"Jack the Monkey": [
+  "Ist deutlich kleiner als fast alle anderen Figuren.",
+  "Trägt nur sehr wenig sichtbare Kleidung oder Ausrüstung.",
+  "Seine Körperform unterscheidet sich deutlich von einem Menschen.",
+],
+
     // =========================
   // GAME OF THRONES
   // =========================
