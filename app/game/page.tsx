@@ -1884,6 +1884,36 @@ const characterTips: Record<string, string[]> = {
   "Schwer erkennbar",
 ],
 
+"Bain": [
+  "Jung",
+  "Schlanke Statur",
+  "Praktische Kleidung",
+],
+
+"Great Goblin": [
+  "Sehr groß",
+  "Sehr breit",
+  "Auffälliges Gesicht",
+],
+
+"Bert": [
+  "Extrem groß",
+  "Sehr kräftig",
+  "Grober Look",
+],
+
+"Tom": [
+  "Extrem groß",
+  "Sehr kräftig",
+  "Ungepflegter Look",
+],
+
+"William": [
+  "Extrem groß",
+  "Sehr kräftig",
+  "Breite Statur",
+],
+
     // =========================
 // THE BOYS
 // =========================

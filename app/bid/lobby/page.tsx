@@ -497,7 +497,8 @@ export default function BidLobbyPage() {
 
   {(
   category.id === "fluch-der-karibik" ||
-  category.id === "herr-der-ringe"
+  category.id === "herr-der-ringe" ||
+  category.id === "hobbit"
 ) && (
   <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
     Fertig
