@@ -810,6 +810,66 @@ const characterTips: Record<string, string[]> = {
     "Sein Erscheinungsbild wirkt sportlicher als bei vielen anderen.",
   ],
 
+  "Alastor Moody": [
+  "Wirkt eher groß und kräftig gebaut.",
+  "Trägt häufig robuste und eher dunkle Kleidung.",
+  "Im Gesichtsbereich gibt es ein auffälliges Detail.",
+],
+
+"Nymphadora Tonks": [
+  "Wirkt eher schlank und beweglich.",
+  "Trägt häufig praktische Kleidung.",
+  "Ihr äußeres Erscheinungsbild kann sich deutlich verändern.",
+],
+
+"Kingsley Shacklebolt": [
+  "Wirkt eher groß und kräftig gebaut.",
+  "Trägt häufig sehr ordentliche Kleidung.",
+  "Sein Erscheinungsbild wirkt insgesamt eher ruhig und kontrolliert.",
+],
+
+"Horace Slughorn": [
+  "Wirkt eher kräftig als athletisch gebaut.",
+  "Trägt häufig sehr ordentliche oder aufwendige Kleidung.",
+  "Sein Erscheinungsbild wirkt eher gepflegt als praktisch.",
+],
+
+"Gilderoy Lockhart": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig auffällig gepflegte Kleidung.",
+  "Sein äußeres Erscheinungsbild wirkt wichtiger als seine Ausrüstung.",
+],
+
+"Fleur Delacour": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig sehr ordentliche Kleidung.",
+  "Ihr Erscheinungsbild wirkt eher leicht und elegant.",
+],
+
+"Cho Chang": [
+  "Wirkt eher klein bis durchschnittlich groß.",
+  "Trägt häufig relativ einheitliche Kleidung.",
+  "Hat meist wenig auffällige Ausrüstung am Körper.",
+],
+
+"Narcissa Malfoy": [
+  "Wirkt eher schlank und durchschnittlich groß.",
+  "Trägt häufig sehr gepflegte und formelle Kleidung.",
+  "Ihr Haar fällt stärker auf als ihre Ausrüstung.",
+],
+
+"Barty Crouch Jr.": [
+  "Wirkt eher schlank und durchschnittlich groß.",
+  "Trägt meist relativ unauffällige Kleidung.",
+  "Sein äußeres Erscheinungsbild kann sehr unterschiedlich wirken.",
+],
+
+"Fenrir Greyback": [
+  "Wirkt eher groß und kräftig gebaut.",
+  "Trägt häufig robuste und eher abgenutzte Kleidung.",
+  "Sein Gesicht wirkt auffälliger als seine Ausrüstung.",
+],
+
     // =========================
   // DC
   // =========================

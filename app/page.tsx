@@ -11,14 +11,14 @@ export default function Home() {
           <Image
   src="/logo.jpeg"
   alt="Logo"
-  width={120}
-  height={120}
+  width={260}
+  height={260}
   priority
   className="mx-auto mb-4 rounded-2xl"
 />
 
           <h1 className="text-4xl font-black tracking-tight">
-            SPION
+            Mellon
           </h1>
 
           <p className="mt-2 text-slate-400">
@@ -39,7 +39,7 @@ export default function Home() {
             href="/deal"
             className="block w-full rounded-2xl bg-emerald-500 px-6 py-5 text-center text-lg font-bold text-white transition hover:scale-[1.02]"
           >
-            ⚽ Deal or No Deal
+            🎰 Deal or No Deal
           </Link>
 
           <Link
