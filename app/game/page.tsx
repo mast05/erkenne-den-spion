@@ -1665,6 +1665,70 @@ const characterTips: Record<string, string[]> = {
   "Ordentliche Kleidung",
   "Älter",
 ],
+"Isildur": [
+  "Groß",
+  "Kräftig gebaut",
+  "Edle Rüstung",
+],
+
+"Lurtz": [
+  "Sehr groß",
+  "Sehr kräftig",
+  "Dunkle Haut",
+],
+
+"Celeborn": [
+  "Sehr schlank",
+  "Helle Haare",
+  "Elegante Kleidung",
+],
+
+"King of the Dead": [
+  "Groß",
+  "Geisterhaft",
+  "Alte Rüstung",
+],
+
+"Mouth of Sauron": [
+  "Sehr groß",
+  "Dunkle Rüstung",
+  "Verdecktes Gesicht",
+],
+
+"Gothmog": [
+  "Kräftige Statur",
+  "Auffälliges Gesicht",
+  "Schwere Rüstung",
+],
+
+"Elendil": [
+  "Extrem groß",
+  "Kräftig gebaut",
+  "Edle Rüstung",
+],
+
+"Gil-galad": [
+  "Groß",
+  "Helle Haare",
+  "Edle Rüstung",
+],
+
+"Rosie Cotton": [
+  "Sehr klein",
+  "Einfache Kleidung",
+  "Gepflegt",
+],
+
+"Gamling": [
+  "Kräftig gebaut",
+  "Robuste Rüstung",
+  "Älter",
+],
+"Grishnákh": [
+  "Kleine Statur",
+  "Dunkle Kleidung",
+  "Auffälliges Gesicht",
+],
 
     // =========================
 // DER HOBBIT
