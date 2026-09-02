@@ -2068,6 +2068,84 @@ const characterTips: Record<string, string[]> = {
   "Einfache Kleidung",
 ],
 
+"Becca Butcher": [
+  "Schlank",
+  "Alltägliche Kleidung",
+  "Gepflegt",
+],
+
+"Grace Mallory": [
+  "Älter",
+  "Ordentliche Kleidung",
+  "Strenger Look",
+],
+
+"Supersonic": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Sehr gepflegt",
+],
+
+"Crimson Countess": [
+  "Schlank",
+  "Auffällige Kleidung",
+  "Rötliche Haare",
+],
+
+"Doppelganger": [
+  "Mittlere Statur",
+  "Unauffälliger Look",
+  "Wenig Ausrüstung",
+],
+
+"Joe Kessler": [
+  "Groß",
+  "Robuste Kleidung",
+  "Älter",
+],
+
+"Black Noir II": [
+  "Sehr groß",
+  "Komplett dunkel",
+  "Vollmaskiert",
+],
+
+"Shockwave": [
+  "Athletisch",
+  "Körpernaher Anzug",
+  "Schlanke Statur",
+],
+
+"Blue Hawk": [
+  "Kräftig gebaut",
+  "Auffälliger Anzug",
+  "Große Statur",
+],
+
+"Webweaver": [
+  "Schlank",
+  "Körpernaher Anzug",
+  "Verdecktes Gesicht",
+],
+
+"Zoe Neuman": [
+  "Kleine Statur",
+  "Alltägliche Kleidung",
+  "Jung",
+],
+
+"Ezekiel": [
+  "Groß",
+  "Ordentliche Kleidung",
+  "Gepflegter Look",
+],
+
+"Blindspot": [
+  "Athletisch",
+  "Dunkle Kleidung",
+  "Bedeckte Augen",
+],
+
     // =========================
 // THE WALKING DEAD
 // =========================
