@@ -1452,6 +1452,65 @@ const characterTips: Record<string, string[]> = {
     "Sein Kopfbereich wirkt meist sehr schlicht.",
   ],
 
+  "Night King": [
+  "Wirkt eher groß und schlank.",
+  "Sein äußeres Erscheinungsbild wirkt nicht menschlich.",
+  "Trägt häufig dunkle und eher feste Kleidung.",
+],
+
+"Ramsay Bolton": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig dunkle und praktische Kleidung.",
+  "Sein Erscheinungsbild wirkt eher unauffällig als auffällig.",
+],
+
+"Tywin Lannister": [
+  "Wirkt eher groß und schlank.",
+  "Trägt häufig sehr ordentliche und aufwendige Kleidung.",
+  "Sein Erscheinungsbild wirkt eher formell als kampforientiert.",
+],
+
+"Bronn": [
+  "Wirkt eher groß und athletisch gebaut.",
+  "Trägt häufig praktische und robuste Kleidung.",
+  "Hat meist mehrere kleinere Ausrüstungsteile am Körper.",
+],
+
+"Stannis Baratheon": [
+  "Wirkt eher groß und kräftig gebaut.",
+  "Trägt häufig dunkle und eher feste Kleidung.",
+  "Sein Erscheinungsbild wirkt insgesamt eher streng und schlicht.",
+],
+
+"Khal Drogo": [
+  "Ist eher groß und sehr kräftig gebaut.",
+  "Trägt vergleichsweise wenig schwere Kleidung.",
+  "Haare und Körperbau prägen sein Erscheinungsbild stark.",
+],
+
+"Missandei": [
+  "Wirkt eher klein und schlank.",
+  "Trägt häufig leichte und eher elegante Kleidung.",
+  "Hat meistens kaum sichtbare Ausrüstung am Körper.",
+],
+
+"Grey Worm": [
+  "Wirkt eher groß und athletisch gebaut.",
+  "Trägt häufig eher einheitliche und feste Kleidung.",
+  "Sein Erscheinungsbild wirkt stark auf Bewegung ausgelegt.",
+],
+
+"Ygritte": [
+  "Wirkt eher schlank und beweglich.",
+  "Trägt häufig schwere und robuste Kleidungsschichten.",
+  "Ihr Erscheinungsbild wirkt eher praktisch als gepflegt.",
+],
+
+"Hodor": [
+  "Ist deutlich größer und breiter als viele andere.",
+  "Trägt meist einfache und robuste Kleidung.",
+  "Seine Körpergröße fällt stärker auf als seine Ausrüstung.",
+],
       // =========================
   // HERR DER RINGE
   // =========================
