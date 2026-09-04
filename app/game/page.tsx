@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
 import { dealCharacters } from "../lib/dealData";
 
@@ -2134,7 +2135,7 @@ const characterTips: Record<string, string[]> = {
   "Jung",
 ],
 
-"Ezekiel": [
+"the-boys:Ezekiel": [
   "Groß",
   "Ordentliche Kleidung",
   "Gepflegter Look",
@@ -2270,7 +2271,7 @@ const characterTips: Record<string, string[]> = {
   "Viel Bart",
 ],
 
-"Ezekiel": [
+"the-walking-dead:Ezekiel": [
   "Groß",
   "Auffällige Haare",
   "Auffällige Kleidung",
@@ -2458,8 +2459,10 @@ const characterTips: Record<string, string[]> = {
 
 
 
-function getRandomTip(character: string) {
-  const tips = characterTips[character];
+function getRandomTip(character: string, category: string) {
+  const tips =
+    characterTips[`${category}:${character}`] ??
+    characterTips[character];
 
   if (!tips || tips.length === 0) {
     return "Die Figur hat eine besondere Persönlichkeit.";
@@ -2508,6 +2511,8 @@ function CharacterImage({
 }
 
 export default function GamePage() {
+  const router = useRouter();
+
   const [role, setRole] = useState<Role | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [loading, setLoading] = useState(true);
@@ -2527,6 +2532,7 @@ export default function GamePage() {
   const [roleRevealed, setRoleRevealed] = useState(false);
   const [imposterGuess, setImposterGuess] = useState("");
 const [submittingGuess, setSubmittingGuess] = useState(false);
+const [guessLocked, setGuessLocked] = useState(false);
 const [imposterGuessResult, setImposterGuessResult] = useState<{
   winner: "players" | "imposter";
   guessedCharacter: string;
@@ -2623,7 +2629,7 @@ const isHost = currentPlayer?.is_host === true;
           await supabase
             .from("rounds")
             .select(
-              "id, secret_word, spy_player_id, status, category"
+              "id, secret_word, spy_player_id, status, category, voting_started_at"
             )
             .eq("room_id", roomId)
             .eq("status", "active")
@@ -2690,6 +2696,7 @@ const isHost = currentPlayer?.is_host === true;
         setSpyPlayerId(round.spy_player_id);
         setCategory(round.category);
         setSecretCharacter(round.secret_word);
+        setGuessLocked(Boolean(round.voting_started_at));
         setPlayers(playerData);
 
         // WICHTIG:
@@ -2719,7 +2726,10 @@ const isHost = currentPlayer?.is_host === true;
   let roundTip = sessionStorage.getItem(tipStorageKey);
 
   if (!roundTip) {
-    roundTip = getRandomTip(round.secret_word);
+    roundTip = getRandomTip(
+  round.secret_word,
+  round.category
+);
     sessionStorage.setItem(tipStorageKey, roundTip);
   }
 
@@ -2774,7 +2784,9 @@ const isHost = currentPlayer?.is_host === true;
     try {
       const { data, error: roundError } = await supabase
         .from("rounds")
-        .select("status, finish_reason, winner_side, imposter_guess")
+        .select(
+          "status, finish_reason, winner_side, imposter_guess, voting_started_at"
+        )
         .eq("id", roundId)
         .maybeSingle();
 
@@ -2782,6 +2794,8 @@ const isHost = currentPlayer?.is_host === true;
         console.error("IMPOSTER GUESS CHECK ERROR:", roundError);
         return;
       }
+
+      setGuessLocked(Boolean(data?.voting_started_at));
 
       if (
         data?.status === "finished" &&
@@ -2978,7 +2992,7 @@ const voteDetails = Array.from(
   function returnToLobby() {
   sessionStorage.removeItem("roundId");
 
-  window.location.href = "/lobby";
+  router.push("/lobby");
 }
 
 async function submitImposterGuess() {
@@ -2986,6 +3000,7 @@ async function submitImposterGuess() {
     !imposterGuess ||
     !roundId ||
     submittingGuess ||
+    guessLocked ||
     role?.type !== "imposter"
   ) {
     return;
@@ -3006,6 +3021,18 @@ async function submitImposterGuess() {
         "IMPOSTER GUESS ERROR:",
         guessError
       );
+
+      // Falls genau gleichzeitig die erste Stimme gespeichert wurde,
+      // wird der Tipp einfach gesperrt. Kein Fehlerbildschirm.
+      if (
+        guessError.message?.includes(
+          "Die Abstimmung hat bereits begonnen"
+        )
+      ) {
+        setGuessLocked(true);
+        setError("");
+        return;
+      }
 
       setError(
         "Dein Tipp konnte nicht gespeichert werden."
@@ -3423,7 +3450,8 @@ async function submitImposterGuess() {
   <select
     value={imposterGuess}
     onChange={(e) => setImposterGuess(e.target.value)}
-    className="mt-4 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white"
+    disabled={guessLocked || submittingGuess}
+    className="mt-4 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white disabled:cursor-not-allowed disabled:opacity-40"
   >
     <option value="">Figur auswählen...</option>
 
@@ -3435,12 +3463,14 @@ async function submitImposterGuess() {
   </select>
   <button
   onClick={submitImposterGuess}
-  disabled={!imposterGuess || submittingGuess}
+  disabled={!imposterGuess || submittingGuess || guessLocked}
   className="mt-4 w-full rounded-xl bg-red-500 px-4 py-3 font-bold text-white transition hover:bg-red-400 disabled:cursor-not-allowed disabled:opacity-40"
 >
-  {submittingGuess
-    ? "Tipp wird geprüft..."
-    : "🎯 Figur einloggen"}
+  {guessLocked
+    ? "🗳️ Abstimmung hat begonnen"
+    : submittingGuess
+      ? "Tipp wird geprüft..."
+      : "🎯 Figur einloggen"}
 </button>
 </div>
             </div>

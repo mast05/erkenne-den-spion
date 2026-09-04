@@ -5,6 +5,7 @@ import {
   useEffect,
   useState,
 } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 import {
   dealGameModes,
@@ -110,6 +111,7 @@ function formatValue(
 }
 
 export default function BidGamePage() {
+  const router = useRouter();
   const [game, setGame] =
     useState<BidState | null>(null);
 
@@ -133,7 +135,7 @@ export default function BidGamePage() {
       sessionStorage.getItem("bidGameId");
 
     if (!roomId || !currentPlayerId) {
-      window.location.href = "/bid";
+      router.push("/bid");
       return;
     }
 
@@ -164,7 +166,7 @@ export default function BidGamePage() {
       }
 
       if (!activeGame) {
-        window.location.href = "/bid/lobby";
+        router.push("/bid/lobby");
         return;
       }
 
@@ -196,7 +198,7 @@ export default function BidGamePage() {
     setGame(data as BidState);
     setError("");
     setLoading(false);
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     loadGame();
@@ -282,7 +284,7 @@ export default function BidGamePage() {
   function returnToLobby() {
     sessionStorage.removeItem("bidGameId");
 
-    window.location.href = "/bid/lobby";
+    router.push("/bid/lobby");
   }
 
   if (loading) {
@@ -312,8 +314,7 @@ export default function BidGamePage() {
 
           <button
             onClick={() => {
-              window.location.href =
-                "/bid/lobby";
+              router.push("/bid/lobby");
             }}
             className="mt-6 rounded-2xl bg-violet-500 px-6 py-4 font-black"
           >

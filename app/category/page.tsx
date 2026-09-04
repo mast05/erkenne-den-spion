@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
 import { dealCharacters } from "../lib/dealData";
 
@@ -245,6 +246,7 @@ allSpyCategories.forEach((categoryId) => {
 });
 
 export default function CategoryPage() {
+const router = useRouter();
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -397,7 +399,7 @@ export default function CategoryPage() {
 
       // Host ins Spiel schicken.
       // Die anderen Spieler werden von der Lobby automatisch weitergeleitet.
-      window.location.href = "/game";
+      router.push("/game");
     } catch (err) {
       console.error("START GAME ERROR:", err);
       setError("Beim Starten des Spiels ist ein Fehler aufgetreten.");
@@ -411,8 +413,8 @@ export default function CategoryPage() {
       <button
         disabled={loading}
         onClick={() => {
-          window.location.href = "/lobby";
-        }}
+  router.push("/lobby");
+}}
         className="text-sm font-semibold text-slate-400 transition hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
       >
         ← Zur Lobby
@@ -461,21 +463,19 @@ export default function CategoryPage() {
               </div>
 
               <div className="ml-4">
-                <p className="text-lg font-black">
-                  <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center gap-2 text-lg font-black">
   <span>{category.name}</span>
 
   {(
-  category.id === "fluch-der-karibik" ||
-  category.id === "herr-der-ringe" ||
-  category.id === "hobbit"
-) && (
-  <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
-    Fertig
-  </span>
-)}
+    category.id === "fluch-der-karibik" ||
+    category.id === "herr-der-ringe" ||
+    category.id === "hobbit"
+  ) && (
+    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+      Fertig
+    </span>
+  )}
 </div>
-                </p>
 
                 <p className="mt-1 text-xs text-slate-500">
   {characters[category.id]?.length ?? 0} mögliche Figuren

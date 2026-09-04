@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   supabase,
   ensureAnonymousAuth,
 } from "../lib/supabase";
 
 export default function DealPage() {
+  const router = useRouter();
   const [mode, setMode] = useState<
     "menu" | "create" | "join"
   >("menu");
@@ -90,7 +92,7 @@ export default function DealPage() {
       sessionStorage.setItem("roomId", room.id);
       sessionStorage.setItem("playerId", player.id);
 
-      window.location.href = "/deal/lobby";
+      router.push("/deal/lobby");
     } catch (err) {
       console.error(err);
       setError("Etwas ist schiefgelaufen.");
@@ -183,7 +185,7 @@ export default function DealPage() {
       sessionStorage.setItem("roomId", room.id);
       sessionStorage.setItem("playerId", player.id);
 
-      window.location.href = "/deal/lobby";
+      router.push("/deal/lobby");
     } catch (err) {
       console.error(err);
       setError("Etwas ist schiefgelaufen.");
@@ -198,8 +200,8 @@ export default function DealPage() {
           <>
             <button
               onClick={() => {
-                window.location.href = "/";
-              }}
+  router.push("/");
+}}
               className="mb-8 w-fit text-sm font-semibold text-slate-400 transition hover:text-white"
             >
               ← Alle Spiele

@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   supabase,
   ensureAnonymousAuth,
 } from "../lib/supabase";
 
 export default function BidPage() {
+  const router = useRouter();
   const [mode, setMode] = useState<
     "menu" | "create" | "join"
   >("menu");
@@ -95,7 +97,7 @@ export default function BidPage() {
       sessionStorage.setItem("roomId", room.id);
       sessionStorage.setItem("playerId", player.id);
 
-      window.location.href = "/bid/lobby";
+      router.push("/bid/lobby");
     } catch (err) {
       console.error(err);
       setError("Etwas ist schiefgelaufen.");
@@ -199,7 +201,7 @@ export default function BidPage() {
         player.id
       );
 
-      window.location.href = "/bid/lobby";
+      router.push("/bid/lobby");
     } catch (err) {
       console.error(err);
       setError("Etwas ist schiefgelaufen.");
@@ -214,7 +216,7 @@ export default function BidPage() {
           <>
             <button
               onClick={() => {
-                window.location.href = "/";
+                router.push("/");
               }}
               className="mb-8 w-fit text-sm font-semibold text-slate-400 transition hover:text-white"
             >

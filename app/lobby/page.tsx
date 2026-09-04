@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
 
 type Player = {
@@ -10,6 +11,7 @@ type Player = {
 };
 
 export default function LobbyPage() {
+  const router = useRouter();
   const [players, setPlayers] = useState<Player[]>([]);
   const [roomCode, setRoomCode] = useState("");
   const [loading, setLoading] = useState(true);
@@ -45,7 +47,7 @@ export default function LobbyPage() {
             clearInterval(interval);
           }
 
-          window.location.href = "/spy";
+          router.push("/spy");
           return;
         }
 
@@ -125,7 +127,7 @@ export default function LobbyPage() {
             clearInterval(interval);
           }
 
-          window.location.href = "/spy";
+          router.push("/spy");
           return;
         }
 
@@ -172,8 +174,8 @@ export default function LobbyPage() {
             clearInterval(interval);
           }
 
-          window.location.href = "/game";
-          return;
+          router.push("/game");
+return;
         }
 
         setError("");
@@ -209,7 +211,7 @@ export default function LobbyPage() {
         clearInterval(interval);
       }
     };
-  }, []);
+  }, [router]);
 
   const currentPlayer = players.find(
     (player) => player.id === playerId
@@ -298,7 +300,7 @@ export default function LobbyPage() {
       sessionStorage.removeItem("roomId");
       sessionStorage.removeItem("roundId");
 
-      window.location.href = "/spy";
+      router.push("/spy");
       return;
     }
 
@@ -389,7 +391,7 @@ export default function LobbyPage() {
       sessionStorage.removeItem("roomId");
       sessionStorage.removeItem("roundId");
 
-      window.location.href = "/spy";
+      router.push("/spy");
     } catch (err) {
       console.error(
         "LEAVE ROOM ERROR:",
@@ -603,9 +605,8 @@ export default function LobbyPage() {
               kickingPlayerId !== null
             }
             onClick={() => {
-              window.location.href =
-                "/category";
-            }}
+  router.push("/category");
+}}
             className="mt-5 w-full rounded-2xl bg-emerald-500 px-6 py-5 font-black text-white transition hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-40"
           >
             🎮 Spiel starten

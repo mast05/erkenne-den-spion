@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   supabase,
   ensureAnonymousAuth,
@@ -9,6 +10,7 @@ import {
 type Mode = "menu" | "create" | "join";
 
 export default function SpyPage() {
+  const router = useRouter();
   const [mode, setMode] = useState<Mode>("menu");
   const [name, setName] = useState("");
   const [roomCode, setRoomCode] = useState("");
@@ -92,7 +94,7 @@ export default function SpyPage() {
       sessionStorage.setItem("playerId", player.id);
       sessionStorage.setItem("roomId", room.id);
 
-      window.location.href = "/lobby";
+      router.push("/lobby");
     } catch (err) {
       console.error("CREATE ROOM ERROR:", err);
 
@@ -182,7 +184,7 @@ export default function SpyPage() {
       sessionStorage.setItem("playerId", player.id);
       sessionStorage.setItem("roomId", room.id);
 
-      window.location.href = "/lobby";
+      router.push("/lobby");
     } catch (err) {
       console.error("JOIN ROOM ERROR:", err);
 
@@ -208,7 +210,7 @@ export default function SpyPage() {
           <>
           <button
   onClick={() => {
-    window.location.href = "/";
+    router.push("/");
   }}
   className="mb-8 w-fit text-sm font-semibold text-slate-400 transition hover:text-white"
 >

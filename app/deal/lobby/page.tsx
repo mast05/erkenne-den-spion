@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 import {
   dealCharacters,
@@ -19,6 +20,7 @@ type Room = {
 };
 
 export default function DealLobbyPage() {
+  const router = useRouter();
   const [room, setRoom] = useState<Room | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [playerId, setPlayerId] = useState("");
@@ -42,7 +44,7 @@ export default function DealLobbyPage() {
       sessionStorage.getItem("playerId");
 
     if (!roomId || !currentPlayerId) {
-      window.location.href = "/deal";
+      router.push("/deal");
       return;
     }
 
@@ -92,7 +94,7 @@ export default function DealLobbyPage() {
         sessionStorage.removeItem("playerId");
         sessionStorage.removeItem("dealGameId");
 
-        window.location.href = "/deal";
+        router.push("/deal");
         return;
       }
 
@@ -121,7 +123,7 @@ export default function DealLobbyPage() {
           activeGame.id
         );
 
-        window.location.href = "/deal/game";
+        router.push("/deal/game");
         return;
       }
 
@@ -133,7 +135,7 @@ export default function DealLobbyPage() {
     const interval = setInterval(loadLobby, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [router]);
 
   async function startGame() {
     const roomId = sessionStorage.getItem("roomId");
@@ -181,7 +183,7 @@ export default function DealLobbyPage() {
 
     sessionStorage.setItem("dealGameId", gameId);
 
-    window.location.href = "/deal/game";
+    router.push("/deal/game");
   }
 
   async function leaveRoom() {
@@ -234,7 +236,7 @@ export default function DealLobbyPage() {
     sessionStorage.removeItem("playerId");
     sessionStorage.removeItem("dealGameId");
 
-    window.location.href = "/deal";
+    router.push("/deal");
   }
 
   async function kickPlayer(targetPlayerId: string) {

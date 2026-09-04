@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 import {
   dealGameModes,
@@ -102,6 +103,7 @@ function formatValue(
 }
 
 export default function DealGamePage() {
+  const router = useRouter();
   const [game, setGame] = useState<DealState | null>(
     null
   );
@@ -121,7 +123,7 @@ export default function DealGamePage() {
       sessionStorage.getItem("dealGameId");
 
     if (!roomId || !currentPlayerId) {
-      window.location.href = "/deal";
+      router.push("/deal");
       return;
     }
 
@@ -150,7 +152,7 @@ export default function DealGamePage() {
       }
 
       if (!activeGame) {
-        window.location.href = "/deal/lobby";
+        router.push("/deal/lobby");
         return;
       }
 
@@ -182,7 +184,7 @@ export default function DealGamePage() {
     setGame(data as DealState);
     setError("");
     setLoading(false);
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     loadGame();
@@ -265,9 +267,9 @@ export default function DealGamePage() {
   }
 
   function returnToLobby() {
-    sessionStorage.removeItem("dealGameId");
-    window.location.href = "/deal/lobby";
-  }
+  sessionStorage.removeItem("dealGameId");
+  router.push("/deal/lobby");
+}
 
   if (loading) {
     return (
@@ -293,7 +295,7 @@ export default function DealGamePage() {
 
           <button
             onClick={() => {
-              window.location.href = "/deal/lobby";
+              router.push("/deal/lobby");
             }}
             className="mt-6 rounded-2xl bg-amber-500 px-6 py-4 font-black text-slate-950"
           >

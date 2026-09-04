@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 import {
   dealCharacters,
@@ -74,6 +75,7 @@ const categories = [
 ];
 
 export default function BidLobbyPage() {
+  const router = useRouter();
   const [room, setRoom] = useState<Room | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [playerId, setPlayerId] = useState("");
@@ -100,7 +102,7 @@ export default function BidLobbyPage() {
       sessionStorage.getItem("playerId");
 
     if (!roomId || !currentPlayerId) {
-      window.location.href = "/bid";
+      router.push("/bid");
       return;
     }
 
@@ -151,7 +153,7 @@ export default function BidLobbyPage() {
         sessionStorage.removeItem("playerId");
         sessionStorage.removeItem("bidGameId");
 
-        window.location.href = "/bid";
+        router.push("/bid");
         return;
       }
 
@@ -180,7 +182,7 @@ export default function BidLobbyPage() {
           activeGame.id
         );
 
-        window.location.href = "/bid/game";
+        router.push("/bid/game");
         return;
       }
 
@@ -192,7 +194,7 @@ export default function BidLobbyPage() {
     const interval = setInterval(loadLobby, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [router]);
 
   async function startGame() {
     const roomId = sessionStorage.getItem("roomId");
@@ -241,7 +243,7 @@ export default function BidLobbyPage() {
 
     sessionStorage.setItem("bidGameId", gameId);
 
-    window.location.href = "/bid/game";
+    router.push("/bid/game");
   }
 
   async function leaveRoom() {
@@ -291,7 +293,7 @@ export default function BidLobbyPage() {
     sessionStorage.removeItem("playerId");
     sessionStorage.removeItem("bidGameId");
 
-    window.location.href = "/bid";
+    router.push("/bid");
   }
 
   async function kickPlayer(targetPlayerId: string) {
