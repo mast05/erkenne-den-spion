@@ -76,6 +76,10 @@ const categories = [
   id: "fussballer",
   label: "⚽ Fußballer",
 },
+{
+  id: "filme",
+  label: "🎞️ Filme",
+},
 ];
 
 export default function BidLobbyPage() {
@@ -498,15 +502,23 @@ export default function BidLobbyPage() {
 if (category.id === "fussballer") {
   setSelectedMode("goals");
 }
+
+if (category.id === "filme") {
+  setSelectedMode("boxOffice");
+}
 if (
   category.id !== "fussballer" &&
+  category.id !== "filme" &&
   (
     selectedMode === "goals" ||
     selectedMode === "assists" ||
     selectedMode === "titles" ||
     selectedMode === "awards" ||
     selectedMode === "clAppearances" ||
-    selectedMode === "internationalCaps"
+    selectedMode === "internationalCaps" ||
+    selectedMode === "boxOffice" ||
+    selectedMode === "imdb" ||
+    selectedMode === "watchRate"
   )
 ) {
   setSelectedMode("fame");
@@ -560,6 +572,22 @@ if (
     "clAppearances",
     "internationalCaps",
   ].includes(gameMode.id);
+}
+if (selectedCategory === "filme") {
+  return [
+    "boxOffice",
+    "imdb",
+    "watchRate",
+    "fame",
+  ].includes(gameMode.id);
+}
+
+if (
+  ["boxOffice", "imdb", "watchRate"].includes(
+    gameMode.id
+  )
+) {
+  return false;
 }
 
 if (

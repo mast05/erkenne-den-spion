@@ -69,6 +69,7 @@ const categoryNames: Record<string, string> = {
   "schauspielerinnen": "💃 Schauspielerinnen",
 "schauspieler": "🎬 Schauspieler",
 "fussballer": "⚽ Fußballer",
+"filme": "🎞️ Filme",
 };
 
 function getCharacterImage(
@@ -99,6 +100,15 @@ function formatValue(
 
     case "age":
       return `${value} Jahre`;
+
+      case "boxOffice":
+  return `${value} Mio. $`;
+
+case "imdb":
+  return `${value} / 10`;
+
+case "watchRate":
+  return `${value} %`;
 
       case "goals":
   return `${value} Tore`;
