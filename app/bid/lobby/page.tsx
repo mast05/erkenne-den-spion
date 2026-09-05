@@ -72,6 +72,10 @@ const categories = [
     id: "schauspieler",
     label: "🎬 Schauspieler",
   },
+  {
+  id: "fussballer",
+  label: "⚽ Fußballer",
+},
 ];
 
 export default function BidLobbyPage() {
@@ -213,13 +217,16 @@ export default function BidLobbyPage() {
     setStarting(true);
     setError("");
 
-    const characterPool = dealCharacters.map(
-      (character) => ({
-        name: character.name,
-        category: character.category,
-        value: character[selectedMode],
-      })
-    );
+    const characterPool = dealCharacters
+  .filter(
+    (character) =>
+      character.category === selectedCategory
+  )
+  .map((character) => ({
+    name: character.name,
+    category: character.category,
+    value: character[selectedMode],
+  }));
 
     const { data: gameId, error: gameError } =
       await supabase.rpc("create_bid_game", {
@@ -481,12 +488,29 @@ export default function BidLobbyPage() {
   setSelectedCategory(category.id);
 
   if (
-    (category.id === "schauspielerinnen" ||
-      category.id === "schauspieler") &&
-    selectedMode === "kills"
-  ) {
-    setSelectedMode("attractiveness");
-  }
+  (category.id === "schauspielerinnen" ||
+    category.id === "schauspieler") &&
+  selectedMode === "kills"
+) {
+  setSelectedMode("attractiveness");
+}
+
+if (category.id === "fussballer") {
+  setSelectedMode("goals");
+}
+if (
+  category.id !== "fussballer" &&
+  (
+    selectedMode === "goals" ||
+    selectedMode === "assists" ||
+    selectedMode === "titles" ||
+    selectedMode === "awards" ||
+    selectedMode === "clAppearances" ||
+    selectedMode === "internationalCaps"
+  )
+) {
+  setSelectedMode("fame");
+}
 }}
                       className={`rounded-2xl border px-4 py-4 text-left text-sm font-bold transition ${
                         selected
@@ -526,14 +550,43 @@ export default function BidLobbyPage() {
 
               <div className="mt-4 space-y-2">
                 {dealGameModes
-  .filter(
-    (gameMode) =>
-      !(
-        (selectedCategory === "schauspielerinnen" ||
-          selectedCategory === "schauspieler") &&
-        gameMode.id === "kills"
-      )
-  )
+  .filter((gameMode) => {
+    if (selectedCategory === "fussballer") {
+  return [
+    "goals",
+    "assists",
+    "titles",
+    "awards",
+    "clAppearances",
+    "internationalCaps",
+  ].includes(gameMode.id);
+}
+
+if (
+  [
+    "goals",
+    "assists",
+    "titles",
+    "awards",
+    "clAppearances",
+    "internationalCaps",
+  ].includes(gameMode.id)
+) {
+  return false;
+}
+
+    
+
+    if (
+      (selectedCategory === "schauspielerinnen" ||
+        selectedCategory === "schauspieler") &&
+      gameMode.id === "kills"
+    ) {
+      return false;
+    }
+
+    return true;
+  })
   .map((gameMode) => {
                   const selected =
                     selectedMode === gameMode.id;

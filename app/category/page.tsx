@@ -45,6 +45,11 @@ const categories = [
     name: "Jurassic Park / World",
     emoji: "🦖",
   },
+  {
+    id: "fussballer",
+    name: "Fußballer",
+    emoji: "⚽"
+  }
 ];
 
 type Character = {

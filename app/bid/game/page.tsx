@@ -68,6 +68,7 @@ const categoryNames: Record<string, string> = {
   jurassic: "🦖 Jurassic Park / World",
   "schauspielerinnen": "💃 Schauspielerinnen",
 "schauspieler": "🎬 Schauspieler",
+"fussballer": "⚽ Fußballer",
 };
 
 function getCharacterImage(
@@ -99,11 +100,29 @@ function formatValue(
     case "age":
       return `${value} Jahre`;
 
+      case "goals":
+  return `${value} Tore`;
+
+case "assists":
+  return `${value} Assists`;
+
+case "titles":
+  return `${value} Titel`;
+
+case "awards":
+  return `${value} Auszeichnungen`;
+
+case "clAppearances":
+  return `${value} CL-Einsätze`;
+
+case "internationalCaps":
+  return `${value} Länderspiele`;
+
     case "strength":
-    case "intelligence":
-    case "fame":
-    case "attractiveness":
-      return `${value} Punkte`;
+case "intelligence":
+case "fame":
+case "attractiveness":
+  return `${value} Punkte`;
 
     default:
       return String(value);

@@ -64,6 +64,10 @@ const categoryInfo = [
   id: "schauspieler",
   name: "🎬 Schauspieler",
 },
+{
+  id: "fussballer",
+  name: "⚽ Fußballer",
+},
 ];
 
 const categories: Category[] = categoryInfo.map(
