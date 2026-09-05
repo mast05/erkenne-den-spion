@@ -467,10 +467,11 @@ const router = useRouter();
   <span>{category.name}</span>
 
   {(
-    category.id === "fluch-der-karibik" ||
-    category.id === "herr-der-ringe" ||
-    category.id === "hobbit"
-  ) && (
+  category.id === "fluch-der-karibik" ||
+  category.id === "herr-der-ringe" ||
+  category.id === "hobbit" ||
+  category.id === "the-boys"
+) && (
     <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
       Fertig
     </span>

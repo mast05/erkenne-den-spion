@@ -2301,6 +2301,66 @@ const characterTips: Record<string, string[]> = {
   "Helle Haare",
 ],
 
+"Dale Horvath": [
+  "Älter",
+  "Helle Haare",
+  "Schlichte Kleidung",
+],
+
+"T-Dog": [
+  "Kräftig gebaut",
+  "Praktische Kleidung",
+  "Kurze Haare",
+],
+
+"Lori Grimes": [
+  "Schlank",
+  "Alltägliche Kleidung",
+  "Dunkle Haare",
+],
+
+"Beth Greene": [
+  "Jung",
+  "Schlanke Statur",
+  "Helle Haare",
+],
+
+"Tara Chambler": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Dunkle Haare",
+],
+
+"Enid": [
+  "Jung",
+  "Schlanke Statur",
+  "Alltägliche Kleidung",
+],
+
+"Dwight": [
+  "Schlank",
+  "Dunkle Kleidung",
+  "Auffälliges Gesicht",
+],
+
+"Simon": [
+  "Groß",
+  "Kräftig gebaut",
+  "Dunkle Kleidung",
+],
+
+"Jerry": [
+  "Sehr kräftig",
+  "Große Statur",
+  "Praktische Kleidung",
+],
+
+"Judith Grimes": [
+  "Sehr klein",
+  "Jung",
+  "Praktische Kleidung",
+],
+
     // =========================
 // JURASSIC PARK / WORLD
 // =========================
@@ -2453,6 +2513,66 @@ const characterTips: Record<string, string[]> = {
   "Mittlere Statur",
   "Moderne Kleidung",
   "Sehr gepflegt",
+],
+
+"Sarah Harding": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Dunkle Haare",
+],
+
+"Roland Tembo": [
+  "Sehr groß",
+  "Kräftig gebaut",
+  "Robuste Kleidung",
+],
+
+"Nick Van Owen": [
+  "Schlank",
+  "Lässige Kleidung",
+  "Dunkle Haare",
+],
+
+"Kelly Curtis": [
+  "Jung",
+  "Kleine Statur",
+  "Alltägliche Kleidung",
+],
+
+"Billy Brennan": [
+  "Schlank",
+  "Praktische Kleidung",
+  "Jung",
+],
+
+"Paul Kirby": [
+  "Mittlere Statur",
+  "Alltägliche Kleidung",
+  "Unauffälliger Look",
+],
+
+"Amanda Kirby": [
+  "Schlank",
+  "Alltägliche Kleidung",
+  "Helle Haare",
+],
+
+"Eric Kirby": [
+  "Jung",
+  "Kleine Statur",
+  "Praktische Kleidung",
+],
+
+"Eddie Carr": [
+  "Mittlere Statur",
+  "Praktische Kleidung",
+  "Viel Ausrüstung",
+],
+
+"Zara Young": [
+  "Schlank",
+  "Ordentliche Kleidung",
+  "Dunkle Haare",
 ],
 
 };

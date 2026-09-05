@@ -569,6 +569,7 @@ export default function DealGamePage() {
 
   {(
   currentCategory === "fluch-der-karibik" ||
+  currentCategory === "the-boys" ||
   currentCategory === "herr-der-ringe" ||
   currentCategory === "hobbit"
 ) && (
