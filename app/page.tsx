@@ -9,13 +9,13 @@ export default function Home() {
         <div className="mb-10 text-center">
 
           <Image
-  src="/logo.jpeg"
-  alt="Logo"
-  width={260}
-  height={260}
-  priority
-  className="mx-auto mb-4 rounded-2xl"
-/>
+            src="/logo.jpeg"
+            alt="Logo"
+            width={260}
+            height={260}
+            priority
+            className="mx-auto mb-4 rounded-2xl"
+          />
 
           <h1 className="text-4xl font-black tracking-tight">
             Mellon
@@ -49,18 +49,25 @@ export default function Home() {
             💰 Bieterkrieg
           </Link>
 
+          <Link
+            href="/arena"
+            className="block w-full rounded-2xl bg-orange-500 px-6 py-5 text-center text-lg font-bold text-white transition hover:scale-[1.02]"
+          >
+            ⚔️ Character Arena
+          </Link>
+
         </div>
 
         <p className="mt-8 text-center text-sm text-slate-500">
           2–3 Spieler · Online · Kostenlos
         </p>
 
-<Link
-  href="/privacy"
-  className="mt-3 text-center text-xs text-slate-600 hover:text-slate-400"
->
-  Datenschutz & Musik
-</Link>
+        <Link
+          href="/privacy"
+          className="mt-3 text-center text-xs text-slate-600 hover:text-slate-400"
+        >
+          Datenschutz & Musik
+        </Link>
 
       </div>
     </main>
