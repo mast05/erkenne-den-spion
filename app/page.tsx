@@ -63,6 +63,13 @@ export default function Home() {
   🤔 Wer bin ich?
 </Link>
 
+<Link
+  href="/silhouette"
+  className="block w-full rounded-2xl bg-violet-500 px-6 py-5 text-center text-lg font-bold text-white transition hover:scale-[1.02]"
+>
+  👤 Silhouette
+</Link>
+
         </div>
 
         <p className="mt-8 text-center text-sm text-slate-500">
