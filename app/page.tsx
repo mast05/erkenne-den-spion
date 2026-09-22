@@ -56,6 +56,13 @@ export default function Home() {
             ⚔️ Character Arena
           </Link>
 
+          <Link
+  href="/who"
+  className="block w-full rounded-2xl bg-cyan-500 px-6 py-5 text-center text-lg font-bold text-slate-950 transition hover:scale-[1.02]"
+>
+  🤔 Wer bin ich?
+</Link>
+
         </div>
 
         <p className="mt-8 text-center text-sm text-slate-500">
