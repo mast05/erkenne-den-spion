@@ -70,6 +70,13 @@ export default function Home() {
   👤 Silhouette
 </Link>
 
+<Link
+  href="/quiz"
+  className="block w-full rounded-2xl bg-emerald-500 px-6 py-5 text-center text-lg font-bold text-slate-950 transition hover:scale-[1.02]"
+>
+  🎓 Fandom Quiz
+</Link>
+
         </div>
 
         <p className="mt-8 text-center text-sm text-slate-500">
