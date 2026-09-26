@@ -1,6 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 
@@ -18,6 +22,7 @@ export default function ArenaLobbyPage() {
   const [playerId, setPlayerId] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const forceLobbyRef = useRef(false);
 
   useEffect(() => {
     const roomId = sessionStorage.getItem("roomId");
@@ -30,6 +35,15 @@ export default function ArenaLobbyPage() {
     }
 
     setPlayerId(currentPlayerId);
+
+    forceLobbyRef.current =
+  sessionStorage.getItem(
+    "arenaForceLobby"
+  ) === "1";
+
+sessionStorage.removeItem(
+  "arenaForceLobby"
+);
 
     let mounted = true;
 
@@ -105,7 +119,10 @@ if (arenaGameError) {
   );
 }
 
-if (arenaGame) {
+if (
+  arenaGame &&
+  !forceLobbyRef.current
+) {
   sessionStorage.setItem(
     "arenaGameId",
     arenaGame.id
