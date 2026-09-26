@@ -1544,7 +1544,7 @@ const finalWinners =
       <button
   onClick={() => {
     sessionStorage.removeItem("arenaGameId");
-    router.push("/arena");
+    router.push("/arena/lobby");
   }}
   className="rounded-2xl bg-orange-500 px-6 py-4 font-black hover:bg-orange-400"
 >
