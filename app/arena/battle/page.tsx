@@ -922,14 +922,15 @@ export default function ArenaBattlePage() {
 
   async function nextRound() {
     if (
-      !game ||
-      !round ||
-      round.status !==
-        "revealed" ||
-      advancing
-    ) {
-      return;
-    }
+  !game ||
+  !round ||
+  !["revealed", "finished"].includes(
+    round.status
+  ) ||
+  advancing
+) {
+  return;
+}
 
     setAdvancing(true);
     setError("");
@@ -1099,6 +1100,17 @@ const finalWinners =
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto max-w-5xl px-6 py-10">
+        <div className="mb-6 flex justify-start">
+  <button
+    onClick={() => {
+      sessionStorage.removeItem("arenaGameId");
+      router.push("/arena");
+    }}
+    className="rounded-2xl border border-slate-700 bg-slate-900 px-4 py-3 text-sm font-black text-slate-200 transition hover:border-slate-500 hover:bg-slate-800"
+  >
+    ← Spiel wechseln
+  </button>
+</div>
         <div className="text-center">
           <p className="text-sm font-black uppercase tracking-[0.25em] text-orange-400">
             ⚔️ Character Arena
