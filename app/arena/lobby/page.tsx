@@ -23,8 +23,8 @@ export default function ArenaLobbyPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  // Verhindert nach "Neues Spiel" den automatischen
-  // Sprung zurück in einen alten Draft.
+  // Wenn true, bleibt man in der Lobby,
+  // auch wenn noch ein alter Draft existiert.
   const stayInLobbyRef = useRef(false);
 
   useEffect(() => {
@@ -41,19 +41,12 @@ export default function ArenaLobbyPage() {
 
     setPlayerId(currentPlayerId);
 
-    // Prüfen, ob wir bewusst in der Lobby bleiben sollen.
-    const forceLobby =
+    // Prüfen, ob wir gerade über
+    // "Neues Spiel" in die Lobby gekommen sind.
+    stayInLobbyRef.current =
       sessionStorage.getItem(
         "arenaForceLobby"
       ) === "1";
-
-    stayInLobbyRef.current =
-      forceLobby;
-
-    // Einmaligen Schalter löschen.
-    sessionStorage.removeItem(
-      "arenaForceLobby"
-    );
 
     let mounted = true;
 
@@ -141,11 +134,14 @@ export default function ArenaLobbyPage() {
         );
       }
 
-      // Normalerweise geht die Lobby automatisch
-      // in einen vorhandenen Draft.
-      //
-      // Nach "Neues Spiel" bleiben wir aber bewusst
-      // in der Lobby, auch beim nächsten Poll.
+      /*
+       * Normal:
+       * Wenn ein Draft existiert, direkt in den Draft.
+       *
+       * Nach "Neues Spiel":
+       * arenaForceLobby bleibt bestehen,
+       * deshalb bleiben wir hier in der Lobby.
+       */
       if (
         arenaGame &&
         !stayInLobbyRef.current
@@ -262,6 +258,7 @@ export default function ArenaLobbyPage() {
                   <div>
                     <p className="font-bold">
                       {player.name}
+
                       {player.id ===
                       playerId
                         ? " (Du)"
@@ -295,8 +292,10 @@ export default function ArenaLobbyPage() {
         {isHost ? (
           <button
             onClick={() => {
-              // Jetzt darf die Lobby wieder
-              // automatisch zum neuen Draft gehen.
+              /*
+               * Ab jetzt darf wieder ein vorhandener
+               * Draft geöffnet werden.
+               */
               stayInLobbyRef.current =
                 false;
 
