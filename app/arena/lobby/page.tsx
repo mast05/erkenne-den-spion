@@ -1,6 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 
@@ -19,8 +23,14 @@ export default function ArenaLobbyPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  // Wenn true, bleibt man in der Lobby,
+  // auch wenn noch ein alter Draft existiert.
+  const stayInLobbyRef = useRef(false);
+
   useEffect(() => {
-    const roomId = sessionStorage.getItem("roomId");
+    const roomId =
+      sessionStorage.getItem("roomId");
+
     const currentPlayerId =
       sessionStorage.getItem("playerId");
 
@@ -31,15 +41,24 @@ export default function ArenaLobbyPage() {
 
     setPlayerId(currentPlayerId);
 
+    // Prüfen, ob wir gerade über
+    // "Neues Spiel" in die Lobby gekommen sind.
+    stayInLobbyRef.current =
+      sessionStorage.getItem(
+        "arenaForceLobby"
+      ) === "1";
+
     let mounted = true;
 
     async function loadLobby() {
-      const { data: room, error: roomError } =
-        await supabase
-          .from("rooms")
-          .select("room_code")
-          .eq("id", roomId)
-          .maybeSingle();
+      const {
+        data: room,
+        error: roomError,
+      } = await supabase
+        .from("rooms")
+        .select("room_code")
+        .eq("id", roomId)
+        .maybeSingle();
 
       if (!mounted) return;
 
@@ -62,7 +81,9 @@ export default function ArenaLobbyPage() {
         error: playersError,
       } = await supabase
         .from("players")
-        .select("id, name, is_host")
+        .select(
+          "id, name, is_host"
+        )
         .eq("room_id", roomId)
         .order("created_at", {
           ascending: true,
@@ -85,48 +106,79 @@ export default function ArenaLobbyPage() {
       }
 
       const {
-  data: arenaGame,
-  error: arenaGameError,
-} = await supabase
-  .from("arena_games")
-  .select("id, status")
-  .eq("room_id", roomId)
-  .eq("status", "draft")
-  .order("created_at", {
-    ascending: false,
-  })
-  .limit(1)
-  .maybeSingle();
+        data: arenaGame,
+        error: arenaGameError,
+      } = await supabase
+        .from("arena_games")
+        .select(
+          "id, status"
+        )
+        .eq(
+          "room_id",
+          roomId
+        )
+        .eq(
+          "status",
+          "draft"
+        )
+        .order("created_at", {
+          ascending: false,
+        })
+        .limit(1)
+        .maybeSingle();
 
-if (arenaGameError) {
-  console.error(
-    "ARENA GAME CHECK ERROR:",
-    arenaGameError
-  );
-}
+      if (arenaGameError) {
+        console.error(
+          "ARENA GAME CHECK ERROR:",
+          arenaGameError
+        );
+      }
 
-if (arenaGame) {
-  sessionStorage.setItem(
-    "arenaGameId",
-    arenaGame.id
-  );
+      /*
+       * Normal:
+       * Wenn ein Draft existiert, direkt in den Draft.
+       *
+       * Nach "Neues Spiel":
+       * arenaForceLobby bleibt bestehen,
+       * deshalb bleiben wir hier in der Lobby.
+       */
+      if (
+        arenaGame &&
+        !stayInLobbyRef.current
+      ) {
+        sessionStorage.setItem(
+          "arenaGameId",
+          arenaGame.id
+        );
 
-  router.push("/arena/draft");
-  return;
-}
+        router.push(
+          "/arena/draft"
+        );
 
-      setRoomCode(room.room_code ?? "");
-      setPlayers(playerData ?? []);
+        return;
+      }
+
+      setRoomCode(
+        room.room_code ?? ""
+      );
+
+      setPlayers(
+        playerData ?? []
+      );
+
       setError("");
       setLoading(false);
     }
 
-    loadLobby();
+    void loadLobby();
 
-    const interval = setInterval(
-      loadLobby,
-      1000
-    );
+    const interval =
+      setInterval(
+        () => {
+          void loadLobby();
+        },
+        1000
+      );
 
     return () => {
       mounted = false;
@@ -134,9 +186,11 @@ if (arenaGame) {
     };
   }, [router]);
 
-  const currentPlayer = players.find(
-    (player) => player.id === playerId
-  );
+  const currentPlayer =
+    players.find(
+      (player) =>
+        player.id === playerId
+    );
 
   const isHost =
     currentPlayer?.is_host === true;
@@ -154,6 +208,7 @@ if (arenaGame) {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-10">
+
         <div className="text-center">
           <div className="text-6xl">
             ⚔️
@@ -194,33 +249,37 @@ if (arenaGame) {
           </div>
 
           <div className="mt-4 space-y-3">
-            {players.map((player) => (
-              <div
-                key={player.id}
-                className="flex items-center justify-between rounded-2xl bg-slate-950 px-4 py-4"
-              >
-                <div>
-                  <p className="font-bold">
-                    {player.name}
-                    {player.id === playerId
-                      ? " (Du)"
-                      : ""}
-                  </p>
+            {players.map(
+              (player) => (
+                <div
+                  key={player.id}
+                  className="flex items-center justify-between rounded-2xl bg-slate-950 px-4 py-4"
+                >
+                  <div>
+                    <p className="font-bold">
+                      {player.name}
 
-                  {player.is_host && (
-                    <p className="mt-1 text-xs font-bold uppercase tracking-wider text-orange-400">
-                      Host
+                      {player.id ===
+                      playerId
+                        ? " (Du)"
+                        : ""}
                     </p>
-                  )}
-                </div>
 
-                <div className="text-2xl">
-                  {player.is_host
-                    ? "👑"
-                    : "⚔️"}
+                    {player.is_host && (
+                      <p className="mt-1 text-xs font-bold uppercase tracking-wider text-orange-400">
+                        Host
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="text-2xl">
+                    {player.is_host
+                      ? "👑"
+                      : "⚔️"}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
 
             {players.length < 3 && (
               <div className="rounded-2xl border border-dashed border-slate-700 px-4 py-4 text-center text-sm text-slate-500">
@@ -232,8 +291,25 @@ if (arenaGame) {
 
         {isHost ? (
           <button
-  onClick={() => router.push("/arena/setup")}
-  disabled={players.length < 2}
+            onClick={() => {
+              /*
+               * Ab jetzt darf wieder ein vorhandener
+               * Draft geöffnet werden.
+               */
+              stayInLobbyRef.current =
+                false;
+
+              sessionStorage.removeItem(
+                "arenaForceLobby"
+              );
+
+              router.push(
+                "/arena/setup"
+              );
+            }}
+            disabled={
+              players.length < 2
+            }
             className="mt-6 w-full rounded-2xl bg-orange-500 px-6 py-5 font-black transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-40"
           >
             ⚔️ Spiel vorbereiten
