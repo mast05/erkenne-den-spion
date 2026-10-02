@@ -26,7 +26,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <div className="site-background" aria-hidden="true">
-          <div className="site-background-image" />
+          <video
+            className="site-background-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+          >
+            <source src="/background.mp4" type="video/mp4" />
+          </video>
+
           <div className="site-background-shade" />
         </div>
 
