@@ -41,6 +41,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </div>
 
         <div className="site-content">
+          <div className="flex justify-end px-4 pt-4 sm:px-6">
+            <a
+              href="https://discord.gg/XH2D8WEqTD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-2xl bg-[#5865F2] px-4 py-3 text-sm font-black text-white shadow-lg transition hover:bg-[#4752C4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              <span aria-hidden="true">💬</span>
+              Discord beitreten
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
           {children}
         </div>
 
