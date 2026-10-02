@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 
@@ -10,222 +10,375 @@ type Player = {
   is_host: boolean;
 };
 
+function clearSilhouetteSession() {
+  ["roomId", "playerId", "silhouetteGameId"].forEach((key) =>
+    sessionStorage.removeItem(key)
+  );
+}
+
 export default function SilhouetteLobbyPage() {
   const router = useRouter();
 
-  const [roomCode, setRoomCode] =
-    useState("");
+  const [roomCode, setRoomCode] = useState("");
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [playerId, setPlayerId] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [lobbyError, setLobbyError] = useState("");
+  const [busy, setBusy] = useState<string | null>(null);
 
-  const [players, setPlayers] =
-    useState<Player[]>([]);
+  const leavingLobbyRef = useRef(false);
+  const actionRunningRef = useRef(false);
 
-  const [playerId, setPlayerId] =
-    useState("");
+  const currentPlayer = players.find(
+    (player) => player.id === playerId
+  );
 
-  const [loading, setLoading] =
-    useState(true);
-
-  const [error, setError] =
-    useState("");
+  const isHost = currentPlayer?.is_host === true;
 
   useEffect(() => {
-    const roomId =
-      sessionStorage.getItem(
-        "roomId"
-      );
+    const roomId = sessionStorage.getItem("roomId");
+    const currentPlayerId = sessionStorage.getItem("playerId");
 
-    const currentPlayerId =
-      sessionStorage.getItem(
-        "playerId"
-      );
-
-    if (
-      !roomId ||
-      !currentPlayerId
-    ) {
-      router.push(
-        "/silhouette"
-      );
-
+    if (!roomId || !currentPlayerId) {
+      router.replace("/silhouette");
       return;
     }
 
-    setPlayerId(
-      currentPlayerId
-    );
+    setPlayerId(currentPlayerId);
 
     let mounted = true;
+    let fetching = false;
+
+    function canUpdate() {
+      return (
+        mounted &&
+        !leavingLobbyRef.current &&
+        !actionRunningRef.current
+      );
+    }
 
     async function loadLobby() {
-      const {
-        data: room,
-        error: roomError,
-      } = await supabase
-        .from("rooms")
-        .select("room_code")
-        .eq("id", roomId)
-        .eq(
-          "game",
-          "silhouette"
-        )
-        .maybeSingle();
+      if (!canUpdate() || fetching) return;
 
-      if (!mounted) {
-        return;
+      fetching = true;
+
+      try {
+        const { data: room, error: roomError } = await supabase
+          .from("rooms")
+          .select("room_code")
+          .eq("id", roomId)
+          .eq("game", "silhouette")
+          .maybeSingle();
+
+        if (!canUpdate()) return;
+
+        if (roomError || !room) {
+          throw new Error(
+            "Der Raum konnte nicht geladen werden."
+          );
+        }
+
+        const { data: playerData, error: playersError } =
+          await supabase
+            .from("players")
+            .select("id, name, is_host")
+            .eq("room_id", roomId)
+            .order("created_at", { ascending: true });
+
+        if (!canUpdate()) return;
+
+        if (playersError) {
+          throw new Error(
+            "Die Spieler konnten nicht geladen werden."
+          );
+        }
+
+        const loadedPlayers: Player[] = playerData ?? [];
+
+        const stillInRoom = loadedPlayers.some(
+          (player) => player.id === currentPlayerId
+        );
+
+        if (!stillInRoom) {
+          leavingLobbyRef.current = true;
+          clearSilhouetteSession();
+          router.replace("/silhouette");
+          return;
+        }
+
+        setRoomCode(room.room_code ?? "");
+        setPlayers(loadedPlayers);
+
+        const {
+          data: silhouetteGame,
+          error: gameError,
+        } = await supabase
+          .from("silhouette_games")
+          .select("id, status")
+          .eq("room_id", roomId)
+          .eq("status", "playing")
+          .order("created_at", { ascending: false })
+          .limit(1)
+          .maybeSingle();
+
+        if (!canUpdate()) return;
+
+        if (gameError) {
+          throw new Error(
+            "Der Spielstart konnte nicht geprüft werden."
+          );
+        }
+
+        if (silhouetteGame) {
+          leavingLobbyRef.current = true;
+
+          sessionStorage.setItem(
+            "silhouetteGameId",
+            silhouetteGame.id
+          );
+
+          router.push("/silhouette/game");
+          return;
+        }
+
+        setLobbyError("");
+      } catch (err) {
+        if (!canUpdate()) return;
+
+        console.error("SILHOUETTE LOBBY ERROR:", err);
+        setLobbyError(
+          err instanceof Error
+            ? err.message
+            : "Die Lobby konnte nicht geladen werden."
+        );
+      } finally {
+        fetching = false;
+
+        if (canUpdate()) {
+          setLoading(false);
+        }
       }
-
-      if (
-        roomError ||
-        !room
-      ) {
-        console.error(
-          "SILHOUETTE ROOM LOAD ERROR:",
-          roomError
-        );
-
-        setError(
-          "Der Raum konnte nicht geladen werden."
-        );
-
-        setLoading(false);
-        return;
-      }
-
-      const {
-        data: playerData,
-        error: playersError,
-      } = await supabase
-        .from("players")
-        .select(
-          "id, name, is_host"
-        )
-        .eq(
-          "room_id",
-          roomId
-        )
-        .order(
-          "created_at",
-          {
-            ascending: true,
-          }
-        );
-
-      if (!mounted) {
-        return;
-      }
-
-      if (playersError) {
-        console.error(
-          "SILHOUETTE PLAYERS LOAD ERROR:",
-          playersError
-        );
-
-        setError(
-          "Die Spieler konnten nicht geladen werden."
-        );
-
-        setLoading(false);
-        return;
-      }
-
-      /*
-       * Prüfen, ob bereits ein
-       * laufendes Silhouette-Spiel
-       * existiert.
-       */
-      const {
-        data: silhouetteGame,
-        error: gameError,
-      } = await supabase
-        .from(
-          "silhouette_games"
-        )
-        .select(
-          "id, status"
-        )
-        .eq(
-          "room_id",
-          roomId
-        )
-        .eq(
-          "status",
-          "playing"
-        )
-        .order(
-          "created_at",
-          {
-            ascending: false,
-          }
-        )
-        .limit(1)
-        .maybeSingle();
-
-      if (!mounted) {
-        return;
-      }
-
-      if (gameError) {
-        console.error(
-          "SILHOUETTE GAME CHECK ERROR:",
-          gameError
-        );
-      }
-
-      if (silhouetteGame) {
-        sessionStorage.setItem(
-          "silhouetteGameId",
-          silhouetteGame.id
-        );
-
-        router.push(
-          "/silhouette/game"
-        );
-
-        return;
-      }
-
-      setRoomCode(
-        room.room_code ?? ""
-      );
-
-      setPlayers(
-        (playerData ??
-          []) as Player[]
-      );
-
-      setError("");
-      setLoading(false);
     }
 
     void loadLobby();
 
-    const interval =
-      window.setInterval(
-        () => {
-          void loadLobby();
-        },
-        1000
-      );
+    const interval = window.setInterval(() => {
+      void loadLobby();
+    }, 1000);
 
     return () => {
       mounted = false;
-
-      window.clearInterval(
-        interval
-      );
+      window.clearInterval(interval);
     };
   }, [router]);
 
-  const currentPlayer =
-    players.find(
-      (player) =>
-        player.id ===
-        playerId
+  async function kickPlayer(targetPlayerId: string) {
+    const roomId = sessionStorage.getItem("roomId");
+
+    if (
+      !isHost ||
+      !roomId ||
+      actionRunningRef.current ||
+      leavingLobbyRef.current ||
+      targetPlayerId === playerId
+    ) {
+      return;
+    }
+
+    const target = players.find(
+      (player) => player.id === targetPlayerId
     );
 
-  const isHost =
-    currentPlayer?.is_host ===
-    true;
+    if (!target || target.is_host) return;
+
+    if (
+      !window.confirm(
+        `${target.name} wirklich aus dem Raum werfen?`
+      )
+    ) {
+      return;
+    }
+
+    actionRunningRef.current = true;
+    setBusy(targetPlayerId);
+    setError("");
+
+    try {
+      const { data: deletedPlayers, error: kickError } =
+        await supabase
+          .from("players")
+          .delete()
+          .eq("id", targetPlayerId)
+          .eq("room_id", roomId)
+          .eq("is_host", false)
+          .select("id");
+
+      if (kickError || !deletedPlayers?.length) {
+        throw new Error(
+          "Der Spieler konnte nicht entfernt werden."
+        );
+      }
+
+      setPlayers((current) =>
+        current.filter(
+          (player) => player.id !== targetPlayerId
+        )
+      );
+    } catch (err) {
+      console.error("SILHOUETTE KICK ERROR:", err);
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Der Spieler konnte nicht entfernt werden."
+      );
+    } finally {
+      actionRunningRef.current = false;
+      setBusy(null);
+    }
+  }
+
+  async function leaveRoom() {
+    if (
+      actionRunningRef.current ||
+      leavingLobbyRef.current
+    ) {
+      return;
+    }
+
+    actionRunningRef.current = true;
+    leavingLobbyRef.current = true;
+    setBusy("leave");
+    setError("");
+
+    const roomId = sessionStorage.getItem("roomId");
+    let promotedPlayerId: string | null = null;
+
+    try {
+      if (roomId && playerId) {
+        const { data: roomPlayers, error: playersError } =
+          await supabase
+            .from("players")
+            .select("id, name, is_host")
+            .eq("room_id", roomId)
+            .order("created_at", { ascending: true });
+
+        if (playersError) {
+          throw new Error(
+            "Die Spieler konnten nicht geprüft werden."
+          );
+        }
+
+        const currentPlayers: Player[] = roomPlayers ?? [];
+        const me = currentPlayers.find(
+          (player) => player.id === playerId
+        );
+
+        if (me) {
+          const otherPlayers = currentPlayers.filter(
+            (player) => player.id !== playerId
+          );
+
+          if (
+            me.is_host &&
+            !otherPlayers.some((player) => player.is_host)
+          ) {
+            const nextHost = otherPlayers[0];
+
+            if (nextHost) {
+              const {
+                data: updatedPlayers,
+                error: hostError,
+              } = await supabase
+                .from("players")
+                .update({ is_host: true })
+                .eq("id", nextHost.id)
+                .eq("room_id", roomId)
+                .eq("is_host", false)
+                .select("id");
+
+              if (hostError || !updatedPlayers?.length) {
+                throw new Error(
+                  "Der Host konnte nicht übertragen werden."
+                );
+              }
+
+              promotedPlayerId = nextHost.id;
+            }
+          }
+
+          const {
+            data: deletedPlayers,
+            error: deleteError,
+          } = await supabase
+            .from("players")
+            .delete()
+            .eq("id", playerId)
+            .eq("room_id", roomId)
+            .select("id");
+
+          if (deleteError || !deletedPlayers?.length) {
+            throw new Error(
+              "Du konntest den Raum nicht verlassen."
+            );
+          }
+        }
+      }
+
+      clearSilhouetteSession();
+      router.replace("/");
+    } catch (err) {
+      console.error("SILHOUETTE LEAVE ERROR:", err);
+
+      let message =
+        err instanceof Error
+          ? err.message
+          : "Der Raum konnte nicht verlassen werden.";
+
+      if (roomId && promotedPlayerId) {
+        try {
+          const {
+            data: restoredPlayers,
+            error: restoreError,
+          } = await supabase
+            .from("players")
+            .update({ is_host: false })
+            .eq("id", promotedPlayerId)
+            .eq("room_id", roomId)
+            .select("id");
+
+          if (restoreError || !restoredPlayers?.length) {
+            message =
+              "Der Host-Wechsel konnte nicht zurückgesetzt werden. Bitte die Lobby neu laden.";
+          }
+        } catch {
+          message =
+            "Der Host-Wechsel konnte nicht zurückgesetzt werden. Bitte die Lobby neu laden.";
+        }
+      }
+
+      actionRunningRef.current = false;
+      leavingLobbyRef.current = false;
+      setBusy(null);
+      setError(message);
+    }
+  }
+
+  function prepareGame() {
+    if (
+      !isHost ||
+      players.length < 2 ||
+      actionRunningRef.current ||
+      leavingLobbyRef.current
+    ) {
+      return;
+    }
+
+    leavingLobbyRef.current = true;
+    setBusy("prepare");
+
+    router.push("/silhouette/setup");
+  }
 
   if (loading) {
     return (
@@ -240,11 +393,19 @@ export default function SilhouetteLobbyPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-10">
+        <button
+          type="button"
+          onClick={() => void leaveRoom()}
+          disabled={busy !== null}
+          className="mb-6 self-start rounded-xl px-3 py-2 font-bold text-slate-400 transition hover:bg-slate-800 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          {busy === "leave"
+            ? "Raum wird verlassen..."
+            : "← Hauptmenü"}
+        </button>
 
         <div className="text-center">
-          <div className="text-6xl">
-            👤
-          </div>
+          <div className="text-6xl">👤</div>
 
           <p className="mt-5 text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
             Silhouette
@@ -255,8 +416,7 @@ export default function SilhouetteLobbyPage() {
           </h1>
 
           <p className="mt-3 text-slate-400">
-            2–3 Spieler können
-            mitspielen.
+            2–3 Spieler können mitspielen.
           </p>
         </div>
 
@@ -270,16 +430,13 @@ export default function SilhouetteLobbyPage() {
           </p>
 
           <p className="mt-3 text-sm text-slate-400">
-            Teile diesen Code mit
-            deinen Mitspielern.
+            Teile diesen Code mit deinen Mitspielern.
           </p>
         </div>
 
         <div className="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-5">
           <div className="flex items-center justify-between">
-            <p className="font-black">
-              Spieler
-            </p>
+            <p className="font-black">Spieler</p>
 
             <span className="text-sm font-bold text-slate-400">
               {players.length}/3
@@ -287,47 +444,51 @@ export default function SilhouetteLobbyPage() {
           </div>
 
           <div className="mt-4 space-y-3">
-            {players.map(
-              (player) => (
-                <div
-                  key={
-                    player.id
-                  }
-                  className="flex items-center justify-between rounded-2xl bg-slate-950 px-4 py-4"
-                >
-                  <div>
-                    <p className="font-bold">
-                      {
-                        player.name
-                      }
+            {players.map((player) => (
+              <div
+                key={player.id}
+                className="flex items-center justify-between rounded-2xl bg-slate-950 px-4 py-4"
+              >
+                <div>
+                  <p className="font-bold">
+                    {player.name}
+                    {player.id === playerId ? " (Du)" : ""}
+                  </p>
 
-                      {player.id ===
-                      playerId
-                        ? " (Du)"
-                        : ""}
+                  {player.is_host && (
+                    <p className="mt-1 text-xs font-bold uppercase tracking-wider text-violet-400">
+                      Host
                     </p>
-
-                    {player.is_host && (
-                      <p className="mt-1 text-xs font-bold uppercase tracking-wider text-violet-400">
-                        Host
-                      </p>
-                    )}
-                  </div>
-
-                  <div className="text-2xl">
-                    {player.is_host
-                      ? "👑"
-                      : "👤"}
-                  </div>
+                  )}
                 </div>
-              )
-            )}
 
-            {players.length <
-              3 && (
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">
+                    {player.is_host ? "👑" : "👤"}
+                  </span>
+
+                  {isHost &&
+                    player.id !== playerId &&
+                    !player.is_host && (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          void kickPlayer(player.id)
+                        }
+                        disabled={busy !== null}
+                        aria-label={`${player.name} entfernen`}
+                        className="rounded-xl bg-red-500/10 px-3 py-2 text-sm font-bold text-red-400 transition hover:bg-red-500/20 disabled:cursor-not-allowed disabled:opacity-40"
+                      >
+                        {busy === player.id ? "..." : "Kick"}
+                      </button>
+                    )}
+                </div>
+              </div>
+            ))}
+
+            {players.length < 3 && (
               <div className="rounded-2xl border border-dashed border-slate-700 px-4 py-4 text-center text-sm text-slate-500">
-                Warte auf weitere
-                Spieler...
+                Warte auf weitere Spieler...
               </div>
             )}
           </div>
@@ -335,36 +496,31 @@ export default function SilhouetteLobbyPage() {
 
         {isHost ? (
           <button
-            onClick={() =>
-              router.push(
-                "/silhouette/setup"
-              )
-            }
-            disabled={
-              players.length < 2
-            }
+            type="button"
+            onClick={prepareGame}
+            disabled={players.length < 2 || busy !== null}
             className="mt-6 w-full rounded-2xl bg-violet-500 px-6 py-5 font-black text-white transition hover:bg-violet-400 disabled:cursor-not-allowed disabled:opacity-40"
           >
             👤 Spiel vorbereiten
           </button>
         ) : (
           <div className="mt-6 rounded-2xl bg-slate-900 p-5 text-center text-sm text-slate-400">
-            Der Host bereitet das
-            Spiel vor.
+            Der Host bereitet das Spiel vor.
           </div>
         )}
 
-        {players.length ===
-          1 && (
+        {players.length === 1 && (
           <p className="mt-3 text-center text-sm text-slate-500">
-            Mindestens 2 Spieler
-            werden benötigt.
+            Mindestens 2 Spieler werden benötigt.
           </p>
         )}
 
-        {error && (
-          <p className="mt-5 text-center text-sm text-red-400">
-            {error}
+        {(error || lobbyError) && (
+          <p
+            role="alert"
+            className="mt-5 text-center text-sm text-red-400"
+          >
+            {error || lobbyError}
           </p>
         )}
       </div>
