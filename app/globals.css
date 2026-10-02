@@ -26,7 +26,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Hintergrund bleibt beim Scrollen stehen. */
+/* Fester Hintergrund auf allen Seiten. */
 .site-background {
   position: fixed;
   inset: 0;
@@ -45,51 +45,11 @@ body {
   background-size: cover;
 }
 
-/* Abdunklung für gut lesbare Texte. */
+/* Leichte Abdunklung für lesbare Texte. */
 .site-background-shade {
   position: absolute;
   inset: 0;
-  background: rgba(2, 6, 23, 0.55);
-}
-
-.site-snow {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-.snowflake {
-  position: absolute;
-  top: -16px;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.35);
-  animation-name: snowfall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-/* Jede Flocke startet und endet außerhalb des Bildschirms. */
-@keyframes snowfall {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(10vw, calc(100vh + 32px), 0);
-  }
-}
-
-@supports (height: 100dvh) {
-  @keyframes snowfall {
-    from {
-      transform: translate3d(0, 0, 0);
-    }
-
-    to {
-      transform: translate3d(10vw, calc(100dvh + 32px), 0);
-    }
-  }
+  background: rgba(2, 6, 23, 0.4);
 }
 
 .site-content {
@@ -97,13 +57,14 @@ body {
   min-width: 0;
 }
 
-/* Seitenflächen freigeben; dunkle Karten bleiben erhalten. */
+/* Seitenflächen durchsichtig, Karten bleiben dunkel. */
 .site-content main {
   background-color: transparent;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .site-snow {
-    display: none;
+/* Auf Handys bleibt Darth Vader im Bildausschnitt. */
+@media (max-width: 640px) {
+  .site-background-image {
+    background-position: 25% center;
   }
 }

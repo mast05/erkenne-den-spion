@@ -27,28 +27,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <div className="site-background" aria-hidden="true">
           <div className="site-background-image" />
-
-          <div className="site-snow">
-            {Array.from({ length: 60 }, (_, index) => {
-              const size = 2 + (index % 4);
-
-              return (
-                <span
-                  key={index}
-                  className="snowflake"
-                  style={{
-                    left: `${((index * 37) % 120) - 10}%`,
-                    width: `${size}px`,
-                    height: `${size}px`,
-                    opacity: 0.25 + (index % 6) * 0.1,
-                    animationDuration: `${8 + (index % 11)}s`,
-                    animationDelay: `-${(index * 7) % 19}s`,
-                  }}
-                />
-              );
-            })}
-          </div>
-
           <div className="site-background-shade" />
         </div>
 
