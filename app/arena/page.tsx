@@ -5,13 +5,10 @@ import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
 
 function createRoomCode() {
-  const chars =
-    "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
   return Array.from({ length: 6 }, () =>
-    chars.charAt(
-      Math.floor(Math.random() * chars.length)
-    )
+    chars.charAt(Math.floor(Math.random() * chars.length))
   ).join("");
 }
 
@@ -29,19 +26,25 @@ async function ensureAnonymousSession() {
     return session.user.id;
   }
 
-  const {
-    data,
-    error: signInError,
-  } = await supabase.auth.signInAnonymously();
+  const { data, error: signInError } =
+    await supabase.auth.signInAnonymously();
 
   if (signInError || !data.user) {
-    throw (
-      signInError ??
-      new Error("Anmeldung fehlgeschlagen.")
-    );
+    throw signInError ?? new Error("Anmeldung fehlgeschlagen.");
   }
 
   return data.user.id;
+}
+
+function saveArenaSession(roomId: string, playerId: string) {
+  sessionStorage.setItem("roomId", roomId);
+  sessionStorage.setItem("playerId", playerId);
+
+  [
+    "arenaGameId",
+    "arenaForceLobby",
+    "arenaPreviousGameId",
+  ].forEach((key) => sessionStorage.removeItem(key));
 }
 
 export default function ArenaPage() {
@@ -55,23 +58,16 @@ export default function ArenaPage() {
   async function createRoom() {
     const cleanName = name.trim();
 
-    if (!cleanName || loading) {
-      return;
-    }
+    if (!cleanName || loading) return;
 
     setLoading(true);
     setError("");
 
     try {
-      const authUserId =
-        await ensureAnonymousSession();
-
+      const authUserId = await ensureAnonymousSession();
       const code = createRoomCode();
 
-      const {
-        data: room,
-        error: roomError,
-      } = await supabase
+      const { data: room, error: roomError } = await supabase
         .from("rooms")
         .insert({
           room_code: code,
@@ -81,62 +77,36 @@ export default function ArenaPage() {
         .single();
 
       if (roomError || !room) {
-        console.error(
-          "ARENA ROOM CREATE ERROR:",
-          roomError
-        );
-
-        setError(
-          "Der Raum konnte nicht erstellt werden."
-        );
-
+        console.error("ARENA ROOM CREATE ERROR:", roomError);
+        setError("Der Raum konnte nicht erstellt werden.");
         return;
       }
 
-      const {
-        data: player,
-        error: playerError,
-      } = await supabase
-        .from("players")
-        .insert({
-          room_id: room.id,
-          name: cleanName,
-          is_host: true,
-          auth_user_id: authUserId,
-        })
-        .select("id")
-        .single();
+      const { data: player, error: playerError } =
+        await supabase
+          .from("players")
+          .insert({
+            room_id: room.id,
+            name: cleanName,
+            is_host: true,
+            auth_user_id: authUserId,
+          })
+          .select("id")
+          .single();
 
       if (playerError || !player) {
         console.error(
           "ARENA PLAYER CREATE ERROR:",
           playerError
         );
-
-        setError(
-          "Der Spieler konnte nicht erstellt werden."
-        );
-
+        setError("Der Spieler konnte nicht erstellt werden.");
         return;
       }
 
-      sessionStorage.setItem(
-        "roomId",
-        room.id
-      );
-
-      sessionStorage.setItem(
-        "playerId",
-        player.id
-      );
-
+      saveArenaSession(room.id, player.id);
       router.push("/arena/lobby");
     } catch (err) {
-      console.error(
-        "ARENA CREATE ERROR:",
-        err
-      );
-
+      console.error("ARENA CREATE ERROR:", err);
       setError(
         "Beim Erstellen des Raums ist ein Fehler aufgetreten."
       );
@@ -147,30 +117,17 @@ export default function ArenaPage() {
 
   async function joinRoom() {
     const cleanName = name.trim();
+    const cleanCode = roomCode.trim().toUpperCase();
 
-    const cleanCode = roomCode
-      .trim()
-      .toUpperCase();
-
-    if (
-      !cleanName ||
-      !cleanCode ||
-      loading
-    ) {
-      return;
-    }
+    if (!cleanName || !cleanCode || loading) return;
 
     setLoading(true);
     setError("");
 
     try {
-      const authUserId =
-        await ensureAnonymousSession();
+      const authUserId = await ensureAnonymousSession();
 
-      const {
-        data: room,
-        error: roomError,
-      } = await supabase
+      const { data: room, error: roomError } = await supabase
         .from("rooms")
         .select("id")
         .eq("room_code", cleanCode)
@@ -178,15 +135,8 @@ export default function ArenaPage() {
         .maybeSingle();
 
       if (roomError) {
-        console.error(
-          "ARENA ROOM LOAD ERROR:",
-          roomError
-        );
-
-        setError(
-          "Der Raum konnte nicht geladen werden."
-        );
-
+        console.error("ARENA ROOM LOAD ERROR:", roomError);
+        setError("Der Raum konnte nicht geladen werden.");
         return;
       }
 
@@ -195,10 +145,7 @@ export default function ArenaPage() {
         return;
       }
 
-      const {
-        count,
-        error: countError,
-      } = await supabase
+      const { count, error: countError } = await supabase
         .from("players")
         .select("id", {
           count: "exact",
@@ -211,69 +158,38 @@ export default function ArenaPage() {
           "ARENA PLAYER COUNT ERROR:",
           countError
         );
-
-        setError(
-          "Der Raum konnte nicht geprüft werden."
-        );
-
+        setError("Der Raum konnte nicht geprüft werden.");
         return;
       }
 
       if ((count ?? 0) >= 3) {
-        setError(
-          "Der Raum ist bereits voll."
-        );
-
+        setError("Der Raum ist bereits voll.");
         return;
       }
 
-      const {
-        data: player,
-        error: playerError,
-      } = await supabase
-        .from("players")
-        .insert({
-          room_id: room.id,
-          name: cleanName,
-          is_host: false,
-          auth_user_id: authUserId,
-        })
-        .select("id")
-        .single();
+      const { data: player, error: playerError } =
+        await supabase
+          .from("players")
+          .insert({
+            room_id: room.id,
+            name: cleanName,
+            is_host: false,
+            auth_user_id: authUserId,
+          })
+          .select("id")
+          .single();
 
       if (playerError || !player) {
-        console.error(
-          "ARENA JOIN ERROR:",
-          playerError
-        );
-
-        setError(
-          "Du konntest dem Raum nicht beitreten."
-        );
-
+        console.error("ARENA JOIN ERROR:", playerError);
+        setError("Du konntest dem Raum nicht beitreten.");
         return;
       }
 
-      sessionStorage.setItem(
-        "roomId",
-        room.id
-      );
-
-      sessionStorage.setItem(
-        "playerId",
-        player.id
-      );
-
+      saveArenaSession(room.id, player.id);
       router.push("/arena/lobby");
     } catch (err) {
-      console.error(
-        "ARENA JOIN ERROR:",
-        err
-      );
-
-      setError(
-        "Beim Beitreten ist ein Fehler aufgetreten."
-      );
+      console.error("ARENA JOIN ERROR:", err);
+      setError("Beim Beitreten ist ein Fehler aufgetreten.");
     } finally {
       setLoading(false);
     }
@@ -282,10 +198,17 @@ export default function ArenaPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-10">
+        <button
+          type="button"
+          onClick={() => router.push("/")}
+          disabled={loading}
+          className="mb-6 self-start rounded-xl px-3 py-2 font-bold text-slate-400 transition hover:bg-slate-800 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          ← Hauptmenü
+        </button>
+
         <div className="text-center">
-          <div className="text-7xl">
-            ⚔️
-          </div>
+          <div className="text-7xl">⚔️</div>
 
           <p className="mt-5 text-sm font-bold uppercase tracking-[0.25em] text-orange-400">
             Battle Game
@@ -296,21 +219,23 @@ export default function ArenaPage() {
           </h1>
 
           <p className="mt-3 text-slate-400">
-            Baue dein Team und besiege deine
-            Gegner in der Arena.
+            Baue dein Team und besiege deine Gegner
+            in der Arena.
           </p>
         </div>
 
         <div className="mt-10">
-          <label className="text-sm font-bold text-slate-300">
+          <label
+            htmlFor="player-name"
+            className="text-sm font-bold text-slate-300"
+          >
             Dein Name
           </label>
 
           <input
+            id="player-name"
             value={name}
-            onChange={(event) =>
-              setName(event.target.value)
-            }
+            onChange={(event) => setName(event.target.value)}
             maxLength={20}
             placeholder="Name eingeben..."
             className="mt-2 w-full rounded-2xl border border-slate-800 bg-slate-900 px-5 py-4 outline-none transition focus:border-orange-500"
@@ -318,15 +243,12 @@ export default function ArenaPage() {
         </div>
 
         <button
-          onClick={createRoom}
-          disabled={
-            !name.trim() || loading
-          }
+          type="button"
+          onClick={() => void createRoom()}
+          disabled={!name.trim() || loading}
           className="mt-5 w-full rounded-2xl bg-orange-500 px-6 py-5 font-black text-white transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          {loading
-            ? "Wird geladen..."
-            : "⚔️ Raum erstellen"}
+          {loading ? "Wird geladen..." : "⚔️ Raum erstellen"}
         </button>
 
         <div className="my-7 flex items-center gap-4">
@@ -339,16 +261,18 @@ export default function ArenaPage() {
           <div className="h-px flex-1 bg-slate-800" />
         </div>
 
-        <label className="text-sm font-bold text-slate-300">
+        <label
+          htmlFor="room-code"
+          className="text-sm font-bold text-slate-300"
+        >
           Raumcode
         </label>
 
         <input
+          id="room-code"
           value={roomCode}
           onChange={(event) =>
-            setRoomCode(
-              event.target.value.toUpperCase()
-            )
+            setRoomCode(event.target.value.toUpperCase())
           }
           maxLength={6}
           placeholder="ABC123"
@@ -356,7 +280,8 @@ export default function ArenaPage() {
         />
 
         <button
-          onClick={joinRoom}
+          type="button"
+          onClick={() => void joinRoom()}
           disabled={
             !name.trim() ||
             roomCode.trim().length !== 6 ||
@@ -368,7 +293,10 @@ export default function ArenaPage() {
         </button>
 
         {error && (
-          <p className="mt-5 text-center text-sm text-red-400">
+          <p
+            role="alert"
+            className="mt-5 text-center text-sm text-red-400"
+          >
             {error}
           </p>
         )}
