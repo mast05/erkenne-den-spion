@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 
@@ -10,238 +10,374 @@ type Player = {
   is_host: boolean;
 };
 
-type WhoGame = {
-  id: string;
-  status: string;
-};
+function clearWhoSession() {
+  ["roomId", "playerId", "whoGameId"].forEach((key) =>
+    sessionStorage.removeItem(key)
+  );
+}
 
 export default function WhoLobbyPage() {
   const router = useRouter();
 
-  const [roomCode, setRoomCode] =
-    useState("");
+  const [roomCode, setRoomCode] = useState("");
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [playerId, setPlayerId] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [lobbyError, setLobbyError] = useState("");
+  const [busy, setBusy] = useState<string | null>(null);
 
-  const [players, setPlayers] =
-    useState<Player[]>([]);
+  const leavingLobbyRef = useRef(false);
+  const actionRunningRef = useRef(false);
 
-  const [playerId, setPlayerId] =
-    useState("");
+  const currentPlayer = players.find(
+    (player) => player.id === playerId
+  );
 
-  const [loading, setLoading] =
-    useState(true);
-
-  const [error, setError] =
-    useState("");
+  const isHost = currentPlayer?.is_host === true;
 
   useEffect(() => {
-    const roomId =
-      sessionStorage.getItem(
-        "roomId"
-      );
+    const roomId = sessionStorage.getItem("roomId");
+    const currentPlayerId = sessionStorage.getItem("playerId");
 
-    const currentPlayerId =
-      sessionStorage.getItem(
-        "playerId"
-      );
-
-    if (
-      !roomId ||
-      !currentPlayerId
-    ) {
-      router.push("/who");
+    if (!roomId || !currentPlayerId) {
+      router.replace("/who");
       return;
     }
 
-    setPlayerId(
-      currentPlayerId
-    );
+    setPlayerId(currentPlayerId);
 
     let mounted = true;
+    let fetching = false;
+
+    function canUpdate() {
+      return (
+        mounted &&
+        !leavingLobbyRef.current &&
+        !actionRunningRef.current
+      );
+    }
 
     async function loadLobby() {
-      const {
-        data: room,
-        error: roomError,
-      } = await supabase
-        .from("rooms")
-        .select("room_code")
-        .eq("id", roomId)
-        .eq("game", "who")
-        .maybeSingle();
+      if (!canUpdate() || fetching) return;
 
-      if (!mounted) {
-        return;
-      }
+      fetching = true;
 
-      if (
-        roomError ||
-        !room
-      ) {
-        console.error(
-          "WHO ROOM LOAD ERROR:",
-          roomError
-        );
+      try {
+        const { data: room, error: roomError } = await supabase
+          .from("rooms")
+          .select("room_code")
+          .eq("id", roomId)
+          .eq("game", "who")
+          .maybeSingle();
 
-        setError(
-          "Der Raum konnte nicht geladen werden."
-        );
+        if (!canUpdate()) return;
 
-        setLoading(false);
-        return;
-      }
-
-      const {
-        data: playerData,
-        error: playersError,
-      } = await supabase
-        .from("players")
-        .select(
-          "id, name, is_host"
-        )
-        .eq(
-          "room_id",
-          roomId
-        )
-        .order(
-          "created_at",
-          {
-            ascending: true,
-          }
-        );
-
-      if (!mounted) {
-        return;
-      }
-
-      if (playersError) {
-        console.error(
-          "WHO PLAYERS LOAD ERROR:",
-          playersError
-        );
-
-        setError(
-          "Die Spieler konnten nicht geladen werden."
-        );
-
-        setLoading(false);
-        return;
-      }
-
-      /*
-       * Prüfen, ob der Host das
-       * Spiel bereits vorbereitet hat.
-       */
-      const {
-        data: whoGame,
-        error: whoGameError,
-      } = await supabase
-        .from("who_games")
-        .select("id, status")
-        .eq(
-          "room_id",
-          roomId
-        )
-        .in(
-          "status",
-          [
-            "assigning",
-            "playing",
-          ]
-        )
-        .order(
-          "created_at",
-          {
-            ascending: false,
-          }
-        )
-        .limit(1)
-        .maybeSingle();
-
-      if (!mounted) {
-        return;
-      }
-
-      if (whoGameError) {
-        console.error(
-          "WHO GAME CHECK ERROR:",
-          whoGameError
-        );
-      }
-
-      if (whoGame) {
-        const game =
-          whoGame as WhoGame;
-
-        sessionStorage.setItem(
-          "whoGameId",
-          game.id
-        );
-
-        if (
-          game.status ===
-          "assigning"
-        ) {
-          router.push(
-            "/who/assign"
+        if (roomError || !room) {
+          throw new Error(
+            "Der Raum konnte nicht geladen werden."
           );
+        }
 
+        const { data: playerData, error: playersError } =
+          await supabase
+            .from("players")
+            .select("id, name, is_host")
+            .eq("room_id", roomId)
+            .order("created_at", { ascending: true });
+
+        if (!canUpdate()) return;
+
+        if (playersError) {
+          throw new Error(
+            "Die Spieler konnten nicht geladen werden."
+          );
+        }
+
+        const loadedPlayers: Player[] = playerData ?? [];
+
+        const stillInRoom = loadedPlayers.some(
+          (player) => player.id === currentPlayerId
+        );
+
+        if (!stillInRoom) {
+          leavingLobbyRef.current = true;
+          clearWhoSession();
+          router.replace("/who");
           return;
         }
 
-        if (
-          game.status ===
-          "playing"
-        ) {
-          router.push(
-            "/who/game"
-          );
+        setRoomCode(room.room_code ?? "");
+        setPlayers(loadedPlayers);
 
+        const { data: whoGame, error: whoGameError } =
+          await supabase
+            .from("who_games")
+            .select("id, status")
+            .eq("room_id", roomId)
+            .in("status", ["assigning", "playing"])
+            .order("created_at", { ascending: false })
+            .limit(1)
+            .maybeSingle();
+
+        if (!canUpdate()) return;
+
+        if (whoGameError) {
+          throw new Error(
+            "Der Spielstart konnte nicht geprüft werden."
+          );
+        }
+
+        if (whoGame) {
+          leavingLobbyRef.current = true;
+
+          sessionStorage.setItem("whoGameId", whoGame.id);
+
+          router.push(
+            whoGame.status === "assigning"
+              ? "/who/assign"
+              : "/who/game"
+          );
           return;
         }
+
+        setLobbyError("");
+      } catch (err) {
+        if (!canUpdate()) return;
+
+        console.error("WHO LOBBY ERROR:", err);
+        setLobbyError(
+          err instanceof Error
+            ? err.message
+            : "Die Lobby konnte nicht geladen werden."
+        );
+      } finally {
+        fetching = false;
+
+        if (canUpdate()) {
+          setLoading(false);
+        }
       }
-
-      setRoomCode(
-        room.room_code ?? ""
-      );
-
-      setPlayers(
-        (playerData ??
-          []) as Player[]
-      );
-
-      setError("");
-      setLoading(false);
     }
 
     void loadLobby();
 
-    const interval =
-      window.setInterval(
-        () => {
-          void loadLobby();
-        },
-        1000
-      );
+    const interval = window.setInterval(() => {
+      void loadLobby();
+    }, 1000);
 
     return () => {
       mounted = false;
-
-      window.clearInterval(
-        interval
-      );
+      window.clearInterval(interval);
     };
   }, [router]);
 
-  const currentPlayer =
-    players.find(
-      (player) =>
-        player.id ===
-        playerId
+  async function kickPlayer(targetPlayerId: string) {
+    const roomId = sessionStorage.getItem("roomId");
+
+    if (
+      !isHost ||
+      !roomId ||
+      actionRunningRef.current ||
+      leavingLobbyRef.current ||
+      targetPlayerId === playerId
+    ) {
+      return;
+    }
+
+    const target = players.find(
+      (player) => player.id === targetPlayerId
     );
 
-  const isHost =
-    currentPlayer?.is_host ===
-    true;
+    if (!target || target.is_host) return;
+
+    if (
+      !window.confirm(
+        `${target.name} wirklich aus dem Raum werfen?`
+      )
+    ) {
+      return;
+    }
+
+    actionRunningRef.current = true;
+    setBusy(targetPlayerId);
+    setError("");
+
+    try {
+      const { data: deletedPlayers, error: kickError } =
+        await supabase
+          .from("players")
+          .delete()
+          .eq("id", targetPlayerId)
+          .eq("room_id", roomId)
+          .eq("is_host", false)
+          .select("id");
+
+      if (kickError || !deletedPlayers?.length) {
+        throw new Error(
+          "Der Spieler konnte nicht entfernt werden."
+        );
+      }
+
+      setPlayers((current) =>
+        current.filter(
+          (player) => player.id !== targetPlayerId
+        )
+      );
+    } catch (err) {
+      console.error("WHO KICK ERROR:", err);
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Der Spieler konnte nicht entfernt werden."
+      );
+    } finally {
+      actionRunningRef.current = false;
+      setBusy(null);
+    }
+  }
+
+  async function leaveRoom() {
+    if (
+      actionRunningRef.current ||
+      leavingLobbyRef.current
+    ) {
+      return;
+    }
+
+    actionRunningRef.current = true;
+    leavingLobbyRef.current = true;
+    setBusy("leave");
+    setError("");
+
+    const roomId = sessionStorage.getItem("roomId");
+    let promotedPlayerId: string | null = null;
+
+    try {
+      if (roomId && playerId) {
+        const { data: roomPlayers, error: playersError } =
+          await supabase
+            .from("players")
+            .select("id, name, is_host")
+            .eq("room_id", roomId)
+            .order("created_at", { ascending: true });
+
+        if (playersError) {
+          throw new Error(
+            "Die Spieler konnten nicht geprüft werden."
+          );
+        }
+
+        const currentPlayers: Player[] = roomPlayers ?? [];
+        const me = currentPlayers.find(
+          (player) => player.id === playerId
+        );
+
+        if (me) {
+          const otherPlayers = currentPlayers.filter(
+            (player) => player.id !== playerId
+          );
+
+          if (
+            me.is_host &&
+            !otherPlayers.some((player) => player.is_host)
+          ) {
+            const nextHost = otherPlayers[0];
+
+            if (nextHost) {
+              const {
+                data: updatedPlayers,
+                error: hostError,
+              } = await supabase
+                .from("players")
+                .update({ is_host: true })
+                .eq("id", nextHost.id)
+                .eq("room_id", roomId)
+                .eq("is_host", false)
+                .select("id");
+
+              if (hostError || !updatedPlayers?.length) {
+                throw new Error(
+                  "Der Host konnte nicht übertragen werden."
+                );
+              }
+
+              promotedPlayerId = nextHost.id;
+            }
+          }
+
+          const {
+            data: deletedPlayers,
+            error: deleteError,
+          } = await supabase
+            .from("players")
+            .delete()
+            .eq("id", playerId)
+            .eq("room_id", roomId)
+            .select("id");
+
+          if (deleteError || !deletedPlayers?.length) {
+            throw new Error(
+              "Du konntest den Raum nicht verlassen."
+            );
+          }
+        }
+      }
+
+      clearWhoSession();
+      router.replace("/");
+    } catch (err) {
+      console.error("WHO LEAVE ERROR:", err);
+
+      let message =
+        err instanceof Error
+          ? err.message
+          : "Der Raum konnte nicht verlassen werden.";
+
+      if (roomId && promotedPlayerId) {
+        try {
+          const {
+            data: restoredPlayers,
+            error: restoreError,
+          } = await supabase
+            .from("players")
+            .update({ is_host: false })
+            .eq("id", promotedPlayerId)
+            .eq("room_id", roomId)
+            .select("id");
+
+          if (restoreError || !restoredPlayers?.length) {
+            message =
+              "Der Host-Wechsel konnte nicht zurückgesetzt werden. Bitte die Lobby neu laden.";
+          }
+        } catch {
+          message =
+            "Der Host-Wechsel konnte nicht zurückgesetzt werden. Bitte die Lobby neu laden.";
+        }
+      }
+
+      actionRunningRef.current = false;
+      leavingLobbyRef.current = false;
+      setBusy(null);
+      setError(message);
+    }
+  }
+
+  function prepareGame() {
+    if (
+      !isHost ||
+      players.length < 2 ||
+      actionRunningRef.current ||
+      leavingLobbyRef.current
+    ) {
+      return;
+    }
+
+    leavingLobbyRef.current = true;
+    setBusy("prepare");
+
+    router.push("/who/setup");
+  }
 
   if (loading) {
     return (
@@ -256,10 +392,19 @@ export default function WhoLobbyPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-10">
+        <button
+          type="button"
+          onClick={() => void leaveRoom()}
+          disabled={busy !== null}
+          className="mb-6 self-start rounded-xl px-3 py-2 font-bold text-slate-400 transition hover:bg-slate-800 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          {busy === "leave"
+            ? "Raum wird verlassen..."
+            : "← Hauptmenü"}
+        </button>
+
         <div className="text-center">
-          <div className="text-6xl">
-            🤔
-          </div>
+          <div className="text-6xl">🤔</div>
 
           <p className="mt-5 text-sm font-bold uppercase tracking-[0.25em] text-cyan-400">
             Wer bin ich?
@@ -270,8 +415,7 @@ export default function WhoLobbyPage() {
           </h1>
 
           <p className="mt-3 text-slate-400">
-            2–3 Spieler können
-            mitspielen.
+            2–3 Spieler können mitspielen.
           </p>
         </div>
 
@@ -285,16 +429,13 @@ export default function WhoLobbyPage() {
           </p>
 
           <p className="mt-3 text-sm text-slate-400">
-            Teile diesen Code mit
-            deinen Mitspielern.
+            Teile diesen Code mit deinen Mitspielern.
           </p>
         </div>
 
         <div className="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-5">
           <div className="flex items-center justify-between">
-            <p className="font-black">
-              Spieler
-            </p>
+            <p className="font-black">Spieler</p>
 
             <span className="text-sm font-bold text-slate-400">
               {players.length}/3
@@ -302,47 +443,51 @@ export default function WhoLobbyPage() {
           </div>
 
           <div className="mt-4 space-y-3">
-            {players.map(
-              (player) => (
-                <div
-                  key={
-                    player.id
-                  }
-                  className="flex items-center justify-between rounded-2xl bg-slate-950 px-4 py-4"
-                >
-                  <div>
-                    <p className="font-bold">
-                      {
-                        player.name
-                      }
+            {players.map((player) => (
+              <div
+                key={player.id}
+                className="flex items-center justify-between rounded-2xl bg-slate-950 px-4 py-4"
+              >
+                <div>
+                  <p className="font-bold">
+                    {player.name}
+                    {player.id === playerId ? " (Du)" : ""}
+                  </p>
 
-                      {player.id ===
-                      playerId
-                        ? " (Du)"
-                        : ""}
+                  {player.is_host && (
+                    <p className="mt-1 text-xs font-bold uppercase tracking-wider text-cyan-400">
+                      Host
                     </p>
-
-                    {player.is_host && (
-                      <p className="mt-1 text-xs font-bold uppercase tracking-wider text-cyan-400">
-                        Host
-                      </p>
-                    )}
-                  </div>
-
-                  <div className="text-2xl">
-                    {player.is_host
-                      ? "👑"
-                      : "🤔"}
-                  </div>
+                  )}
                 </div>
-              )
-            )}
 
-            {players.length <
-              3 && (
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">
+                    {player.is_host ? "👑" : "🤔"}
+                  </span>
+
+                  {isHost &&
+                    player.id !== playerId &&
+                    !player.is_host && (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          void kickPlayer(player.id)
+                        }
+                        disabled={busy !== null}
+                        aria-label={`${player.name} entfernen`}
+                        className="rounded-xl bg-red-500/10 px-3 py-2 text-sm font-bold text-red-400 transition hover:bg-red-500/20 disabled:cursor-not-allowed disabled:opacity-40"
+                      >
+                        {busy === player.id ? "..." : "Kick"}
+                      </button>
+                    )}
+                </div>
+              </div>
+            ))}
+
+            {players.length < 3 && (
               <div className="rounded-2xl border border-dashed border-slate-700 px-4 py-4 text-center text-sm text-slate-500">
-                Warte auf weitere
-                Spieler...
+                Warte auf weitere Spieler...
               </div>
             )}
           </div>
@@ -350,36 +495,31 @@ export default function WhoLobbyPage() {
 
         {isHost ? (
           <button
-            onClick={() =>
-              router.push(
-                "/who/setup"
-              )
-            }
-            disabled={
-              players.length < 2
-            }
+            type="button"
+            onClick={prepareGame}
+            disabled={players.length < 2 || busy !== null}
             className="mt-6 w-full rounded-2xl bg-cyan-500 px-6 py-5 font-black text-slate-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            🎭 Spiel vorbereiten
+            🎮 Spiel vorbereiten
           </button>
         ) : (
           <div className="mt-6 rounded-2xl bg-slate-900 p-5 text-center text-sm text-slate-400">
-            Der Host bereitet das
-            Spiel vor.
+            Der Host bereitet das Spiel vor.
           </div>
         )}
 
-        {players.length ===
-          1 && (
+        {players.length === 1 && (
           <p className="mt-3 text-center text-sm text-slate-500">
-            Mindestens 2 Spieler
-            werden benötigt.
+            Mindestens 2 Spieler werden benötigt.
           </p>
         )}
 
-        {error && (
-          <p className="mt-5 text-center text-sm text-red-400">
-            {error}
+        {(error || lobbyError) && (
+          <p
+            role="alert"
+            className="mt-5 text-center text-sm text-red-400"
+          >
+            {error || lobbyError}
           </p>
         )}
       </div>
