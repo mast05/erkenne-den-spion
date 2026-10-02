@@ -105,58 +105,78 @@ export default function ArenaLobbyPage() {
         return;
       }
 
-      const {
-        data: arenaGame,
-        error: arenaGameError,
-      } = await supabase
-        .from("arena_games")
-        .select(
-          "id, status"
-        )
-        .eq(
-          "room_id",
-          roomId
-        )
-        .eq(
-          "status",
-          "draft"
-        )
-        .order("created_at", {
-          ascending: false,
-        })
-        .limit(1)
-        .maybeSingle();
+      let draftQuery = supabase
+  .from("arena_games")
+  .select("id, status")
+  .eq("room_id", roomId)
+  .eq("status", "draft");
 
-      if (arenaGameError) {
-        console.error(
-          "ARENA GAME CHECK ERROR:",
-          arenaGameError
-        );
-      }
+if (stayInLobbyRef.current) {
+  const previousGameId =
+    sessionStorage.getItem("arenaPreviousGameId");
 
-      /*
-       * Normal:
-       * Wenn ein Draft existiert, direkt in den Draft.
-       *
-       * Nach "Neues Spiel":
-       * arenaForceLobby bleibt bestehen,
-       * deshalb bleiben wir hier in der Lobby.
-       */
-      if (
-        arenaGame &&
-        !stayInLobbyRef.current
-      ) {
-        sessionStorage.setItem(
-          "arenaGameId",
-          arenaGame.id
-        );
+  if (!previousGameId) {
+    setError(
+      "Alte Lobby-Sitzung: Bitte für den ersten Test einen neuen Raum erstellen."
+    );
+    setLoading(false);
+    return;
+  }
 
-        router.push(
-          "/arena/draft"
-        );
+  const {
+    data: previousGame,
+    error: previousGameError,
+  } = await supabase
+    .from("arena_games")
+    .select("created_at")
+    .eq("id", previousGameId)
+    .eq("room_id", roomId)
+    .maybeSingle();
 
-        return;
-      }
+  if (!mounted) return;
+
+  if (previousGameError || !previousGame?.created_at) {
+    setError(
+      "Das vorherige Spiel konnte nicht geprüft werden."
+    );
+    setLoading(false);
+    return;
+  }
+
+  draftQuery = draftQuery.gt(
+    "created_at",
+    previousGame.created_at
+  );
+}
+
+const {
+  data: arenaGame,
+  error: arenaGameError,
+} = await draftQuery
+  .order("created_at", { ascending: false })
+  .limit(1)
+  .maybeSingle();
+
+if (!mounted) return;
+
+if (arenaGameError) {
+  console.error(
+    "ARENA GAME CHECK ERROR:",
+    arenaGameError
+  );
+  setError("Der Spielstart konnte nicht geprüft werden.");
+  setLoading(false);
+  return;
+}
+
+if (arenaGame) {
+  sessionStorage.setItem("arenaGameId", arenaGame.id);
+  sessionStorage.removeItem("arenaForceLobby");
+  sessionStorage.removeItem("arenaPreviousGameId");
+
+  router.push("/arena/draft");
+  return;
+}
 
       setRoomCode(
         room.room_code ?? ""
@@ -296,9 +316,6 @@ export default function ArenaLobbyPage() {
                * Ab jetzt darf wieder ein vorhandener
                * Draft geöffnet werden.
                */
-              stayInLobbyRef.current =
-                false;
-
               sessionStorage.removeItem(
                 "arenaForceLobby"
               );

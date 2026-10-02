@@ -1531,18 +1531,19 @@ const finalWinners =
     <div className="mx-auto mt-8 grid max-w-md gap-3 sm:grid-cols-2">
       <button
   onClick={() => {
-    sessionStorage.removeItem(
-      "arenaGameId"
-    );
+    const previousGameId =
+      sessionStorage.getItem("arenaGameId");
 
-    sessionStorage.setItem(
-      "arenaForceLobby",
-      "1"
-    );
+    if (previousGameId) {
+      sessionStorage.setItem(
+        "arenaPreviousGameId",
+        previousGameId
+      );
+    }
 
-    router.push(
-      "/arena/lobby"
-    );
+    sessionStorage.removeItem("arenaGameId");
+    sessionStorage.setItem("arenaForceLobby", "1");
+    router.push("/arena/lobby");
   }}
   className="rounded-2xl bg-orange-500 px-6 py-4 font-black hover:bg-orange-400"
 >
