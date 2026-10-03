@@ -134,7 +134,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 179,
-    age: 45,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 91,
     intelligence: 88,
     fame: 92,
@@ -145,7 +145,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 80,
     height: 188,
-    age: 22,
+    age: 22, // Episode III; Kanon-Geburtsjahr 41 BBY.
     strength: 97,
     intelligence: 86,
     fame: 98,
@@ -156,7 +156,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 183,
-    age: 41,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 83,
     intelligence: 84,
     fame: 94,
@@ -167,7 +167,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 177,
-    age: 67,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 18,
     intelligence: 87,
     fame: 95,
@@ -178,7 +178,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 228,
-    age: 235,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 88,
     intelligence: 76,
     fame: 97,
@@ -189,7 +189,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 193,
-    age: 83,
+    age: 83, // Episode III; Kanon-Geburtsjahr 102 BBY.
     strength: 93,
     intelligence: 94,
     fame: 85,
@@ -200,7 +200,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 100,
     height: 203,
-    age: 45,
+    age: 45, // Episode VI; Kanon-Geburtsjahr 41 BBY.
     strength: 98,
     intelligence: 90,
     fame: 100,
@@ -211,7 +211,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 178,
-    age: 24,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 69,
     intelligence: 72,
     fame: 83,
@@ -222,7 +222,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 216,
-    age: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 89,
     intelligence: 83,
     fame: 88,
@@ -233,7 +233,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 3,
     height: 34,
-    age: 50,
+    age: 50, // The Mandalorian, Staffel 1.
     strength: 74,
     intelligence: 60,
     fame: 97,
@@ -244,7 +244,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 180,
-    age: 66,
+    age: 66, // Episode VII; Kanon-Geburtsjahr 32 BBY.
     strength: 73,
     intelligence: 85,
     fame: 98,
@@ -254,8 +254,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jabba the Hutt",
     category: "star-wars",
     kills: 0,
-    height: 175,
-    age: 604,
+    height: null, // Keine ausreichend belegte Kanon-Größe übernommen.
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 52,
     intelligence: 82,
     fame: 89,
@@ -265,8 +265,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Kylo Ren",
     category: "star-wars",
     kills: 20,
-    height: 189,
-    age: 30,
+    height: null, // Keine ausreichend belegte Kanon-Größe übernommen.
+    age: 30, // Episode IX; Kanon-Geburtsjahr 5 ABY.
     strength: 92,
     intelligence: 80,
     fame: 94,
@@ -276,8 +276,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lando Calrissian",
     category: "star-wars",
     kills: 10,
-    height: 177,
-    age: 78,
+    height: 178,
+    age: 78, // Ungefährer Wert in Episode IX; The Rise of Skywalker: The Visual Dictionary.
     strength: 65,
     intelligence: 86,
     fame: 87,
@@ -287,8 +287,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Leia Organa",
     category: "star-wars",
     kills: 15,
-    height: 155,
-    age: 54,
+    height: 150,
+    age: 54, // Episode IX; Kanon-Geburtsjahr 19 BBY.
     strength: 72,
     intelligence: 92,
     fame: 98,
@@ -299,7 +299,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 172,
-    age: 53,
+    age: 53, // Episode VIII; Kanon-Geburtsjahr 19 BBY.
     strength: 97,
     intelligence: 88,
     fame: 100,
@@ -310,7 +310,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 192,
-    age: 53,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 96,
     intelligence: 90,
     fame: 89,
@@ -321,7 +321,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 50,
     height: 180,
-    age: 40,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 85,
     intelligence: 80,
     fame: 92,
@@ -331,8 +331,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Obi-Wan Kenobi",
     category: "star-wars",
     kills: 35,
-    height: 181,
-    age: 56,
+    height: 182,
+    age: 56, // Episode IV; Kanon-Zeitlinie mit Handlung in 1 BBY und Geburt in 57 BBY.
     strength: 94,
     intelligence: 92,
     fame: 98,
@@ -343,7 +343,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 10,
     height: 165,
-    age: 27,
+    age: 27, // Episode III; Kanon-Geburtsjahr 46 BBY.
     strength: 61,
     intelligence: 91,
     fame: 90,
@@ -354,7 +354,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 173,
-    age: 119,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 99,
     intelligence: 100,
     fame: 98,
@@ -365,7 +365,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 10,
     height: 193,
-    age: 48,
+    age: 48, // Ungefährer Wert in Episode I; Kanon-Geburtsjahr circa 80 BBY.
     strength: 91,
     intelligence: 91,
     fame: 88,
@@ -375,8 +375,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "R2-D2",
     category: "star-wars",
     kills: 2,
-    height: 108,
-    age: 67,
+    height: 109,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 30,
     intelligence: 93,
     fame: 97,
@@ -387,7 +387,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 10,
     height: 170,
-    age: 20,
+    age: 20, // Episode IX; Kanon-Geburtsjahr 15 ABY.
     strength: 93,
     intelligence: 82,
     fame: 93,
@@ -398,7 +398,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 10,
     height: 66,
-    age: 900,
+    age: 900, // Episode VI; Alter bei seinem Tod.
     strength: 99,
     intelligence: 98,
     fame: 100,
@@ -408,8 +408,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Darth Maul",
     category: "star-wars",
     kills: 35,
-    height: 175,
-    age: 44,
+    height: 184,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 95,
     intelligence: 88,
     fame: 97,
@@ -420,7 +420,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 183,
-    age: 44,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 86,
     intelligence: 87,
     fame: 93,
@@ -431,7 +431,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 185,
-    age: 71,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 81,
     intelligence: 93,
     fame: 89,
@@ -441,8 +441,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Bo-Katan Kryze",
     category: "star-wars",
     kills: 35,
-    height: 170,
-    age: 50,
+    height: 180,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 84,
     intelligence: 88,
     fame: 90,
@@ -453,7 +453,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 172,
-    age: 32,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 67,
     intelligence: 86,
     fame: 90,
@@ -464,7 +464,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 200,
-    age: 40,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 88,
     intelligence: 82,
     fame: 86,
@@ -474,8 +474,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Grand Moff Tarkin",
     category: "star-wars",
     kills: 5,
-    height: 183,
-    age: 64,
+    height: 185,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 45,
     intelligence: 97,
     fame: 92,
@@ -486,7 +486,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 180,
-    age: 60,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 52,
     intelligence: 94,
     fame: 92,
@@ -496,8 +496,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Asajj Ventress",
     category: "star-wars",
     kills: 45,
-    height: 180,
-    age: 30,
+    height: 179,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 93,
     intelligence: 89,
     fame: 89,
@@ -508,7 +508,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 196,
-    age: 45,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 91,
     intelligence: 88,
     fame: 85,
@@ -519,7 +519,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 55,
     height: 183,
-    age: 32,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 86,
     intelligence: 91,
     fame: 92,
@@ -530,7 +530,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 45,
     height: 183,
-    age: 32,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 85,
     intelligence: 89,
     fame: 88,
@@ -540,8 +540,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Grand Admiral Thrawn",
     category: "star-wars",
     kills: 15,
-    height: 188,
-    age: 55,
+    height: 193,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 74,
     intelligence: 100,
     fame: 93,
@@ -551,8 +551,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Moff Gideon",
     category: "star-wars",
     kills: 25,
-    height: 173,
-    age: 55,
+    height: 183,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 79,
     intelligence: 94,
     fame: 90,
@@ -562,8 +562,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Fennec Shand",
     category: "star-wars",
     kills: 35,
-    height: 168,
-    age: 55,
+    height: null, // Keine ausreichend belegte Kanon-Größe übernommen.
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 80,
     intelligence: 91,
     fame: 87,
@@ -574,7 +574,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 191,
-    age: 32,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 91,
     intelligence: 89,
     fame: 89,
@@ -584,8 +584,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ezra Bridger",
     category: "star-wars",
     kills: 20,
-    height: 175,
-    age: 19,
+    height: 182,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 88,
     intelligence: 86,
     fame: 90,
@@ -595,8 +595,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Sabine Wren",
     category: "star-wars",
     kills: 30,
-    height: 170,
-    age: 30,
+    height: 171,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 82,
     intelligence: 91,
     fame: 89,
@@ -606,8 +606,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hera Syndulla",
     category: "star-wars",
     kills: 15,
-    height: 176,
-    age: 40,
+    height: 173,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 70,
     intelligence: 96,
     fame: 88,
@@ -618,7 +618,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 188,
-    age: 385,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 94,
     intelligence: 93,
     fame: 87,
@@ -628,8 +628,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Aayla Secura",
     category: "star-wars",
     kills: 25,
-    height: 178,
-    age: 30,
+    height: 170,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 91,
     intelligence: 88,
     fame: 88,
@@ -639,8 +639,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Savage Opress",
     category: "star-wars",
     kills: 40,
-    height: 208,
-    age: 35,
+    height: 189,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 98,
     intelligence: 72,
     fame: 87,
@@ -650,8 +650,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Pre Vizsla",
     category: "star-wars",
     kills: 30,
-    height: 183,
-    age: 45,
+    height: 184,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 88,
     intelligence: 89,
     fame: 85,
@@ -662,7 +662,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 191,
-    age: 65,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 35,
     intelligence: 85,
     fame: 86,
@@ -673,11 +673,568 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 170,
-    age: 50,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
     strength: 64,
     intelligence: 91,
     fame: 86,
     attractiveness: 87,
+  },
+
+  // =========================
+  // Weitere Star-Wars-Figuren aus dem aktuellen Kanon.
+  // Kills und die Bewertungen von 0 bis 100 sind Spielschätzungen.
+  // Unbekannte Angaben bleiben null; Alter bezieht sich auf den angegebenen Auftritt.
+  {
+    name: "Jar Jar Binks",
+    category: "star-wars",
+    kills: 5,
+    height: 196,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 42,
+    intelligence: 35,
+    fame: 94,
+    attractiveness: 25,
+  },
+  {
+    name: "BB-8",
+    category: "star-wars",
+    kills: 5,
+    height: 67,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 22,
+    intelligence: 86,
+    fame: 93,
+    attractiveness: 0,
+  },
+  {
+    name: "Snoke",
+    category: "star-wars",
+    kills: 10,
+    height: 218,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 95,
+    intelligence: 91,
+    fame: 90,
+    attractiveness: 12,
+  },
+  {
+    name: "Cassian Andor",
+    category: "star-wars",
+    kills: 25,
+    height: 178,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 76,
+    intelligence: 92,
+    fame: 90,
+    attractiveness: 88,
+  },
+  {
+    name: "Jyn Erso",
+    category: "star-wars",
+    kills: 15,
+    height: 160,
+    age: 21, // Rogue One; Altersangabe aus Kanon-Referenzliteratur.
+    strength: 72,
+    intelligence: 87,
+    fame: 89,
+    attractiveness: 90,
+  },
+  {
+    name: "K-2SO",
+    category: "star-wars",
+    kills: 30,
+    height: 216,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 83,
+    intelligence: 93,
+    fame: 88,
+    attractiveness: 0,
+  },
+  {
+    name: "General Hux",
+    category: "star-wars",
+    kills: 5,
+    height: 185,
+    age: 35, // Ungefährer Wert in Episode VII; Kanon-Geburtsjahr 1 BBY.
+    strength: 53,
+    intelligence: 85,
+    fame: 87,
+    attractiveness: 76,
+  },
+  {
+    name: "Maz Kanata",
+    category: "star-wars",
+    kills: 5,
+    height: 124,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 58,
+    intelligence: 96,
+    fame: 86,
+    attractiveness: 24,
+  },
+  {
+    name: "Greedo",
+    category: "star-wars",
+    kills: 5,
+    height: 174,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 57,
+    intelligence: 52,
+    fame: 86,
+    attractiveness: 23,
+  },
+  {
+    name: "Wicket",
+    category: "star-wars",
+    kills: 5,
+    height: 80,
+    age: 11, // Ungefährer Wert in Episode VI; Kanon-Geburtsjahr 7 BBY.
+    strength: 38,
+    intelligence: 70,
+    fame: 85,
+    attractiveness: 15,
+  },
+  {
+    name: "Watto",
+    category: "star-wars",
+    kills: 0,
+    height: 137,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 31,
+    intelligence: 77,
+    fame: 84,
+    attractiveness: 12,
+  },
+  {
+    name: "Mon Mothma",
+    category: "star-wars",
+    kills: 0,
+    height: 150,
+    age: 48, // Ungefährer Wert um Rogue One; Kanon-Geburtsjahr circa 48 BBY.
+    strength: 35,
+    intelligence: 96,
+    fame: 84,
+    attractiveness: 83,
+  },
+  {
+    name: "Orson Krennic",
+    category: "star-wars",
+    kills: 5,
+    height: 180,
+    age: 51, // Rogue One; The Ultimate Visual Guide nennt 51 Jahre.
+    strength: 58,
+    intelligence: 94,
+    fame: 83,
+    attractiveness: 75,
+  },
+  {
+    name: "Rose Tico",
+    category: "star-wars",
+    kills: 5,
+    height: 157,
+    age: 23, // Ungefährer Wert in Episode VIII; Kanon-Geburtsjahr circa 11 ABY.
+    strength: 54,
+    intelligence: 86,
+    fame: 82,
+    attractiveness: 80,
+  },
+  {
+    name: "Owen Lars",
+    category: "star-wars",
+    kills: 0,
+    height: 178,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 48,
+    intelligence: 76,
+    fame: 82,
+    attractiveness: 61,
+  },
+  {
+    name: "Bail Organa",
+    category: "star-wars",
+    kills: 0,
+    height: 199,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 45,
+    intelligence: 93,
+    fame: 82,
+    attractiveness: 85,
+  },
+  {
+    name: "Shmi Skywalker",
+    category: "star-wars",
+    kills: 0,
+    height: 163,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 31,
+    intelligence: 78,
+    fame: 81,
+    attractiveness: 71,
+  },
+  {
+    name: "Greef Karga",
+    category: "star-wars",
+    kills: 5,
+    height: 188,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 63,
+    intelligence: 87,
+    fame: 80,
+    attractiveness: 72,
+  },
+  {
+    name: "IG-11",
+    category: "star-wars",
+    kills: 45,
+    height: 193, // The Secrets of the Bounty Hunters (2022); andere Quelle nennt 219 cm.
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 86,
+    intelligence: 84,
+    fame: 80,
+    attractiveness: 0,
+  },
+  {
+    name: "Saw Gerrera",
+    category: "star-wars",
+    kills: 30,
+    height: 187,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 74,
+    intelligence: 88,
+    fame: 79,
+    attractiveness: 53,
+  },
+  {
+    name: "Chopper",
+    category: "star-wars",
+    kills: 45,
+    height: 104,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 38,
+    intelligence: 89,
+    fame: 79,
+    attractiveness: 0,
+  },
+  {
+    name: "Hondo Ohnaka",
+    category: "star-wars",
+    kills: 20,
+    height: 185,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 67,
+    intelligence: 91,
+    fame: 78,
+    attractiveness: 40,
+  },
+  {
+    name: "Chirrut Îmwe",
+    category: "star-wars",
+    kills: 20,
+    height: 173,
+    age: null, // Kein ausreichend belegter Alterswert übernommen.
+    strength: 78,
+    intelligence: 88,
+    fame: 78,
+    attractiveness: 85,
+  },
+  {
+    name: "Shaak Ti",
+    category: "star-wars",
+    kills: 25,
+    height: 187,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 92,
+    intelligence: 92,
+    fame: 77,
+    attractiveness: 84,
+  },
+  {
+    name: "Sebulba",
+    category: "star-wars",
+    kills: 5,
+    height: 112,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 43,
+    intelligence: 68,
+    fame: 76,
+    attractiveness: 10,
+  },
+
+  // Weitere 25 Kanon-Figuren. Bewertungen und Kills sind Spielschätzungen.
+  {
+    name: "Ki-Adi-Mundi",
+    category: "star-wars",
+    kills: 25,
+    height: 198,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 92,
+    intelligence: 90,
+    fame: 88,
+    attractiveness: 60,
+  },
+  {
+    name: "Bossk",
+    category: "star-wars",
+    kills: 35,
+    height: 206,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 81,
+    intelligence: 76,
+    fame: 87,
+    attractiveness: 25,
+  },
+  {
+    name: "Dengar",
+    category: "star-wars",
+    kills: 25,
+    height: 187,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 72,
+    intelligence: 77,
+    fame: 82,
+    attractiveness: 38,
+  },
+  {
+    name: "IG-88",
+    category: "star-wars",
+    kills: 40,
+    height: 196,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 85,
+    intelligence: 91,
+    fame: 86,
+    attractiveness: 0,
+  },
+  {
+    name: "Nien Nunb",
+    category: "star-wars",
+    kills: 15,
+    height: 160,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 56,
+    intelligence: 84,
+    fame: 84,
+    attractiveness: 30,
+  },
+  {
+    name: "Luthen Rael",
+    category: "star-wars",
+    kills: 15,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 66,
+    intelligence: 98,
+    fame: 87,
+    attractiveness: 72,
+  },
+  {
+    name: "Großinquisitor",
+    category: "star-wars",
+    kills: 30,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 90,
+    intelligence: 92,
+    fame: 86,
+    attractiveness: 35,
+  },
+  {
+    name: "Reva",
+    category: "star-wars",
+    kills: 20,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 84,
+    intelligence: 82,
+    fame: 82,
+    attractiveness: 83,
+  },
+  {
+    name: "Baylan Skoll",
+    category: "star-wars",
+    kills: 35,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 94,
+    intelligence: 94,
+    fame: 83,
+    attractiveness: 78,
+  },
+  {
+    name: "Shin Hati",
+    category: "star-wars",
+    kills: 15,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 87,
+    intelligence: 80,
+    fame: 80,
+    attractiveness: 88,
+  },
+  {
+    name: "Hunter",
+    category: "star-wars",
+    kills: 40,
+    height: 180,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 85,
+    intelligence: 91,
+    fame: 85,
+    attractiveness: 83,
+  },
+  {
+    name: "Crosshair",
+    category: "star-wars",
+    kills: 50,
+    height: 192,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 83,
+    intelligence: 87,
+    fame: 84,
+    attractiveness: 71,
+  },
+  {
+    name: "Wrecker",
+    category: "star-wars",
+    kills: 45,
+    height: 210,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 94,
+    intelligence: 62,
+    fame: 83,
+    attractiveness: 64,
+  },
+  {
+    name: "Tech",
+    category: "star-wars",
+    kills: 25,
+    height: 182,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 74,
+    intelligence: 97,
+    fame: 84,
+    attractiveness: 70,
+  },
+  {
+    name: "Echo",
+    category: "star-wars",
+    kills: 35,
+    height: 181,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 82,
+    intelligence: 93,
+    fame: 84,
+    attractiveness: 61,
+  },
+  {
+    name: "Omega",
+    category: "star-wars",
+    kills: 5,
+    height: 129,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 52,
+    intelligence: 84,
+    fame: 84,
+    attractiveness: 0,
+  },
+  {
+    name: "Fives",
+    category: "star-wars",
+    kills: 35,
+    height: 183,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 85,
+    intelligence: 90,
+    fame: 86,
+    attractiveness: 81,
+  },
+  {
+    name: "Luminara Unduli",
+    category: "star-wars",
+    kills: 25,
+    height: 176,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 91,
+    intelligence: 93,
+    fame: 82,
+    attractiveness: 80,
+  },
+  {
+    name: "Barriss Offee",
+    category: "star-wars",
+    kills: 10,
+    height: 166,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 86,
+    intelligence: 90,
+    fame: 82,
+    attractiveness: 78,
+  },
+  {
+    name: "Quinlan Vos",
+    category: "star-wars",
+    kills: 30,
+    height: 191,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 93,
+    intelligence: 88,
+    fame: 81,
+    attractiveness: 86,
+  },
+  {
+    name: "Yaddle",
+    category: "star-wars",
+    kills: 15,
+    height: 61,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 93,
+    intelligence: 96,
+    fame: 83,
+    attractiveness: 24,
+  },
+  {
+    name: "Baze Malbus",
+    category: "star-wars",
+    kills: 35,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 83,
+    intelligence: 79,
+    fame: 81,
+    attractiveness: 59,
+  },
+  {
+    name: "Bodhi Rook",
+    category: "star-wars",
+    kills: 5,
+    height: null,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 55,
+    intelligence: 81,
+    fame: 80,
+    attractiveness: 76,
+  },
+  {
+    name: "Dexter Jettster",
+    category: "star-wars",
+    kills: 0,
+    height: 188,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 61,
+    intelligence: 85,
+    fame: 82,
+    attractiveness: 16,
+  },
+  {
+    name: "Enfys Nest",
+    category: "star-wars",
+    kills: 20,
+    height: 187,
+    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    strength: 78,
+    intelligence: 89,
+    fame: 80,
+    attractiveness: 76,
   },
 
   // =========================
