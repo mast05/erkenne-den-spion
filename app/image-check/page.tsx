@@ -11,6 +11,13 @@ type Category = {
   characters: string[];
 };
 
+const completedCategoryIds = new Set([
+  "fluch-der-karibik",
+  "herr-der-ringe",
+  "hobbit",
+  "the-boys",
+]);
+
 const categoryInfo = [
   {
     id: "star-wars",
@@ -267,10 +274,18 @@ export default function ImageCheckPage() {
             key={category.id}
             className="mt-14"
           >
-            <div className="mb-6 flex items-center justify-between">
-              <h2 className="text-2xl font-black">
-                {category.name}
-              </h2>
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap items-center gap-3">
+                <h2 className="text-2xl font-black">
+                  {category.name}
+                </h2>
+
+                {completedCategoryIds.has(category.id) && (
+                  <span className="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-bold text-emerald-400">
+                    ✅ Fertig
+                  </span>
+                )}
+              </div>
 
               <span className="rounded-full bg-slate-900 px-4 py-2 text-sm text-slate-400">
                 {category.characters.length} Figuren
