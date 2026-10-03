@@ -12,6 +12,7 @@ type Category = {
 };
 
 const completedCategoryIds = new Set([
+  "harry-potter",
   "fluch-der-karibik",
   "herr-der-ringe",
   "hobbit",
@@ -19,22 +20,10 @@ const completedCategoryIds = new Set([
 ]);
 
 const categoryInfo = [
-  {
-    id: "star-wars",
-    name: "⭐ Star Wars",
-  },
-  {
-    id: "marvel",
-    name: "🦸 Marvel",
-  },
-  {
-    id: "harry-potter",
-    name: "🪄 Harry Potter",
-  },
-  {
-    id: "dc",
-    name: "🦇 DC",
-  },
+  { id: "star-wars", name: "⭐ Star Wars" },
+  { id: "marvel", name: "🦸 Marvel" },
+  { id: "harry-potter", name: "🪄 Harry Potter" },
+  { id: "dc", name: "🦇 DC" },
   {
     id: "fluch-der-karibik",
     name: "🏴‍☠️ Fluch der Karibik",
@@ -47,14 +36,8 @@ const categoryInfo = [
     id: "herr-der-ringe",
     name: "💍 Herr der Ringe",
   },
-  {
-    id: "hobbit",
-    name: "🏔️ Der Hobbit",
-  },
-  {
-    id: "the-boys",
-    name: "🩸 The Boys",
-  },
+  { id: "hobbit", name: "🏔️ Der Hobbit" },
+  { id: "the-boys", name: "🩸 The Boys" },
   {
     id: "the-walking-dead",
     name: "🧟 The Walking Dead",
@@ -64,21 +47,15 @@ const categoryInfo = [
     name: "🦖 Jurassic Park / World",
   },
   {
-  id: "schauspielerinnen",
-  name: "💃 Schauspielerinnen",
-},
-{
-  id: "schauspieler",
-  name: "🎬 Schauspieler",
-},
-{
-  id: "fussballer",
-  name: "⚽ Fußballer",
-},
-{
-  id: "filme",
-  name: "🎞️ Filme",
-},
+    id: "schauspielerinnen",
+    name: "💃 Schauspielerinnen",
+  },
+  {
+    id: "schauspieler",
+    name: "🎬 Schauspieler",
+  },
+  { id: "fussballer", name: "⚽ Fußballer" },
+  { id: "filme", name: "🎞️ Filme" },
 ];
 
 const categories: Category[] = categoryInfo.map(
@@ -226,8 +203,8 @@ export default function ImageCheckPage() {
           </h1>
 
           <p className="mt-3 text-slate-400">
-            Hier werden alle Charakterbilder automatisch
-            überprüft.
+            Hier werden alle Charakterbilder
+            automatisch überprüft.
           </p>
         </div>
 
@@ -280,7 +257,9 @@ export default function ImageCheckPage() {
                   {category.name}
                 </h2>
 
-                {completedCategoryIds.has(category.id) && (
+                {completedCategoryIds.has(
+                  category.id
+                ) && (
                   <span className="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-bold text-emerald-400">
                     ✅ Fertig
                   </span>

@@ -48,8 +48,8 @@ const categories = [
   {
     id: "fussballer",
     name: "Fußballer",
-    emoji: "⚽"
-  }
+    emoji: "⚽",
+  },
 ];
 
 type Character = {
@@ -192,7 +192,10 @@ const characters: Record<string, Character[]> = {
     { name: "Ragetti", tip: "Wirkt etwas unsicher." },
     { name: "Giselle", tip: "Wirkt selbstbewusst." },
     { name: "Ian Mercer", tip: "Wirkt kontrolliert." },
-    { name: "Lieutenant Theodore Groves", tip: "Wirkt pflichtbewusst." },
+    {
+      name: "Lieutenant Theodore Groves",
+      tip: "Wirkt pflichtbewusst.",
+    },
     { name: "Captain Teague", tip: "Wirkt selbstsicher." },
     { name: "Scrum", tip: "Wirkt locker." },
     { name: "Tamara", tip: "Wirkt ruhig." },
@@ -243,7 +246,10 @@ const allSpyCategories = [
 
 allSpyCategories.forEach((categoryId) => {
   characters[categoryId] = dealCharacters
-    .filter((character) => character.category === categoryId)
+    .filter(
+      (character) =>
+        character.category === categoryId
+    )
     .map((character) => ({
       name: character.name,
       tip: "",
@@ -251,7 +257,7 @@ allSpyCategories.forEach((categoryId) => {
 });
 
 export default function CategoryPage() {
-const router = useRouter();
+  const router = useRouter();
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -260,7 +266,8 @@ const router = useRouter();
     if (loading) return;
 
     const roomId = sessionStorage.getItem("roomId");
-    const currentPlayerId = sessionStorage.getItem("playerId");
+    const currentPlayerId =
+      sessionStorage.getItem("playerId");
 
     if (!roomId || !currentPlayerId) {
       setError("Deine Spielsitzung wurde nicht gefunden.");
@@ -269,7 +276,10 @@ const router = useRouter();
 
     const categoryCharacters = characters[categoryId];
 
-    if (!categoryCharacters || categoryCharacters.length === 0) {
+    if (
+      !categoryCharacters ||
+      categoryCharacters.length === 0
+    ) {
       setError("Ungültige Kategorie.");
       return;
     }
@@ -278,8 +288,10 @@ const router = useRouter();
     setError("");
 
     try {
-      // Alle Spieler des Raums laden
-      const { data: players, error: playersError } = await supabase
+      const {
+        data: players,
+        error: playersError,
+      } = await supabase
         .from("players")
         .select("id, is_host")
         .eq("room_id", roomId)
@@ -304,7 +316,6 @@ const router = useRouter();
         return;
       }
 
-      // Prüfen, ob dieser Tab wirklich der Host ist
       const currentPlayer = players.find(
         (player) => player.id === currentPlayerId
       );
@@ -321,12 +332,11 @@ const router = useRouter();
         return;
       }
 
-      // Alte gespeicherte Rundennummer dieses Tabs entfernen
       sessionStorage.removeItem("roundId");
 
-      // Falls noch eine alte aktive Runde existiert:
-      // sauber beenden.
-      const { error: finishOldRoundsError } = await supabase
+      const {
+        error: finishOldRoundsError,
+      } = await supabase
         .from("rounds")
         .update({
           status: "finished",
@@ -345,14 +355,12 @@ const router = useRouter();
         return;
       }
 
-      // EXAKT EINEN der drei Spieler als Imposter auswählen
       const randomSpyIndex = Math.floor(
         Math.random() * players.length
       );
 
       const spyPlayerId = players[randomSpyIndex].id;
 
-      // Eine zufällige Figur auswählen
       const randomCharacterIndex = Math.floor(
         Math.random() * categoryCharacters.length
       );
@@ -360,7 +368,6 @@ const router = useRouter();
       const secretCharacter =
         categoryCharacters[randomCharacterIndex];
 
-      // Kategorie im Raum speichern
       const { error: roomError } = await supabase
         .from("rooms")
         .update({
@@ -375,8 +382,10 @@ const router = useRouter();
         return;
       }
 
-      // Genau EINE neue Runde erstellen
-      const { data: round, error: roundError } = await supabase
+      const {
+        data: round,
+        error: roundError,
+      } = await supabase
         .from("rounds")
         .insert({
           room_id: roomId,
@@ -395,15 +404,12 @@ const router = useRouter();
         return;
       }
 
-      // Die neue Runde nur für diesen Tab speichern
       sessionStorage.setItem("roundId", round.id);
 
       console.log("NEUE RUNDE:", round.id);
       console.log("IMPOSTER ID:", spyPlayerId);
       console.log("FIGUR:", secretCharacter.name);
 
-      // Host ins Spiel schicken.
-      // Die anderen Spieler werden von der Lobby automatisch weitergeleitet.
       router.push("/game");
     } catch (err) {
       console.error("START GAME ERROR:", err);
@@ -413,107 +419,110 @@ const router = useRouter();
   }
 
   return (
-  <main className="min-h-screen bg-slate-950 text-white">
-    <div className="mx-auto max-w-md px-6 py-10">
-      <button
-        disabled={loading}
-        onClick={() => {
-  router.push("/lobby");
-}}
-        className="text-sm font-semibold text-slate-400 transition hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
-      >
-        ← Zur Lobby
-      </button>
+    <main className="min-h-screen bg-slate-950 text-white">
+      <div className="mx-auto max-w-md px-6 py-10">
+        <button
+          disabled={loading}
+          onClick={() => router.push("/lobby")}
+          className="text-sm font-semibold text-slate-400 transition hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          ← Zur Lobby
+        </button>
 
-      <div className="mt-10 text-center">
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl border border-slate-800 bg-slate-900 text-5xl">
-          🎭
-        </div>
+        <div className="mt-10 text-center">
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl border border-slate-800 bg-slate-900 text-5xl">
+            🎭
+          </div>
 
-        <p className="mt-6 text-xs font-bold uppercase tracking-[0.3em] text-emerald-400">
-          Neue Runde
-        </p>
+          <p className="mt-6 text-xs font-bold uppercase tracking-[0.3em] text-emerald-400">
+            Neue Runde
+          </p>
 
-        <h1 className="mt-3 text-3xl font-black">
-          Kategorie wählen
-        </h1>
+          <h1 className="mt-3 text-3xl font-black">
+            Kategorie wählen
+          </h1>
 
-        <p className="mx-auto mt-3 max-w-xs text-slate-400">
-          Wähle die Welt, aus der die geheime Figur
-          für diese Runde stammen soll.
-        </p>
-      </div>
-
-      {error && (
-        <div className="mt-7 rounded-2xl border border-red-900 bg-red-950/30 p-4 text-center">
-          <p className="text-sm text-red-300">
-            {error}
+          <p className="mx-auto mt-3 max-w-xs text-slate-400">
+            Wähle die Welt, aus der die geheime Figur
+            für diese Runde stammen soll.
           </p>
         </div>
-      )}
 
-      <div className="mt-10 space-y-3">
-        {categories.map((category) => (
-          <button
-            key={category.id}
-            disabled={loading}
-            onClick={() =>
-              selectCategory(category.id)
-            }
-            className="group flex w-full items-center justify-between rounded-3xl border border-slate-800 bg-slate-900 p-5 text-left transition hover:scale-[1.02] hover:border-slate-600 hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            <div className="flex items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-950 text-3xl">
-                {category.emoji}
+        {error && (
+          <div className="mt-7 rounded-2xl border border-red-900 bg-red-950/30 p-4 text-center">
+            <p className="text-sm text-red-300">
+              {error}
+            </p>
+          </div>
+        )}
+
+        <div className="mt-10 space-y-3">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              disabled={loading}
+              onClick={() =>
+                selectCategory(category.id)
+              }
+              className="group flex w-full items-center justify-between rounded-3xl border border-slate-800 bg-slate-900 p-5 text-left transition hover:scale-[1.02] hover:border-slate-600 hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              <div className="flex items-center">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-950 text-3xl">
+                  {category.emoji}
+                </div>
+
+                <div className="ml-4">
+                  <div className="flex items-center gap-2 text-lg font-black">
+                    <span>{category.name}</span>
+
+                    {(
+                      category.id === "harry-potter" ||
+                      category.id === "fluch-der-karibik" ||
+                      category.id === "herr-der-ringe" ||
+                      category.id === "hobbit" ||
+                      category.id === "the-boys"
+                    ) && (
+                      <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+                        Fertig
+                      </span>
+                    )}
+                  </div>
+
+                  <p className="mt-1 text-xs text-slate-500">
+                    {characters[category.id]?.length ?? 0} mögliche Figuren
+                  </p>
+                </div>
               </div>
 
-              <div className="ml-4">
-                <div className="flex items-center gap-2 text-lg font-black">
-  <span>{category.name}</span>
+              <span className="text-xl text-slate-600 transition group-hover:translate-x-1 group-hover:text-white">
+                →
+              </span>
+            </button>
+          ))}
+        </div>
 
-  {(
-  category.id === "fluch-der-karibik" ||
-  category.id === "herr-der-ringe" ||
-  category.id === "hobbit" ||
-  category.id === "the-boys"
-) && (
-    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
-      Fertig
-    </span>
-  )}
-</div>
+        {loading && (
+          <div className="mt-7 rounded-2xl border border-emerald-900 bg-emerald-950/20 p-4 text-center">
+            <p className="font-bold text-emerald-400">
+              🎲 Runde wird vorbereitet...
+            </p>
 
-                <p className="mt-1 text-xs text-slate-500">
-  {characters[category.id]?.length ?? 0} mögliche Figuren
-</p>
-              </div>
-            </div>
+            <p className="mt-1 text-xs text-slate-500">
+              Figur und Imposter werden zufällig ausgewählt.
+            </p>
+          </div>
+        )}
 
-            <span className="text-xl text-slate-600 transition group-hover:translate-x-1 group-hover:text-white">
-              →
-            </span>
-          </button>
-        ))}
-      </div>
-
-      {loading && (
-        <div className="mt-7 rounded-2xl border border-emerald-900 bg-emerald-950/20 p-4 text-center">
-          <p className="font-bold text-emerald-400">
-            🎲 Runde wird vorbereitet...
-          </p>
-
-          <p className="mt-1 text-xs text-slate-500">
-            Figur und Imposter werden zufällig ausgewählt.
+        <div className="mt-8 text-center">
+          <p className="text-xs text-slate-600">
+            11 Kategorien ·{" "}
+            {Object.values(characters).reduce(
+              (sum, list) => sum + list.length,
+              0
+            )} Figuren
           </p>
         </div>
-      )}
-
-      <div className="mt-8 text-center">
-        <p className="text-xs text-slate-600">
-          11 Kategorien · {Object.values(characters).reduce((sum, list) => sum + list.length, 0)} Figuren
-        </p>
       </div>
-    </div>
-  </main>
-);
+    </main>
+  );
 }
