@@ -171,7 +171,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 18,
     intelligence: 87,
     fame: 95,
-    attractiveness: null,
+    attractiveness: 55,
   },
   {
     name: "Chewbacca",
@@ -237,7 +237,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 74,
     intelligence: 60,
     fame: 97,
-    attractiveness: null,
+    attractiveness: 90,
   },
   {
     name: "Han Solo",
@@ -380,7 +380,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 30,
     intelligence: 93,
     fame: 97,
-    attractiveness: null,
+    attractiveness: 80,
   },
   {
     name: "Rey",
@@ -490,7 +490,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 52,
     intelligence: 94,
     fame: 92,
-    attractiveness: null,
+    attractiveness: 35,
   },
   {
     name: "Asajj Ventress",
@@ -1359,7 +1359,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 90,
     intelligence: 62,
     fame: 96,
-    attractiveness: null,
+    attractiveness: 75,
   },
   {
     name: "Hawkeye",
@@ -1425,7 +1425,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 75,
     intelligence: 94,
     fame: 92,
-    attractiveness: null,
+    attractiveness: 65,
   },
   {
     name: "Scarlet Witch",
@@ -1700,7 +1700,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 99,
     intelligence: 100,
     fame: 97,
-    attractiveness: null,
+    attractiveness: 60,
   },
   {
     name: "Red Skull",
@@ -2439,7 +2439,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 79,
     intelligence: 82,
     fame: 86,
-    attractiveness: null,
+    attractiveness: 88,
   },
   {
     name: "Dobby",
@@ -2450,7 +2450,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 82,
     intelligence: 79,
     fame: 94,
-    attractiveness: null,
+    attractiveness: 45,
   },
   {
     name: "Dolores Umbridge",
@@ -2472,7 +2472,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 76,
     intelligence: 83,
     fame: 95,
-    attractiveness: null,
+    attractiveness: 82,
   },
   {
     name: "Fred Weasley",
@@ -2505,7 +2505,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 82,
     intelligence: 84,
     fame: 91,
-    attractiveness: null,
+    attractiveness: 85,
   },
   {
     name: "Harry Potter",
@@ -2516,7 +2516,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 90,
     intelligence: 88,
     fame: 100,
-    attractiveness: null,
+    attractiveness: 80,
   },
   {
     name: "Hermine Granger",
@@ -2560,7 +2560,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 75,
     intelligence: 89,
     fame: 91,
-    attractiveness: null,
+    attractiveness: 84,
   },
   {
     name: "Minerva McGonagall",
@@ -2593,7 +2593,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 82,
     intelligence: 82,
     fame: 91,
-    attractiveness: null,
+    attractiveness: 72,
   },
   {
     name: "Peter Pettigrew",
@@ -2736,7 +2736,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 81,
   intelligence: 86,
   fame: 86,
-  attractiveness: null,
+  attractiveness: 92,
 },
 {
   name: "Cho Chang",
@@ -2747,7 +2747,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 73,
   intelligence: 84,
   fame: 82,
-  attractiveness: null,
+  attractiveness: 86,
 },
 {
   name: "Narcissa Malfoy",
@@ -3478,7 +3478,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 68,
     intelligence: 88,
     fame: 96,
-    attractiveness: null,
+    attractiveness: 80,
   },
   {
     name: "Shazam",
@@ -3489,7 +3489,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 99,
     intelligence: 72,
     fame: 91,
-    attractiveness: null,
+    attractiveness: 78,
   },
   {
     name: "Supergirl",
@@ -4904,7 +4904,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 52,
   intelligence: 70,
   fame: 88,
-  attractiveness: null,
+  attractiveness: 50,
 },
 
   // =========================
@@ -4930,7 +4930,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 35,
     intelligence: 96,
     fame: 91,
-    attractiveness: null,
+    attractiveness: 68,
   },
   {
     name: "Brienne von Tarth",
@@ -6439,7 +6439,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 68,
   intelligence: 82,
   fame: 82,
-  attractiveness: null,
+  attractiveness: 70,
 },
 {
   name: "Great Goblin",
@@ -6674,7 +6674,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 98,
     intelligence: 73,
     fame: 89,
-    attractiveness: null,
+    attractiveness: 62,
   },
   {
     name: "Lamplighter",
@@ -6883,7 +6883,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 87,
   intelligence: 80,
   fame: 82,
-  attractiveness: null,
+  attractiveness: 65,
 },
 {
   name: "Ezekiel",
@@ -6997,7 +6997,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 68,
     intelligence: 82,
     fame: 96,
-    attractiveness: null,
+    attractiveness: 75,
   },
   {
     name: "Shane Walsh",
@@ -7294,7 +7294,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 30,
   intelligence: 67,
   fame: 71,
-  attractiveness: null,
+  attractiveness: 70,
 },
 
   // =========================
@@ -7353,7 +7353,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 42,
     intelligence: 91,
     fame: 88,
-    attractiveness: null,
+    attractiveness: 72,
   },
   {
     name: "Tim Murphy",
@@ -7364,7 +7364,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 38,
     intelligence: 82,
     fame: 87,
-    attractiveness: null,
+    attractiveness: 65,
   },
   {
     name: "Dennis Nedry",
@@ -7452,7 +7452,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 48,
     intelligence: 84,
     fame: 89,
-    attractiveness: null,
+    attractiveness: 76,
   },
   {
     name: "Zach Mitchell",
@@ -7463,7 +7463,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 61,
     intelligence: 78,
     fame: 85,
-    attractiveness: null,
+    attractiveness: 78,
   },
   {
     name: "Gray Mitchell",
@@ -7474,7 +7474,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 40,
     intelligence: 89,
     fame: 87,
-    attractiveness: null,
+    attractiveness: 66,
   },
   {
     name: "Barry Sembène",
@@ -7617,7 +7617,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 34,
   intelligence: 65,
   fame: 45,
-  attractiveness: null,
+  attractiveness: 72,
 },
 {
   name: "Billy Brennan",
@@ -7661,7 +7661,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 37,
   intelligence: 71,
   fame: 52,
-  attractiveness: null,
+  attractiveness: 68,
 },
 {
   name: "Eddie Carr",
