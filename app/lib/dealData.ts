@@ -5296,6 +5296,462 @@ export const dealCharacters: DealCharacter[] = [
   attractiveness: 68,
 },
 
+  // Weitere Serienfiguren (Game of Thrones: 70 insgesamt)
+  // Jack Gleeson; Game of Thrones (HBO)
+  {
+    name: "Joffrey Baratheon",
+    category: "game-of-thrones",
+    kills: 1,
+    height: null,
+    age: null,
+    strength: 23,
+    intelligence: 40,
+    fame: 98,
+    attractiveness: 0,
+  },
+
+  // Mark Addy; Game of Thrones (HBO)
+  {
+    name: "Robert Baratheon",
+    category: "game-of-thrones",
+    kills: 50,
+    height: null,
+    age: null,
+    strength: 84,
+    intelligence: 46,
+    fame: 94,
+    attractiveness: 52,
+  },
+
+  // Gethin Anthony; Game of Thrones (HBO)
+  {
+    name: "Renly Baratheon",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 45,
+    intelligence: 67,
+    fame: 79,
+    attractiveness: 82,
+  },
+
+  // Dean-Charles Chapman; Game of Thrones (HBO)
+  {
+    name: "Tommen Baratheon",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 20,
+    intelligence: 44,
+    fame: 89,
+    attractiveness: 0,
+  },
+
+  // Nell Tiger Free; Game of Thrones (HBO)
+  {
+    name: "Myrcella Baratheon",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 15,
+    intelligence: 58,
+    fame: 77,
+    attractiveness: 0,
+  },
+
+  // Kerry Ingram; Game of Thrones (HBO)
+  {
+    name: "Shireen Baratheon",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 10,
+    intelligence: 77,
+    fame: 84,
+    attractiveness: 0,
+  },
+
+  // Finn Jones; Game of Thrones (HBO)
+  {
+    name: "Loras Tyrell",
+    category: "game-of-thrones",
+    kills: 10,
+    height: null,
+    age: null,
+    strength: 82,
+    intelligence: 67,
+    fame: 87,
+    attractiveness: 88,
+  },
+
+  // Pedro Pascal; Game of Thrones (HBO)
+  {
+    name: "Oberyn Martell",
+    category: "game-of-thrones",
+    kills: 20,
+    height: null,
+    age: null,
+    strength: 92,
+    intelligence: 87,
+    fame: 96,
+    attractiveness: 94,
+  },
+
+  // Indira Varma; Game of Thrones (HBO)
+  {
+    name: "Ellaria Sand",
+    category: "game-of-thrones",
+    kills: 3,
+    height: null,
+    age: null,
+    strength: 39,
+    intelligence: 76,
+    fame: 85,
+    attractiveness: 88,
+  },
+
+  // Gemma Whelan; Game of Thrones (HBO)
+  {
+    name: "Yara Greyjoy",
+    category: "game-of-thrones",
+    kills: 20,
+    height: null,
+    age: null,
+    strength: 78,
+    intelligence: 82,
+    fame: 90,
+    attractiveness: 74,
+  },
+
+  // Pilou Asbaek; Game of Thrones (HBO)
+  {
+    name: "Euron Greyjoy",
+    category: "game-of-thrones",
+    kills: 50,
+    height: null,
+    age: null,
+    strength: 90,
+    intelligence: 76,
+    fame: 89,
+    attractiveness: 76,
+  },
+
+  // Michael McElhatton; Game of Thrones (HBO)
+  {
+    name: "Roose Bolton",
+    category: "game-of-thrones",
+    kills: 10,
+    height: null,
+    age: null,
+    strength: 54,
+    intelligence: 91,
+    fame: 91,
+    attractiveness: 48,
+  },
+
+  // David Bradley; Game of Thrones (HBO)
+  {
+    name: "Walder Frey",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 12,
+    intelligence: 82,
+    fame: 90,
+    attractiveness: 8,
+  },
+
+  // Kate Dickie; Game of Thrones (HBO)
+  {
+    name: "Lysa Arryn",
+    category: "game-of-thrones",
+    kills: 1,
+    height: null,
+    age: null,
+    strength: 21,
+    intelligence: 45,
+    fame: 82,
+    attractiveness: 39,
+  },
+
+  // James Cosmo; Game of Thrones (HBO)
+  {
+    name: "Jeor Mormont",
+    category: "game-of-thrones",
+    kills: 40,
+    height: null,
+    age: null,
+    strength: 81,
+    intelligence: 88,
+    fame: 88,
+    attractiveness: 39,
+  },
+
+  // Harry Lloyd; Game of Thrones (HBO)
+  {
+    name: "Viserys Targaryen",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 32,
+    intelligence: 47,
+    fame: 90,
+    attractiveness: 80,
+  },
+
+  // Oona Chaplin; Game of Thrones (HBO)
+  {
+    name: "Talisa Stark",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 25,
+    intelligence: 83,
+    fame: 82,
+    attractiveness: 89,
+  },
+
+  // Art Parkinson; Game of Thrones (HBO)
+  {
+    name: "Rickon Stark",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 17,
+    intelligence: 35,
+    fame: 81,
+    attractiveness: 0,
+  },
+
+  // Natalia Tena; Game of Thrones (HBO)
+  {
+    name: "Osha",
+    category: "game-of-thrones",
+    kills: 5,
+    height: null,
+    age: null,
+    strength: 65,
+    intelligence: 73,
+    fame: 86,
+    attractiveness: 76,
+  },
+
+  // Ellie Kendrick; Game of Thrones (HBO)
+  {
+    name: "Meera Reed",
+    category: "game-of-thrones",
+    kills: 3,
+    height: null,
+    age: null,
+    strength: 68,
+    intelligence: 79,
+    fame: 83,
+    attractiveness: 0,
+  },
+
+  // Thomas Brodie-Sangster; Game of Thrones (HBO)
+  {
+    name: "Jojen Reed",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 14,
+    intelligence: 88,
+    fame: 82,
+    attractiveness: 0,
+  },
+
+  // Tom Wlaschiha; Game of Thrones (HBO)
+  {
+    name: "Jaqen H’ghar",
+    category: "game-of-thrones",
+    kills: 30,
+    height: null,
+    age: null,
+    strength: 87,
+    intelligence: 96,
+    fame: 94,
+    attractiveness: 87,
+  },
+
+  // Sibel Kekilli; Game of Thrones (HBO)
+  {
+    name: "Shae",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 24,
+    intelligence: 73,
+    fame: 90,
+    attractiveness: 86,
+  },
+
+  // Hannah Murray; Game of Thrones (HBO)
+  {
+    name: "Gilly",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 25,
+    intelligence: 62,
+    fame: 86,
+    attractiveness: 78,
+  },
+
+  // Daniel Portman; Game of Thrones (HBO)
+  {
+    name: "Podrick Payne",
+    category: "game-of-thrones",
+    kills: 1,
+    height: null,
+    age: null,
+    strength: 65,
+    intelligence: 72,
+    fame: 91,
+    attractiveness: 80,
+  },
+
+  // Richard Dormer; Game of Thrones (HBO)
+  {
+    name: "Beric Dondarrion",
+    category: "game-of-thrones",
+    kills: 25,
+    height: null,
+    age: null,
+    strength: 84,
+    intelligence: 83,
+    fame: 86,
+    attractiveness: 72,
+  },
+
+  // Bella Ramsey; Game of Thrones (HBO)
+  {
+    name: "Lyanna Mormont",
+    category: "game-of-thrones",
+    kills: 1,
+    height: null,
+    age: null,
+    strength: 38,
+    intelligence: 86,
+    fame: 91,
+    attractiveness: 0,
+  },
+
+  // Ian McElhinney; Game of Thrones (HBO)
+  {
+    name: "Barristan Selmy",
+    category: "game-of-thrones",
+    kills: 50,
+    height: null,
+    age: null,
+    strength: 94,
+    intelligence: 87,
+    fame: 91,
+    attractiveness: 50,
+  },
+
+  // Anton Lesser; Game of Thrones (HBO)
+  {
+    name: "Qyburn",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 16,
+    intelligence: 98,
+    fame: 88,
+    attractiveness: 20,
+  },
+
+  // Jonathan Pryce; Game of Thrones (HBO)
+  {
+    name: "Hoher Spatz",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 10,
+    intelligence: 91,
+    fame: 89,
+    attractiveness: 15,
+  },
+
+  // Julian Glover; Game of Thrones (HBO)
+  {
+    name: "Pycelle",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 8,
+    intelligence: 86,
+    fame: 83,
+    attractiveness: 10,
+  },
+
+  // Peter Vaughan; Game of Thrones (HBO)
+  {
+    name: "Maester Aemon",
+    category: "game-of-thrones",
+    kills: 0,
+    height: null,
+    age: null,
+    strength: 5,
+    intelligence: 97,
+    fame: 88,
+    attractiveness: 8,
+  },
+
+  // Owen Teale; Game of Thrones (HBO)
+  {
+    name: "Alliser Thorne",
+    category: "game-of-thrones",
+    kills: 20,
+    height: null,
+    age: null,
+    strength: 80,
+    intelligence: 65,
+    fame: 86,
+    attractiveness: 39,
+  },
+
+  // Ciaran Hinds; Game of Thrones (HBO)
+  {
+    name: "Mance Rayder",
+    category: "game-of-thrones",
+    kills: 30,
+    height: null,
+    age: null,
+    strength: 78,
+    intelligence: 88,
+    fame: 88,
+    attractiveness: 61,
+  },
+
+  // Michiel Huisman; Game of Thrones (HBO)
+  {
+    name: "Daario Naharis",
+    category: "game-of-thrones",
+    kills: 40,
+    height: null,
+    age: null,
+    strength: 91,
+    intelligence: 79,
+    fame: 91,
+    attractiveness: 94,
+  },
+
   // =========================
   // HERR DER RINGE
   // =========================
@@ -8850,4 +9306,1206 @@ export const dealCharacters: DealCharacter[] = [
   imdb: 8.7,
   watchRate: 95,
 },
+
+  // Weitere bekannte Filme (100 insgesamt).
+  // fame und watchRate sind Spielschätzungen, keine gemessenen Zuschauerquoten.
+  // 1972; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Godfather",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 251,
+    imdb: 9.2,
+    watchRate: 92,
+  },
+
+  // 1974; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Godfather Part II",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 48,
+    imdb: 9.0,
+    watchRate: 84,
+  },
+
+  // 1999; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Green Mile",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 287,
+    imdb: 8.6,
+    watchRate: 88,
+  },
+
+  // 1993; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Schindler’s List",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 322,
+    imdb: 9.0,
+    watchRate: 89,
+  },
+
+  // 1998; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Saving Private Ryan",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 482,
+    imdb: 8.6,
+    watchRate: 87,
+  },
+
+  // 2012; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Django Unchained",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 426,
+    imdb: 8.5,
+    watchRate: 92,
+  },
+
+  // 2009; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Inglourious Basterds",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 95,
+    attractiveness: null,
+    boxOffice: 321,
+    imdb: 8.4,
+    watchRate: 89,
+  },
+
+  // 1995; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Se7en",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 330,
+    imdb: 8.6,
+    watchRate: 87,
+  },
+
+  // 1991; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Silence of the Lambs",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 273,
+    imdb: 8.6,
+    watchRate: 89,
+  },
+
+  // 2006; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Departed",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 90,
+    attractiveness: null,
+    boxOffice: 292,
+    imdb: 8.5,
+    watchRate: 82,
+  },
+
+  // 2010; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Shutter Island",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 295,
+    imdb: 8.2,
+    watchRate: 90,
+  },
+
+  // 1990; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Goodfellas",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 93,
+    attractiveness: null,
+    boxOffice: 47,
+    imdb: 8.7,
+    watchRate: 85,
+  },
+
+  // 1983; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Scarface",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 66,
+    imdb: 8.3,
+    watchRate: 88,
+  },
+
+  // 1998; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Truman Show",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 264,
+    imdb: 8.2,
+    watchRate: 89,
+  },
+
+  // 1985; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Back to the Future",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 392,
+    imdb: 8.5,
+    watchRate: 96,
+  },
+
+  // 1982; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "E.T. the Extra-Terrestrial",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 797,
+    imdb: 7.9,
+    watchRate: 94,
+  },
+
+  // 1975; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Jaws",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 491,
+    imdb: 8.1,
+    watchRate: 91,
+  },
+
+  // 1984; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Ghostbusters",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 297,
+    imdb: 7.8,
+    watchRate: 91,
+  },
+
+  // 1990; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Home Alone",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 477,
+    imdb: 7.8,
+    watchRate: 96,
+  },
+
+  // 2009; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Hangover",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 469,
+    imdb: 7.7,
+    watchRate: 94,
+  },
+
+  // 1999; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "American Pie",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 235,
+    imdb: 7.0,
+    watchRate: 90,
+  },
+
+  // 1990; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Pretty Woman",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 463,
+    imdb: 7.1,
+    watchRate: 91,
+  },
+
+  // 2011; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Intouchables",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 427,
+    imdb: 8.5,
+    watchRate: 93,
+  },
+
+  // 1999; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Sixth Sense",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 673,
+    imdb: 8.2,
+    watchRate: 89,
+  },
+
+  // 1980; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Shining",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 50,
+    imdb: 8.4,
+    watchRate: 87,
+  },
+
+  // 2017; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "It",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 720,
+    imdb: 7.3,
+    watchRate: 89,
+  },
+
+  // 2013; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Conjuring",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 93,
+    attractiveness: null,
+    boxOffice: 321,
+    imdb: 7.5,
+    watchRate: 85,
+  },
+
+  // 1996; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Scream",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 95,
+    attractiveness: null,
+    boxOffice: 173,
+    imdb: 7.4,
+    watchRate: 88,
+  },
+
+  // 1978; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Halloween",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 93,
+    attractiveness: null,
+    boxOffice: 47,
+    imdb: 7.7,
+    watchRate: 83,
+  },
+
+  // 1979; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Alien",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 110,
+    imdb: 8.4,
+    watchRate: 88,
+  },
+
+  // 1986; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Aliens",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 131,
+    imdb: 8.4,
+    watchRate: 85,
+  },
+
+  // 1991; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Terminator 2: Judgment Day",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 519,
+    imdb: 8.6,
+    watchRate: 91,
+  },
+
+  // 1988; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Die Hard",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 144,
+    imdb: 8.2,
+    watchRate: 92,
+  },
+
+  // 2014; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "John Wick",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 86,
+    imdb: 7.5,
+    watchRate: 92,
+  },
+
+  // 2015; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Mad Max: Fury Road",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 95,
+    attractiveness: null,
+    boxOffice: 380,
+    imdb: 8.1,
+    watchRate: 87,
+  },
+
+  // 1994; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Speed",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 92,
+    attractiveness: null,
+    boxOffice: 350,
+    imdb: 7.3,
+    watchRate: 84,
+  },
+
+  // 1997; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Men in Black",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 589,
+    imdb: 7.3,
+    watchRate: 94,
+  },
+
+  // 1996; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Independence Day",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 817,
+    imdb: 7.0,
+    watchRate: 92,
+  },
+
+  // 2015; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Martian",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 94,
+    attractiveness: null,
+    boxOffice: 631,
+    imdb: 8.0,
+    watchRate: 89,
+  },
+
+  // 2021; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Dune",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 95,
+    attractiveness: null,
+    boxOffice: 411,
+    imdb: 8.0,
+    watchRate: 89,
+  },
+
+  // 2024; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Dune: Part Two",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 715,
+    imdb: 8.4,
+    watchRate: 89,
+  },
+
+  // 2022; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Avatar: The Way of Water",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 2334,
+    imdb: 7.5,
+    watchRate: 92,
+  },
+
+  // 1977; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Star Wars: A New Hope",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 775,
+    imdb: 8.6,
+    watchRate: 95,
+  },
+
+  // 1983; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Star Wars: Return of the Jedi",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 482,
+    imdb: 8.3,
+    watchRate: 93,
+  },
+
+  // 2005; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Star Wars: Revenge of the Sith",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 906,
+    imdb: 7.7,
+    watchRate: 94,
+  },
+
+  // 2015; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Star Wars: The Force Awakens",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 2071,
+    imdb: 7.7,
+    watchRate: 93,
+  },
+
+  // 2016; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Rogue One: A Star Wars Story",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 1059,
+    imdb: 7.8,
+    watchRate: 90,
+  },
+
+  // 2001; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Lord of the Rings: The Fellowship of the Ring",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 898,
+    imdb: 8.9,
+    watchRate: 95,
+  },
+
+  // 2002; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Lord of the Rings: The Two Towers",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 945,
+    imdb: 8.8,
+    watchRate: 94,
+  },
+
+  // 2012; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Hobbit: An Unexpected Journey",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 1017,
+    imdb: 7.8,
+    watchRate: 91,
+  },
+
+  // 2001; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Harry Potter and the Philosopher’s Stone",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 1035,
+    imdb: 7.7,
+    watchRate: 97,
+  },
+
+  // 2002; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Harry Potter and the Chamber of Secrets",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 884,
+    imdb: 7.5,
+    watchRate: 94,
+  },
+
+  // 2004; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Harry Potter and the Prisoner of Azkaban",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 812,
+    imdb: 7.9,
+    watchRate: 94,
+  },
+
+  // 2005; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Harry Potter and the Goblet of Fire",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 901,
+    imdb: 7.7,
+    watchRate: 94,
+  },
+
+  // 2006; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Pirates of the Caribbean: Dead Man’s Chest",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 1066,
+    imdb: 7.4,
+    watchRate: 94,
+  },
+
+  // 2008; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Iron Man",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 586,
+    imdb: 7.9,
+    watchRate: 95,
+  },
+
+  // 2012; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Avengers",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 1521,
+    imdb: 8.0,
+    watchRate: 96,
+  },
+
+  // 2014; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Guardians of the Galaxy",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 773,
+    imdb: 8.0,
+    watchRate: 94,
+  },
+
+  // 2018; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Black Panther",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 1350,
+    imdb: 7.3,
+    watchRate: 93,
+  },
+
+  // 2016; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Deadpool",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 783,
+    imdb: 8.0,
+    watchRate: 94,
+  },
+
+  // 2017; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Logan",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 619,
+    imdb: 8.1,
+    watchRate: 92,
+  },
+
+  // 2002; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Spider-Man",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 811,
+    imdb: 7.4,
+    watchRate: 96,
+  },
+
+  // 2022; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Batman",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 773,
+    imdb: 7.8,
+    watchRate: 91,
+  },
+
+  // 1994; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "The Lion King",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 979,
+    imdb: 8.5,
+    watchRate: 97,
+  },
+
+  // 2001; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Shrek",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 490,
+    imdb: 7.9,
+    watchRate: 97,
+  },
+
+  // 1995; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Toy Story",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 401,
+    imdb: 8.3,
+    watchRate: 96,
+  },
+
+  // 2003; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Finding Nemo",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 942,
+    imdb: 8.2,
+    watchRate: 96,
+  },
+
+  // 2013; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Frozen",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 99,
+    attractiveness: null,
+    boxOffice: 1285,
+    imdb: 7.4,
+    watchRate: 96,
+  },
+
+  // 2015; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Inside Out",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 859,
+    imdb: 8.1,
+    watchRate: 93,
+  },
+
+  // 2024; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Inside Out 2",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 1699,
+    imdb: 7.5,
+    watchRate: 93,
+  },
+
+  // 2017; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Coco",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 822,
+    imdb: 8.4,
+    watchRate: 91,
+  },
+
+  // 2008; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "WALL-E",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 96,
+    attractiveness: null,
+    boxOffice: 527,
+    imdb: 8.4,
+    watchRate: 90,
+  },
+
+  // 2007; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Ratatouille",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 624,
+    imdb: 8.1,
+    watchRate: 93,
+  },
+
+  // 2010; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "How to Train Your Dragon",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 97,
+    attractiveness: null,
+    boxOffice: 495,
+    imdb: 8.1,
+    watchRate: 94,
+  },
+
+  // 2010; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
+  {
+    name: "Despicable Me",
+    category: "filme",
+    kills: null,
+    height: null,
+    age: null,
+    strength: 0,
+    intelligence: 0,
+    fame: 98,
+    attractiveness: null,
+    boxOffice: 544,
+    imdb: 7.6,
+    watchRate: 95,
+  },
 ];

@@ -12,6 +12,9 @@ type Category = {
 };
 
 const completedCategoryIds = new Set([
+  "game-of-thrones",
+  "dc",
+  "harry-potter",
   "fluch-der-karibik",
   "herr-der-ringe",
   "hobbit",
@@ -19,22 +22,10 @@ const completedCategoryIds = new Set([
 ]);
 
 const categoryInfo = [
-  {
-    id: "star-wars",
-    name: "⭐ Star Wars",
-  },
-  {
-    id: "marvel",
-    name: "🦸 Marvel",
-  },
-  {
-    id: "harry-potter",
-    name: "🪄 Harry Potter",
-  },
-  {
-    id: "dc",
-    name: "🦇 DC",
-  },
+  { id: "star-wars", name: "⭐ Star Wars" },
+  { id: "marvel", name: "🦸 Marvel" },
+  { id: "harry-potter", name: "🪄 Harry Potter" },
+  { id: "dc", name: "🦇 DC" },
   {
     id: "fluch-der-karibik",
     name: "🏴‍☠️ Fluch der Karibik",
@@ -47,14 +38,8 @@ const categoryInfo = [
     id: "herr-der-ringe",
     name: "💍 Herr der Ringe",
   },
-  {
-    id: "hobbit",
-    name: "🏔️ Der Hobbit",
-  },
-  {
-    id: "the-boys",
-    name: "🩸 The Boys",
-  },
+  { id: "hobbit", name: "🏔️ Der Hobbit" },
+  { id: "the-boys", name: "🩸 The Boys" },
   {
     id: "the-walking-dead",
     name: "🧟 The Walking Dead",
@@ -64,40 +49,26 @@ const categoryInfo = [
     name: "🦖 Jurassic Park / World",
   },
   {
-  id: "schauspielerinnen",
-  name: "💃 Schauspielerinnen",
-},
-{
-  id: "schauspieler",
-  name: "🎬 Schauspieler",
-},
-{
-  id: "fussballer",
-  name: "⚽ Fußballer",
-},
-{
-  id: "filme",
-  name: "🎞️ Filme",
-},
+    id: "schauspielerinnen",
+    name: "💃 Schauspielerinnen",
+  },
+  {
+    id: "schauspieler",
+    name: "🎬 Schauspieler",
+  },
+  { id: "fussballer", name: "⚽ Fußballer" },
+  { id: "filme", name: "🎞️ Filme" },
 ];
 
-const categories: Category[] = categoryInfo.map(
-  (category) => ({
-    id: category.id,
-    name: category.name,
-    characters: dealCharacters
-      .filter(
-        (character) =>
-          character.category === category.id
-      )
-      .map((character) => character.name),
-  })
-);
+const categories: Category[] = categoryInfo.map((category) => ({
+  id: category.id,
+  name: category.name,
+  characters: dealCharacters
+    .filter((character) => character.category === category.id)
+    .map((character) => character.name),
+}));
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
+function getCharacterImage(character: string, category: string) {
   const fileName = character
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -116,19 +87,11 @@ function ImageCard({
 }: {
   character: string;
   category: string;
-  onStatus: (
-    key: string,
-    status: ImageStatus
-  ) => void;
+  onStatus: (key: string, status: ImageStatus) => void;
 }) {
-  const [status, setStatus] =
-    useState<ImageStatus>("loading");
+  const [status, setStatus] = useState<ImageStatus>("loading");
 
-  const imagePath = getCharacterImage(
-    character,
-    category
-  );
-
+  const imagePath = getCharacterImage(character, category);
   const key = `${category}-${character}`;
 
   function changeStatus(newStatus: ImageStatus) {
@@ -157,9 +120,7 @@ function ImageCard({
       </div>
 
       <div className="mt-4">
-        <p className="font-bold text-white">
-          {character}
-        </p>
+        <p className="font-bold text-white">{character}</p>
 
         <p
           className={`mt-2 text-sm font-bold ${
@@ -188,10 +149,7 @@ export default function ImageCheckPage() {
     Record<string, ImageStatus>
   >({});
 
-  function handleStatus(
-    key: string,
-    status: ImageStatus
-  ) {
+  function handleStatus(key: string, status: ImageStatus) {
     setStatuses((current) => ({
       ...current,
       [key]: status,
@@ -199,8 +157,7 @@ export default function ImageCheckPage() {
   }
 
   const total = categories.reduce(
-    (sum, category) =>
-      sum + category.characters.length,
+    (sum, category) => sum + category.characters.length,
     0
   );
 
@@ -226,54 +183,40 @@ export default function ImageCheckPage() {
           </h1>
 
           <p className="mt-3 text-slate-400">
-            Hier werden alle Charakterbilder automatisch
-            überprüft.
+            Hier werden alle Bilder automatisch überprüft.
           </p>
         </div>
 
         <div className="mx-auto mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-4 text-center">
-            <p className="text-2xl font-black">
-              {total}
-            </p>
-            <p className="text-sm text-slate-400">
-              Gesamt
-            </p>
+            <p className="text-2xl font-black">{total}</p>
+            <p className="text-sm text-slate-400">Gesamt</p>
           </div>
 
           <div className="rounded-2xl border border-emerald-900 bg-emerald-950/30 p-4 text-center">
             <p className="text-2xl font-black text-emerald-400">
               {loaded}
             </p>
-            <p className="text-sm text-slate-400">
-              Gefunden
-            </p>
+            <p className="text-sm text-slate-400">Gefunden</p>
           </div>
 
           <div className="rounded-2xl border border-red-900 bg-red-950/30 p-4 text-center">
             <p className="text-2xl font-black text-red-400">
               {missing}
             </p>
-            <p className="text-sm text-slate-400">
-              Fehlen
-            </p>
+            <p className="text-sm text-slate-400">Fehlen</p>
           </div>
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-4 text-center">
             <p className="text-2xl font-black text-yellow-400">
               {waiting}
             </p>
-            <p className="text-sm text-slate-400">
-              Offen
-            </p>
+            <p className="text-sm text-slate-400">Offen</p>
           </div>
         </div>
 
         {categories.map((category) => (
-          <section
-            key={category.id}
-            className="mt-14"
-          >
+          <section key={category.id} className="mt-14">
             <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
               <div className="flex flex-wrap items-center gap-3">
                 <h2 className="text-2xl font-black">
@@ -288,21 +231,20 @@ export default function ImageCheckPage() {
               </div>
 
               <span className="rounded-full bg-slate-900 px-4 py-2 text-sm text-slate-400">
-                {category.characters.length} Figuren
+                {category.characters.length}{" "}
+                {category.id === "filme" ? "Filme" : "Figuren"}
               </span>
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-              {category.characters.map(
-                (character) => (
-                  <ImageCard
-                    key={character}
-                    character={character}
-                    category={category.id}
-                    onStatus={handleStatus}
-                  />
-                )
-              )}
+              {category.characters.map((character) => (
+                <ImageCard
+                  key={character}
+                  character={character}
+                  category={category.id}
+                  onStatus={handleStatus}
+                />
+              ))}
             </div>
           </section>
         ))}
