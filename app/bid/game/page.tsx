@@ -1,5 +1,12 @@
 "use client";
 
+import Image from "next/image";
+import {
+  getCharacterImage,
+  categoryNames,
+  formatValue,
+} from "../../lib/catalog";
+
 import {
   useCallback,
   useEffect,
@@ -53,91 +60,11 @@ type BidState = {
   teams: BidTeamCharacter[];
 };
 
-const categoryNames: Record<string, string> = {
-  "star-wars": "⭐ Star Wars",
-  marvel: "🦸 Marvel",
-  "harry-potter": "🪄 Harry Potter",
-  dc: "🦇 DC",
-  "fluch-der-karibik": "🏴‍☠️ Fluch der Karibik",
-  "game-of-thrones": "⚔️ Game of Thrones",
 
-  "herr-der-ringe": "💍 Herr der Ringe",
-  hobbit: "🏔️ Der Hobbit",
-  "the-boys": "🩸 The Boys",
-  "the-walking-dead": "🧟 The Walking Dead",
-  jurassic: "🦖 Jurassic Park / World",
-  "schauspielerinnen": "💃 Schauspielerinnen",
-"schauspieler": "🎬 Schauspieler",
-"fussballer": "⚽ Fußballer",
-"filme": "🎞️ Filme",
-};
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
-function formatValue(
-  mode: DealGameMode,
-  value: number
-) {
-  switch (mode) {
-    case "kills":
-      return `${value} Kills`;
 
-    case "height":
-      return `${value} cm`;
-
-    case "age":
-      return `${value} Jahre`;
-
-      case "boxOffice":
-  return `${value} Mio. $`;
-
-case "imdb":
-  return `${value} / 10`;
-
-case "watchRate":
-  return `${value} %`;
-
-      case "goals":
-  return `${value} Tore`;
-
-case "assists":
-  return `${value} Assists`;
-
-case "titles":
-  return `${value} Titel`;
-
-case "awards":
-  return `${value} Auszeichnungen`;
-
-case "clAppearances":
-  return `${value} CL-Einsätze`;
-
-case "internationalCaps":
-  return `${value} Länderspiele`;
-
-    case "strength":
-case "intelligence":
-case "fame":
-case "attractiveness":
-  return `${value} Punkte`;
-
-    default:
-      return String(value);
-  }
-}
 
 export default function BidGamePage() {
   const router = useRouter();
@@ -145,7 +72,20 @@ export default function BidGamePage() {
     useState<BidState | null>(null);
 
   const [playerId, setPlayerId] = useState("");
-  const [bidAmount, setBidAmount] = useState(1);
+  const [bidInput, setBidInput] = useState<{
+    key: string;
+    amount: number;
+  } | null>(null);
+
+  const bidKey = `${game?.auction?.id ?? ""}:${game?.auction?.current_bid ?? 0}`;
+
+  const bidAmount = bidInput?.key === bidKey
+    ? bidInput.amount
+    : (game?.auction?.current_bid ?? 0) + 1;
+
+  function setBidAmount(amount: number) {
+    setBidInput({ key: bidKey, amount });
+  }
 
   const [loading, setLoading] = useState(true);
   const [actionLoading, setActionLoading] =
@@ -230,30 +170,22 @@ export default function BidGamePage() {
   }, [router]);
 
   useEffect(() => {
-    loadGame();
+    const initialLoad = window.setTimeout(() => {
+      void loadGame();
+    }, 0);
 
     const interval = setInterval(
       loadGame,
       1200
     );
 
-    return () => clearInterval(interval);
+    return () => {
+      window.clearTimeout(initialLoad);
+      clearInterval(interval);
+    };
   }, [loadGame]);
 
-  // Bei jedem neuen Gebot automatisch
-  // das kleinste mögliche Folgegebot einsetzen
-  useEffect(() => {
-    if (!game?.auction) {
-      return;
-    }
-
-    setBidAmount(
-      game.auction.current_bid + 1
-    );
-  }, [
-    game?.auction?.id,
-    game?.auction?.current_bid,
-  ]);
+  
 
   async function placeBid() {
     if (
@@ -519,7 +451,7 @@ export default function BidGamePage() {
                             key={`${player.id}-${character.character_name}`}
                             className="flex items-center gap-4 rounded-2xl bg-slate-950 p-3"
                           >
-                            <img
+                            <Image unoptimized width={720} height={720} loading="eager"
                               src={getCharacterImage(
                                 character.character_name,
                                 game.category
@@ -695,7 +627,7 @@ export default function BidGamePage() {
                 Zur Auktion
               </p>
 
-              <img
+              <Image unoptimized width={720} height={720} loading="eager"
                 src={getCharacterImage(
                   game.auction.character_name,
                   game.category
@@ -982,7 +914,7 @@ export default function BidGamePage() {
                                 }
                                 className="flex items-center gap-3 rounded-xl bg-slate-950 p-2"
                               >
-                                <img
+                                <Image unoptimized width={720} height={720} loading="eager"
                                   src={getCharacterImage(
                                     character.character_name,
                                     game.category

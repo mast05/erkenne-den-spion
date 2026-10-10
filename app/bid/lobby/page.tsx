@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
+import type { DealGameMode } from "../../lib/dealData";
 import {
-  dealCharacters,
-  dealGameModes,
-  DealGameMode,
-} from "../../lib/dealData";
+  categories as catalogCategories,
+  getPlayablePool,
+  getAvailableBidModes,
+} from "../../lib/catalog";
+import CategoryLabel from "../../components/CategoryLabel";
 
 type Player = {
   id: string;
@@ -19,68 +21,7 @@ type Room = {
   room_code: string;
 };
 
-const categories = [
-  {
-    id: "star-wars",
-    label: "⭐ Star Wars",
-  },
-  {
-    id: "marvel",
-    label: "🦸 Marvel",
-  },
-  {
-    id: "harry-potter",
-    label: "🪄 Harry Potter",
-  },
-  {
-    id: "dc",
-    label: "🦇 DC",
-  },
-  {
-    id: "fluch-der-karibik",
-    label: "🏴‍☠️ Fluch der Karibik",
-  },
-  {
-    id: "game-of-thrones",
-    label: "⚔️ Game of Thrones",
-  },
-  {
-    id: "herr-der-ringe",
-    label: "💍 Herr der Ringe",
-  },
-  {
-    id: "hobbit",
-    label: "🏔️ Der Hobbit",
-  },
-  {
-    id: "the-boys",
-    label: "🩸 The Boys",
-  },
-  {
-    id: "the-walking-dead",
-    label: "🧟 The Walking Dead",
-  },
-  {
-    id: "jurassic",
-    label: "🦖 Jurassic Park / World",
-  },
-    {
-    id: "schauspielerinnen",
-    label: "💃 Schauspielerinnen",
-  },
-  {
-    id: "schauspieler",
-    label: "🎬 Schauspieler",
-  },
-  {
-  id: "fussballer",
-  label: "⚽ Fußballer",
-},
-{
-  id: "filme",
-  label: "🎞️ Filme",
-},
-];
+const categories = catalogCategories;
 
 export default function BidLobbyPage() {
   const router = useRouter();
@@ -114,7 +55,7 @@ export default function BidLobbyPage() {
       return;
     }
 
-    setPlayerId(currentPlayerId);
+    const sessionPlayerId = currentPlayerId;
 
     async function loadLobby() {
       const { data: roomData, error: roomError } =
@@ -132,6 +73,7 @@ export default function BidLobbyPage() {
         return;
       }
 
+      setPlayerId(sessionPlayerId);
       setRoom(roomData);
 
       const { data: playerData, error: playerError } =
@@ -204,7 +146,12 @@ export default function BidLobbyPage() {
     return () => clearInterval(interval);
   }, [router]);
 
-  async function startGame() {
+  const availableModes = getAvailableBidModes(
+    selectedCategory,
+    players.length
+  );
+
+    async function startGame() {
     const roomId = sessionStorage.getItem("roomId");
 
     if (!roomId || !isHost || starting) {
@@ -221,16 +168,21 @@ export default function BidLobbyPage() {
     setStarting(true);
     setError("");
 
-    const characterPool = dealCharacters
-  .filter(
-    (character) =>
-      character.category === selectedCategory
-  )
-  .map((character) => ({
-    name: character.name,
-    category: character.category,
-    value: character[selectedMode],
-  }));
+    const characterPool = getPlayablePool(
+      selectedMode,
+      selectedCategory
+    );
+
+    if (
+      !availableModes.some(mode => mode.id === selectedMode) ||
+      characterPool.length < players.length * 5
+    ) {
+      setError(
+        "Für diese Wertung sind nicht genügend Figuren mit bekanntem Wert vorhanden."
+      );
+      setStarting(false);
+      return;
+    }
 
     const { data: gameId, error: gameError } =
       await supabase.rpc("create_bid_game", {
@@ -316,7 +268,7 @@ export default function BidLobbyPage() {
       (player) => player.id === targetPlayerId
     );
 
-    if (!target) {
+    if (!target || target.is_host || target.id === playerId) {
       return;
     }
 
@@ -489,61 +441,26 @@ export default function BidLobbyPage() {
                     <button
                       key={category.id}
                       onClick={() => {
-  setSelectedCategory(category.id);
+                        setSelectedCategory(category.id);
 
-  if (
-  (category.id === "schauspielerinnen" ||
-    category.id === "schauspieler") &&
-  selectedMode === "kills"
-) {
-  setSelectedMode("attractiveness");
-}
+                        const modes = getAvailableBidModes(
+                          category.id,
+                          players.length
+                        );
 
-if (category.id === "fussballer") {
-  setSelectedMode("goals");
-}
-
-if (category.id === "filme") {
-  setSelectedMode("boxOffice");
-}
-if (
-  category.id !== "fussballer" &&
-  category.id !== "filme" &&
-  (
-    selectedMode === "goals" ||
-    selectedMode === "assists" ||
-    selectedMode === "titles" ||
-    selectedMode === "awards" ||
-    selectedMode === "clAppearances" ||
-    selectedMode === "internationalCaps" ||
-    selectedMode === "boxOffice" ||
-    selectedMode === "imdb" ||
-    selectedMode === "watchRate"
-  )
-) {
-  setSelectedMode("fame");
-}
-}}
+                        setSelectedMode(
+                          modes.some(mode => mode.id === selectedMode)
+                            ? selectedMode
+                            : modes[0]?.id ?? "fame"
+                        );
+                      }}
                       className={`rounded-2xl border px-4 py-4 text-left text-sm font-bold transition ${
                         selected
                           ? "border-violet-400 bg-violet-500/15 text-violet-300"
                           : "border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-600"
                       }`}
                     >
-                      <div className="flex items-center justify-between gap-2">
-  <span>{category.label}</span>
-
-  {(
-  category.id === "fluch-der-karibik" ||
-  category.id === "herr-der-ringe" ||
-  category.id === "hobbit" ||
-  category.id === "the-boys"
-) && (
-  <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
-    Fertig
-  </span>
-)}
-</div>
+                      <CategoryLabel categoryId={category.id} />
                     </button>
                   );
                 })}
@@ -561,61 +478,7 @@ if (
               </p>
 
               <div className="mt-4 space-y-2">
-                {dealGameModes
-  .filter((gameMode) => {
-    if (selectedCategory === "fussballer") {
-  return [
-    "goals",
-    "assists",
-    "titles",
-    "awards",
-    "clAppearances",
-    "internationalCaps",
-  ].includes(gameMode.id);
-}
-if (selectedCategory === "filme") {
-  return [
-    "boxOffice",
-    "imdb",
-    "watchRate",
-    "fame",
-  ].includes(gameMode.id);
-}
-
-if (
-  ["boxOffice", "imdb", "watchRate"].includes(
-    gameMode.id
-  )
-) {
-  return false;
-}
-
-if (
-  [
-    "goals",
-    "assists",
-    "titles",
-    "awards",
-    "clAppearances",
-    "internationalCaps",
-  ].includes(gameMode.id)
-) {
-  return false;
-}
-
-    
-
-    if (
-      (selectedCategory === "schauspielerinnen" ||
-        selectedCategory === "schauspieler") &&
-      gameMode.id === "kills"
-    ) {
-      return false;
-    }
-
-    return true;
-  })
-  .map((gameMode) => {
+                {availableModes.map((gameMode) => {
                   const selected =
                     selectedMode === gameMode.id;
 
@@ -634,6 +497,12 @@ if (
                       }`}
                     >
                       {gameMode.label}
+                      <span className="mt-1 block text-xs font-normal text-slate-400">
+                        {getPlayablePool(
+                          gameMode.id,
+                          selectedCategory
+                        ).length} Einträge mit bekanntem Wert
+                      </span>
                     </button>
                   );
                 })}
@@ -682,8 +551,8 @@ if (
               onClick={startGame}
               disabled={
                 starting ||
-                (players.length !== 2 &&
-                  players.length !== 3)
+                !availableModes.some(mode => mode.id === selectedMode) ||
+                (players.length !== 2 && players.length !== 3)
               }
               className="mt-6 w-full rounded-2xl bg-violet-500 px-6 py-5 font-black text-white transition hover:bg-violet-400 disabled:cursor-not-allowed disabled:opacity-40"
             >

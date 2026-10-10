@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import { getCharacterImage } from "../../lib/catalog";
+
 import {
   useCallback,
   useEffect,
@@ -23,20 +26,7 @@ type Assignment = {
   target_player_name: string;
 };
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
 function CharacterImage({
   character,
@@ -57,7 +47,7 @@ function CharacterImage({
   }
 
   return (
-    <img
+    <Image unoptimized width={720} height={720} loading="eager"
       src={getCharacterImage(
         character,
         category
@@ -308,7 +298,9 @@ export default function WhoAssignPage() {
       return;
     }
 
-    void loadAssign();
+    const initialLoad = window.setTimeout(() => {
+      void loadAssign();
+    }, 0);
 
     const channel = supabase
       .channel(
@@ -375,6 +367,7 @@ export default function WhoAssignPage() {
       );
 
     return () => {
+      window.clearTimeout(initialLoad);
       window.clearInterval(
         interval
       );

@@ -45,7 +45,7 @@ export default function SilhouetteLobbyPage() {
       return;
     }
 
-    setPlayerId(currentPlayerId);
+    const sessionPlayerId = currentPlayerId;
 
     let mounted = true;
     let fetching = false;
@@ -95,6 +95,7 @@ export default function SilhouetteLobbyPage() {
         }
 
         const loadedPlayers: Player[] = playerData ?? [];
+        setPlayerId(sessionPlayerId);
 
         const stillInRoom = loadedPlayers.some(
           (player) => player.id === currentPlayerId

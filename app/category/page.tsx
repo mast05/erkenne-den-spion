@@ -1,71 +1,15 @@
 "use client";
 
+import { spyCategories, completedCategoryIds } from "../lib/catalog";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
 import { dealCharacters } from "../lib/dealData";
 
-const categories = [
-  { id: "star-wars", name: "Star Wars", emoji: "⭐" },
-  { id: "marvel", name: "Marvel", emoji: "🦸" },
-  { id: "harry-potter", name: "Harry Potter", emoji: "🪄" },
-  { id: "dc", name: "DC", emoji: "🦇" },
-  {
-    id: "fluch-der-karibik",
-    name: "Fluch der Karibik",
-    emoji: "🏴‍☠️",
-  },
-  {
-    id: "game-of-thrones",
-    name: "Game of Thrones",
-    emoji: "⚔️",
-  },
-  {
-    id: "herr-der-ringe",
-    name: "Herr der Ringe",
-    emoji: "💍",
-  },
-  {
-    id: "hobbit",
-    name: "Der Hobbit",
-    emoji: "🏔️",
-  },
-  {
-    id: "the-boys",
-    name: "The Boys",
-    emoji: "🩸",
-  },
-  {
-    id: "the-walking-dead",
-    name: "The Walking Dead",
-    emoji: "🧟",
-  },
-  {
-    id: "jurassic",
-    name: "Jurassic Park / World",
-    emoji: "🦖",
-  },
-  {
-    id: "filme",
-    name: "Filme",
-    emoji: "🎞️",
-  },
-  {
-    id: "fussballer",
-    name: "Fußballer",
-    emoji: "⚽",
-  },
-];
+const categories = spyCategories;
 
-const completedCategoryIds = new Set([
-  "game-of-thrones",
-  "dc",
-  "harry-potter",
-  "fluch-der-karibik",
-  "herr-der-ringe",
-  "hobbit",
-  "the-boys",
-]);
+
 
 type Character = {
   name: string;
@@ -81,6 +25,10 @@ for (const category of categories) {
       name: character.name,
       tip: "",
     }));
+}
+
+function chooseIndex(length: number) {
+  return Math.floor(Math.random() * length);
 }
 
 export default function CategoryPage() {
@@ -173,15 +121,11 @@ export default function CategoryPage() {
         return;
       }
 
-      const randomSpyIndex = Math.floor(
-        Math.random() * players.length
-      );
+      const randomSpyIndex = chooseIndex(players.length);
 
       const spyPlayerId = players[randomSpyIndex].id;
 
-      const randomCharacterIndex = Math.floor(
-        Math.random() * categoryCharacters.length
-      );
+      const randomCharacterIndex = chooseIndex(categoryCharacters.length);
 
       const secretCharacter =
         categoryCharacters[randomCharacterIndex];

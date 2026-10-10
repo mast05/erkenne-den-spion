@@ -3,11 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
-import {
-  dealCharacters,
-  dealGameModes,
-  DealGameMode,
-} from "../../lib/dealData";
+import { dealGameModes, type DealGameMode } from "../../lib/dealData";
+import { getDealPool, getDealCategoryCount } from "../../lib/catalog";
 
 type Player = {
   id: string;
@@ -48,7 +45,7 @@ export default function DealLobbyPage() {
       return;
     }
 
-    setPlayerId(currentPlayerId);
+    const sessionPlayerId = currentPlayerId;
 
     async function loadLobby() {
       const { data: roomData, error: roomError } =
@@ -66,6 +63,7 @@ export default function DealLobbyPage() {
         return;
       }
 
+      setPlayerId(sessionPlayerId);
       setRoom(roomData);
 
       const { data: playerData, error: playerError } =
@@ -137,7 +135,11 @@ export default function DealLobbyPage() {
     return () => clearInterval(interval);
   }, [router]);
 
-  async function startGame() {
+  const availableModes = dealGameModes.filter(
+    mode => getDealCategoryCount(mode.id) >= 3
+  );
+
+    async function startGame() {
     const roomId = sessionStorage.getItem("roomId");
 
     if (!roomId || !isHost || starting) {
@@ -154,13 +156,15 @@ export default function DealLobbyPage() {
     setStarting(true);
     setError("");
 
-    const characterPool = dealCharacters.map(
-      (character) => ({
-        name: character.name,
-        category: character.category,
-        value: character[selectedMode],
-      })
-    );
+    const characterPool = getDealPool(selectedMode);
+
+    if (getDealCategoryCount(selectedMode) < 3) {
+      setError(
+        "Diese Wertung benötigt mindestens drei Kategorien mit jeweils mindestens 20 bekannten Werten."
+      );
+      setStarting(false);
+      return;
+    }
 
     const { data: gameId, error: gameError } =
       await supabase.rpc("create_deal_game", {
@@ -248,7 +252,7 @@ export default function DealLobbyPage() {
       (player) => player.id === targetPlayerId
     );
 
-    if (!target) {
+    if (!target || target.is_host || target.id === playerId) {
       return;
     }
 
@@ -407,7 +411,7 @@ export default function DealLobbyPage() {
             </div>
 
             <div className="mt-4 space-y-2">
-              {dealGameModes.map((gameMode) => {
+              {availableModes.map((gameMode) => {
                 const selected =
                   selectedMode === gameMode.id;
 
@@ -424,6 +428,9 @@ export default function DealLobbyPage() {
                     }`}
                   >
                     {gameMode.label}
+                    <span className="mt-1 block text-xs font-normal text-slate-400">
+                      {getDealCategoryCount(gameMode.id)} Kategorien mit genügend bekannten Werten
+                    </span>
                   </button>
                 );
               })}
@@ -458,8 +465,8 @@ export default function DealLobbyPage() {
               onClick={startGame}
               disabled={
                 starting ||
-                (players.length !== 2 &&
-                  players.length !== 3)
+                !availableModes.some(mode => mode.id === selectedMode) ||
+                (players.length !== 2 && players.length !== 3)
               }
               className="mt-6 w-full rounded-2xl bg-amber-500 px-6 py-5 font-black text-slate-950 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-40"
             >

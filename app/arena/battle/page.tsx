@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import { getCharacterImage } from "../../lib/catalog";
+
 import {
   useCallback,
   useEffect,
@@ -10,6 +13,7 @@ import {
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 import { dealCharacters } from "../../lib/dealData";
+import { getCharacterValue as getCatalogValue } from "../../lib/catalog";
 
 type ArenaGame = {
   id: string;
@@ -81,20 +85,7 @@ const modeInfo: Record<
   },
 };
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
 function CharacterImage({
   character,
@@ -115,7 +106,7 @@ function CharacterImage({
   }
 
   return (
-    <img
+    <Image unoptimized width={720} height={720} loading="eager"
       src={getCharacterImage(
         character,
         category
@@ -146,25 +137,7 @@ function getCharacterValue(
     return null;
   }
 
-  switch (mode) {
-    case "kills":
-      return character.kills;
-
-    case "strength":
-      return character.strength;
-
-    case "intelligence":
-      return character.intelligence;
-
-    case "fame":
-      return character.fame;
-
-    case "attractiveness":
-      return character.attractiveness;
-
-    default:
-      return null;
-  }
+  return getCatalogValue(character, mode);
 }
 
 export default function ArenaBattlePage() {
@@ -701,11 +674,9 @@ export default function ArenaBattlePage() {
       return;
     }
 
-    setPlayerId(
-      currentPlayerId
-    );
-
-    void loadBattle();
+    const initialLoad = window.setTimeout(() => {
+      void loadBattle();
+    }, 0);
 
     const channel =
       supabase
@@ -780,6 +751,7 @@ export default function ArenaBattlePage() {
         });
 
     return () => {
+      window.clearTimeout(initialLoad);
       mountedRef.current =
         false;
 
@@ -807,8 +779,20 @@ export default function ArenaBattlePage() {
       return;
     }
 
-    const characterToPlay =
-      selectedCharacter;
+    if (
+      getCharacterValue(
+        selectedCharacter,
+        round.mode,
+        game.category
+      ) === null
+    ) {
+      setError(
+        "Für diese Figur fehlt der Wert dieser Runde. Wähle eine andere Figur oder starte ein neues Spiel."
+      );
+      return;
+    }
+
+    const characterToPlay = selectedCharacter;
 
     setSubmitting(true);
     setError("");
@@ -1192,10 +1176,15 @@ const finalWinners =
                       selectedCharacter ===
                       pick.character_name;
 
-                    const used =
-                      usedCharacters.includes(
-                        pick.character_name
-                      );
+                    const unavailable = getCharacterValue(
+                      pick.character_name,
+                      round.mode,
+                      game.category
+                    ) === null;
+
+                    const used = usedCharacters.includes(
+                      pick.character_name
+                    );
 
                     return (
                       <button
@@ -1203,18 +1192,13 @@ const finalWinners =
                           pick.id
                         }
                         onClick={() => {
-                          if (
-                            !used
-                          ) {
+                          if (!used && !unavailable) {
                             setSelectedCharacter(
                               pick.character_name
                             );
                           }
                         }}
-                        disabled={
-                          submitting ||
-                          used
-                        }
+                        disabled={submitting || used || unavailable}
                         className={`overflow-hidden rounded-3xl border transition ${
                           used
                             ? "cursor-not-allowed border-slate-800 bg-slate-900 opacity-30"
@@ -1256,7 +1240,13 @@ const finalWinners =
                               </p>
                             )}
 
-                          {used && (
+                          {unavailable && (
+                            <p className="mt-2 text-sm text-amber-300">
+                              Kein Wert für diese Runde
+                            </p>
+                          )}
+
+                             {used && (
                             <p className="mt-2 text-sm font-bold text-slate-500">
                               ❌ Bereits
                               eingesetzt

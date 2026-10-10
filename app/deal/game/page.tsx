@@ -1,5 +1,13 @@
 "use client";
 
+import Image from "next/image";
+import {
+  getCharacterImage,
+  categoryNames,
+  formatValue,
+  completedCategoryIds,
+} from "../../lib/catalog";
+
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
@@ -47,60 +55,11 @@ type DealState = {
   picks: DealPick[];
 };
 
-const categoryNames: Record<string, string> = {
-  "star-wars": "⭐ Star Wars",
-  marvel: "🦸 Marvel",
-  "harry-potter": "🪄 Harry Potter",
-  dc: "🦇 DC",
-  "fluch-der-karibik": "🏴‍☠️ Fluch der Karibik",
-  "game-of-thrones": "⚔️ Game of Thrones",
 
-  "herr-der-ringe": "💍 Herr der Ringe",
-  hobbit: "🏔️ Der Hobbit",
-  "the-boys": "🩸 The Boys",
-  "the-walking-dead": "🧟 The Walking Dead",
-  jurassic: "🦖 Jurassic Park / World",
-};
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
-function formatValue(
-  mode: DealGameMode,
-  value: number
-) {
-  switch (mode) {
-    case "kills":
-      return `${value} Kills`;
 
-    case "height":
-      return `${value} cm`;
-
-    case "age":
-      return `${value} Jahre`;
-
-    case "strength":
-    case "intelligence":
-    case "fame":
-    case "attractiveness":
-      return `${value}/100`;
-
-    default:
-      return String(value);
-  }
-}
 
 export default function DealGamePage() {
   const router = useRouter();
@@ -187,11 +146,16 @@ export default function DealGamePage() {
   }, [router]);
 
   useEffect(() => {
-    loadGame();
+    const initialLoad = window.setTimeout(() => {
+      void loadGame();
+    }, 0);
 
     const interval = setInterval(loadGame, 1200);
 
-    return () => clearInterval(interval);
+    return () => {
+      window.clearTimeout(initialLoad);
+      clearInterval(interval);
+    };
   }, [loadGame]);
 
   async function openCase(caseId: string) {
@@ -436,7 +400,7 @@ export default function DealGamePage() {
                           key={`${player.id}-${pick.round_number}`}
                           className="flex items-center gap-4 rounded-2xl bg-slate-950 p-3"
                         >
-                          <img
+                          <Image unoptimized width={720} height={720} loading="eager"
                             src={getCharacterImage(
                               pick.character_name,
                               pick.category
@@ -567,12 +531,7 @@ export default function DealGamePage() {
     {categoryNames[currentCategory] ?? currentCategory}
   </p>
 
-  {(
-  currentCategory === "fluch-der-karibik" ||
-  currentCategory === "the-boys" ||
-  currentCategory === "herr-der-ringe" ||
-  currentCategory === "hobbit"
-) && (
+  {completedCategoryIds.has(currentCategory) && (
   <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
     Fertig
   </span>
@@ -658,7 +617,7 @@ export default function DealGamePage() {
                 Koffer {myOpenCase.case_number}
               </p>
 
-              <img
+              <Image unoptimized width={720} height={720} loading="eager"
                 src={getCharacterImage(
                   myOpenCase.character_name,
                   currentCategory

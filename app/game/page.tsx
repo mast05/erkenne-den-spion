@@ -1,5 +1,9 @@
 "use client";
 
+import Image from "next/image";
+import { getCharacterImage, categoryNames } from "../lib/catalog";
+import { getNameTips } from "../lib/spyHints";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
@@ -26,28 +30,9 @@ type Result = {
   }[];
 };
 
-type Round = {
-  id: string;
-  secret_word: string;
-  spy_player_id: string;
-  status: string;
-  category: string;
-};
 
-const categoryNames: Record<string, string> = {
-  "star-wars": "⭐ Star Wars",
-  marvel: "🦸 Marvel",
-  "harry-potter": "🪄 Harry Potter",
-  dc: "🦇 DC",
-  "fluch-der-karibik": "🏴‍☠️ Fluch der Karibik",
-  "game-of-thrones": "⚔️ Game of Thrones",
 
-  "herr-der-ringe": "💍 Herr der Ringe",
-  hobbit: "🏔️ Der Hobbit",
-  "the-boys": "🩸 The Boys",
-  "the-walking-dead": "🧟 The Walking Dead",
-  jurassic: "🦖 Jurassic Park / World",
-};
+
 
 const characterTips: Record<string, string[]> = {
     // =========================
@@ -2585,23 +2570,14 @@ function getRandomTip(character: string, category: string) {
     characterTips[character];
 
   if (!tips || tips.length === 0) {
-    return "Die Figur hat eine besondere Persönlichkeit.";
+    const fallback = getNameTips(character, category);
+    return fallback[Math.floor(Math.random() * fallback.length)];
   }
 
   return tips[Math.floor(Math.random() * tips.length)];
 }
 
-function getCharacterImage(character: string, category: string) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
 function CharacterImage({
   character,
@@ -2621,7 +2597,7 @@ function CharacterImage({
   }
 
   return (
-    <img
+    <Image unoptimized width={720} height={720} loading="eager"
       src={getCharacterImage(character, category)}
       alt={character}
       onError={() => setImageError(true)}
@@ -2662,11 +2638,7 @@ const availableCharacters = dealCharacters
   .filter((character) => character.category === category)
   .map((character) => character.name)
   .sort((a, b) => a.localeCompare(b));
-  const currentPlayer = players.find(
-  (player) => player.id === playerId
-);
-
-const isHost = currentPlayer?.is_host === true;
+  
 
   useEffect(() => {
     let mounted = true;
@@ -2825,20 +2797,11 @@ const isHost = currentPlayer?.is_host === true;
         const isImposter =
           currentPlayerId === round.spy_player_id;
 
-        console.log(
-          "GAME PLAYER ID:",
-          currentPlayerId
-        );
+        
 
-        console.log(
-          "GAME SPY ID:",
-          round.spy_player_id
-        );
+        
 
-        console.log(
-          "IST IMPOSTER:",
-          isImposter
-        );
+        
 
         if (isImposter) {
   const tipStorageKey = `roundTip:${round.id}`;

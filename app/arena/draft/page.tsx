@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import { getCharacterImage } from "../../lib/catalog";
+
 import {
   useEffect,
   useMemo,
@@ -7,7 +10,7 @@ import {
 } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
-import { dealCharacters } from "../../lib/dealData";
+import { getArenaCharacters } from "../../lib/catalog";
 
 type ArenaGame = {
   id: string;
@@ -60,20 +63,7 @@ const categoryNames: Record<string, string> = {
     "🦖 Jurassic Park / World",
 };
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
 function CharacterImage({
   character,
@@ -94,7 +84,7 @@ function CharacterImage({
   }
 
   return (
-    <img
+    <Image unoptimized width={720} height={720} loading="eager"
       src={getCharacterImage(
         character,
         category
@@ -179,7 +169,7 @@ export default function ArenaDraftPage() {
       return;
     }
 
-    setPlayerId(currentPlayerId);
+    const sessionPlayerId = currentPlayerId;
 
     let mounted = true;
     let loadingNow = false;
@@ -324,17 +314,7 @@ export default function ArenaDraftPage() {
               currentPlayerId
           );
 
-        const categoryCharacters =
-          dealCharacters
-            .filter(
-              (character) =>
-                character.category ===
-                gameData.category
-            )
-            .map(
-              (character) =>
-                character.name
-            );
+        const categoryCharacters = getArenaCharacters(gameData.category).map(character => character.name);
 
         let optionData:
           | DraftOption[]
@@ -469,9 +449,8 @@ export default function ArenaDraftPage() {
           optionData = [];
         }
 
-        setGame(
-          gameData as ArenaGame
-        );
+        setPlayerId(sessionPlayerId);
+        setGame(gameData as ArenaGame);
 
         setPlayers(
           (playerData ??

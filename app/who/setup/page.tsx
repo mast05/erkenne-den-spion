@@ -1,55 +1,14 @@
 "use client";
 
+import { fictionCategories } from "../../lib/catalog";
+import { checkHostRoom } from "../../lib/setupChecks";
+import CategoryLabel from "../../components/CategoryLabel";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
 
-const categories = [
-  {
-    id: "star-wars",
-    name: "⭐ Star Wars",
-  },
-  {
-    id: "marvel",
-    name: "🦸 Marvel",
-  },
-  {
-    id: "harry-potter",
-    name: "🪄 Harry Potter",
-  },
-  {
-    id: "dc",
-    name: "🦇 DC",
-  },
-  {
-    id: "fluch-der-karibik",
-    name: "🏴‍☠️ Fluch der Karibik",
-  },
-  {
-    id: "game-of-thrones",
-    name: "⚔️ Game of Thrones",
-  },
-  {
-    id: "herr-der-ringe",
-    name: "💍 Herr der Ringe",
-  },
-  {
-    id: "hobbit",
-    name: "🏔️ Der Hobbit",
-  },
-  {
-    id: "the-boys",
-    name: "🩸 The Boys",
-  },
-  {
-    id: "the-walking-dead",
-    name: "🧟 The Walking Dead",
-  },
-  {
-    id: "jurassic",
-    name: "🦖 Jurassic Park / World",
-  },
-];
+const categories = fictionCategories;
 
 export default function WhoSetupPage() {
   const router = useRouter();
@@ -85,6 +44,7 @@ export default function WhoSetupPage() {
     setError("");
 
     try {
+      await checkHostRoom("who");
       /*
        * Prüfen, ob wirklich der Host
        * diese Seite startet.
@@ -224,7 +184,9 @@ export default function WhoSetupPage() {
       );
 
       setError(
-        "Beim Starten ist ein Fehler aufgetreten."
+        err instanceof Error
+          ? err.message
+          : "Beim Starten ist ein Fehler aufgetreten."
       );
     } finally {
       setLoading(false);
@@ -276,9 +238,7 @@ export default function WhoSetupPage() {
                   }`}
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <span>
-                      {category.name}
-                    </span>
+                    <CategoryLabel categoryId={category.id} />
 
                     <span className="text-xl">
                       {selected

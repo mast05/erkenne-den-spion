@@ -50,7 +50,7 @@ export default function ArenaLobbyPage() {
       return;
     }
 
-    setPlayerId(currentPlayerId);
+    const sessionPlayerId = currentPlayerId;
 
     stayInLobbyRef.current =
       sessionStorage.getItem("arenaForceLobby") === "1";
@@ -103,6 +103,7 @@ export default function ArenaLobbyPage() {
         }
 
         const loadedPlayers: Player[] = playerData ?? [];
+        setPlayerId(sessionPlayerId);
 
         const stillInRoom = loadedPlayers.some(
           (player) => player.id === currentPlayerId

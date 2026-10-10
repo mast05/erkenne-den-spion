@@ -476,7 +476,7 @@ export default function QuizGamePage() {
 
   const loadGame =
 
-    useCallback(async () => {
+    useCallback(async function refreshQuiz() {
 
       const roomId =
 
@@ -892,7 +892,7 @@ export default function QuizGamePage() {
 
                 () => {
 
-                  void loadGame();
+                  void refreshQuiz();
 
                 },
 

@@ -3,25 +3,30 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
+import { fictionCategories } from "../../lib/catalog";
 
-type Category = {
-  id: string;
-  name: string;
+const categories = fictionCategories.map(category => ({
+  id: category.id,
+  name: `${category.emoji} ${category.name}`,
+}));
+
+const roundTypes = [
+  "emoji",
+  "quickfire",
+  "true_false",
+  "timeline",
+  "next_scene",
+] as const;
+
+type RoundType = typeof roundTypes[number];
+
+const typeNames: Record<RoundType, string> = {
+  emoji: "Emoji",
+  quickfire: "Schnellfeuer",
+  true_false: "Wahr/Falsch",
+  timeline: "Timeline",
+  next_scene: "Nächste Szene",
 };
-
-const categories: Category[] = [
-  { id: "star-wars", name: "⭐ Star Wars" },
-  { id: "marvel", name: "🦸 Marvel" },
-  { id: "harry-potter", name: "🪄 Harry Potter" },
-  { id: "dc", name: "🦇 DC" },
-  { id: "fluch-der-karibik", name: "🏴‍☠️ Fluch der Karibik" },
-  { id: "game-of-thrones", name: "⚔️ Game of Thrones" },
-  { id: "herr-der-ringe", name: "💍 Herr der Ringe" },
-  { id: "hobbit", name: "🏔️ Der Hobbit" },
-  { id: "the-boys", name: "🩸 The Boys" },
-  { id: "the-walking-dead", name: "🧟 The Walking Dead" },
-  { id: "jurassic", name: "🦖 Jurassic Park / World" },
-];
 
 export default function QuizSetupPage() {
   const router = useRouter();
@@ -29,6 +34,8 @@ export default function QuizSetupPage() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [questionCounts, setQuestionCounts] =
     useState<Record<string, number>>({});
+  const [typeCounts, setTypeCounts] =
+    useState<Record<string, Partial<Record<RoundType, number>>>>({});
   const [loading, setLoading] = useState(true);
   const [starting, setStarting] = useState(false);
   const [error, setError] = useState("");
@@ -67,37 +74,41 @@ export default function QuizSetupPage() {
           return;
         }
 
-        // Jede Welt direkt zählen, ohne alle Fragen herunterzuladen.
         const results = await Promise.all(
-          categories.map(async (category) => {
-            const { count, error: countError } = await supabase
-              .from("quiz_questions")
-              .select("id", {
-                count: "exact",
-                head: true,
-              })
-              .eq("category", category.id)
-              .eq("is_active", true);
+          categories.flatMap(category =>
+            roundTypes.map(async questionType => {
+              const { count, error: countError } = await supabase
+                .from("quiz_questions")
+                .select("id", {
+                  count: "exact",
+                  head: true,
+                })
+                .eq("category", category.id)
+                .eq("is_active", true)
+                .eq("question_type", questionType);
 
-            return {
-              categoryId: category.id,
-              count,
-              error: countError,
-            };
-          })
+              return {
+                categoryId: category.id,
+                questionType,
+                count,
+                error: countError,
+              };
+            })
+          )
         );
 
         if (!mounted) return;
 
-        const failedResults = results.filter(
-          (result) => result.error || result.count === null
+        const failed = results.filter(
+          result => result.error || result.count === null
         );
 
-        if (failedResults.length > 0) {
-          for (const result of failedResults) {
+        if (failed.length > 0) {
+          for (const result of failed) {
             console.error(
               "QUIZ QUESTION COUNT ERROR:",
               result.categoryId,
+              result.questionType,
               result.error
             );
           }
@@ -108,12 +119,23 @@ export default function QuizSetupPage() {
         }
 
         const counts: Record<string, number> = {};
+        const byType: Record<
+          string,
+          Partial<Record<RoundType, number>>
+        > = {};
 
         for (const result of results) {
-          counts[result.categoryId] = result.count ?? 0;
+          counts[result.categoryId] =
+            (counts[result.categoryId] ?? 0) +
+            (result.count ?? 0);
+
+          byType[result.categoryId] ??= {};
+          byType[result.categoryId][result.questionType] =
+            result.count ?? 0;
         }
 
         setQuestionCounts(counts);
+        setTypeCounts(byType);
         setError("");
         setLoading(false);
       } catch (err) {
@@ -134,6 +156,15 @@ export default function QuizSetupPage() {
 
   async function startGame() {
     if (!selectedCategory || starting) return;
+
+    if (
+      !roundTypes.every(
+        type => (typeCounts[selectedCategory]?.[type] ?? 0) > 0
+      )
+    ) {
+      setError("Für diese Welt fehlt mindestens ein Fragetyp.");
+      return;
+    }
 
     const roomId = sessionStorage.getItem("roomId");
 
@@ -158,7 +189,7 @@ export default function QuizSetupPage() {
         console.error("QUIZ GAME CREATE ERROR:", gameError);
         setError(
           gameError?.message ??
-            "Das Quiz konnte nicht gestartet werden."
+          "Das Quiz konnte nicht gestartet werden."
         );
         return;
       }
@@ -167,9 +198,7 @@ export default function QuizSetupPage() {
 
       const { error: roundError } = await supabase.rpc(
         "ensure_quiz_round",
-        {
-          p_game_id: gameId,
-        }
+        { p_game_id: gameId }
       );
 
       if (roundError) {
@@ -200,34 +229,29 @@ export default function QuizSetupPage() {
       <div className="mx-auto max-w-md px-6 py-10">
         <div className="text-center">
           <div className="text-7xl">🎓</div>
-
           <p className="mt-5 text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">
             Fandom Quiz
           </p>
-
           <h1 className="mt-2 text-3xl font-black">
             Welt auswählen
           </h1>
-
           <p className="mt-3 text-slate-400">
             5 Runden – jeder Fragetyp kommt genau einmal.
           </p>
         </div>
 
         <div className="mt-8 space-y-3">
-          {categories.map((category) => {
+          {categories.map(category => {
             const count = questionCounts[category.id] ?? 0;
-            const available = count > 0;
+            const available = roundTypes.every(
+              type => (typeCounts[category.id]?.[type] ?? 0) > 0
+            );
             const selected = selectedCategory === category.id;
 
             return (
               <button
                 key={category.id}
-                onClick={() => {
-                  if (available && !starting) {
-                    setSelectedCategory(category.id);
-                  }
-                }}
+                onClick={() => setSelectedCategory(category.id)}
                 disabled={!available || starting}
                 className={`w-full rounded-2xl border px-5 py-4 text-left transition ${
                   selected
@@ -240,14 +264,20 @@ export default function QuizSetupPage() {
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <p className="font-bold">{category.name}</p>
-
-                    <p className="mt-1 text-xs text-slate-500">
+                    <p className="mt-1 text-xs text-slate-400">
                       {available
-                        ? `${count} ${count === 1 ? "Frage" : "Fragen"}`
-                        : "Noch keine Fragen"}
+                        ? `${count} Fragen`
+                        : count > 0
+                          ? "Mindestens ein Fragetyp fehlt"
+                          : "Noch keine Fragen"}
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {roundTypes.map(
+                        type =>
+                          `${typeNames[type]}: ${typeCounts[category.id]?.[type] ?? 0}`
+                      ).join(" · ")}
                     </p>
                   </div>
-
                   <span className="text-xl">
                     {selected ? "✅" : available ? "›" : "🔒"}
                   </span>
@@ -259,7 +289,6 @@ export default function QuizSetupPage() {
 
         <div className="mt-8 rounded-3xl border border-emerald-500/20 bg-emerald-500/5 p-5">
           <p className="font-black">🎮 Rundentypen</p>
-
           <div className="mt-3 space-y-2 text-sm text-slate-400">
             <p>😀 Emoji-Rätsel</p>
             <p>⚡ Schnellfeuer</p>

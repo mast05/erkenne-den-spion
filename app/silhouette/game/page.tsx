@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import { getCharacterImage } from "../../lib/catalog";
+
 import {
   useCallback,
   useEffect,
@@ -78,20 +81,7 @@ type TickResult = {
 const STAGE_SECONDS = 10;
 const REVEAL_SECONDS = 2;
 
-function getCharacterImage(
-  character: string,
-  category: string
-) {
-  const fileName = character
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 
-  return `/characters/${category}/${fileName}.webp`;
-}
 
 function clearSilhouetteSession() {
   ["roomId", "playerId", "silhouetteGameId"].forEach(
@@ -131,7 +121,7 @@ function SilhouetteImage({
   }
 
   return (
-    <img
+    <Image unoptimized width={720} height={720} loading="eager"
       src={getCharacterImage(character, category)}
       alt={revealed ? character : "Geheimer Charakter"}
       onError={() => setImageError(true)}
@@ -214,7 +204,7 @@ export default function SilhouetteGamePage() {
       )
       .map((character) => character.name)
       .sort((a, b) => a.localeCompare(b, "de"));
-  }, [game?.category]);
+  }, [game]);
 
   const guessedThisStage = useMemo(
     () =>
@@ -225,7 +215,7 @@ export default function SilhouetteGamePage() {
               guess.reveal_stage === round.reveal_stage
           )
       ),
-    [ownGuesses, round?.reveal_stage]
+    [ownGuesses, round]
   );
 
   const alreadyCorrect = useMemo(
@@ -657,7 +647,9 @@ export default function SilhouetteGamePage() {
       };
     }
 
-    void loadGame();
+    const initialLoad = window.setTimeout(() => {
+      void loadGame();
+    }, 0);
 
     let channel = supabase.channel(
       `silhouette-game-${gameId}`
@@ -710,6 +702,7 @@ export default function SilhouetteGamePage() {
     return () => {
       mountedRef.current = false;
       lifecycleRef.current += 1;
+      window.clearTimeout(initialLoad);
       window.clearInterval(fallback);
       void supabase.removeChannel(channel);
     };
@@ -736,21 +729,28 @@ export default function SilhouetteGamePage() {
    * Der Server entscheidet über Stufen- und Rundenwechsel.
    * Die Runden-ID schützt vor verspäteten Doppelaufrufen.
    */
+  const activeGameId = game?.id;
+  const activeGameStatus = game?.status;
+  const activeGameRound = game?.current_round;
+  const activeRoundId = round?.id;
+  const activeRoundStatus = round?.status;
+  const activeRoundNumber = round?.round_number;
+
   useEffect(() => {
     if (
       !isHost ||
-      !game ||
-      !round ||
-      game.status !== "playing" ||
-      round.status !== "playing" ||
-      round.round_number !== game.current_round
+      !activeGameId ||
+      !activeRoundId ||
+      activeGameStatus !== "playing" ||
+      activeRoundStatus !== "playing" ||
+      activeRoundNumber !== activeGameRound
     ) {
       return;
     }
 
-    const gameId = game.id;
-    const roundId = round.id;
-    const roundNumber = round.round_number;
+    const gameId = activeGameId;
+    const roundId = activeRoundId;
+    const roundNumber = activeRoundNumber;
     const lifecycle = lifecycleRef.current;
 
     let cancelled = false;
@@ -838,12 +838,12 @@ export default function SilhouetteGamePage() {
     };
   }, [
     isHost,
-    game?.id,
-    game?.status,
-    game?.current_round,
-    round?.id,
-    round?.status,
-    round?.round_number,
+    activeGameId,
+    activeGameStatus,
+    activeGameRound,
+    activeRoundId,
+    activeRoundStatus,
+    activeRoundNumber,
     loadGame,
   ]);
 
