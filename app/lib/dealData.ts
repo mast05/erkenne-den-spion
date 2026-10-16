@@ -134,7 +134,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 179,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 45, // [ABLEITUNG] Geburt 36 BBY plus Referenzjahr 9 ABY; Jahresalter; https://starwars.fandom.com/wiki/Ahsoka_Tano
     strength: 91,
     intelligence: 88,
     fame: 92,
@@ -156,7 +156,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 183,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 41, // [ABLEITUNG] Geburt 32 BBY plus Referenzjahr 9 ABY; Jahresalter; https://starwars.fandom.com/wiki/Boba_Fett
     strength: 83,
     intelligence: 84,
     fame: 94,
@@ -167,7 +167,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 177,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 67, // [SCHAETZUNG] Episode IX; seit Anakins Wiederaufbau, nicht gesichertes Gesamtalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 18,
     intelligence: 87,
     fame: 95,
@@ -178,7 +178,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 228,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 190, // [BELEGT] Solo: A Star Wars Story; https://www.starwars.com/databank/chewbacca/
     strength: 88,
     intelligence: 76,
     fame: 97,
@@ -211,7 +211,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 178,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 24, // [ABLEITUNG] Episode IX; berechnet: 35 ABY minus 11 ABY; https://starwars.fandom.com/wiki/Finn
     strength: 69,
     intelligence: 72,
     fame: 83,
@@ -222,7 +222,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 216,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] Episode III; organisches Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 89,
     intelligence: 83,
     fame: 88,
@@ -254,8 +254,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jabba the Hutt",
     category: "star-wars",
     kills: 0,
-    height: null, // Keine ausreichend belegte Kanon-Größe übernommen.
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 175, // [SCHAETZUNG] Episode VI; Hoehe im Sitzen, nicht Koerperlaenge; angenaeherte Bildschirmgestalt in cm
+    age: 604, // [BELEGT] StarWars.com: 604 Jahre bei seinem Tod in Episode VI; https://www.starwars.com/news/hutt-history
     strength: 52,
     intelligence: 82,
     fame: 89,
@@ -265,7 +265,7 @@ export const dealCharacters: DealCharacter[] = [
     name: "Kylo Ren",
     category: "star-wars",
     kills: 20,
-    height: null, // Keine ausreichend belegte Kanon-Größe übernommen.
+    height: 189, // [BELEGT] DK Character Encyclopedia; Groesse in cm; DK: Star Wars Character Encyclopedia, Updated and Expanded
     age: 30, // Episode IX; Kanon-Geburtsjahr 5 ABY.
     strength: 92,
     intelligence: 80,
@@ -310,7 +310,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 192,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 53, // [ABLEITUNG] Episode III; berechnet: 72 BBY minus 19 BBY; https://starwars.fandom.com/wiki/Mace_Windu
     strength: 96,
     intelligence: 90,
     fame: 89,
@@ -321,7 +321,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 50,
     height: 180,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 40, // [SCHAETZUNG] The Mandalorian, Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 80,
     fame: 92,
@@ -354,7 +354,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 173,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 88, // [ABLEITUNG] Kanon-Geburt 84 BBY plus Episode VI 4 ABY; Jahresalter; https://starwars.fandom.com/wiki/Darth_Sidious
     strength: 99,
     intelligence: 100,
     fame: 98,
@@ -376,7 +376,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 2,
     height: 109,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 80, // [SCHAETZUNG] Episode IX; Zeit seit Herstellung; Jahre, kein gesicherter exakter Kanonwert
     strength: 30,
     intelligence: 93,
     fame: 97,
@@ -409,7 +409,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 184,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 52, // [ABLEITUNG] Rebels, bei seinem Tod; 54 BBY minus 2 BBY; https://starwars.fandom.com/wiki/Maul
     strength: 95,
     intelligence: 88,
     fame: 97,
@@ -420,7 +420,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 183,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 44, // [ABLEITUNG] Episode II, bei seinem Tod; 66 BBY minus 22 BBY; https://starwars.fandom.com/wiki/Jango_Fett
     strength: 86,
     intelligence: 87,
     fame: 93,
@@ -431,7 +431,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 185,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 71, // [SCHAETZUNG] The Book of Boba Fett; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 93,
     fame: 89,
@@ -442,7 +442,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 180,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] The Mandalorian, Staffel 3; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 88,
     fame: 90,
@@ -453,7 +453,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 172,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 33, // [ABLEITUNG] Episode IX; berechnet: 35 ABY minus 2 ABY; https://starwars.fandom.com/wiki/Poe_Dameron
     strength: 67,
     intelligence: 86,
     fame: 90,
@@ -464,7 +464,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 200,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 40, // [SCHAETZUNG] Episode VIII; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 82,
     fame: 86,
@@ -475,7 +475,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 185,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 64, // [SCHAETZUNG] Episode IV; Jahre, kein gesicherter exakter Kanonwert
     strength: 45,
     intelligence: 97,
     fame: 92,
@@ -486,7 +486,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 180,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 90, // [SCHAETZUNG] Episode VIII; Jahre, kein gesicherter exakter Kanonwert
     strength: 52,
     intelligence: 94,
     fame: 92,
@@ -497,7 +497,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 45,
     height: 179,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 30, // [SCHAETZUNG] Spaete Clone-Wars-Zeit; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 89,
     fame: 89,
@@ -508,7 +508,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 196,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 40, // [SCHAETZUNG] Episode III; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 88,
     fame: 85,
@@ -519,7 +519,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 55,
     height: 183,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 13, // [ABLEITUNG] Geburt 32 BBY minus Ende Clone Wars 19 BBY; chronologisches Jahresalter; https://starwars.fandom.com/wiki/Rex
     strength: 86,
     intelligence: 91,
     fame: 92,
@@ -530,7 +530,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 45,
     height: 183,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 13, // [ABLEITUNG] Geburt 32 BBY minus Episode III 19 BBY; chronologisches Jahresalter; https://starwars.fandom.com/wiki/Cody
     strength: 85,
     intelligence: 89,
     fame: 88,
@@ -541,7 +541,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 193,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 68, // [SCHAETZUNG] Ahsoka, 9 ABY; Jahre, kein gesicherter exakter Kanonwert
     strength: 74,
     intelligence: 100,
     fame: 93,
@@ -552,7 +552,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 183,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 55, // [SCHAETZUNG] The Mandalorian; Jahre, kein gesicherter exakter Kanonwert
     strength: 79,
     intelligence: 94,
     fame: 90,
@@ -562,8 +562,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Fennec Shand",
     category: "star-wars",
     kills: 35,
-    height: null, // Keine ausreichend belegte Kanon-Größe übernommen.
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 163, // [SCHAETZUNG] The Book of Boba Fett; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] The Book of Boba Fett; Jahre, kein gesicherter exakter Kanonwert
     strength: 80,
     intelligence: 91,
     fame: 87,
@@ -574,7 +574,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 191,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 32, // [ABLEITUNG] Geburt 33 BBY minus Tod 1 BBY; Jahresalter; https://starwars.fandom.com/wiki/Kanan_Jarrus
     strength: 91,
     intelligence: 89,
     fame: 89,
@@ -585,7 +585,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 182,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 28, // [ABLEITUNG] Geburt 19 BBY plus Ahsoka-Referenzjahr 9 ABY; Jahresalter; https://starwars.fandom.com/wiki/Ezra_Bridger
     strength: 88,
     intelligence: 86,
     fame: 90,
@@ -596,7 +596,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 171,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 30, // [ABLEITUNG] Geburt 21 BBY plus Ahsoka-Referenzjahr 9 ABY; Jahresalter; https://starwars.fandom.com/wiki/Sabine_Wren
     strength: 82,
     intelligence: 91,
     fame: 89,
@@ -607,7 +607,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 173,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 38, // [ABLEITUNG] Geburt 29 BBY plus Ahsoka-Referenzjahr 9 ABY; Jahresalter; https://starwars.fandom.com/wiki/Hera_Syndulla
     strength: 70,
     intelligence: 96,
     fame: 88,
@@ -618,7 +618,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 188,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 300, // [SPIELWERT] Episode III; grober Spielwert fuer langlebigen Kel Dor; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 93,
     fame: 87,
@@ -629,7 +629,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 170,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 30, // [SCHAETZUNG] Episode III; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 88,
     fame: 88,
@@ -640,7 +640,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 189,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 35, // [SCHAETZUNG] The Clone Wars; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 72,
     fame: 87,
@@ -651,7 +651,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 184,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 40, // [SCHAETZUNG] The Clone Wars; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 89,
     fame: 85,
@@ -662,7 +662,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 191,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 60, // [SCHAETZUNG] Episode III; Jahre, kein gesicherter exakter Kanonwert
     strength: 35,
     intelligence: 85,
     fame: 86,
@@ -673,7 +673,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 170,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 56, // [SCHAETZUNG] Episode IX; Jahre, kein gesicherter exakter Kanonwert
     strength: 64,
     intelligence: 91,
     fame: 86,
@@ -689,7 +689,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 196,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 33, // [SCHAETZUNG] Episode III; Jahre, kein gesicherter exakter Kanonwert
     strength: 42,
     intelligence: 35,
     fame: 94,
@@ -700,7 +700,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 67,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 6, // [ABLEITUNG] Episode IX; seit Herstellung 29 ABY; https://starwars.fandom.com/wiki/BB-8
     strength: 22,
     intelligence: 86,
     fame: 93,
@@ -711,7 +711,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 10,
     height: 218,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 80, // [SCHAETZUNG] Episode VIII; angenaehertes Erscheinungsalter, Klonalter unbekannt; Jahre, kein gesicherter exakter Kanonwert
     strength: 95,
     intelligence: 91,
     fame: 90,
@@ -722,7 +722,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 178,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 27, // [BELEGT] Dawn of Rebellion Visual Guide laut Kanon-Wiki: 27 in Andor Staffel 1; widerspricht altem Rogue-One-Guide; https://starwars.fandom.com/wiki/Cassian_Jeron_Andor
     strength: 76,
     intelligence: 92,
     fame: 90,
@@ -744,7 +744,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 216,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] Rogue One; Zeit seit Herstellung; Jahre, kein gesicherter exakter Kanonwert
     strength: 83,
     intelligence: 93,
     fame: 88,
@@ -766,7 +766,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 124,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 1007, // [BELEGT] Rise of Skywalker Visual Dictionary laut Kanon-Wiki: geboren 1007 Jahre vor Starkiller-Vorfall in Episode VII; https://starwars.fandom.com/wiki/Maz_Kanata
     strength: 58,
     intelligence: 96,
     fame: 86,
@@ -777,7 +777,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 174,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 40, // [SCHAETZUNG] Episode IV; Jahre, kein gesicherter exakter Kanonwert
     strength: 57,
     intelligence: 52,
     fame: 86,
@@ -799,7 +799,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 137,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] Episode I; Jahre, kein gesicherter exakter Kanonwert
     strength: 31,
     intelligence: 77,
     fame: 84,
@@ -843,7 +843,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 178,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] Episode IV; Jahre, kein gesicherter exakter Kanonwert
     strength: 48,
     intelligence: 76,
     fame: 82,
@@ -854,7 +854,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 199,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 65, // [SCHAETZUNG] Episode IV; Jahre, kein gesicherter exakter Kanonwert
     strength: 45,
     intelligence: 93,
     fame: 82,
@@ -865,7 +865,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 163,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] Episode II; Jahre, kein gesicherter exakter Kanonwert
     strength: 31,
     intelligence: 78,
     fame: 81,
@@ -876,7 +876,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 188,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 65, // [SCHAETZUNG] The Mandalorian; Jahre, kein gesicherter exakter Kanonwert
     strength: 63,
     intelligence: 87,
     fame: 80,
@@ -887,7 +887,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 45,
     height: 193, // The Secrets of the Bounty Hunters (2022); andere Quelle nennt 219 cm.
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 10, // [SCHAETZUNG] The Mandalorian, Staffel 1; Zeit seit Herstellung; Jahre, kein gesicherter exakter Kanonwert
     strength: 86,
     intelligence: 84,
     fame: 80,
@@ -898,7 +898,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 187,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] Rogue One; Jahre, kein gesicherter exakter Kanonwert
     strength: 74,
     intelligence: 88,
     fame: 79,
@@ -909,7 +909,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 45,
     height: 104,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 20, // [SCHAETZUNG] Spaete Rebels-Zeit; Droide bereits waehrend Clone Wars aktiv; Jahre, kein gesicherter exakter Kanonwert
     strength: 38,
     intelligence: 89,
     fame: 79,
@@ -920,7 +920,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 185,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 65, // [SCHAETZUNG] Rebels; Jahre, kein gesicherter exakter Kanonwert
     strength: 67,
     intelligence: 91,
     fame: 78,
@@ -931,7 +931,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 173,
-    age: null, // Kein ausreichend belegter Alterswert übernommen.
+    age: 52, // [BELEGT] Rogue One Ultimate Visual Guide laut Kanon-Wiki: 52 bei der Mission; https://starwars.fandom.com/wiki/Chirrut_%C3%8Emwe
     strength: 78,
     intelligence: 88,
     fame: 78,
@@ -942,7 +942,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 187,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 50, // [SCHAETZUNG] Episode III; Jahre, kein gesicherter exakter Kanonwert
     strength: 92,
     intelligence: 92,
     fame: 77,
@@ -953,7 +953,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 112,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 45, // [SCHAETZUNG] Episode I; Jahre, kein gesicherter exakter Kanonwert
     strength: 43,
     intelligence: 68,
     fame: 76,
@@ -966,7 +966,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 198,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 150, // [SCHAETZUNG] Episode III; beruecksichtigt sein Auftreten in The Acolyte, kein Legends-Alter; Jahre, kein gesicherter exakter Kanonwert
     strength: 92,
     intelligence: 90,
     fame: 88,
@@ -977,7 +977,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 206,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 60, // [SCHAETZUNG] Episode V; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 76,
     fame: 87,
@@ -988,7 +988,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 187,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 60, // [SCHAETZUNG] Episode V; Jahre, kein gesicherter exakter Kanonwert
     strength: 72,
     intelligence: 77,
     fame: 82,
@@ -999,7 +999,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 196,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] Episode V; Zeit seit Herstellung; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 91,
     fame: 86,
@@ -1010,7 +1010,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 160,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 45, // [SCHAETZUNG] Episode VI; Jahre, kein gesicherter exakter Kanonwert
     strength: 56,
     intelligence: 84,
     fame: 84,
@@ -1020,8 +1020,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Luthen Rael",
     category: "star-wars",
     kills: 15,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 190, // [SCHAETZUNG] Andor, Staffel 1; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Andor, Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 66,
     intelligence: 98,
     fame: 87,
@@ -1031,8 +1031,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Großinquisitor",
     category: "star-wars",
     kills: 30,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 198, // [BELEGT] Rebels: Head-to-Head; laut Jedipedia; https://www.jedipedia.net/wiki/Gro%C3%9Finquisitor_%28Pau%E2%80%99aner%29
+    age: 50, // [SCHAETZUNG] Rebels, Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 92,
     fame: 86,
@@ -1042,8 +1042,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Reva",
     category: "star-wars",
     kills: 20,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 165, // [SCHAETZUNG] Obi-Wan Kenobi; ungefaehr zehn Jahre nach Order 66; angenaeherte Bildschirmgestalt in cm
+    age: 20, // [SCHAETZUNG] Obi-Wan Kenobi; ungefaehr zehn Jahre nach Order 66; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 82,
     fame: 82,
@@ -1053,8 +1053,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Baylan Skoll",
     category: "star-wars",
     kills: 35,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 190, // [SCHAETZUNG] Ahsoka; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Ahsoka; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 94,
     fame: 83,
@@ -1064,8 +1064,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Shin Hati",
     category: "star-wars",
     kills: 15,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 170, // [SCHAETZUNG] Ahsoka; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Ahsoka; Jahre, kein gesicherter exakter Kanonwert
     strength: 87,
     intelligence: 80,
     fame: 80,
@@ -1076,7 +1076,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 40,
     height: 180,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] The Bad Batch, spaete Handlung; chronologisches Klonalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 91,
     fame: 85,
@@ -1087,7 +1087,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 50,
     height: 192,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] The Bad Batch, spaete Handlung; chronologisches Klonalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 83,
     intelligence: 87,
     fame: 84,
@@ -1098,7 +1098,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 45,
     height: 210,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] The Bad Batch, spaete Handlung; chronologisches Klonalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 62,
     fame: 83,
@@ -1109,7 +1109,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 182,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 14, // [SCHAETZUNG] The Bad Batch, Staffel 2; chronologisches Klonalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 74,
     intelligence: 97,
     fame: 84,
@@ -1120,7 +1120,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 181,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] The Bad Batch, spaete Handlung; chronologisches Klonalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 93,
     fame: 84,
@@ -1131,7 +1131,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 129,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 15, // [SCHAETZUNG] The Bad Batch, spaete Handlung; nicht erwachsener Epilog; Jahre, kein gesicherter exakter Kanonwert
     strength: 52,
     intelligence: 84,
     fame: 84,
@@ -1142,7 +1142,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 35,
     height: 183,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 13, // [SCHAETZUNG] The Clone Wars; chronologisches Klonalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 90,
     fame: 86,
@@ -1153,7 +1153,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 176,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 40, // [SCHAETZUNG] Ende Clone Wars; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 93,
     fame: 82,
@@ -1164,7 +1164,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 10,
     height: 166,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 20, // [SCHAETZUNG] The Clone Wars, Staffel 5; Jahre, kein gesicherter exakter Kanonwert
     strength: 86,
     intelligence: 90,
     fame: 82,
@@ -1175,7 +1175,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 30,
     height: 191,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 35, // [SCHAETZUNG] Spaete Clone-Wars-Zeit; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 88,
     fame: 81,
@@ -1186,7 +1186,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 15,
     height: 61,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 477, // [BELEGT] StarWars.com: 477 Jahre in Episode I; https://www.starwars.com/news/jedi-council
     strength: 93,
     intelligence: 96,
     fame: 83,
@@ -1196,8 +1196,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Baze Malbus",
     category: "star-wars",
     kills: 35,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 180, // [BELEGT] Kanon-Wiki nennt 1.80 m mit Databank-Verweis; 180 cm; https://starwars.fandom.com/wiki/Baze_Malbus
+    age: 53, // [BELEGT] Rogue One Ultimate Visual Guide laut Kanon-Wiki: 53 bei der Mission; https://starwars.fandom.com/wiki/Baze_Malbus
     strength: 83,
     intelligence: 79,
     fame: 81,
@@ -1207,8 +1207,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Bodhi Rook",
     category: "star-wars",
     kills: 5,
-    height: null,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    height: 172, // [BELEGT] Kanon-Wiki nennt 1.72 m mit Databank-Verweis; 172 cm; https://starwars.fandom.com/wiki/Bodhi_Rook
+    age: 25, // [SCHAETZUNG] Rogue One; Jahre, kein gesicherter exakter Kanonwert
     strength: 55,
     intelligence: 81,
     fame: 80,
@@ -1219,7 +1219,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 0,
     height: 188,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 60, // [SCHAETZUNG] Episode II; Jahre, kein gesicherter exakter Kanonwert
     strength: 61,
     intelligence: 85,
     fame: 82,
@@ -1230,7 +1230,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 187,
-    age: null, // Kein ausreichend belegter Kanon-Alterswert übernommen.
+    age: 16, // [SCHAETZUNG] Solo; junge Anfuehrerin der Cloud-Riders; Jahre, kein gesicherter exakter Kanonwert
     strength: 78,
     intelligence: 89,
     fame: 80,
@@ -1355,7 +1355,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "marvel",
     kills: 25,
     height: 230,
-    age: null,
+    age: 7, // [SCHAETZUNG] Neuer Groot in Guardians Vol. 3; biologisch, Blip-Zeit ausgenommen; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 62,
     fame: 96,
@@ -1487,7 +1487,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "marvel",
     kills: 35,
     height: 230,
-    age: null,
+    age: 100, // [SPIELWERT] Venom-Filme; Symbiont, nicht Eddie Brock; grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 72,
     fame: 96,
@@ -1798,8 +1798,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mister Fantastic",
     category: "marvel",
     kills: 5,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] The Fantastic Four: First Steps; normale Koerpergroesse; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] The Fantastic Four: First Steps; normale Koerpergroesse; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 99,
     fame: 89,
@@ -1810,8 +1810,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Invisible Woman",
     category: "marvel",
     kills: 3,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] The Fantastic Four: First Steps; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] The Fantastic Four: First Steps; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 92,
     fame: 88,
@@ -1822,8 +1822,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Human Torch",
     category: "marvel",
     kills: 8,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] The Fantastic Four: First Steps; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] The Fantastic Four: First Steps; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 74,
     fame: 88,
@@ -1834,8 +1834,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "The Thing",
     category: "marvel",
     kills: 10,
-    height: null,
-    age: null,
+    height: 210, // [SCHAETZUNG] The Fantastic Four: First Steps; verwandelte Form, Ben Grimms Lebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] The Fantastic Four: First Steps; verwandelte Form, Ben Grimms Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 96,
     intelligence: 76,
     fame: 91,
@@ -1846,8 +1846,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Doctor Doom",
     category: "marvel",
     kills: 12,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Fantastic Four (2005), Julian-McMahon-Fassung; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Fantastic Four (2005), Julian-McMahon-Fassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 94,
     fame: 93,
@@ -1858,8 +1858,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mystique",
     category: "marvel",
     kills: 35,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] X-Men: First Class; uebliche menschliche Erscheinung; angenaeherte Bildschirmgestalt in cm
+    age: 28, // [SCHAETZUNG] X-Men: First Class; uebliche menschliche Erscheinung; Jahre, kein gesicherter exakter Kanonwert
     strength: 78,
     intelligence: 88,
     fame: 92,
@@ -1870,8 +1870,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Nightcrawler",
     category: "marvel",
     kills: 3,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] X2, Alan-Cumming-Fassung; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] X2, Alan-Cumming-Fassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 80,
     intelligence: 79,
     fame: 87,
@@ -1882,8 +1882,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Rogue",
     category: "marvel",
     kills: 2,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] X-Men (2000); angenaeherte Bildschirmgestalt in cm
+    age: 17, // [SCHAETZUNG] X-Men (2000); Jahre, kein gesicherter exakter Kanonwert
     strength: 83,
     intelligence: 78,
     fame: 87,
@@ -1894,8 +1894,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Gambit",
     category: "marvel",
     kills: 15,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Deadpool & Wolverine; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Deadpool & Wolverine; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 81,
     fame: 88,
@@ -1906,8 +1906,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Colossus",
     category: "marvel",
     kills: 3,
-    height: null,
-    age: null,
+    height: 230, // [SCHAETZUNG] Deadpool-Filme; Metallform; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Deadpool-Filme; Metallform; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 79,
     fame: 84,
@@ -1918,8 +1918,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Juggernaut",
     category: "marvel",
     kills: 20,
-    height: null,
-    age: null,
+    height: 280, // [SCHAETZUNG] Deadpool 2; CGI-Figur; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Deadpool 2; CGI-Figur; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 49,
     fame: 82,
@@ -1930,8 +1930,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Iceman",
     category: "marvel",
     kills: 5,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] X2; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] X2; Jahre, kein gesicherter exakter Kanonwert
     strength: 89,
     intelligence: 79,
     fame: 84,
@@ -1942,8 +1942,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Quicksilver",
     category: "marvel",
     kills: 5,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] X-Men: Days of Future Past; Peter, nicht MCU-Pietro; angenaeherte Bildschirmgestalt in cm
+    age: 20, // [SCHAETZUNG] X-Men: Days of Future Past; Peter, nicht MCU-Pietro; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 79,
     fame: 89,
@@ -1954,8 +1954,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Apocalypse",
     category: "marvel",
     kills: 250,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] X-Men: Apocalypse; grober Gesamtalters-Spielwert; angenaeherte Bildschirmgestalt in cm
+    age: 5500, // [SPIELWERT] X-Men: Apocalypse; grober Gesamtalters-Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 99,
     intelligence: 94,
     fame: 85,
@@ -1966,8 +1966,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Sabretooth",
     category: "marvel",
     kills: 120,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] X-Men Origins: Wolverine; langlebiger Victor Creed; angenaeherte Bildschirmgestalt in cm
+    age: 165, // [SCHAETZUNG] X-Men Origins: Wolverine; langlebiger Victor Creed; Jahre, kein gesicherter exakter Kanonwert
     strength: 89,
     intelligence: 70,
     fame: 84,
@@ -1978,8 +1978,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Cable",
     category: "marvel",
     kills: 60,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Deadpool 2; persoenliches Lebensalter trotz Zeitreise; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Deadpool 2; persoenliches Lebensalter trotz Zeitreise; Jahre, kein gesicherter exakter Kanonwert
     strength: 86,
     intelligence: 89,
     fame: 85,
@@ -1990,8 +1990,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Domino",
     category: "marvel",
     kills: 20,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Deadpool 2; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Deadpool 2; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 84,
     fame: 82,
@@ -2002,8 +2002,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "X-23",
     category: "marvel",
     kills: 45,
-    height: null,
-    age: null,
+    height: 140, // [SCHAETZUNG] Logan; junge Laura, nicht erwachsene Deadpool-&-Wolverine-Fassung; angenaeherte Bildschirmgestalt in cm
+    age: 11, // [BELEGT] Logan: Regisseur James Mangold beschreibt Laura als elfjaehrig; https://www.firstshowing.net/2017/interview-logan-director-james-mangold-on-making-unique-movies/
     strength: 85,
     intelligence: 78,
     fame: 84,
@@ -2014,8 +2014,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Electro",
     category: "marvel",
     kills: 15,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] The Amazing Spider-Man 2; menschliche Grundform; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] The Amazing Spider-Man 2; menschliche Grundform; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 78,
     fame: 89,
@@ -2026,8 +2026,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Sandman",
     category: "marvel",
     kills: 2,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Spider-Man 3; normale menschenfoermige Gestalt; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Spider-Man 3; normale menschenfoermige Gestalt; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 67,
     fame: 89,
@@ -2038,8 +2038,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lizard",
     category: "marvel",
     kills: 8,
-    height: null,
-    age: null,
+    height: 260, // [SCHAETZUNG] The Amazing Spider-Man; Echsenform, Curt Connors Lebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] The Amazing Spider-Man; Echsenform, Curt Connors Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 94,
     fame: 85,
@@ -2050,8 +2050,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Vulture",
     category: "marvel",
     kills: 4,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Spider-Man: Homecoming; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Spider-Man: Homecoming; Jahre, kein gesicherter exakter Kanonwert
     strength: 79,
     intelligence: 85,
     fame: 85,
@@ -2062,8 +2062,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Carnage",
     category: "marvel",
     kills: 35,
-    height: null,
-    age: null,
+    height: 250, // [SCHAETZUNG] Venom: Let There Be Carnage; Symbiontenform, Alter des Wirts Cletus; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Venom: Let There Be Carnage; Symbiontenform, Alter des Wirts Cletus; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 66,
     fame: 90,
@@ -2074,8 +2074,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mantis",
     category: "marvel",
     kills: 2,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Guardians Vol. 2; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Guardians Vol. 2; Jahre, kein gesicherter exakter Kanonwert
     strength: 72,
     intelligence: 75,
     fame: 87,
@@ -2086,8 +2086,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Yondu",
     category: "marvel",
     kills: 90,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Guardians Vol. 2; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Guardians Vol. 2; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 83,
     fame: 87,
@@ -2098,8 +2098,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Wong",
     category: "marvel",
     kills: 5,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Doctor Strange in the Multiverse of Madness; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Doctor Strange in the Multiverse of Madness; Jahre, kein gesicherter exakter Kanonwert
     strength: 86,
     intelligence: 93,
     fame: 86,
@@ -2110,8 +2110,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Valkyrie",
     category: "marvel",
     kills: 80,
-    height: null,
-    age: null,
+    height: 163, // [SCHAETZUNG] Thor: Ragnarok; grober Spielwert fuer langlebige Asgardierin; angenaeherte Bildschirmgestalt in cm
+    age: 3000, // [SPIELWERT] Thor: Ragnarok; grober Spielwert fuer langlebige Asgardierin; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 83,
     fame: 85,
@@ -2122,8 +2122,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Odin",
     category: "marvel",
     kills: 300,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Thor: Ragnarok; grober Spielwert; angenaeherte Bildschirmgestalt in cm
+    age: 5000, // [SPIELWERT] Thor: Ragnarok; grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 97,
     fame: 88,
@@ -2134,8 +2134,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Heimdall",
     category: "marvel",
     kills: 60,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Infinity War; grober Spielwert; angenaeherte Bildschirmgestalt in cm
+    age: 2000, // [SPIELWERT] Infinity War; grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 88,
     fame: 84,
@@ -2146,8 +2146,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jane Foster",
     category: "marvel",
     kills: 20,
-    height: null,
-    age: null,
+    height: 160, // [SCHAETZUNG] Thor: Love and Thunder; angenaehertes biologisches Alter; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Thor: Love and Thunder; angenaehertes biologisches Alter; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 95,
     fame: 87,
@@ -2158,8 +2158,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Shuri",
     category: "marvel",
     kills: 5,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Black Panther, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 16, // [BELEGT] Black Panther (erster Film); Produzent Nate Moore; Produzent Nate Moore, Black-Panther-Interview: Shuri ist 16
     strength: 88,
     intelligence: 98,
     fame: 88,
@@ -2170,8 +2170,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Okoye",
     category: "marvel",
     kills: 30,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Black Panther, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Black Panther, erster Film; Jahre, kein gesicherter exakter Kanonwert
     strength: 79,
     intelligence: 86,
     fame: 83,
@@ -2182,8 +2182,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Killmonger",
     category: "marvel",
     kills: 70,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Black Panther, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Black Panther, erster Film; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 87,
     fame: 89,
@@ -2194,8 +2194,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "M'Baku",
     category: "marvel",
     kills: 25,
-    height: null,
-    age: null,
+    height: 196, // [SCHAETZUNG] Black Panther, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Black Panther, erster Film; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 80,
     fame: 80,
@@ -2206,8 +2206,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Yelena Belova",
     category: "marvel",
     kills: 45,
-    height: null,
-    age: null,
+    height: 163, // [SCHAETZUNG] Black Widow, 2016; Geburt laut Quellen zwischen 1988 und 1989; angenaeherte Bildschirmgestalt in cm
+    age: 27, // [SCHAETZUNG] Black Widow, 2016; Geburt laut Quellen zwischen 1988 und 1989; Jahre, kein gesicherter exakter Kanonwert
     strength: 76,
     intelligence: 85,
     fame: 87,
@@ -2218,8 +2218,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Red Guardian",
     category: "marvel",
     kills: 30,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Black Widow; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Black Widow; Jahre, kein gesicherter exakter Kanonwert
     strength: 87,
     intelligence: 64,
     fame: 81,
@@ -2230,8 +2230,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Kate Bishop",
     category: "marvel",
     kills: 0,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Hawkeye; angenaeherte Bildschirmgestalt in cm
+    age: 22, // [BELEGT] Hawkeye; offizielle Disney-Beschreibung; https://press.disneyplus.com/news/disney-plus-marvel-studios-hawkeye-trailer-and-teaser-poster
     strength: 65,
     intelligence: 84,
     fame: 82,
@@ -2242,8 +2242,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "She-Hulk",
     category: "marvel",
     kills: 0,
-    height: null,
-    age: null,
+    height: 201, // [BELEGT] Hulk-Form der Serie; 6 Fuss 7 Zoll, auf cm gerundet; https://thewaltdisneycompany.com/news/marvel-studios-she-hulk-attorney-at-law-to-debut-on-disney-august-17/
+    age: 35, // [SCHAETZUNG] Eigene Serie; offiziell nur als thirty-something beschrieben; Jahre, kein gesicherter exakter Kanonwert
     strength: 96,
     intelligence: 94,
     fame: 88,
@@ -2254,8 +2254,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jessica Jones",
     category: "marvel",
     kills: 5,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Jessica Jones, Staffel 1; aus Geburtszeitraum 1985-1986 angenaehert; angenaeherte Bildschirmgestalt in cm
+    age: 29, // [SCHAETZUNG] Jessica Jones, Staffel 1; aus Geburtszeitraum 1985-1986 angenaehert; Jahre, kein gesicherter exakter Kanonwert
     strength: 86,
     intelligence: 86,
     fame: 84,
@@ -2266,8 +2266,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Luke Cage",
     category: "marvel",
     kills: 8,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Luke Cage, Staffel 1, 2016; chronologisch vor dem Blip; angenaeherte Bildschirmgestalt in cm
+    age: 36, // [SCHAETZUNG] Luke Cage, Staffel 1, 2016; chronologisch vor dem Blip; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 81,
     fame: 85,
@@ -2278,8 +2278,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Iron Fist",
     category: "marvel",
     kills: 12,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Iron Fist, Anfang Staffel 1, vor April 2017; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Iron Fist, Anfang Staffel 1, vor April 2017; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 77,
     fame: 82,
@@ -2290,8 +2290,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ms. Marvel",
     category: "marvel",
     kills: 0,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Eigene Serie; normale Grundform; angenaeherte Bildschirmgestalt in cm
+    age: 16, // [BELEGT] Ms. Marvel, eigene Serie; Disney-Produktionsunterlagen; Disney: Ms. Marvel Production Brief
     strength: 85,
     intelligence: 83,
     fame: 85,
@@ -2302,8 +2302,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Agatha Harkness",
     category: "marvel",
     kills: 35,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Agatha All Along, 2026; aus Geburtszeitraum 1674-1675 angenaehert; angenaeherte Bildschirmgestalt in cm
+    age: 351, // [SCHAETZUNG] Agatha All Along, 2026; aus Geburtszeitraum 1674-1675 angenaehert; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 94,
     fame: 86,
@@ -2314,8 +2314,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Monica Rambeau",
     category: "marvel",
     kills: 3,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] The Marvels; angenaehertes biologisches Alter, Blip-Zeit ausgenommen; angenaeherte Bildschirmgestalt in cm
+    age: 38, // [SCHAETZUNG] The Marvels; angenaehertes biologisches Alter, Blip-Zeit ausgenommen; Jahre, kein gesicherter exakter Kanonwert
     strength: 92,
     intelligence: 87,
     fame: 81,
@@ -2326,8 +2326,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Namor",
     category: "marvel",
     kills: 50,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Wakanda Forever; aus Herkunft 1571 und Handlungszeit angenaehert; angenaeherte Bildschirmgestalt in cm
+    age: 454, // [SCHAETZUNG] Wakanda Forever; aus Herkunft 1571 und Handlungszeit angenaehert; Jahre, kein gesicherter exakter Kanonwert
     strength: 95,
     intelligence: 89,
     fame: 87,
@@ -2338,8 +2338,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Kang",
     category: "marvel",
     kills: 200,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Quantumania; Erscheinungsalter, tatsaechliches Alter durch Zeitreisen unklar; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Quantumania; Erscheinungsalter, tatsaechliches Alter durch Zeitreisen unklar; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 98,
     fame: 89,
@@ -2350,8 +2350,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Abomination",
     category: "marvel",
     kills: 15,
-    height: null,
-    age: null,
+    height: 270, // [SCHAETZUNG] The Incredible Hulk; verwandelte Form, Emil Blonskys Lebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 39, // [SCHAETZUNG] The Incredible Hulk; verwandelte Form, Emil Blonskys Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 97,
     intelligence: 69,
     fame: 83,
@@ -2362,8 +2362,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Taskmaster",
     category: "marvel",
     kills: 35,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Black Widow; Antonia Dreykov, nicht Comic-Tony-Masters; angenaeherte Bildschirmgestalt in cm
+    age: 20, // [SCHAETZUNG] Black Widow; Antonia Dreykov, nicht Comic-Tony-Masters; Jahre, kein gesicherter exakter Kanonwert
     strength: 80,
     intelligence: 83,
     fame: 82,
@@ -2374,8 +2374,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ghost",
     category: "marvel",
     kills: 12,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Ant-Man and the Wasp, 2018; Ava Starr; angenaeherte Bildschirmgestalt in cm
+    age: 29, // [SCHAETZUNG] Ant-Man and the Wasp, 2018; Ava Starr; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 82,
     fame: 78,
@@ -2386,8 +2386,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Gorr",
     category: "marvel",
     kills: 45,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Thor: Love and Thunder; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Thor: Love and Thunder; Jahre, kein gesicherter exakter Kanonwert
     strength: 97,
     intelligence: 85,
     fame: 85,
@@ -2446,7 +2446,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "harry-potter",
     kills: 0,
     height: 106,
-    age: null,
+    age: 50, // [SPIELWERT] Bei seinem Tod; Hauselfenalter unbekannt, grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 79,
     fame: 94,
@@ -2790,8 +2790,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Argus Filch",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 65, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 24,
     intelligence: 65,
     fame: 84,
@@ -2802,8 +2802,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Sybill Trelawney",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 72,
     intelligence: 81,
     fame: 83,
@@ -2814,8 +2814,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Filius Flitwick",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 107, // [SCHAETZUNG] Heiligtuemer des Todes; kleine Filmgestalt; angenaeherte Bildschirmgestalt in cm
+    age: 70, // [SCHAETZUNG] Heiligtuemer des Todes; kleine Filmgestalt; Jahre, kein gesicherter exakter Kanonwert
     strength: 89,
     intelligence: 94,
     fame: 81,
@@ -2826,8 +2826,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Pomona Sprout",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 89,
     fame: 78,
@@ -2838,8 +2838,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Quirinus Quirrell",
     category: "harry-potter",
     kills: 1,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Stein der Weisen; bei seinem Tod; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Stein der Weisen; bei seinem Tod; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 83,
     fame: 86,
@@ -2850,8 +2850,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Aberforth Dumbledore",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Heiligtuemer des Todes, 1998; aus Schulbeginn 1895 angenaehert; angenaeherte Bildschirmgestalt in cm
+    age: 114, // [SCHAETZUNG] Heiligtuemer des Todes, 1998; aus Schulbeginn 1895 angenaehert; Jahre, kein gesicherter exakter Kanonwert
     strength: 89,
     intelligence: 88,
     fame: 79,
@@ -2862,8 +2862,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Cornelius Fudge",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Orden des Phoenix; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Orden des Phoenix; Jahre, kein gesicherter exakter Kanonwert
     strength: 62,
     intelligence: 71,
     fame: 80,
@@ -2874,8 +2874,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Garrick Ollivander",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Heiligtuemer des Todes, 1998; Geburt in oder vor 1909; angenaeherte Bildschirmgestalt in cm
+    age: 90, // [SCHAETZUNG] Heiligtuemer des Todes, 1998; Geburt in oder vor 1909; Jahre, kein gesicherter exakter Kanonwert
     strength: 74,
     intelligence: 97,
     fame: 84,
@@ -2886,8 +2886,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Griphook",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 100, // [SCHAETZUNG] Heiligtuemer des Todes; Goblin-Filmgestalt; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Heiligtuemer des Todes; Goblin-Filmgestalt; Jahre, kein gesicherter exakter Kanonwert
     strength: 46,
     intelligence: 86,
     fame: 81,
@@ -2898,8 +2898,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Kreacher",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 90, // [SCHAETZUNG] Heiligtuemer des Todes; grober Spielwert fuer alten Hauselfen; angenaeherte Bildschirmgestalt in cm
+    age: 200, // [SPIELWERT] Heiligtuemer des Todes; grober Spielwert fuer alten Hauselfen; Jahre, kein gesicherter exakter Kanonwert
     strength: 75,
     intelligence: 73,
     fame: 81,
@@ -2910,8 +2910,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Maulende Myrte",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 150, // [SCHAETZUNG] Alter bei ihrem Tod; Geisterjahre nicht addiert; angenaeherte Bildschirmgestalt in cm
+    age: 14, // [BELEGT] Harry-Potter-Wiki: 14 beim Tod; kein addiertes Geisteralter; https://harrypotter.fandom.com/de/wiki/Myrte_Warren
     strength: 38,
     intelligence: 66,
     fame: 86,
@@ -2922,8 +2922,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Vernon Dursley",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 34,
     intelligence: 52,
     fame: 86,
@@ -2934,8 +2934,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Petunia Dursley",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 22,
     intelligence: 71,
     fame: 80,
@@ -2946,8 +2946,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Dudley Dursley",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 17, // [ABLEITUNG] Am 2. Mai 1998; aus vom Lexicon abgeleitetem Geburtsdatum; https://www.hp-lexicon.org/character/dursley-family/dudley-dursley/
     strength: 39,
     intelligence: 43,
     fame: 83,
@@ -2958,8 +2958,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Bill Weasley",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Heiligtuemer des Todes; Geburtsjahr in Nachschlagewerken widerspruechlich; angenaeherte Bildschirmgestalt in cm
+    age: 27, // [SCHAETZUNG] Heiligtuemer des Todes; Geburtsjahr in Nachschlagewerken widerspruechlich; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 89,
     fame: 79,
@@ -2970,8 +2970,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Percy Weasley",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 21, // [ABLEITUNG] Am 2. Mai 1998; berechnet aus Geburtstag 22. August 1976; https://www.hp-lexicon.org/character/weasley-family/percy-weasley/
     strength: 69,
     intelligence: 84,
     fame: 78,
@@ -2982,8 +2982,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Seamus Finnigan",
     category: "harry-potter",
     kills: 3,
-    height: null,
-    age: null,
+    height: 160, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 73,
     intelligence: 69,
     fame: 81,
@@ -2994,8 +2994,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Dean Thomas",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 71,
     intelligence: 76,
     fame: 77,
@@ -3006,8 +3006,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lavender Brown",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 163, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 61,
     intelligence: 66,
     fame: 79,
@@ -3018,8 +3018,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Rita Kimmkorn",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Feuerkelch; angenaeherte Bildschirmgestalt in cm
+    age: 43, // [BELEGT] Feuerkelch; Buch, Kapitel 18; Harry Potter und der Feuerkelch, Kapitel 18
     strength: 61,
     intelligence: 86,
     fame: 82,
@@ -3030,8 +3030,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Xenophilius Lovegood",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 66,
     intelligence: 77,
     fame: 77,
@@ -3042,8 +3042,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hedwig",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 45, // [SCHAETZUNG] Bei ihrem Tod; stehende Eulenhoehe, keine Fluegelspannweite; angenaeherte Bildschirmgestalt in cm
+    age: 7, // [SCHAETZUNG] Bei ihrem Tod; stehende Eulenhoehe, keine Fluegelspannweite; Jahre, kein gesicherter exakter Kanonwert
     strength: 24,
     intelligence: 65,
     fame: 94,
@@ -3054,8 +3054,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Vincent Crabbe",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Spaete Schulzeit; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Spaete Schulzeit; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 65,
     intelligence: 35,
     fame: 78,
@@ -3066,8 +3066,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Seidenschnabel",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Gefangene von Askaban; Schulterhoehe, Alter sehr grob; angenaeherte Bildschirmgestalt in cm
+    age: 20, // [SCHAETZUNG] Gefangene von Askaban; Schulterhoehe, Alter sehr grob; Jahre, kein gesicherter exakter Kanonwert
     strength: 79,
     intelligence: 55,
     fame: 88,
@@ -3078,8 +3078,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Gregory Goyle",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 69,
     intelligence: 39,
     fame: 79,
@@ -3092,8 +3092,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "James Potter",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Erwachsene Filmgestalt; angenaeherte Bildschirmgestalt in cm
+    age: 21, // [ABLEITUNG] Bei seinem Tod 1981; Filmskript Deathly Hallows Part 1; Filmskript Harry Potter and the Deathly Hallows Part 1: Grabinschrift
     strength: 78,
     intelligence: 83,
     fame: 83,
@@ -3104,8 +3104,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lily Potter",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Erwachsene Filmgestalt; angenaeherte Bildschirmgestalt in cm
+    age: 21, // [ABLEITUNG] Bei ihrem Tod 1981; Filmskript Deathly Hallows Part 1; Filmskript Harry Potter and the Deathly Hallows Part 1: Grabinschrift
     strength: 81,
     intelligence: 90,
     fame: 84,
@@ -3116,8 +3116,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Poppy Pomfrey",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 70,
     intelligence: 92,
     fame: 76,
@@ -3128,8 +3128,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Olympe Maxime",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 280, // [SCHAETZUNG] Feuerkelch; Halb-Riesen-Gestalt, nicht Darstellerinnengroesse; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Feuerkelch; Halb-Riesen-Gestalt, nicht Darstellerinnengroesse; Jahre, kein gesicherter exakter Kanonwert
     strength: 89,
     intelligence: 84,
     fame: 76,
@@ -3140,8 +3140,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Oliver Wood",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Heiligtuemer des Todes, 1998; geboren etwa 1975-1976; angenaeherte Bildschirmgestalt in cm
+    age: 22, // [SCHAETZUNG] Heiligtuemer des Todes, 1998; geboren etwa 1975-1976; Jahre, kein gesicherter exakter Kanonwert
     strength: 71,
     intelligence: 76,
     fame: 78,
@@ -3152,8 +3152,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Blaise Zabini",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Heiligtuemer des Todes; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 67,
     intelligence: 77,
     fame: 66,
@@ -3164,8 +3164,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Pansy Parkinson",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 163, // [SCHAETZUNG] Halbblutprinz; Harrys Schuljahrgang; angenaeherte Bildschirmgestalt in cm
+    age: 17, // [SCHAETZUNG] Halbblutprinz; Harrys Schuljahrgang; Jahre, kein gesicherter exakter Kanonwert
     strength: 57,
     intelligence: 65,
     fame: 69,
@@ -3176,8 +3176,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lee Jordan",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 160, // [SCHAETZUNG] Kammer des Schreckens; junge Filmfassung; angenaeherte Bildschirmgestalt in cm
+    age: 14, // [SCHAETZUNG] Kammer des Schreckens; junge Filmfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 58,
     intelligence: 73,
     fame: 71,
@@ -3188,8 +3188,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Colin Creevey",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 140, // [SCHAETZUNG] Kammer des Schreckens; erste Klasse, junge Filmfassung; angenaeherte Bildschirmgestalt in cm
+    age: 11, // [SCHAETZUNG] Kammer des Schreckens; erste Klasse, junge Filmfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 40,
     intelligence: 64,
     fame: 73,
@@ -3200,8 +3200,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Marjorie Dursley",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Gefangene von Askaban; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Gefangene von Askaban; Jahre, kein gesicherter exakter Kanonwert
     strength: 29,
     intelligence: 46,
     fame: 77,
@@ -3212,8 +3212,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Fast Kopfloser Nick",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 195, // [SCHAETZUNG] Angenaehertes Alter beim Tod; Geisterjahre nicht addiert; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Angenaehertes Alter beim Tod; Geisterjahre nicht addiert; Jahre, kein gesicherter exakter Kanonwert
     strength: 31,
     intelligence: 75,
     fame: 82,
@@ -3224,8 +3224,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Rufus Scrimgeour",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 65, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 87,
     fame: 73,
@@ -3236,8 +3236,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Barty Crouch Sr.",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Feuerkelch; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Feuerkelch; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 88,
     fame: 76,
@@ -3248,8 +3248,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Scabior",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 71,
     intelligence: 64,
     fame: 64,
@@ -3260,8 +3260,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mundungus Fletcher",
     category: "harry-potter",
     kills: 0,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Heiligtuemer des Todes; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Heiligtuemer des Todes; Jahre, kein gesicherter exakter Kanonwert
     strength: 49,
     intelligence: 65,
     fame: 67,
@@ -3353,7 +3353,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "dc",
     kills: 100,
     height: 267,
-    age: null,
+    age: 5000, // [SPIELWERT] Zack Snyder's Justice League; grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 100,
     intelligence: 97,
     fame: 95,
@@ -3663,8 +3663,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Alfred Pennyworth",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] The Dark Knight Rises; angenaeherte Bildschirmgestalt in cm
+    age: 80, // [SCHAETZUNG] The Dark Knight Rises; Jahre, kein gesicherter exakter Kanonwert
     strength: 30,
     intelligence: 91,
     fame: 93,
@@ -3675,8 +3675,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "James Gordon",
     category: "dc",
     kills: 1,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] The Dark Knight Rises; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] The Dark Knight Rises; Jahre, kein gesicherter exakter Kanonwert
     strength: 45,
     intelligence: 87,
     fame: 92,
@@ -3687,8 +3687,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lois Lane",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 163, // [SCHAETZUNG] Man of Steel; angenaeherte Bildschirmgestalt in cm
+    age: 33, // [SCHAETZUNG] Man of Steel; Jahre, kein gesicherter exakter Kanonwert
     strength: 31,
     intelligence: 92,
     fame: 94,
@@ -3699,8 +3699,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jimmy Olsen",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Supergirl; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Supergirl; Jahre, kein gesicherter exakter Kanonwert
     strength: 68,
     intelligence: 82,
     fame: 80,
@@ -3711,8 +3711,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Martha Kent",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Man of Steel; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Man of Steel; Jahre, kein gesicherter exakter Kanonwert
     strength: 23,
     intelligence: 76,
     fame: 80,
@@ -3723,8 +3723,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "General Zod",
     category: "dc",
     kills: 20,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Man of Steel; persoenliches Lebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Man of Steel; persoenliches Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 99,
     intelligence: 88,
     fame: 92,
@@ -3735,8 +3735,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Faora",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Man of Steel; persoenliches Lebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Man of Steel; persoenliches Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 97,
     intelligence: 84,
     fame: 81,
@@ -3747,8 +3747,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Doomsday",
     category: "dc",
     kills: 1,
-    height: null,
-    age: null,
+    height: 350, // [SCHAETZUNG] Batman v Superman; Tage seit Erschaffung dieser Kreatur, nicht Zods Alter; angenaeherte Bildschirmgestalt in cm
+    age: 0, // [SCHAETZUNG] Batman v Superman; Tage seit Erschaffung dieser Kreatur, nicht Zods Alter; Jahre, kein gesicherter exakter Kanonwert
     strength: 100,
     intelligence: 24,
     fame: 88,
@@ -3759,8 +3759,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Steppenwolf",
     category: "dc",
     kills: 30,
-    height: null,
-    age: null,
+    height: 300, // [SCHAETZUNG] Zack Snyder's Justice League; CGI-Form, grober Alters-Spielwert; angenaeherte Bildschirmgestalt in cm
+    age: 5000, // [SPIELWERT] Zack Snyder's Justice League; CGI-Form, grober Alters-Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 76,
     fame: 85,
@@ -3771,8 +3771,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Cheetah",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Wonder Woman 1984; verwandelte Form, Barbaras Lebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Wonder Woman 1984; verwandelte Form, Barbaras Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 86,
     fame: 83,
@@ -3783,8 +3783,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Maxwell Lord",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Wonder Woman 1984; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Wonder Woman 1984; Jahre, kein gesicherter exakter Kanonwert
     strength: 46,
     intelligence: 88,
     fame: 79,
@@ -3795,8 +3795,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ares",
     category: "dc",
     kills: 20,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Wonder Woman; grober Spielwert fuer Gott; angenaeherte Bildschirmgestalt in cm
+    age: 6000, // [SPIELWERT] Wonder Woman; grober Spielwert fuer Gott; Jahre, kein gesicherter exakter Kanonwert
     strength: 99,
     intelligence: 94,
     fame: 84,
@@ -3807,8 +3807,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Orm",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Aquaman, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Aquaman, erster Film; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 81,
     fame: 83,
@@ -3819,8 +3819,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Black Manta",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Aquaman, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Aquaman, erster Film; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 86,
     fame: 86,
@@ -3831,8 +3831,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mera",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Aquaman, erster Film; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Aquaman, erster Film; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 83,
     fame: 88,
@@ -3843,8 +3843,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hippolyta",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Wonder Woman; grober Spielwert fuer langlebige Amazone; angenaeherte Bildschirmgestalt in cm
+    age: 5000, // [SPIELWERT] Wonder Woman; grober Spielwert fuer langlebige Amazone; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 91,
     fame: 82,
@@ -3855,8 +3855,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Antiope",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Wonder Woman; grober Spielwert fuer langlebige Amazone; angenaeherte Bildschirmgestalt in cm
+    age: 5000, // [SPIELWERT] Wonder Woman; grober Spielwert fuer langlebige Amazone; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 88,
     fame: 77,
@@ -3867,8 +3867,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Doctor Sivana",
     category: "dc",
     kills: 7,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Shazam!; aus Kindheitsrueckblende angenaehert; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Shazam!; aus Kindheitsrueckblende angenaehert; Jahre, kein gesicherter exakter Kanonwert
     strength: 93,
     intelligence: 91,
     fame: 79,
@@ -3879,8 +3879,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Doctor Fate",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Black Adam; Kent Nelson, nicht Alter des Helms; angenaeherte Bildschirmgestalt in cm
+    age: 90, // [SCHAETZUNG] Black Adam; Kent Nelson, nicht Alter des Helms; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 97,
     fame: 88,
@@ -3891,8 +3891,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hawkman",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Black Adam; aktuelle menschliche Inkarnation; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Black Adam; aktuelle menschliche Inkarnation; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 85,
     fame: 86,
@@ -3903,8 +3903,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Peacemaker",
     category: "dc",
     kills: 25,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Peacemaker, Staffel 1; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Peacemaker, Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 78,
     intelligence: 65,
     fame: 91,
@@ -3915,8 +3915,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Bloodsport",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] The Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] The Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 85,
     fame: 86,
@@ -3927,8 +3927,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ratcatcher II",
     category: "dc",
     kills: 1,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] The Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] The Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 73,
     intelligence: 79,
     fame: 80,
@@ -3939,8 +3939,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Polka-Dot Man",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] The Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] The Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 83,
     intelligence: 69,
     fame: 75,
@@ -3951,8 +3951,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "King Shark",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 240, // [SCHAETZUNG] The Suicide Squad; CGI-Koerper, grober Lebensalters-Spielwert; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SPIELWERT] The Suicide Squad; CGI-Koerper, grober Lebensalters-Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 29,
     fame: 87,
@@ -3963,8 +3963,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Rick Flag",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] The Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] The Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 72,
     intelligence: 83,
     fame: 82,
@@ -3975,8 +3975,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Amanda Waller",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 24,
     intelligence: 96,
     fame: 87,
@@ -3987,8 +3987,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Deadshot",
     category: "dc",
     kills: 30,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 73,
     intelligence: 86,
     fame: 90,
@@ -3999,8 +3999,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Captain Boomerang",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 65,
     intelligence: 62,
     fame: 80,
@@ -4011,8 +4011,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Killer Croc",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Suicide Squad; Filmgestalt; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Suicide Squad; Filmgestalt; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 54,
     fame: 84,
@@ -4023,8 +4023,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Enchantress",
     category: "dc",
     kills: 20,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Suicide Squad; Alter des Hexengeistes, nicht June Moone; angenaeherte Bildschirmgestalt in cm
+    age: 6313, // [BELEGT] Suicide-Squad-Filmpromo nennt 6313 Years Young; Hexengeist, nicht June Moone; https://www.popisms.com/TelevisionCommercial/127071/Suicide-Squad-Commercial-2016
     strength: 98,
     intelligence: 87,
     fame: 81,
@@ -4035,8 +4035,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Katana",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 160, // [SCHAETZUNG] Suicide Squad; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Suicide Squad; Jahre, kein gesicherter exakter Kanonwert
     strength: 76,
     intelligence: 81,
     fame: 80,
@@ -4047,8 +4047,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Huntress",
     category: "dc",
     kills: 8,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Birds of Prey; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Birds of Prey; Jahre, kein gesicherter exakter Kanonwert
     strength: 73,
     intelligence: 82,
     fame: 81,
@@ -4059,8 +4059,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Black Mask",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Birds of Prey; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Birds of Prey; Jahre, kein gesicherter exakter Kanonwert
     strength: 45,
     intelligence: 78,
     fame: 81,
@@ -4071,8 +4071,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Victor Zsasz",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Birds of Prey; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Birds of Prey; Jahre, kein gesicherter exakter Kanonwert
     strength: 63,
     intelligence: 68,
     fame: 72,
@@ -4083,8 +4083,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Renee Montoya",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Birds of Prey; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Birds of Prey; Jahre, kein gesicherter exakter Kanonwert
     strength: 52,
     intelligence: 86,
     fame: 72,
@@ -4095,8 +4095,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Superboy",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Titans; chronologisches Klonalter, nicht Koerperreife; angenaeherte Bildschirmgestalt in cm
+    age: 1, // [SCHAETZUNG] Titans; chronologisches Klonalter, nicht Koerperreife; Jahre, kein gesicherter exakter Kanonwert
     strength: 97,
     intelligence: 74,
     fame: 85,
@@ -4107,8 +4107,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Red Hood",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 173, // [SCHAETZUNG] Titans, Staffel 3; angenaeherte Bildschirmgestalt in cm
+    age: 19, // [SCHAETZUNG] Titans, Staffel 3; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 78,
     fame: 88,
@@ -4119,8 +4119,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Donna Troy",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Titans, Staffel 2; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Titans, Staffel 2; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 85,
     fame: 79,
@@ -4131,8 +4131,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hawk",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Titans; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Titans; Jahre, kein gesicherter exakter Kanonwert
     strength: 73,
     intelligence: 67,
     fame: 76,
@@ -4143,8 +4143,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Dove",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Titans; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Titans; Jahre, kein gesicherter exakter Kanonwert
     strength: 69,
     intelligence: 81,
     fame: 75,
@@ -4155,8 +4155,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Batwoman",
     category: "dc",
     kills: 1,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Batwoman, Staffel 1, 2019; angenaeherte Bildschirmgestalt in cm
+    age: 29, // [ABLEITUNG] Kate Kane laut Serienwiki geboren 26.01.1990; Referenz Oktober 2019 ergibt 29; https://arrow.fandom.com/wiki/Kate_Kane
     strength: 75,
     intelligence: 86,
     fame: 85,
@@ -4167,8 +4167,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "White Canary",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Legends of Tomorrow, Anfang Staffel 1, Januar 2016; angenaeherte Bildschirmgestalt in cm
+    age: 28, // [ABLEITUNG] Sara Lance laut Serienwiki geboren 25.12.1987; Referenz Januar 2016 ergibt 28; https://arrow.fandom.com/wiki/Sara_Lance
     strength: 79,
     intelligence: 83,
     fame: 82,
@@ -4179,8 +4179,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "The Atom",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Legends of Tomorrow, Staffel 1; normales Koerpermass; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Legends of Tomorrow, Staffel 1; normales Koerpermass; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 98,
     fame: 82,
@@ -4191,8 +4191,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Firestorm",
     category: "dc",
     kills: 2,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Legends of Tomorrow, Anfang Staffel 1; Jax als Koerper, nicht Martin Stein; angenaeherte Bildschirmgestalt in cm
+    age: 22, // [ABLEITUNG] Jax laut Serienwiki geboren 12.09.1993; Referenz Januar 2016 ergibt 22; https://arrow.fandom.com/wiki/Jefferson_Jackson
     strength: 94,
     intelligence: 88,
     fame: 81,
@@ -4203,8 +4203,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Captain Cold",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Legends of Tomorrow, Anfang Staffel 1, Januar 2016; angenaeherte Bildschirmgestalt in cm
+    age: 43, // [ABLEITUNG] Leonard Snart laut Serienwiki geboren 02.06.1972; Referenz Januar 2016 ergibt 43; https://arrow.fandom.com/wiki/Leonard_Snart
     strength: 69,
     intelligence: 88,
     fame: 82,
@@ -4215,8 +4215,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Heat Wave",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Legends of Tomorrow, Anfang Staffel 1; angenaeherte Bildschirmgestalt in cm
+    age: 42, // [SCHAETZUNG] Legends of Tomorrow, Anfang Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 73,
     intelligence: 65,
     fame: 76,
@@ -4227,8 +4227,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Reverse-Flash",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] The Flash, Staffel 1; Erscheinungsalter im Wells-Koerper; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] The Flash, Staffel 1; Erscheinungsalter im Wells-Koerper; Jahre, kein gesicherter exakter Kanonwert
     strength: 98,
     intelligence: 99,
     fame: 88,
@@ -4239,8 +4239,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Zoom",
     category: "dc",
     kills: 15,
-    height: null,
-    age: null,
+    height: 193, // [SCHAETZUNG] The Flash, Staffel 2; angenaeherte Bildschirmgestalt in cm
+    age: 33, // [SCHAETZUNG] The Flash, Staffel 2; Jahre, kein gesicherter exakter Kanonwert
     strength: 97,
     intelligence: 86,
     fame: 82,
@@ -4251,8 +4251,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Killer Frost",
     category: "dc",
     kills: 2,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] The Flash, Staffel 3; Koerperalter der Caitlin-Fassung; angenaeherte Bildschirmgestalt in cm
+    age: 28, // [SCHAETZUNG] The Flash, Staffel 3; Koerperalter der Caitlin-Fassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 86,
     fame: 82,
@@ -4263,8 +4263,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Vixen",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Arrow, Staffel 4; angenaeherte Bildschirmgestalt in cm
+    age: 28, // [SCHAETZUNG] Arrow, Staffel 4; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 78,
     fame: 73,
@@ -4275,8 +4275,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Black Lightning",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 196, // [SCHAETZUNG] Black Lightning, Anfang Staffel 1, Januar 2018; angenaeherte Bildschirmgestalt in cm
+    age: 43, // [ABLEITUNG] Jefferson Pierce laut Serienwiki geboren 12.09.1974; Referenz Januar 2018 ergibt 43; https://arrow.fandom.com/wiki/Jefferson_Pierce
     strength: 88,
     intelligence: 86,
     fame: 81,
@@ -4287,8 +4287,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Stargirl",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Stargirl, Staffel 1; angenaeherte Bildschirmgestalt in cm
+    age: 15, // [BELEGT] Stargirl, Staffel 1; Serienversion laut DC Database; DC Database: Courtney Whitmore, Stargirl TV Series
     strength: 81,
     intelligence: 72,
     fame: 77,
@@ -4299,8 +4299,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Steel",
     category: "dc",
     kills: 2,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Superman & Lois; ohne vergroessernde Ruestung; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Superman & Lois; ohne vergroessernde Ruestung; Jahre, kein gesicherter exakter Kanonwert
     strength: 85,
     intelligence: 91,
     fame: 73,
@@ -4311,8 +4311,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Brainiac",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Smallville; menschliche Erscheinung, grober KI-Alters-Spielwert; angenaeherte Bildschirmgestalt in cm
+    age: 1000, // [SPIELWERT] Smallville; menschliche Erscheinung, grober KI-Alters-Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 95,
     intelligence: 100,
     fame: 87,
@@ -4323,8 +4323,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ra’s al Ghul",
     category: "dc",
     kills: 10,
-    height: null,
-    age: null,
+    height: 193, // [SCHAETZUNG] Batman Begins; sterbliche Nolan-Fassung; angenaeherte Bildschirmgestalt in cm
+    age: 60, // [SCHAETZUNG] Batman Begins; sterbliche Nolan-Fassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 77,
     intelligence: 96,
     fame: 87,
@@ -4335,8 +4335,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Talia al Ghul",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] The Dark Knight Rises; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] The Dark Knight Rises; Jahre, kein gesicherter exakter Kanonwert
     strength: 55,
     intelligence: 92,
     fame: 81,
@@ -4347,8 +4347,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Swamp Thing",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 198, // [SCHAETZUNG] Swamp Thing (2019); Zeit seit Entstehung der Kreatur; angenaeherte Bildschirmgestalt in cm
+    age: 0, // [SCHAETZUNG] Swamp Thing (2019); Zeit seit Entstehung der Kreatur; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 78,
     fame: 83,
@@ -4359,8 +4359,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Robotman",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 198, // [BELEGT] Doom-Patrol-Serienfassung laut DC Database: 6 Fuss 6 Zoll, auf 198 cm gerundet; https://dc.fandom.com/wiki/Clifford_Steele_(Doom_Patrol_TV_Series)
+    age: 60, // [SCHAETZUNG] Doom Patrol; Roboterkoerper, Cliff Steeles Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 61,
     fame: 76,
@@ -4371,8 +4371,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Negative Man",
     category: "dc",
     kills: 2,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Doom Patrol, Staffel 1; Larrys Gesamtlebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 90, // [SCHAETZUNG] Doom Patrol, Staffel 1; Larrys Gesamtlebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 81,
     fame: 71,
@@ -4383,8 +4383,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Crazy Jane",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 157, // [SCHAETZUNG] Doom Patrol, Staffel 1; Kays Gesamtlebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 70, // [SCHAETZUNG] Doom Patrol, Staffel 1; Kays Gesamtlebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 92,
     intelligence: 79,
     fame: 73,
@@ -4395,8 +4395,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Elasti-Woman",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Doom Patrol, Staffel 1; normale Koerpergestalt, Ritas Gesamtlebensalter; angenaeherte Bildschirmgestalt in cm
+    age: 100, // [SCHAETZUNG] Doom Patrol, Staffel 1; normale Koerpergestalt, Ritas Gesamtlebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 79,
     intelligence: 78,
     fame: 72,
@@ -4407,8 +4407,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mazikeen",
     category: "dc",
     kills: 20,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Lucifer; sehr grober Spielwert fuer zeitlose Daemonin; angenaeherte Bildschirmgestalt in cm
+    age: 10000, // [SPIELWERT] Lucifer; sehr grober Spielwert fuer zeitlose Daemonin; Jahre, kein gesicherter exakter Kanonwert
     strength: 88,
     intelligence: 76,
     fame: 84,
@@ -4419,8 +4419,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Amenadiel",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 190, // [SCHAETZUNG] Lucifer; vor Schoepfung, pauschaler kosmischer Spielwert ohne bestaetigtes Zahlenalter; angenaeherte Bildschirmgestalt in cm
+    age: 14000000000, // [SPIELWERT] Lucifer; vor Schoepfung, pauschaler kosmischer Spielwert ohne bestaetigtes Zahlenalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 99,
     intelligence: 86,
     fame: 82,
@@ -4431,8 +4431,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Chloe Decker",
     category: "dc",
     kills: 1,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Lucifer, Anfang Staffel 1, Januar 2016; angenaeherte Bildschirmgestalt in cm
+    age: 34, // [ABLEITUNG] Geburt laut Serienwiki 06.11.1981; Referenz Januar 2016 ergibt 34; https://lucifer.fandom.com/wiki/Chloe_Decker
     strength: 40,
     intelligence: 87,
     fame: 85,
@@ -4445,8 +4445,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mister Terrific",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Superman (2025); angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Superman (2025); Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 100,
     fame: 82,
@@ -4458,8 +4458,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hawkgirl",
     category: "dc",
     kills: 1,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Superman (2025); angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Superman (2025); Jahre, kein gesicherter exakter Kanonwert
     strength: 86,
     intelligence: 79,
     fame: 82,
@@ -4471,8 +4471,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Krypto",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 50, // [SCHAETZUNG] Superman (2025); Schulterhoehe des Hundes; angenaeherte Bildschirmgestalt in cm
+    age: 3, // [SCHAETZUNG] Superman (2025); Schulterhoehe des Hundes; Jahre, kein gesicherter exakter Kanonwert
     strength: 96,
     intelligence: 51,
     fame: 89,
@@ -4484,8 +4484,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Sinestro",
     category: "dc",
     kills: 5,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Green Lantern (2011); angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Green Lantern (2011); Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 93,
     fame: 86,
@@ -4497,8 +4497,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Vigilante",
     category: "dc",
     kills: 20,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Peacemaker, Staffel 1; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Peacemaker, Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 74,
     intelligence: 62,
     fame: 81,
@@ -4510,8 +4510,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jonathan Kent",
     category: "dc",
     kills: 0,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Man of Steel; zur Zeit seines Todes in der Rueckblende; angenaeherte Bildschirmgestalt in cm
+    age: 50, // [SCHAETZUNG] Man of Steel; zur Zeit seines Todes in der Rueckblende; Jahre, kein gesicherter exakter Kanonwert
     strength: 30,
     intelligence: 78,
     fame: 83,
@@ -4746,7 +4746,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "fluch-der-karibik",
     kills: 3,
     height: 170,
-    age: null,
+    age: 100, // [SPIELWERT] Fremde Gezeiten; Meerjungfrauen-Lebensalter, sehr grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 79,
     fame: 75,
@@ -4757,7 +4757,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "fluch-der-karibik",
     kills: 5,
     height: 168,
-    age: null,
+    age: 150, // [SPIELWERT] Fremde Gezeiten; Meerjungfrauen-Lebensalter, sehr grober Spielwert; Jahre, kein gesicherter exakter Kanonwert
     strength: 80,
     intelligence: 75,
     fame: 58,
@@ -4768,7 +4768,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "fluch-der-karibik",
     kills: 2,
     height: 168,
-    age: null,
+    age: 1000, // [SPIELWERT] Calypso als Goettin; gesetzter Spielwert, kein bestaetigtes Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 96,
     intelligence: 98,
     fame: 90,
@@ -5302,8 +5302,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Joffrey Baratheon",
     category: "game-of-thrones",
     kills: 1,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Staffel 4; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 18, // [SCHAETZUNG] Staffel 4; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 23,
     intelligence: 40,
     fame: 98,
@@ -5315,8 +5315,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Robert Baratheon",
     category: "game-of-thrones",
     kills: 50,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Staffel 1; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Staffel 1; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 46,
     fame: 94,
@@ -5328,8 +5328,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Renly Baratheon",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Staffel 2; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Staffel 2; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 45,
     intelligence: 67,
     fame: 79,
@@ -5341,8 +5341,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Tommen Baratheon",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Staffel 6; Alter nach Neubesetzung widerspruechlich; angenaeherte Bildschirmgestalt in cm
+    age: 17, // [SCHAETZUNG] Staffel 6; Alter nach Neubesetzung widerspruechlich; Jahre, kein gesicherter exakter Kanonwert
     strength: 20,
     intelligence: 44,
     fame: 89,
@@ -5354,8 +5354,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Myrcella Baratheon",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Staffel 5; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 17, // [SCHAETZUNG] Staffel 5; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 15,
     intelligence: 58,
     fame: 77,
@@ -5367,8 +5367,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Shireen Baratheon",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Staffel 5; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 12, // [SCHAETZUNG] Staffel 5; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 10,
     intelligence: 77,
     fame: 84,
@@ -5380,8 +5380,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Loras Tyrell",
     category: "game-of-thrones",
     kills: 10,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 82,
     intelligence: 67,
     fame: 87,
@@ -5393,8 +5393,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Oberyn Martell",
     category: "game-of-thrones",
     kills: 20,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Staffel 4; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Staffel 4; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 92,
     intelligence: 87,
     fame: 96,
@@ -5406,8 +5406,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Ellaria Sand",
     category: "game-of-thrones",
     kills: 3,
-    height: null,
-    age: null,
+    height: 171, // [SCHAETZUNG] Staffel 7; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Staffel 7; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 39,
     intelligence: 76,
     fame: 85,
@@ -5419,8 +5419,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Yara Greyjoy",
     category: "game-of-thrones",
     kills: 20,
-    height: null,
-    age: null,
+    height: 168, // [SCHAETZUNG] Staffel 8; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Staffel 8; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 78,
     intelligence: 82,
     fame: 90,
@@ -5432,8 +5432,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Euron Greyjoy",
     category: "game-of-thrones",
     kills: 50,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 8; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Staffel 8; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 76,
     fame: 89,
@@ -5445,8 +5445,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Roose Bolton",
     category: "game-of-thrones",
     kills: 10,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 54,
     intelligence: 91,
     fame: 91,
@@ -5458,8 +5458,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Walder Frey",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 178, // [SCHAETZUNG] Staffel 6; aus fast 90 Jahren in Staffel 1 angenaehert; angenaeherte Bildschirmgestalt in cm
+    age: 95, // [SCHAETZUNG] Staffel 6; aus fast 90 Jahren in Staffel 1 angenaehert; Jahre, kein gesicherter exakter Kanonwert
     strength: 12,
     intelligence: 82,
     fame: 90,
@@ -5471,8 +5471,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lysa Arryn",
     category: "game-of-thrones",
     kills: 1,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Staffel 4; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Staffel 4; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 21,
     intelligence: 45,
     fame: 82,
@@ -5484,8 +5484,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jeor Mormont",
     category: "game-of-thrones",
     kills: 40,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Staffel 3; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 70, // [SCHAETZUNG] Staffel 3; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 81,
     intelligence: 88,
     fame: 88,
@@ -5497,8 +5497,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Viserys Targaryen",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 1; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 23, // [SCHAETZUNG] Staffel 1; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 32,
     intelligence: 47,
     fame: 90,
@@ -5510,8 +5510,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Talisa Stark",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 170, // [SCHAETZUNG] Staffel 3; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Staffel 3; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 25,
     intelligence: 83,
     fame: 82,
@@ -5523,8 +5523,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Rickon Stark",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 12, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 17,
     intelligence: 35,
     fame: 81,
@@ -5536,8 +5536,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Osha",
     category: "game-of-thrones",
     kills: 5,
-    height: null,
-    age: null,
+    height: 166, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 65,
     intelligence: 73,
     fame: 86,
@@ -5549,8 +5549,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Meera Reed",
     category: "game-of-thrones",
     kills: 3,
-    height: null,
-    age: null,
+    height: 155, // [SCHAETZUNG] Staffel 7; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 22, // [SCHAETZUNG] Staffel 7; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 68,
     intelligence: 79,
     fame: 83,
@@ -5562,8 +5562,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jojen Reed",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Staffel 4; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 16, // [SCHAETZUNG] Staffel 4; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 14,
     intelligence: 88,
     fame: 82,
@@ -5575,8 +5575,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Jaqen H’ghar",
     category: "game-of-thrones",
     kills: 30,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 2; Identitaet und tatsaechliches Alter unklar; angenaeherte Bildschirmgestalt in cm
+    age: 40, // [SCHAETZUNG] Staffel 2; Identitaet und tatsaechliches Alter unklar; Jahre, kein gesicherter exakter Kanonwert
     strength: 87,
     intelligence: 96,
     fame: 94,
@@ -5588,8 +5588,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Shae",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 163, // [SCHAETZUNG] Staffel 4; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 30, // [SCHAETZUNG] Staffel 4; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 24,
     intelligence: 73,
     fame: 90,
@@ -5601,8 +5601,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Gilly",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 165, // [SCHAETZUNG] Staffel 8; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 25, // [SCHAETZUNG] Staffel 8; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 25,
     intelligence: 62,
     fame: 86,
@@ -5614,8 +5614,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Podrick Payne",
     category: "game-of-thrones",
     kills: 1,
-    height: null,
-    age: null,
+    height: 174, // [SCHAETZUNG] Staffel 8; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 23, // [SCHAETZUNG] Staffel 8; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 65,
     intelligence: 72,
     fame: 91,
@@ -5627,8 +5627,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Beric Dondarrion",
     category: "game-of-thrones",
     kills: 25,
-    height: null,
-    age: null,
+    height: 175, // [SCHAETZUNG] Staffel 8; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 45, // [SCHAETZUNG] Staffel 8; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 83,
     fame: 86,
@@ -5640,8 +5640,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Lyanna Mormont",
     category: "game-of-thrones",
     kills: 1,
-    height: null,
-    age: null,
+    height: 150, // [SCHAETZUNG] Staffel 6; junge Seriengestalt; angenaeherte Bildschirmgestalt in cm
+    age: 10, // [BELEGT] Game of Thrones, Staffel 5; laut Serienwiki; Game of Thrones Wiki: Lyanna Mormont, Staffel 5
     strength: 38,
     intelligence: 86,
     fame: 91,
@@ -5653,8 +5653,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Barristan Selmy",
     category: "game-of-thrones",
     kills: 50,
-    height: null,
-    age: null,
+    height: 180, // [SCHAETZUNG] Staffel 5; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 70, // [SCHAETZUNG] Staffel 5; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 94,
     intelligence: 87,
     fame: 91,
@@ -5666,8 +5666,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Qyburn",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 166, // [SCHAETZUNG] Staffel 8; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 65, // [SCHAETZUNG] Staffel 8; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 16,
     intelligence: 98,
     fame: 88,
@@ -5679,8 +5679,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Hoher Spatz",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 70, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 10,
     intelligence: 91,
     fame: 89,
@@ -5692,8 +5692,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Pycelle",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 80, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 8,
     intelligence: 86,
     fame: 83,
@@ -5705,8 +5705,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Maester Aemon",
     category: "game-of-thrones",
     kills: 0,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 5; Seriengestalt; angenaeherte Bildschirmgestalt in cm
+    age: 104, // [BELEGT] Game of Thrones, Staffel 5; laut Serienwiki; Game of Thrones Wiki: Aemon, Staffel 5
     strength: 5,
     intelligence: 97,
     fame: 88,
@@ -5718,8 +5718,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Alliser Thorne",
     category: "game-of-thrones",
     kills: 20,
-    height: null,
-    age: null,
+    height: 188, // [SCHAETZUNG] Staffel 6; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Staffel 6; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 80,
     intelligence: 65,
     fame: 86,
@@ -5731,8 +5731,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Mance Rayder",
     category: "game-of-thrones",
     kills: 30,
-    height: null,
-    age: null,
+    height: 185, // [SCHAETZUNG] Staffel 5; Serienfassung; angenaeherte Bildschirmgestalt in cm
+    age: 55, // [SCHAETZUNG] Staffel 5; Serienfassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 78,
     intelligence: 88,
     fame: 88,
@@ -5744,8 +5744,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Daario Naharis",
     category: "game-of-thrones",
     kills: 40,
-    height: null,
-    age: null,
+    height: 183, // [SCHAETZUNG] Staffel 6; Michiel-Huisman-Fassung; angenaeherte Bildschirmgestalt in cm
+    age: 35, // [SCHAETZUNG] Staffel 6; Michiel-Huisman-Fassung; Jahre, kein gesicherter exakter Kanonwert
     strength: 91,
     intelligence: 79,
     fame: 91,
