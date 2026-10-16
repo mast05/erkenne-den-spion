@@ -32,7 +32,9 @@ export const spyCategories = categories.filter(category =>
 // Filme bleibt ausdrücklich offen.
 export const completedCategoryIds = new Set<string>([
   "game-of-thrones", "dc", "harry-potter", "fluch-der-karibik",
-  "herr-der-ringe", "hobbit", "the-boys",
+  "herr-der-ringe", "hobbit", "the-boys",   "the-walking-dead",
+
+  "jurassic",
 ]);
 
 export const categoryNames: Record<string, string> = Object.fromEntries(

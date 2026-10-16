@@ -10508,4 +10508,512 @@ export const dealCharacters: DealCharacter[] = [
     imdb: 7.6,
     watchRate: 95,
   },
+
+  // TWD-Erweiterung: Hauptserie, Staffeln 1-11
+  {
+    name: "Lydia",
+    category: "the-walking-dead",
+    kills: 35, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 163, // [SCHAETZUNG] cm; Staffel 11, vor dem letzten Zeitsprung
+    age: 18, // [SERIENWIKI] Staffel 11, vor dem letzten Zeitsprung; https://walkingdead.fandom.com/wiki/Lydia_(TV_Universe)
+    strength: 61, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 78, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Connie",
+    category: "the-walking-dead",
+    kills: 25, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 157, // [SCHAETZUNG] cm; Staffel 11
+    age: 40, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Magna",
+    category: "the-walking-dead",
+    kills: 40, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 173, // [SCHAETZUNG] cm; Staffel 11
+    age: 35, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Yumiko",
+    category: "the-walking-dead",
+    kills: 30, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 172, // [SCHAETZUNG] cm; Staffel 11
+    age: 40, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 66, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 83, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Kelly",
+    category: "the-walking-dead",
+    kills: 20, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 165, // [SCHAETZUNG] cm; Staffel 11
+    age: 22, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 68, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 76, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Luke",
+    category: "the-walking-dead",
+    kills: 15, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 165, // [SCHAETZUNG] cm; Staffel 11
+    age: 40, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 45, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 65, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 63, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Jadis",
+    category: "the-walking-dead",
+    kills: 35, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 180, // [SCHAETZUNG] cm; Hauptserie, Staffel 9
+    age: 40, // [SCHAETZUNG] Hauptserie, Staffel 9; kein gesicherter exakter Alterswert
+    strength: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 72, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Princess",
+    category: "the-walking-dead",
+    kills: 30, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 160, // [SCHAETZUNG] cm; Staffel 11
+    age: 30, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 83, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Mercer",
+    category: "the-walking-dead",
+    kills: 65, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 188, // [SCHAETZUNG] cm; Staffel 11
+    age: 40, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Pamela Milton",
+    category: "the-walking-dead",
+    kills: 2, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 170, // [SCHAETZUNG] cm; Staffel 11
+    age: 60, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 32, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 65, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Lance Hornsby",
+    category: "the-walking-dead",
+    kills: 12, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 178, // [SCHAETZUNG] cm; Staffel 11
+    age: 50, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 62, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Sebastian Milton",
+    category: "the-walking-dead",
+    kills: 1, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 185, // [SCHAETZUNG] cm; Staffel 11
+    age: 25, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 46, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 38, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 63, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Max Mercer",
+    category: "the-walking-dead",
+    kills: 2, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 168, // [SCHAETZUNG] cm; Staffel 11
+    age: 30, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 35, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 68, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Alden",
+    category: "the-walking-dead",
+    kills: 35, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 180, // [SCHAETZUNG] cm; Staffel 11
+    age: 28, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Siddiq",
+    category: "the-walking-dead",
+    kills: 20, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 183, // [SCHAETZUNG] cm; Staffel 10
+    age: 30, // [SCHAETZUNG] Staffel 10; kein gesicherter exakter Alterswert
+    strength: 61, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Gregory",
+    category: "the-walking-dead",
+    kills: 1, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 183, // [SCHAETZUNG] cm; Staffel 9
+    age: 60, // [SCHAETZUNG] Staffel 9; kein gesicherter exakter Alterswert
+    strength: 28, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 68, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 39, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Gareth",
+    category: "the-walking-dead",
+    kills: 10, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 180, // [SCHAETZUNG] cm; Staffel 5
+    age: 28, // [SCHAETZUNG] Staffel 5; kein gesicherter exakter Alterswert
+    strength: 62, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 72, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Bob Stookey",
+    category: "the-walking-dead",
+    kills: 15, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 175, // [SCHAETZUNG] cm; Staffel 5
+    age: 35, // [SCHAETZUNG] Staffel 5; kein gesicherter exakter Alterswert
+    strength: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 62, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Noah",
+    category: "the-walking-dead",
+    kills: 8, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 173, // [SCHAETZUNG] cm; Staffel 5
+    age: 17, // [SERIENWIKI] Staffel 5; https://walkingdead.fandom.com/wiki/Noah_(TV_Series)
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Denise Cloyd",
+    category: "the-walking-dead",
+    kills: 2, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 174, // [SCHAETZUNG] cm; Staffel 6
+    age: 30, // [SCHAETZUNG] Staffel 6; kein gesicherter exakter Alterswert
+    strength: 31, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 65, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Sophia Peletier",
+    category: "the-walking-dead",
+    kills: 0, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 140, // [SCHAETZUNG] cm; Staffel 2, lebende Figur
+    age: 12, // [SERIENWIKI] Staffel 2, lebende Figur; https://walkingdead.fandom.com/wiki/Sophia_Peletier_(TV_Series)
+    strength: 18, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 47, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Lizzie Samuels",
+    category: "the-walking-dead",
+    kills: 5, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 150, // [SCHAETZUNG] cm; Staffel 4
+    age: 12, // [SERIENWIKI] Staffel 4; https://walkingdead.fandom.com/wiki/Lizzie_Samuels_(TV_Series)
+    strength: 25, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 42, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Mika Samuels",
+    category: "the-walking-dead",
+    kills: 3, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 137, // [SCHAETZUNG] cm; Staffel 4
+    age: 10, // [SERIENWIKI] Staffel 4; https://walkingdead.fandom.com/wiki/Mika_Samuels_(TV_Series)
+    strength: 20, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 61, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Deanna Monroe",
+    category: "the-walking-dead",
+    kills: 2, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 160, // [SCHAETZUNG] cm; Staffel 6
+    age: 60, // [SCHAETZUNG] Staffel 6; kein gesicherter exakter Alterswert
+    strength: 26, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 54, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Jessie Anderson",
+    category: "the-walking-dead",
+    kills: 5, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 170, // [SCHAETZUNG] cm; Staffel 6
+    age: 30, // [SCHAETZUNG] Staffel 6; kein gesicherter exakter Alterswert
+    strength: 42, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 68, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Henry",
+    category: "the-walking-dead",
+    kills: 15, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 173, // [SCHAETZUNG] cm; Staffel 9, jugendliche Figur aus dem Koenigreich
+    age: 17, // [SCHAETZUNG] Staffel 9, jugendliche Figur aus dem Koenigreich; kein gesicherter exakter Alterswert
+    strength: 53, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Leah Shaw",
+    category: "the-walking-dead",
+    kills: 35, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 173, // [SCHAETZUNG] cm; Staffel 11
+    age: 40, // [SCHAETZUNG] Staffel 11; kein gesicherter exakter Alterswert
+    strength: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Dawn Lerner",
+    category: "the-walking-dead",
+    kills: 8, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 168, // [SCHAETZUNG] cm; Staffel 5
+    age: 35, // [SCHAETZUNG] Staffel 5; kein gesicherter exakter Alterswert
+    strength: 61, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Shiva",
+    category: "the-walking-dead",
+    kills: 15, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 90, // [SCHAETZUNG] cm; Staffel 8; Groesse als Schulterhoehe des Tigers
+    age: 10, // [SCHAETZUNG] Staffel 8; Groesse als Schulterhoehe des Tigers; kein gesicherter exakter Alterswert
+    strength: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 30, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Dog",
+    category: "the-walking-dead",
+    kills: 3, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 65, // [SCHAETZUNG] cm; Staffel 11; Groesse als Schulterhoehe des Hundes
+    age: 7, // [SCHAETZUNG] Staffel 11; Groesse als Schulterhoehe des Hundes; kein gesicherter exakter Alterswert
+    strength: 45, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 44, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Nicholas",
+    category: "the-walking-dead",
+    kills: 8, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 183, // [SCHAETZUNG] cm; Staffel 6
+    age: 35, // [SCHAETZUNG] Staffel 6; kein gesicherter exakter Alterswert
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 38, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 51, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Spencer Monroe",
+    category: "the-walking-dead",
+    kills: 10, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 190, // [SCHAETZUNG] cm; Staffel 7
+    age: 30, // [SCHAETZUNG] Staffel 7; kein gesicherter exakter Alterswert
+    strength: 65, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Amy Harrison",
+    category: "the-walking-dead",
+    kills: 0, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 168, // [SCHAETZUNG] cm; Staffel 1
+    age: 24, // [SERIENWIKI] Staffel 1; https://walkingdead.fandom.com/wiki/Amy_Harrison_(TV_Series)
+    strength: 25, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 56, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Edwin Jenner",
+    category: "the-walking-dead",
+    kills: 2, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 190, // [SCHAETZUNG] cm; Staffel 1; Wissenschaftler im CDC
+    age: 45, // [SCHAETZUNG] Staffel 1; Wissenschaftler im CDC; kein gesicherter exakter Alterswert
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 62, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  {
+    name: "Duane Jones",
+    category: "the-walking-dead",
+    kills: 0, // [SPIEL-SCHAETZUNG] Keine vollstaendige kanonische Kill-Zaehlliste.
+    height: 140, // [SCHAETZUNG] cm; Staffel 1, lebende Figur
+    age: 10, // [SERIENWIKI] Staffel 1, lebende Figur; https://walkingdead.fandom.com/wiki/Duane_Jones_(TV_Universe)
+    strength: 20, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+
+  // Filmfassung: Ein neues Zeitalter
+  {
+    name: "Lewis Dodgson",
+    category: "jurassic",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 60, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 42, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 58, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Vergessene Welt
+  {
+    name: "Peter Ludlow",
+    category: "jurassic",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 56, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Vergessene Welt
+  {
+    name: "Dieter Stark",
+    category: "jurassic",
+    kills: 1, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 189, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 61, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Das gefallene Koenigreich
+  {
+    name: "Ken Wheatley",
+    category: "jurassic",
+    kills: 2, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 55, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 65, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 55, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Ein neues Zeitalter
+  {
+    name: "Soyona Santos",
+    category: "jurassic",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 171, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 65, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Die Wiedergeburt
+  {
+    name: "Zora Bennett",
+    category: "jurassic",
+    kills: 5, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 160, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Die Wiedergeburt
+  {
+    name: "Henry Loomis",
+    category: "jurassic",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 47, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Die Wiedergeburt
+  {
+    name: "Duncan Kincaid",
+    category: "jurassic",
+    kills: 6, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 188, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Die Wiedergeburt
+  {
+    name: "Martin Krebs",
+    category: "jurassic",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 191, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 74, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Filmfassung: Die Wiedergeburt
+  {
+    name: "Reuben Delgado",
+    category: "jurassic",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 189, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG]
+  },
 ];
