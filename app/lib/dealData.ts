@@ -13,12 +13,14 @@ export type DealCharacter = {
   | "the-walking-dead"
   | "jurassic"
   | "elden-ring"
+  | "resident-evil"
   | "schauspielerinnen"
   | "schauspieler"
   | "fussballer"
   | "filme";
 
   isBoss?: boolean;
+  attractivenessNotApplicable?: boolean;
   runes?: number | null;
   bossDifficulty?: number | null;
   magicPower?: number | null;
@@ -15133,5 +15135,735 @@ export const dealCharacters: DealCharacter[] = [
     "magicPower": 99
   },
 
+  ]),
+
+  // RESIDENT EVIL: Menschen und humanoide Gegner.
+  // Kills und 0–100-Ratings sind kuratierte Spielwerte.
+  ...defineDealCharacters([
+  // Referenz: RE4 (2004); Alter: Profil; Größe: Profil
+{
+  "name": "Leon S. Kennedy",
+  "category": "resident-evil",
+  "kills": 700,
+  "height": 180,
+  "age": 27,
+  "strength": 85,
+  "intelligence": 89,
+  "fame": 100,
+  "attractiveness": 94
+},
+  // Referenz: RE5 (2009); Alter: Guide-Profil; Größe: Guide-Profil
+{
+  "name": "Chris Redfield",
+  "category": "resident-evil",
+  "kills": 600,
+  "height": 185,
+  "age": 35,
+  "strength": 91,
+  "intelligence": 84,
+  "fame": 99,
+  "attractiveness": 90
+},
+  // Referenz: RE3 (1998); Alter: Profil; Größe: Profil
+{
+  "name": "Jill Valentine",
+  "category": "resident-evil",
+  "kills": 350,
+  "height": 166,
+  "age": 23,
+  "strength": 80,
+  "intelligence": 91,
+  "fame": 99,
+  "attractiveness": 95
+},
+  // Referenz: RE2 (1998); Alter: Profil; Größe: Profil
+{
+  "name": "Claire Redfield",
+  "category": "resident-evil",
+  "kills": 250,
+  "height": 169,
+  "age": 19,
+  "strength": 74,
+  "intelligence": 85,
+  "fame": 96,
+  "attractiveness": 92
+},
+  // Referenz: RE4 (2004); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Ada Wong",
+  "category": "resident-evil",
+  "kills": 300,
+  "height": 170,
+  "age": 30,
+  "strength": 82,
+  "intelligence": 96,
+  "fame": 98,
+  "attractiveness": 97
+},
+  // Referenz: RE5 (2009), infizierte menschliche Form; Alter und Größe: Guide-Profil
+{
+  "name": "Albert Wesker",
+  "category": "resident-evil",
+  "kills": 900,
+  "height": 190,
+  "age": 48,
+  "strength": 97,
+  "intelligence": 98,
+  "fame": 99,
+  "attractiveness": 89
+},
+  // Referenz: RE0 (1998); Alter: Profil; Größe: Profil
+{
+  "name": "Rebecca Chambers",
+  "category": "resident-evil",
+  "kills": 90,
+  "height": 161,
+  "age": 18,
+  "strength": 55,
+  "intelligence": 95,
+  "fame": 88,
+  "attractiveness": 88
+},
+  // Referenz: Revelations 2 (2011); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Barry Burton",
+  "category": "resident-evil",
+  "kills": 300,
+  "height": 186,
+  "age": 51,
+  "strength": 83,
+  "intelligence": 82,
+  "fame": 88,
+  "attractiveness": 77
+},
+  // Referenz: RE6 (2013), erwachsene Agentin; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Sherry Birkin",
+  "category": "resident-evil",
+  "kills": 200,
+  "height": 165,
+  "age": 26,
+  "strength": 74,
+  "intelligence": 86,
+  "fame": 91,
+  "attractiveness": 89
+},
+  // Referenz: RE3 Remake (1998); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Carlos Oliveira",
+  "category": "resident-evil",
+  "kills": 200,
+  "height": 182,
+  "age": 21,
+  "strength": 82,
+  "intelligence": 82,
+  "fame": 91,
+  "attractiveness": 91
+},
+  // Referenz: RE0 (1998); Alter: Profil; Größe: Profil
+{
+  "name": "Billy Coen",
+  "category": "resident-evil",
+  "kills": 150,
+  "height": 181,
+  "age": 26,
+  "strength": 84,
+  "intelligence": 78,
+  "fame": 84,
+  "attractiveness": 87
+},
+  // Referenz: RE2, Einsatzprofil; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "HUNK",
+  "category": "resident-evil",
+  "kills": 400,
+  "height": 185,
+  "age": 35,
+  "strength": 88,
+  "intelligence": 91,
+  "fame": 94,
+  "attractiveness": 80
+},
+  // Referenz: Village (2021); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Ethan Winters",
+  "category": "resident-evil",
+  "kills": 300,
+  "height": 180,
+  "age": 36,
+  "strength": 79,
+  "intelligence": 80,
+  "fame": 96,
+  "attractiveness": 84
+},
+  // Referenz: Village (2021), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Mia Winters",
+  "category": "resident-evil",
+  "kills": 30,
+  "height": 170,
+  "age": 36,
+  "strength": 61,
+  "intelligence": 83,
+  "fame": 89,
+  "attractiveness": 87
+},
+  // Referenz: Shadows of Rose (2037), Jugendliche; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Rosemary Winters",
+  "category": "resident-evil",
+  "kills": 50,
+  "height": 165,
+  "age": 16,
+  "strength": 96,
+  "intelligence": 80,
+  "fame": 85,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+},
+  // Referenz: RE5 (2009); Alter und Größe: Guide-Profil
+{
+  "name": "Sheva Alomar",
+  "category": "resident-evil",
+  "kills": 450,
+  "height": 165,
+  "age": 23,
+  "strength": 79,
+  "intelligence": 86,
+  "fame": 90,
+  "attractiveness": 94
+},
+  // Referenz: RE5 (2009); Alter und Größe: Guide-Profil
+{
+  "name": "Josh Stone",
+  "category": "resident-evil",
+  "kills": 150,
+  "height": 185,
+  "age": 35,
+  "strength": 85,
+  "intelligence": 83,
+  "fame": 72,
+  "attractiveness": 83
+},
+  // Referenz: RE6 (2013); Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Helena Harper",
+  "category": "resident-evil",
+  "kills": 250,
+  "height": 170,
+  "age": 24,
+  "strength": 80,
+  "intelligence": 82,
+  "fame": 78,
+  "attractiveness": 89
+},
+  // Referenz: RE6 (2013), vor Mutation; Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Piers Nivans",
+  "category": "resident-evil",
+  "kills": 250,
+  "height": 178,
+  "age": 26,
+  "strength": 82,
+  "intelligence": 85,
+  "fame": 79,
+  "attractiveness": 88
+},
+  // Referenz: RE6 (2013); Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Jake Muller",
+  "category": "resident-evil",
+  "kills": 300,
+  "height": 190,
+  "age": 20,
+  "strength": 90,
+  "intelligence": 78,
+  "fame": 84,
+  "attractiveness": 89
+},
+  // Referenz: RE4 (2004); Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Ashley Graham",
+  "category": "resident-evil",
+  "kills": 0,
+  "height": 167,
+  "age": 20,
+  "strength": 29,
+  "intelligence": 76,
+  "fame": 96,
+  "attractiveness": 92
+},
+  // Referenz: RE4 (2004); Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Luis Serra",
+  "category": "resident-evil",
+  "kills": 30,
+  "height": 185,
+  "age": 28,
+  "strength": 62,
+  "intelligence": 95,
+  "fame": 90,
+  "attractiveness": 91
+},
+  // Referenz: RE4 (2004); Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Ingrid Hunnigan",
+  "category": "resident-evil",
+  "kills": 0,
+  "height": 170,
+  "age": 24,
+  "strength": 35,
+  "intelligence": 96,
+  "fame": 80,
+  "attractiveness": 88
+},
+  // Referenz: RE2 (1998), vor Verwandlung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Marvin Branagh",
+  "category": "resident-evil",
+  "kills": 15,
+  "height": 185,
+  "age": 43,
+  "strength": 64,
+  "intelligence": 79,
+  "fame": 83,
+  "attractiveness": 73
+},
+  // Referenz: RE2 (1998); Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Robert Kendo",
+  "category": "resident-evil",
+  "kills": 5,
+  "height": 178,
+  "age": 40,
+  "strength": 59,
+  "intelligence": 77,
+  "fame": 75,
+  "attractiveness": 70
+},
+  // Referenz: RE3 (1998), vor Verwandlung; Alter: Profil; Größe: Profil
+{
+  "name": "Brad Vickers",
+  "category": "resident-evil",
+  "kills": 5,
+  "height": 174,
+  "age": 35,
+  "strength": 46,
+  "intelligence": 68,
+  "fame": 76,
+  "attractiveness": 65
+},
+  // Referenz: RE3 (1998); Alter: Profil; Größe: Profil
+{
+  "name": "Nicholai Ginovaef",
+  "category": "resident-evil",
+  "kills": 60,
+  "height": 187,
+  "age": 35,
+  "strength": 78,
+  "intelligence": 90,
+  "fame": 80,
+  "attractiveness": 74
+},
+  // Referenz: Code: Veronica (1998), vor Mutation; Alter: Profil; Größe: Profil
+{
+  "name": "Steve Burnside",
+  "category": "resident-evil",
+  "kills": 90,
+  "height": 173,
+  "age": 17,
+  "strength": 61,
+  "intelligence": 62,
+  "fame": 79,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+},
+  // Referenz: Revelations 2 (2011); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Moira Burton",
+  "category": "resident-evil",
+  "kills": 35,
+  "height": 165,
+  "age": 20,
+  "strength": 56,
+  "intelligence": 73,
+  "fame": 77,
+  "attractiveness": 84
+},
+  // Referenz: Revelations 2 (2011), Kind; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Natalia Korda",
+  "category": "resident-evil",
+  "kills": 0,
+  "height": 130,
+  "age": 10,
+  "strength": 19,
+  "intelligence": 89,
+  "fame": 75,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+},
+  // Referenz: Revelations 2 (2011), vor Mutation; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Alex Wesker",
+  "category": "resident-evil",
+  "kills": 150,
+  "height": 177,
+  "age": 51,
+  "strength": 72,
+  "intelligence": 98,
+  "fame": 80,
+  "attractiveness": 76
+},
+  // Referenz: Code: Veronica (1998), humanoide Form; Alter: Profil; Größe: Profil
+{
+  "name": "Alexia Ashford",
+  "category": "resident-evil",
+  "kills": 80,
+  "height": 175,
+  "age": 27,
+  "strength": 95,
+  "intelligence": 99,
+  "fame": 83,
+  "attractiveness": 88
+},
+  // Referenz: Code: Veronica (1998); Alter: Profil; Größe: Profil
+{
+  "name": "Alfred Ashford",
+  "category": "resident-evil",
+  "kills": 15,
+  "height": 176,
+  "age": 27,
+  "strength": 49,
+  "intelligence": 81,
+  "fame": 77,
+  "attractiveness": 65
+},
+  // Referenz: RE2 (1998); Größe der menschlichen Form; Alter: Profil; Größe: Profil
+{
+  "name": "William Birkin",
+  "category": "resident-evil",
+  "kills": 40,
+  "height": 178,
+  "age": 36,
+  "strength": 96,
+  "intelligence": 99,
+  "fame": 92,
+  "attractiveness": 60
+},
+  // Referenz: RE2 (1998); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Annette Birkin",
+  "category": "resident-evil",
+  "kills": 5,
+  "height": 165,
+  "age": 36,
+  "strength": 40,
+  "intelligence": 96,
+  "fame": 83,
+  "attractiveness": 76
+},
+  // Referenz: RE5-Rückblende (2006); Alter: Guide-Näherung; Größe: Guide-Profil
+{
+  "name": "Oswell E. Spencer",
+  "category": "resident-evil",
+  "kills": 10,
+  "height": 179.4,
+  "age": 75,
+  "strength": 12,
+  "intelligence": 98,
+  "fame": 81,
+  "attractiveness": 25
+},
+  // Referenz: RE5 (2009), vor Mutation; Alter: Guide-Altersspanne, Spielwert; Größe: Guide-Profil
+{
+  "name": "Excella Gionne",
+  "category": "resident-evil",
+  "kills": 5,
+  "height": 175.1,
+  "age": 26,
+  "strength": 42,
+  "intelligence": 91,
+  "fame": 75,
+  "attractiveness": 93
+},
+  // Referenz: RE6 (2013), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Carla Radames",
+  "category": "resident-evil",
+  "kills": 80,
+  "height": 170,
+  "age": 38,
+  "strength": 82,
+  "intelligence": 97,
+  "fame": 72,
+  "attractiveness": 87
+},
+  // Referenz: RE6 (2013); Größe der menschlichen Form; Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Derek C. Simmons",
+  "category": "resident-evil",
+  "kills": 100,
+  "height": 185,
+  "age": 46,
+  "strength": 95,
+  "intelligence": 91,
+  "fame": 77,
+  "attractiveness": 66
+},
+  // Referenz: Requiem (2026); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Grace Ashcroft",
+  "category": "resident-evil",
+  "kills": 50,
+  "height": 170,
+  "age": 25,
+  "strength": 42,
+  "intelligence": 92,
+  "fame": 91,
+  "attractiveness": 87
+},
+  // Referenz: Outbreak (1998); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Alyssa Ashcroft",
+  "category": "resident-evil",
+  "kills": 20,
+  "height": 176,
+  "age": 34,
+  "strength": 49,
+  "intelligence": 89,
+  "fame": 76,
+  "attractiveness": 82
+},
+  // Referenz: RE3, humanoide Form; Alter als Einsatz-Spielwert; Größe: Schätzung/Spielwert
+{
+  "name": "Nemesis",
+  "category": "resident-evil",
+  "kills": 50,
+  "height": 221,
+  "age": 1,
+  "strength": 99,
+  "intelligence": 45,
+  "fame": 99,
+  "attractiveness": 5
+},
+  // Referenz: RE2 Remake, humanoide Form; Alter als Einsatz-Spielwert; Größe: Schätzung/Spielwert
+{
+  "name": "Mr. X",
+  "category": "resident-evil",
+  "kills": 30,
+  "height": 230,
+  "age": 1,
+  "strength": 96,
+  "intelligence": 28,
+  "fame": 97,
+  "attractiveness": 8
+},
+  // Referenz: RE4 (2004), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Jack Krauser",
+  "category": "resident-evil",
+  "kills": 150,
+  "height": 186,
+  "age": 34,
+  "strength": 89,
+  "intelligence": 86,
+  "fame": 91,
+  "attractiveness": 82
+},
+  // Referenz: RE4 (2004), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Osmund Saddler",
+  "category": "resident-evil",
+  "kills": 70,
+  "height": 180,
+  "age": 54,
+  "strength": 95,
+  "intelligence": 92,
+  "fame": 88,
+  "attractiveness": 35
+},
+  // Referenz: RE4 (2004), menschliche Erscheinung; Alter: Profil; Größe: Schätzung/Spielwert
+{
+  "name": "Ramón Salazar",
+  "category": "resident-evil",
+  "kills": 30,
+  "height": 123,
+  "age": 20,
+  "strength": 82,
+  "intelligence": 80,
+  "fame": 89,
+  "attractiveness": 20
+},
+  // Referenz: RE4 (2004), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Bitores Méndez",
+  "category": "resident-evil",
+  "kills": 30,
+  "height": 207,
+  "age": 47,
+  "strength": 93,
+  "intelligence": 68,
+  "fame": 87,
+  "attractiveness": 30
+},
+  // Referenz: Village (2021); Größe einschließlich Hut und Schuhen; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Lady Dimitrescu",
+  "category": "resident-evil",
+  "kills": 150,
+  "height": 290,
+  "age": 107,
+  "strength": 94,
+  "intelligence": 87,
+  "fame": 99,
+  "attractiveness": 94
+},
+  // Referenz: Village (2021), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Karl Heisenberg",
+  "category": "resident-evil",
+  "kills": 100,
+  "height": 185,
+  "age": 90,
+  "strength": 96,
+  "intelligence": 93,
+  "fame": 91,
+  "attractiveness": 85
+},
+  // Referenz: Village (2021), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Mutter Miranda",
+  "category": "resident-evil",
+  "kills": 1000,
+  "height": 175,
+  "age": 125,
+  "strength": 100,
+  "intelligence": 99,
+  "fame": 92,
+  "attractiveness": 85
+},
+  // Referenz: Village (2021), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Donna Beneviento",
+  "category": "resident-evil",
+  "kills": 20,
+  "height": 175,
+  "age": 25,
+  "strength": 65,
+  "intelligence": 89,
+  "fame": 90,
+  "attractiveness": 78
+},
+  // Referenz: RE7 (2017), humanoide Form; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Jack Baker",
+  "category": "resident-evil",
+  "kills": 40,
+  "height": 190,
+  "age": 55,
+  "strength": 95,
+  "intelligence": 66,
+  "fame": 95,
+  "attractiveness": 35
+},
+  // Referenz: RE7 (2017), menschliche Erscheinung; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Marguerite Baker",
+  "category": "resident-evil",
+  "kills": 20,
+  "height": 175,
+  "age": 52,
+  "strength": 82,
+  "intelligence": 64,
+  "fame": 87,
+  "attractiveness": 25
+},
+  // Referenz: RE7 (2017), vor Mutation; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Lucas Baker",
+  "category": "resident-evil",
+  "kills": 20,
+  "height": 180,
+  "age": 26,
+  "strength": 58,
+  "intelligence": 94,
+  "fame": 87,
+  "attractiveness": 50
+},
+  // Referenz: RE7 (2017), Kindergestalt; Alter seit Erschaffung als Spielwert; Größe: Schätzung/Spielwert
+{
+  "name": "Eveline",
+  "category": "resident-evil",
+  "kills": 50,
+  "height": 120,
+  "age": 3,
+  "strength": 98,
+  "intelligence": 83,
+  "fame": 88,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+},
+  // Referenz: RE7 (2017); Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Zoe Baker",
+  "category": "resident-evil",
+  "kills": 5,
+  "height": 170,
+  "age": 23,
+  "strength": 42,
+  "intelligence": 85,
+  "fame": 82,
+  "attractiveness": 83
+},
+  // Referenz: Village; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Der Duke",
+  "category": "resident-evil",
+  "kills": 0,
+  "height": 210,
+  "age": 55,
+  "strength": 55,
+  "intelligence": 97,
+  "fame": 93,
+  "attractiveness": 45
+},
+  // Referenz: RE4; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Händler aus RE4",
+  "category": "resident-evil",
+  "kills": 0,
+  "height": 185,
+  "age": 45,
+  "strength": 52,
+  "intelligence": 94,
+  "fame": 96,
+  "attractiveness": 55
+},
+  // Referenz: Requiem; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Victor Gideon",
+  "category": "resident-evil",
+  "kills": 60,
+  "height": 190,
+  "age": 60,
+  "strength": 91,
+  "intelligence": 96,
+  "fame": 83,
+  "attractiveness": 40
+},
+  // Referenz: Requiem; Alter und Größe: Schätzung/Spielwert
+{
+  "name": "Emily",
+  "category": "resident-evil",
+  "kills": 0,
+  "height": 130,
+  "age": 10,
+  "strength": 15,
+  "intelligence": 70,
+  "fame": 78,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+}
   ]),
 ];

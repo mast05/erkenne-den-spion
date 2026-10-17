@@ -24,6 +24,11 @@ export default function CatalogAudit() {
         Kills Schätzungen und die Ratings subjektiv. Alter und Größe werden dort
         nicht gewertet; Runen und Boss-Schwierigkeit gelten nur für Bossprofile.
       </p>
+      <p className="mt-2 text-xs text-slate-500">
+        Resident Evil verwendet pro Figur ein Spielprofil. Kills und Ratings sind
+        Spielschätzungen; unsichere Größen und Altersangaben sind in den Daten
+        als Schätzwerte markiert. Kinderfiguren werden nicht nach Attraktivität gewertet.
+      </p>
       <div className="mt-5 space-y-3">
         {categories.map(category => {
           const entries = dealCharacters.filter(entry => entry.category === category.id);

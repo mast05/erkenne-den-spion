@@ -18,6 +18,7 @@ export const categories = [
   { id: "the-walking-dead", name: "The Walking Dead", emoji: "🧟" },
   { id: "jurassic", name: "Jurassic Park / World", emoji: "🦖" },
   { id: "elden-ring", name: "Elden Ring", emoji: "💍" },
+  { id: "resident-evil", name: "Resident Evil", emoji: "☣️" },
   { id: "schauspielerinnen", name: "Schauspielerinnen", emoji: "💃" },
   { id: "schauspieler", name: "Schauspieler", emoji: "🎬" },
   { id: "fussballer", name: "Fußballer", emoji: "⚽" },
@@ -34,6 +35,7 @@ export const spyCategories = categories.filter(category =>
 // „Fertig“ bezeichnet die abgeschlossene Charakterauswahl.
 // Filme bleibt ausdrücklich offen.
 export const completedCategoryIds = new Set<string>([
+  "resident-evil",
   "game-of-thrones", "dc", "harry-potter", "fluch-der-karibik",
   "herr-der-ringe", "hobbit", "the-boys",   "the-walking-dead",
 
@@ -67,6 +69,7 @@ export function getApplicableModes(category: string): DealGameMode[] {
 }
 
 export function getCharacterValue(character: DealCharacter, mode: string): number | null {
+  if (mode === "attractiveness" && character.attractivenessNotApplicable === true) return null;
   if (!getApplicableModes(character.category).includes(mode as DealGameMode)) return null;
   if (character.category === "elden-ring" && ["runes", "bossDifficulty"].includes(mode) && character.isBoss !== true) return null;
   const value = character[mode as DealGameMode];
@@ -105,6 +108,7 @@ export function getArenaCharacters(category: string) {
 
 export function getMissingModes(character: DealCharacter) {
   return getApplicableModes(character.category).filter(mode =>
+    !(mode === "attractiveness" && character.attractivenessNotApplicable === true) &&
     !(character.category === "elden-ring" && character.isBoss === false && ["runes", "bossDifficulty"].includes(mode)) &&
     getCharacterValue(character, mode) === null
   );
