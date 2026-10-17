@@ -17,13 +17,16 @@ export const categories = [
   { id: "the-boys", name: "The Boys", emoji: "🩸" },
   { id: "the-walking-dead", name: "The Walking Dead", emoji: "🧟" },
   { id: "jurassic", name: "Jurassic Park / World", emoji: "🦖" },
+  { id: "elden-ring", name: "Elden Ring", emoji: "💍" },
   { id: "schauspielerinnen", name: "Schauspielerinnen", emoji: "💃" },
   { id: "schauspieler", name: "Schauspieler", emoji: "🎬" },
   { id: "fussballer", name: "Fußballer", emoji: "⚽" },
   { id: "filme", name: "Filme", emoji: "🎞️" },
 ] as const;
 
-export const fictionCategories = categories.slice(0, 11);
+export const fictionCategories = categories.filter(category =>
+  !["schauspielerinnen", "schauspieler", "fussballer", "filme"].includes(category.id)
+);
 export const spyCategories = categories.filter(category =>
   !["schauspieler", "schauspielerinnen"].includes(category.id)
 );
@@ -35,6 +38,7 @@ export const completedCategoryIds = new Set<string>([
   "herr-der-ringe", "hobbit", "the-boys",   "the-walking-dead",
 
   "jurassic",
+  "elden-ring",
 ]);
 
 export const categoryNames: Record<string, string> = Object.fromEntries(
@@ -53,6 +57,7 @@ export const arenaModes: DealGameMode[] = [
 ];
 
 export function getApplicableModes(category: string): DealGameMode[] {
+  if (category === "elden-ring") return [...arenaModes, "runes", "bossDifficulty", "magicPower"];
   if (category === "filme") return filmModes;
   if (category === "fussballer") return footballModes;
   if (category === "schauspieler" || category === "schauspielerinnen") {
@@ -63,6 +68,7 @@ export function getApplicableModes(category: string): DealGameMode[] {
 
 export function getCharacterValue(character: DealCharacter, mode: string): number | null {
   if (!getApplicableModes(character.category).includes(mode as DealGameMode)) return null;
+  if (character.category === "elden-ring" && ["runes", "bossDifficulty"].includes(mode) && character.isBoss !== true) return null;
   const value = character[mode as DealGameMode];
   return typeof value === "number" && Number.isFinite(value) && value >= 0 ? value : null;
 }
@@ -98,7 +104,10 @@ export function getArenaCharacters(category: string) {
 }
 
 export function getMissingModes(character: DealCharacter) {
-  return getApplicableModes(character.category).filter(mode => getCharacterValue(character, mode) === null);
+  return getApplicableModes(character.category).filter(mode =>
+    !(character.category === "elden-ring" && character.isBoss === false && ["runes", "bossDifficulty"].includes(mode)) &&
+    getCharacterValue(character, mode) === null
+  );
 }
 
 export function getCharacterImage(character: string, category: string) {
@@ -109,11 +118,11 @@ export function getCharacterImage(character: string, category: string) {
 
 export function formatValue(mode: DealGameMode, value: number) {
   const units: Partial<Record<DealGameMode, string>> = {
-    kills: "Kills", height: "cm", age: "Jahre", goals: "Tore", assists: "Assists",
+    runes: "Runen (NG)", kills: "Kills", height: "cm", age: "Jahre", goals: "Tore", assists: "Assists",
     titles: "Titel", awards: "Auszeichnungen", clAppearances: "CL-Einsätze",
     internationalCaps: "Länderspiele", boxOffice: "Mio. $", watchRate: "%",
   };
   if (mode === "imdb") return `${value.toLocaleString("de-DE")} / 10`;
-  if (["strength", "intelligence", "fame", "attractiveness"].includes(mode)) return `${value}/100`;
+  if (["strength", "intelligence", "fame", "attractiveness", "bossDifficulty", "magicPower"].includes(mode)) return `${value}/100`;
   return `${value.toLocaleString("de-DE")} ${units[mode] ?? ""}`.trim();
 }

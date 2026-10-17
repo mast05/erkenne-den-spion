@@ -2,6 +2,7 @@ import { dealCharacters, type DealGameMode } from "../lib/dealData";
 import { categories, getMissingModes } from "../lib/catalog";
 
 const labels: Partial<Record<DealGameMode, string>> = {
+  runes: "Runen (NG)", bossDifficulty: "Boss-Schwierigkeit", magicPower: "Magische Macht",
   kills: "Kills", height: "Größe", age: "Alter", strength: "Stärke",
   intelligence: "Intelligenz", fame: "Bekanntheit", attractiveness: "Attraktivität",
   goals: "Tore", assists: "Assists", titles: "Titel", awards: "Auszeichnungen",
@@ -19,7 +20,9 @@ export default function CatalogAudit() {
       </p>
       <p className="mt-2 text-xs text-slate-500">
         Geprüft wird die Datenvollständigkeit. Spielbewertungen wie Stärke,
-        Intelligenz und Bekanntheit sind keine belegten Messwerte.
+        Intelligenz und Bekanntheit sind keine belegten Messwerte. Bei Elden Ring sind
+        Kills Schätzungen und die Ratings subjektiv. Alter und Größe werden dort
+        nicht gewertet; Runen und Boss-Schwierigkeit gelten nur für Bossprofile.
       </p>
       <div className="mt-5 space-y-3">
         {categories.map(category => {

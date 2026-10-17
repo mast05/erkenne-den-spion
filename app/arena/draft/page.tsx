@@ -45,6 +45,7 @@ type ArenaPick = {
 };
 
 const categoryNames: Record<string, string> = {
+  "elden-ring": "💍 Elden Ring",
   "star-wars": "⭐ Star Wars",
   marvel: "🦸 Marvel",
   "harry-potter": "🪄 Harry Potter",

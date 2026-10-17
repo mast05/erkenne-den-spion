@@ -475,6 +475,13 @@ export default function BidLobbyPage() {
 
               <p className="mt-1 text-sm text-slate-400">
                 Die Werte bleiben bis zum Spielende geheim.
+                {selectedCategory === "elden-ring" && (
+                  <span className="mt-2 block">
+                    Runen: Bossbelohnung im ersten Durchlauf ohne Boni.
+                    Runen und Schwierigkeit nutzen nur Bossprofile.
+                    Kills sind geschätzt; Schwierigkeit, magische Macht und andere Ratings sind subjektive Spielwertungen.
+                  </span>
+                )}
               </p>
 
               <div className="mt-4 space-y-2">

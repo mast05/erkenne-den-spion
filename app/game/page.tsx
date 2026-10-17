@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import SpyQuestionRounds from "../components/SpyQuestionRounds";
 import { getCharacterImage, categoryNames } from "../lib/catalog";
 import { getNameTips } from "../lib/spyHints";
 
@@ -2789,6 +2790,7 @@ const availableCharacters = dealCharacters
         setCategory(round.category);
         setSecretCharacter(round.secret_word);
         setGuessLocked(Boolean(round.voting_started_at));
+        setVotingStarted(Boolean(round.voting_started_at));
         setPlayers(playerData);
 
         // WICHTIG:
@@ -2879,6 +2881,7 @@ const availableCharacters = dealCharacters
       }
 
       setGuessLocked(Boolean(data?.voting_started_at));
+      if (data?.voting_started_at) setVotingStarted(true);
 
       if (
         data?.status === "finished" &&
@@ -2942,6 +2945,8 @@ const availableCharacters = dealCharacters
         }
 
         if (!votes) return;
+
+        setVoted(votes.some((vote) => vote.voter_id === playerId));
 
         // Falls aus irgendeinem Grund ein Spieler
         // mehrfach abgestimmt hat, zählt nur eine
@@ -3070,6 +3075,7 @@ const voteDetails = Array.from(
     result,
     players,
     spyPlayerId,
+    playerId,
   ]);
 
   function returnToLobby() {
@@ -3560,12 +3566,12 @@ async function submitImposterGuess() {
           )}
 
 
-  <button
-    onClick={() => setVotingStarted(true)}
-    className="mt-10 w-full rounded-2xl bg-emerald-500 px-6 py-5 font-bold text-white transition hover:scale-[1.02]"
-  >
-    🗳️ Zur Abstimmung
-  </button>
+  <SpyQuestionRounds
+    roundId={roundId}
+    playerId={playerId}
+    players={players}
+    onVotingStart={setVotingStarted}
+  />
 </>
 )}
 

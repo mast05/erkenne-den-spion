@@ -12,11 +12,16 @@ export type DealCharacter = {
   | "the-boys"
   | "the-walking-dead"
   | "jurassic"
+  | "elden-ring"
   | "schauspielerinnen"
   | "schauspieler"
   | "fussballer"
   | "filme";
 
+  isBoss?: boolean;
+  runes?: number | null;
+  bossDifficulty?: number | null;
+  magicPower?: number | null;
   kills: number | null;
   height: number | null;
   age: number | null;
@@ -38,6 +43,9 @@ attractiveness: number | null;
 };
 
 export type DealGameMode =
+  | "runes"
+  | "bossDifficulty"
+  | "magicPower"
   | "kills"
   | "height"
   | "age"
@@ -123,9 +131,26 @@ export const dealGameModes: {
     id: "attractiveness",
     label: "❤️ Wer ist am attraktivsten?",
   },
+  {
+    "id": "runes",
+    "label": "✨ Wer gibt die meisten Runen? (NG)"
+  },
+  {
+    "id": "bossDifficulty",
+    "label": "⚔️ Welcher Boss ist schwieriger? (Spielwertung)"
+  },
+  {
+    "id": "magicPower",
+    "label": "🔮 Wer hat mehr magische Macht? (Spielwertung)"
+  },
 ];
 
+function defineDealCharacters(characters: DealCharacter[]): DealCharacter[] {
+  return characters;
+}
+
 export const dealCharacters: DealCharacter[] = [
+  ...defineDealCharacters([
   // =========================
   // STAR WARS
   // =========================
@@ -1236,6 +1261,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 80,
     attractiveness: 76,
   },
+  ]),
+  ...defineDealCharacters([
 
   // =========================
   // MARVEL
@@ -2393,6 +2420,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 85,
     attractiveness: 19,
   },
+  ]),
+  ...defineDealCharacters([
 
   // =========================
   // HARRY POTTER
@@ -3546,6 +3575,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 100,
     attractiveness: 98,
   },
+  ]),
+  ...defineDealCharacters([
   {
   name: "Martian Manhunter",
   category: "dc",
@@ -4730,6 +4761,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 82,
     attractiveness: 58,
   },
+  ]),
+  ...defineDealCharacters([
   {
     name: "Scrum",
     category: "fluch-der-karibik",
@@ -5909,6 +5942,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 96,
     attractiveness: 94,
   },
+  ]),
+  ...defineDealCharacters([
   {
     name: "Arwen",
     category: "herr-der-ringe",
@@ -7021,6 +7056,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 94,
     attractiveness: 74,
   },
+  ]),
+  ...defineDealCharacters([
   {
     name: "The Governor",
     category: "the-walking-dead",
@@ -8133,6 +8170,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 100,
     attractiveness: 98,
   },
+  ]),
+  ...defineDealCharacters([
   {
     name: "Brad Pitt",
     category: "schauspieler",
@@ -9580,6 +9619,8 @@ export const dealCharacters: DealCharacter[] = [
     imdb: 8.1,
     watchRate: 91,
   },
+  ]),
+  ...defineDealCharacters([
 
   // 1984; Einspielergebnis in Mio. USD, auf ganze Millionen gerundet.
   {
@@ -10980,6 +11021,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
     attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG]
   },
+  ]),
+  ...defineDealCharacters([
   // Filmfassung: Die Wiedergeburt
   {
     name: "Duncan Kincaid",
@@ -12181,6 +12224,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
     attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG]
   },
+  ]),
+  ...defineDealCharacters([
   // Biografiedaten: https://www.wikidata.org/wiki/Q483907
   {
     name: "Jack Black",
@@ -13382,6 +13427,8 @@ export const dealCharacters: DealCharacter[] = [
     fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
     attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
+  ]),
+  ...defineDealCharacters([
   // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
   {
     name: "Ikaris",
@@ -13890,6 +13937,8 @@ export const dealCharacters: DealCharacter[] = [
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
   {"name":"Mellos","category":"game-of-thrones","kills":0,"height":173,"age":70,"strength":12,"intelligence":87,"fame":67,"attractiveness":40},
+  ]),
+  ...defineDealCharacters([
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
   {"name":"Blut","category":"game-of-thrones","kills":8,"height":190,"age":40,"strength":89,"intelligence":51,"fame":71,"attractiveness":32},
@@ -13953,4 +14002,1136 @@ export const dealCharacters: DealCharacter[] = [
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
   {"name":"Sheepstealer","category":"game-of-thrones","kills":100,"height":900,"age":70,"strength":93,"intelligence":52,"fame":80,"attractiveness":63},
+  // ELDEN RING: NG-Runen; Kills geschätzt, Ratings subjektiv 0–100.
+  // Radagon: 0 separate Runen; Finale zahlt erst bei der Eldenbestie.
+  {
+    "name": "Malenia",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 5000,
+    "height": null,
+    "age": null,
+    "strength": 98,
+    "intelligence": 83,
+    "fame": 100,
+    "attractiveness": 93,
+    "runes": 480000,
+    "bossDifficulty": 99,
+    "magicPower": 95
+  },
+  {
+    "name": "Radahn",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 6000,
+    "height": null,
+    "age": null,
+    "strength": 99,
+    "intelligence": 87,
+    "fame": 99,
+    "attractiveness": 62,
+    "runes": 70000,
+    "bossDifficulty": 87,
+    "magicPower": 96
+  },
+  {
+    "name": "Maliketh",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 4000,
+    "height": null,
+    "age": null,
+    "strength": 98,
+    "intelligence": 85,
+    "fame": 95,
+    "attractiveness": 48,
+    "runes": 220000,
+    "bossDifficulty": 96,
+    "magicPower": 97
+  },
+  {
+    "name": "Godfrey",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 8000,
+    "height": null,
+    "age": null,
+    "strength": 100,
+    "intelligence": 82,
+    "fame": 96,
+    "attractiveness": 79,
+    "runes": 300000,
+    "bossDifficulty": 90,
+    "magicPower": 35
+  },
+  {
+    "name": "Morgott",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1800,
+    "height": null,
+    "age": null,
+    "strength": 90,
+    "intelligence": 91,
+    "fame": 94,
+    "attractiveness": 29,
+    "runes": 120000,
+    "bossDifficulty": 83,
+    "magicPower": 88
+  },
+  {
+    "name": "Mohg",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 2200,
+    "height": null,
+    "age": null,
+    "strength": 93,
+    "intelligence": 82,
+    "fame": 93,
+    "attractiveness": 22,
+    "runes": 420000,
+    "bossDifficulty": 92,
+    "magicPower": 94
+  },
+  {
+    "name": "Rykard",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 3500,
+    "height": null,
+    "age": null,
+    "strength": 95,
+    "intelligence": 85,
+    "fame": 93,
+    "attractiveness": 14,
+    "runes": 130000,
+    "bossDifficulty": 72,
+    "magicPower": 89
+  },
+  {
+    "name": "Rennala",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 300,
+    "height": null,
+    "age": null,
+    "strength": 68,
+    "intelligence": 97,
+    "fame": 96,
+    "attractiveness": 87,
+    "runes": 40000,
+    "bossDifficulty": 54,
+    "magicPower": 98
+  },
+  {
+    "name": "Godrick",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 700,
+    "height": null,
+    "age": null,
+    "strength": 78,
+    "intelligence": 57,
+    "fame": 96,
+    "attractiveness": 17,
+    "runes": 20000,
+    "bossDifficulty": 61,
+    "magicPower": 53
+  },
+  {
+    "name": "Radagon",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 4500,
+    "height": null,
+    "age": null,
+    "strength": 97,
+    "intelligence": 96,
+    "fame": 97,
+    "attractiveness": 85,
+    "runes": 0,
+    "bossDifficulty": 94,
+    "magicPower": 99
+  },
+  {
+    "name": "Eldenbestie",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 2000,
+    "height": null,
+    "age": null,
+    "strength": 99,
+    "intelligence": 90,
+    "fame": 95,
+    "attractiveness": 66,
+    "runes": 500000,
+    "bossDifficulty": 91,
+    "magicPower": 100
+  },
+  {
+    "name": "Drachenfürst Placidusax",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 6500,
+    "height": null,
+    "age": null,
+    "strength": 99,
+    "intelligence": 91,
+    "fame": 91,
+    "attractiveness": 35,
+    "runes": 280000,
+    "bossDifficulty": 93,
+    "magicPower": 99
+  },
+  {
+    "name": "Lichdrache Fortissax",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 3000,
+    "height": null,
+    "age": null,
+    "strength": 95,
+    "intelligence": 84,
+    "fame": 85,
+    "attractiveness": 31,
+    "runes": 90000,
+    "bossDifficulty": 82,
+    "magicPower": 96
+  },
+  {
+    "name": "Astel",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 2500,
+    "height": null,
+    "age": null,
+    "strength": 94,
+    "intelligence": 76,
+    "fame": 89,
+    "attractiveness": 19,
+    "runes": 80000,
+    "bossDifficulty": 85,
+    "magicPower": 98
+  },
+  {
+    "name": "Feuerriese",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 2500,
+    "height": null,
+    "age": null,
+    "strength": 98,
+    "intelligence": 50,
+    "fame": 94,
+    "attractiveness": 15,
+    "runes": 180000,
+    "bossDifficulty": 87,
+    "magicPower": 88
+  },
+  {
+    "name": "Loretta",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 700,
+    "height": null,
+    "age": null,
+    "strength": 85,
+    "intelligence": 88,
+    "fame": 84,
+    "attractiveness": 76,
+    "runes": 200000,
+    "bossDifficulty": 79,
+    "magicPower": 89
+  },
+  {
+    "name": "Kommandant Niall",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1000,
+    "height": null,
+    "age": null,
+    "strength": 87,
+    "intelligence": 78,
+    "fame": 80,
+    "attractiveness": 58,
+    "runes": 90000,
+    "bossDifficulty": 85,
+    "magicPower": 71
+  },
+  {
+    "name": "Elemer von den Dornen",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 800,
+    "height": null,
+    "age": null,
+    "strength": 86,
+    "intelligence": 72,
+    "fame": 75,
+    "attractiveness": 32,
+    "runes": 24000,
+    "bossDifficulty": 80,
+    "magicPower": 76
+  },
+  {
+    "name": "Alecto",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 600,
+    "height": null,
+    "age": null,
+    "strength": 87,
+    "intelligence": 87,
+    "fame": 77,
+    "attractiveness": 54,
+    "runes": 80000,
+    "bossDifficulty": 89,
+    "magicPower": 84
+  },
+  {
+    "name": "Roter Wolf Radagons",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 150,
+    "height": null,
+    "age": null,
+    "strength": 76,
+    "intelligence": 59,
+    "fame": 86,
+    "attractiveness": 49,
+    "runes": 14000,
+    "bossDifficulty": 57,
+    "magicPower": 78
+  },
+  {
+    "name": "Messmer",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 12000,
+    "height": null,
+    "age": null,
+    "strength": 98,
+    "intelligence": 90,
+    "fame": 97,
+    "attractiveness": 84,
+    "runes": 400000,
+    "bossDifficulty": 96,
+    "magicPower": 98
+  },
+  {
+    "name": "Rellana",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1400,
+    "height": null,
+    "age": null,
+    "strength": 93,
+    "intelligence": 94,
+    "fame": 90,
+    "attractiveness": 86,
+    "runes": 240000,
+    "bossDifficulty": 95,
+    "magicPower": 97
+  },
+  {
+    "name": "Bayle",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 9000,
+    "height": null,
+    "age": null,
+    "strength": 100,
+    "intelligence": 77,
+    "fame": 93,
+    "attractiveness": 18,
+    "runes": 490000,
+    "bossDifficulty": 98,
+    "magicPower": 98
+  },
+  {
+    "name": "Midra",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1800,
+    "height": null,
+    "age": null,
+    "strength": 96,
+    "intelligence": 85,
+    "fame": 88,
+    "attractiveness": 20,
+    "runes": 410000,
+    "bossDifficulty": 93,
+    "magicPower": 99
+  },
+  {
+    "name": "Romina",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1200,
+    "height": null,
+    "age": null,
+    "strength": 89,
+    "intelligence": 79,
+    "fame": 83,
+    "attractiveness": 34,
+    "runes": 380000,
+    "bossDifficulty": 84,
+    "magicPower": 90
+  },
+  {
+    "name": "Metyr",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1000,
+    "height": null,
+    "age": null,
+    "strength": 96,
+    "intelligence": 92,
+    "fame": 84,
+    "attractiveness": 10,
+    "runes": 420000,
+    "bossDifficulty": 88,
+    "magicPower": 99
+  },
+  {
+    "name": "Kommandant Gaius",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1600,
+    "height": null,
+    "age": null,
+    "strength": 92,
+    "intelligence": 76,
+    "fame": 81,
+    "attractiveness": 41,
+    "runes": 230000,
+    "bossDifficulty": 91,
+    "magicPower": 85
+  },
+  {
+    "name": "Fäulnisritter",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 500,
+    "height": null,
+    "age": null,
+    "strength": 89,
+    "intelligence": 47,
+    "fame": 79,
+    "attractiveness": 12,
+    "runes": 220000,
+    "bossDifficulty": 87,
+    "magicPower": 87
+  },
+  {
+    "name": "Göttliche Bestie Tanzender Löwe",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 1100,
+    "height": null,
+    "age": null,
+    "strength": 91,
+    "intelligence": 71,
+    "fame": 89,
+    "attractiveness": 46,
+    "runes": 120000,
+    "bossDifficulty": 88,
+    "magicPower": 92
+  },
+  {
+    "name": "Avatar des Scadubaums",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 350,
+    "height": null,
+    "age": null,
+    "strength": 94,
+    "intelligence": 40,
+    "fame": 81,
+    "attractiveness": 27,
+    "runes": 260000,
+    "bossDifficulty": 86,
+    "magicPower": 94
+  },
+  {
+    "name": "Gideon Ofnir",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 180,
+    "height": null,
+    "age": null,
+    "strength": 73,
+    "intelligence": 99,
+    "fame": 91,
+    "attractiveness": 50,
+    "runes": 150000,
+    "bossDifficulty": 65,
+    "magicPower": 95
+  },
+  {
+    "name": "Ranni",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 10,
+    "height": null,
+    "age": null,
+    "strength": 80,
+    "intelligence": 99,
+    "fame": 100,
+    "attractiveness": 96,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 99
+  },
+  {
+    "name": "Melina",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 100,
+    "height": null,
+    "age": null,
+    "strength": 84,
+    "intelligence": 94,
+    "fame": 99,
+    "attractiveness": 95,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 94
+  },
+  {
+    "name": "Marika",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 9000,
+    "height": null,
+    "age": null,
+    "strength": 99,
+    "intelligence": 98,
+    "fame": 97,
+    "attractiveness": 95,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 100
+  },
+  {
+    "name": "Miquella",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 5,
+    "height": null,
+    "age": null,
+    "strength": 72,
+    "intelligence": 100,
+    "fame": 94,
+    "attractiveness": 85,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 100
+  },
+  {
+    "name": "Godwyn",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 2600,
+    "height": null,
+    "age": null,
+    "strength": 96,
+    "intelligence": 90,
+    "fame": 88,
+    "attractiveness": 87,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 95
+  },
+  {
+    "name": "Alexander",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 250,
+    "height": null,
+    "age": null,
+    "strength": 84,
+    "intelligence": 65,
+    "fame": 96,
+    "attractiveness": 52,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 18
+  },
+  {
+    "name": "Blaidd",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 450,
+    "height": null,
+    "age": null,
+    "strength": 90,
+    "intelligence": 78,
+    "fame": 96,
+    "attractiveness": 78,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 28
+  },
+  {
+    "name": "Millicent",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 180,
+    "height": null,
+    "age": null,
+    "strength": 86,
+    "intelligence": 82,
+    "fame": 93,
+    "attractiveness": 93,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 55
+  },
+  {
+    "name": "Fia",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 8,
+    "height": null,
+    "age": null,
+    "strength": 38,
+    "intelligence": 90,
+    "fame": 90,
+    "attractiveness": 91,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 86
+  },
+  {
+    "name": "Dungfresser",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 130,
+    "height": null,
+    "age": null,
+    "strength": 81,
+    "intelligence": 69,
+    "fame": 89,
+    "attractiveness": 5,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 60
+  },
+  {
+    "name": "Sellen",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 45,
+    "height": null,
+    "age": null,
+    "strength": 49,
+    "intelligence": 97,
+    "fame": 88,
+    "attractiveness": 87,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 94
+  },
+  {
+    "name": "Rogier",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 85,
+    "height": null,
+    "age": null,
+    "strength": 64,
+    "intelligence": 91,
+    "fame": 84,
+    "attractiveness": 80,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 85
+  },
+  {
+    "name": "Iji",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 300,
+    "height": null,
+    "age": null,
+    "strength": 89,
+    "intelligence": 92,
+    "fame": 83,
+    "attractiveness": 39,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 58
+  },
+  {
+    "name": "Varré",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 90,
+    "height": null,
+    "age": null,
+    "strength": 68,
+    "intelligence": 86,
+    "fame": 90,
+    "attractiveness": 51,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 74
+  },
+  {
+    "name": "Nepheli Loux",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 220,
+    "height": null,
+    "age": null,
+    "strength": 87,
+    "intelligence": 76,
+    "fame": 87,
+    "attractiveness": 87,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 40
+  },
+  {
+    "name": "Roderika",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 0,
+    "height": null,
+    "age": null,
+    "strength": 19,
+    "intelligence": 83,
+    "fame": 88,
+    "attractiveness": 88,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 68
+  },
+  {
+    "name": "Hewg",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 90,
+    "height": null,
+    "age": null,
+    "strength": 80,
+    "intelligence": 88,
+    "fame": 90,
+    "attractiveness": 20,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 35
+  },
+  {
+    "name": "Patches",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 35,
+    "height": null,
+    "age": null,
+    "strength": 59,
+    "intelligence": 91,
+    "fame": 96,
+    "attractiveness": 43,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 12
+  },
+  {
+    "name": "Igon",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 350,
+    "height": null,
+    "age": null,
+    "strength": 79,
+    "intelligence": 73,
+    "fame": 91,
+    "attractiveness": 35,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 32
+  },
+  // ELDEN RING: Ergänzung auf 75. Kills geschätzt, Ratings subjektiv.
+  // Bossprofile: Baumwächter in Limgrave; Adliger im Tempel von Eiglay;
+  // Tränennachahmer in Nokron; Drachenbaumwächter vor Leyndell.
+  {
+    "name": "Baumwächter",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 350,
+    "height": null,
+    "age": null,
+    "strength": 84,
+    "intelligence": 68,
+    "fame": 95,
+    "attractiveness": 57,
+    "runes": 3200,
+    "bossDifficulty": 72,
+    "magicPower": 52
+  },
+  {
+    "name": "Bluthundritter Darriwil",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 180,
+    "height": null,
+    "age": null,
+    "strength": 79,
+    "intelligence": 62,
+    "fame": 85,
+    "attractiveness": 38,
+    "runes": 1900,
+    "bossDifficulty": 63,
+    "magicPower": 12
+  },
+  {
+    "name": "Fliegender Drache Agheel",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 500,
+    "height": null,
+    "age": null,
+    "strength": 88,
+    "intelligence": 45,
+    "fame": 87,
+    "attractiveness": 39,
+    "runes": 5000,
+    "bossDifficulty": 65,
+    "magicPower": 76
+  },
+  {
+    "name": "Adliger der Götterskalpe",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 850,
+    "height": null,
+    "age": null,
+    "strength": 87,
+    "intelligence": 78,
+    "fame": 88,
+    "attractiveness": 9,
+    "runes": 50000,
+    "bossDifficulty": 84,
+    "magicPower": 88
+  },
+  {
+    "name": "Tränennachahmer",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 20,
+    "height": null,
+    "age": null,
+    "strength": 80,
+    "intelligence": 70,
+    "fame": 96,
+    "attractiveness": 50,
+    "runes": 10000,
+    "bossDifficulty": 50,
+    "magicPower": 82
+  },
+  {
+    "name": "Drachenbaumwächter",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 700,
+    "height": null,
+    "age": null,
+    "strength": 90,
+    "intelligence": 73,
+    "fame": 87,
+    "attractiveness": 49,
+    "runes": 50000,
+    "bossDifficulty": 86,
+    "magicPower": 82
+  },
+  {
+    "name": "Kommandant O’Neil",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 900,
+    "height": null,
+    "age": null,
+    "strength": 82,
+    "intelligence": 76,
+    "fame": 81,
+    "attractiveness": 43,
+    "runes": 12000,
+    "bossDifficulty": 73,
+    "magicPower": 66
+  },
+  {
+    "name": "Uralter Drache Lansseax",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 2800,
+    "height": null,
+    "age": null,
+    "strength": 94,
+    "intelligence": 85,
+    "fame": 83,
+    "attractiveness": 45,
+    "runes": 60000,
+    "bossDifficulty": 80,
+    "magicPower": 94
+  },
+  {
+    "name": "Uralter Drache Senessax",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 3200,
+    "height": null,
+    "age": null,
+    "strength": 96,
+    "intelligence": 79,
+    "fame": 78,
+    "attractiveness": 30,
+    "runes": 200000,
+    "bossDifficulty": 89,
+    "magicPower": 96
+  },
+  {
+    "name": "Ritter des einsamen Kerkers",
+    "category": "elden-ring",
+    "isBoss": true,
+    "kills": 650,
+    "height": null,
+    "age": null,
+    "strength": 88,
+    "intelligence": 72,
+    "fame": 84,
+    "attractiveness": 59,
+    "runes": 70000,
+    "bossDifficulty": 86,
+    "magicPower": 5
+  },
+  {
+    "name": "Miriel",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 0,
+    "height": null,
+    "age": null,
+    "strength": 35,
+    "intelligence": 98,
+    "fame": 96,
+    "attractiveness": 60,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 92
+  },
+  {
+    "name": "Boc",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 0,
+    "height": null,
+    "age": null,
+    "strength": 16,
+    "intelligence": 73,
+    "fame": 87,
+    "attractiveness": 38,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 4
+  },
+  {
+    "name": "Goldmaske",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 0,
+    "height": null,
+    "age": null,
+    "strength": 20,
+    "intelligence": 100,
+    "fame": 88,
+    "attractiveness": 41,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 86
+  },
+  {
+    "name": "Bruder Corhyn",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 10,
+    "height": null,
+    "age": null,
+    "strength": 35,
+    "intelligence": 82,
+    "fame": 83,
+    "attractiveness": 40,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 75
+  },
+  {
+    "name": "Rya",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 0,
+    "height": null,
+    "age": null,
+    "strength": 30,
+    "intelligence": 77,
+    "fame": 88,
+    "attractiveness": 83,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 38
+  },
+  {
+    "name": "Tanith",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 12,
+    "height": null,
+    "age": null,
+    "strength": 45,
+    "intelligence": 91,
+    "fame": 87,
+    "attractiveness": 82,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 49
+  },
+  {
+    "name": "Yura",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 280,
+    "height": null,
+    "age": null,
+    "strength": 84,
+    "intelligence": 83,
+    "fame": 88,
+    "attractiveness": 73,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 24
+  },
+  {
+    "name": "Shabriri",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 1600,
+    "height": null,
+    "age": null,
+    "strength": 68,
+    "intelligence": 95,
+    "fame": 84,
+    "attractiveness": 33,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 96
+  },
+  {
+    "name": "Bernahl",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 900,
+    "height": null,
+    "age": null,
+    "strength": 89,
+    "intelligence": 84,
+    "fame": 85,
+    "attractiveness": 62,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 78
+  },
+  {
+    "name": "Sir Ansbach",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 1300,
+    "height": null,
+    "age": null,
+    "strength": 89,
+    "intelligence": 95,
+    "fame": 92,
+    "attractiveness": 71,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 83
+  },
+  {
+    "name": "Nadelritterin Leda",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 700,
+    "height": null,
+    "age": null,
+    "strength": 88,
+    "intelligence": 87,
+    "fame": 91,
+    "attractiveness": 86,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 84
+  },
+  {
+    "name": "Thiollier",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 30,
+    "height": null,
+    "age": null,
+    "strength": 55,
+    "intelligence": 86,
+    "fame": 86,
+    "attractiveness": 78,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 70
+  },
+  {
+    "name": "Rotmähne Freyja",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 1100,
+    "height": null,
+    "age": null,
+    "strength": 92,
+    "intelligence": 73,
+    "fame": 85,
+    "attractiveness": 81,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 30
+  },
+  {
+    "name": "Moore",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 15,
+    "height": null,
+    "age": null,
+    "strength": 76,
+    "intelligence": 58,
+    "fame": 87,
+    "attractiveness": 43,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 22
+  },
+  {
+    "name": "Heilige Trina",
+    "category": "elden-ring",
+    "isBoss": false,
+    "kills": 0,
+    "height": null,
+    "age": null,
+    "strength": 25,
+    "intelligence": 97,
+    "fame": 90,
+    "attractiveness": 78,
+    "runes": null,
+    "bossDifficulty": null,
+    "magicPower": 99
+  },
+
+  ]),
 ];
