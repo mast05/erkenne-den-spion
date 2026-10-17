@@ -11016,4 +11016,2941 @@ export const dealCharacters: DealCharacter[] = [
     fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
     attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG]
   },
+
+  // Biografiedaten: https://www.wikidata.org/wiki/Q13909
+  {
+    name: "Angelina Jolie",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 169, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 51, // [BERECHNET] Geboren 1975-06-04; Stand 2026-10-16
+    strength: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q40791
+  {
+    name: "Sandra Bullock",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 171, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 62, // [BERECHNET] Geboren 1964-07-26; Stand 2026-10-16
+    strength: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q40523
+  {
+    name: "Julia Roberts",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 58, // [BERECHNET] Geboren 1967-10-28; Stand 2026-10-16
+    strength: 50, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q32522
+  {
+    name: "Jennifer Aniston",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 164, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 57, // [BERECHNET] Geboren 1969-02-11; Stand 2026-10-16
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q37459
+  {
+    name: "Nicole Kidman",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 180, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 59, // [BERECHNET] Geboren 1967-06-20; Stand 2026-10-16
+    strength: 56, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q80966
+  {
+    name: "Cate Blanchett",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 57, // [BERECHNET] Geboren 1969-05-14; Stand 2026-10-16
+    strength: 54, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q202765
+  {
+    name: "Kate Winslet",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 51, // [BERECHNET] Geboren 1975-10-05; Stand 2026-10-16
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q873
+  {
+    name: "Meryl Streep",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 77, // [BERECHNET] Geboren 1949-06-22; Stand 2026-10-16
+    strength: 40, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q41351
+  {
+    name: "Jodie Foster",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 160, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 63, // [BERECHNET] Geboren 1962-11-19; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q102124
+  {
+    name: "Sigourney Weaver",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 182, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 77, // [BERECHNET] Geboren 1949-10-08; Stand 2026-10-16
+    strength: 65, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q43044
+  {
+    name: "Demi Moore",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 63, // [BERECHNET] Geboren 1962-11-11; Stand 2026-10-16
+    strength: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q44380
+  {
+    name: "Cameron Diaz",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 54, // [BERECHNET] Geboren 1972-08-30; Stand 2026-10-16
+    strength: 64, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q676094
+  {
+    name: "Drew Barrymore",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 163, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 51, // [BERECHNET] Geboren 1975-02-22; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q44063
+  {
+    name: "Reese Witherspoon",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 156, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 50, // [BERECHNET] Geboren 1976-03-22; Stand 2026-10-16
+    strength: 52, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q39666
+  {
+    name: "Penélope Cruz",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 52, // [BERECHNET] Geboren 1974-04-28; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q47664
+  {
+    name: "Catherine Zeta-Jones",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 57, // [BERECHNET] Geboren 1969-09-25; Stand 2026-10-16
+    strength: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q1033016
+  {
+    name: "Halle Berry",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 60, // [BERECHNET] Geboren 1966-08-14; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q125017
+  {
+    name: "Uma Thurman",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 181, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 56, // [BERECHNET] Geboren 1970-04-29; Stand 2026-10-16
+    strength: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q101797
+  {
+    name: "Winona Ryder",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 161, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 54, // [BERECHNET] Geboren 1971-10-29; Stand 2026-10-16
+    strength: 45, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q34460
+  {
+    name: "Gwyneth Paltrow",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 54, // [BERECHNET] Geboren 1972-09-27; Stand 2026-10-16
+    strength: 53, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q179414
+  {
+    name: "Kate Beckinsale",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 53, // [BERECHNET] Geboren 1973-07-26; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q134077
+  {
+    name: "Rachel Weisz",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 56, // [BERECHNET] Geboren 1970-03-07; Stand 2026-10-16
+    strength: 54, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q193517
+  {
+    name: "Emily Blunt",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 171, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 43, // [BERECHNET] Geboren 1983-02-23; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q481832
+  {
+    name: "Amy Adams",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 163, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 52, // [BERECHNET] Geboren 1974-08-20; Stand 2026-10-16
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q229313
+  {
+    name: "Jessica Chastain",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 163, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 49, // [BERECHNET] Geboren 1977-03-24; Stand 2026-10-16
+    strength: 63, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q189226
+  {
+    name: "Amanda Seyfried",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 159, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 40, // [BERECHNET] Geboren 1985-12-03; Stand 2026-10-16
+    strength: 49, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q126599
+  {
+    name: "Kristen Stewart",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 36, // [BERECHNET] Geboren 1990-04-09; Stand 2026-10-16
+    strength: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q178882
+  {
+    name: "Kristen Bell",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 155, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 46, // [BERECHNET] Geboren 1980-07-18; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q16738674
+  {
+    name: "Daisy Ridley",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 34, // [BERECHNET] Geboren 1992-04-10; Stand 2026-10-16
+    strength: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q234447
+  {
+    name: "Felicity Jones",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 160, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 42, // [BERECHNET] Geboren 1983-10-17; Stand 2026-10-16
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q230004
+  {
+    name: "Rosamund Pike",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 47, // [BERECHNET] Geboren 1979-01-27; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q42581
+  {
+    name: "Keira Knightley",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 41, // [BERECHNET] Geboren 1985-03-26; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q191644
+  {
+    name: "Eva Green",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 46, // [BERECHNET] Geboren 1980-07-06; Stand 2026-10-16
+    strength: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q170606
+  {
+    name: "Eva Mendes",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 52, // [BERECHNET] Geboren 1974-03-05; Stand 2026-10-16
+    strength: 54, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q184219
+  {
+    name: "Michelle Rodriguez",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 48, // [BERECHNET] Geboren 1978-07-12; Stand 2026-10-16
+    strength: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q214289
+  {
+    name: "Michelle Yeoh",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 163, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 64, // [BERECHNET] Geboren 1962-08-06; Stand 2026-10-16
+    strength: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q188375
+  {
+    name: "Lucy Liu",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 160, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 57, // [BERECHNET] Geboren 1968-12-02; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q183439
+  {
+    name: "Nina Dobrev",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 37, // [BERECHNET] Geboren 1989-01-09; Stand 2026-10-16
+    strength: 59, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q231751
+  {
+    name: "Kat Dennings",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 161, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 40, // [BERECHNET] Geboren 1986-06-13; Stand 2026-10-16
+    strength: 44, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q210547
+  {
+    name: "Aubrey Plaza",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 42, // [BERECHNET] Geboren 1984-06-26; Stand 2026-10-16
+    strength: 46, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q16759
+  {
+    name: "Kaley Cuoco",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 40, // [BERECHNET] Geboren 1985-11-30; Stand 2026-10-16
+    strength: 63, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q229048
+  {
+    name: "Melissa McCarthy",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 157, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 56, // [BERECHNET] Geboren 1970-08-26; Stand 2026-10-16
+    strength: 51, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q67701
+  {
+    name: "Anna Kendrick",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 157, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 41, // [BERECHNET] Geboren 1985-08-09; Stand 2026-10-16
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q231058
+  {
+    name: "Shailene Woodley",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 173, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 34, // [BERECHNET] Geboren 1991-11-15; Stand 2026-10-16
+    strength: 64, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q115541
+  {
+    name: "Dakota Fanning",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 164, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 32, // [BERECHNET] Geboren 1994-02-23; Stand 2026-10-16
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q228943
+  {
+    name: "Elle Fanning",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 28, // [BERECHNET] Geboren 1998-04-09; Stand 2026-10-16
+    strength: 45, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q25936414
+  {
+    name: "Millie Bobby Brown",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 163, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 22, // [BERECHNET] Geboren 2004-02-19; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q27452406
+  {
+    name: "Sadie Sink",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 160, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 24, // [BERECHNET] Geboren 2002-04-16; Stand 2026-10-16
+    strength: 51, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q46994907
+  {
+    name: "Maya Hawke",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 28, // [BERECHNET] Geboren 1998-07-08; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q5362676
+  {
+    name: "Elizabeth Debicki",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 188, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 36, // [BERECHNET] Geboren 1990-08-24; Stand 2026-10-16
+    strength: 50, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q234959
+  {
+    name: "Hayley Atwell",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 169, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 44, // [BERECHNET] Geboren 1982-04-05; Stand 2026-10-16
+    strength: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q231237
+  {
+    name: "Karen Gillan",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 180, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 38, // [BERECHNET] Geboren 1987-11-28; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q29328
+  {
+    name: "Brie Larson",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 37, // [BERECHNET] Geboren 1989-10-01; Stand 2026-10-16
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q190162
+  {
+    name: "Zoe Saldaña",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 48, // [BERECHNET] Geboren 1978-06-19; Stand 2026-10-16
+    strength: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q3840847
+  {
+    name: "Lupita Nyong'o",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 43, // [BERECHNET] Geboren 1983-03-01; Stand 2026-10-16
+    strength: 63, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q636653
+  {
+    name: "Danai Gurira",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 48, // [BERECHNET] Geboren 1978-02-14; Stand 2026-10-16
+    strength: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q27489535
+  {
+    name: "Letitia Wright",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 32, // [BERECHNET] Geboren 1993-10-31; Stand 2026-10-16
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q271500
+  {
+    name: "Tessa Thompson",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 162, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 43, // [BERECHNET] Geboren 1983-10-03; Stand 2026-10-16
+    strength: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q200355
+  {
+    name: "Olivia Wilde",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 42, // [BERECHNET] Geboren 1984-03-10; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q15069963
+  {
+    name: "Olivia Cooke",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 166, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 32, // [BERECHNET] Geboren 1993-12-27; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q170428
+  {
+    name: "Helena Bonham Carter",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 157, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 60, // [BERECHNET] Geboren 1966-05-26; Stand 2026-10-16
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q172653
+  {
+    name: "Maggie Smith",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 89, // [BERECHNET] Geboren 1934-12-28; Alter beim Tod am 2024-09-27
+    strength: 30, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 78, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q349391
+  {
+    name: "Helen Mirren",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 163, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 81, // [BERECHNET] Geboren 1945-07-26; Stand 2026-10-16
+    strength: 38, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q106997
+  {
+    name: "Jamie Lee Curtis",
+    category: "schauspielerinnen",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 67, // [BERECHNET] Geboren 1958-11-22; Stand 2026-10-16
+    strength: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q37079
+  {
+    name: "Tom Cruise",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 64, // [BERECHNET] Geboren 1962-07-03; Stand 2026-10-16
+    strength: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q2263
+  {
+    name: "Tom Hanks",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 183, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 70, // [BERECHNET] Geboren 1956-07-09; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 81, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q37175
+  {
+    name: "Johnny Depp",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 178, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 63, // [BERECHNET] Geboren 1963-06-09; Stand 2026-10-16
+    strength: 61, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q165219
+  {
+    name: "Robert Downey Jr.",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 173, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 61, // [BERECHNET] Geboren 1965-04-04; Stand 2026-10-16
+    strength: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q10738
+  {
+    name: "Dwayne Johnson",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 196, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 54, // [BERECHNET] Geboren 1972-05-02; Stand 2026-10-16
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q40096
+  {
+    name: "Will Smith",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 188, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 58, // [BERECHNET] Geboren 1968-09-25; Stand 2026-10-16
+    strength: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q42101
+  {
+    name: "Denzel Washington",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 185, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 71, // [BERECHNET] Geboren 1954-12-28; Stand 2026-10-16
+    strength: 66, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q48337
+  {
+    name: "Morgan Freeman",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 188, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 89, // [BERECHNET] Geboren 1937-06-01; Stand 2026-10-16
+    strength: 33, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q172678
+  {
+    name: "Samuel L. Jackson",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 189, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 77, // [BERECHNET] Geboren 1948-12-21; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q81328
+  {
+    name: "Harrison Ford",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 185, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 84, // [BERECHNET] Geboren 1942-07-13; Stand 2026-10-16
+    strength: 51, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q65932
+  {
+    name: "Anthony Hopkins",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 88, // [BERECHNET] Geboren 1937-12-31; Stand 2026-10-16
+    strength: 29, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 78, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q41163
+  {
+    name: "Al Pacino",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 86, // [BERECHNET] Geboren 1940-04-25; Stand 2026-10-16
+    strength: 33, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q36949
+  {
+    name: "Robert De Niro",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 177, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 83, // [BERECHNET] Geboren 1943-08-17; Stand 2026-10-16
+    strength: 42, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 83, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q45772
+  {
+    name: "Christian Bale",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 183, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 52, // [BERECHNET] Geboren 1974-01-30; Stand 2026-10-16
+    strength: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q175535
+  {
+    name: "Matt Damon",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 178, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 56, // [BERECHNET] Geboren 1970-10-08; Stand 2026-10-16
+    strength: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q483118
+  {
+    name: "Ben Affleck",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 192, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 54, // [BERECHNET] Geboren 1972-08-15; Stand 2026-10-16
+    strength: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q164119
+  {
+    name: "Mark Wahlberg",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 173, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 55, // [BERECHNET] Geboren 1971-06-05; Stand 2026-10-16
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q205707
+  {
+    name: "Bradley Cooper",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 185, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 51, // [BERECHNET] Geboren 1975-01-05; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q23844
+  {
+    name: "George Clooney",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 180, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 65, // [BERECHNET] Geboren 1961-05-06; Stand 2026-10-16
+    strength: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 98, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q129817
+  {
+    name: "Russell Crowe",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 182, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 62, // [BERECHNET] Geboren 1964-04-07; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q42229
+  {
+    name: "Mel Gibson",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 177, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 70, // [BERECHNET] Geboren 1956-01-03; Stand 2026-10-16
+    strength: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q2680
+  {
+    name: "Bruce Willis",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 183, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 71, // [BERECHNET] Geboren 1955-03-19; Stand 2026-10-16
+    strength: 62, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q2685
+  {
+    name: "Arnold Schwarzenegger",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 188, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 79, // [BERECHNET] Geboren 1947-07-30; Stand 2026-10-16
+    strength: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q40026
+  {
+    name: "Sylvester Stallone",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 177, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 80, // [BERECHNET] Geboren 1946-07-06; Stand 2026-10-16
+    strength: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q308840
+  {
+    name: "Jean-Claude Van Damme",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 177, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 65, // [BERECHNET] Geboren 1960-10-18; Stand 2026-10-16
+    strength: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q169963
+  {
+    name: "Jason Statham",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 178, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 59, // [BERECHNET] Geboren 1967-07-26; Stand 2026-10-16
+    strength: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q178166
+  {
+    name: "Vin Diesel",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 182, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 59, // [BERECHNET] Geboren 1967-07-18; Stand 2026-10-16
+    strength: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q36970
+  {
+    name: "Jackie Chan",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 72, // [BERECHNET] Geboren 1954-04-07; Stand 2026-10-16
+    strength: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q159577
+  {
+    name: "Jet Li",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 63, // [BERECHNET] Geboren 1963-04-26; Stand 2026-10-16
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q43874
+  {
+    name: "Eddie Murphy",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 65, // [BERECHNET] Geboren 1961-04-03; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q40504
+  {
+    name: "Jim Carrey",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 188, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 64, // [BERECHNET] Geboren 1962-01-17; Stand 2026-10-16
+    strength: 56, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q132952
+  {
+    name: "Adam Sandler",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 177, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 60, // [BERECHNET] Geboren 1966-09-09; Stand 2026-10-16
+    strength: 57, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 81, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q47100
+  {
+    name: "Ben Stiller",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 60, // [BERECHNET] Geboren 1965-11-30; Stand 2026-10-16
+    strength: 54, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q483907
+  {
+    name: "Jack Black",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 57, // [BERECHNET] Geboren 1969-08-28; Stand 2026-10-16
+    strength: 59, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q216221
+  {
+    name: "Steve Carell",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 64, // [BERECHNET] Geboren 1962-08-16; Stand 2026-10-16
+    strength: 44, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 83, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q23760
+  {
+    name: "Rowan Atkinson",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 181, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 71, // [BERECHNET] Geboren 1955-01-06; Stand 2026-10-16
+    strength: 39, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 76, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q38119
+  {
+    name: "Daniel Radcliffe",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 165, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 37, // [BERECHNET] Geboren 1989-07-23; Stand 2026-10-16
+    strength: 61, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q19190
+  {
+    name: "Rupert Grint",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 173, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 38, // [BERECHNET] Geboren 1988-08-24; Stand 2026-10-16
+    strength: 53, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q105682
+  {
+    name: "Tom Felton",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 39, // [BERECHNET] Geboren 1987-09-22; Stand 2026-10-16
+    strength: 54, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q2023710
+  {
+    name: "Tom Holland",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 173, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 30, // [BERECHNET] Geboren 1996-06-01; Stand 2026-10-16
+    strength: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q165524
+  {
+    name: "Tobey Maguire",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 172, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 51, // [BERECHNET] Geboren 1975-06-27; Stand 2026-10-16
+    strength: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q188772
+  {
+    name: "Willem Dafoe",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 175, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 71, // [BERECHNET] Geboren 1955-07-22; Stand 2026-10-16
+    strength: 56, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 81, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q185140
+  {
+    name: "Joaquin Phoenix",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 173, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 51, // [BERECHNET] Geboren 1974-10-28; Stand 2026-10-16
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q40572
+  {
+    name: "Heath Ledger",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 185, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 28, // [BERECHNET] Geboren 1979-04-04; Alter beim Tod am 2008-01-22
+    strength: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q83338
+  {
+    name: "Robin Williams",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 170, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 63, // [BERECHNET] Geboren 1951-07-21; Alter beim Tod am 2014-08-11
+    strength: 51, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 83, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q5066520
+  {
+    name: "Chadwick Boseman",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 183, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 43, // [BERECHNET] Geboren 1976-11-29; Alter beim Tod am 2020-08-28
+    strength: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q106481
+  {
+    name: "Alan Rickman",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 185, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 69, // [BERECHNET] Geboren 1946-02-21; Alter beim Tod am 2016-01-14
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 86, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q4573
+  {
+    name: "Sean Connery",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 189, // [WIKIDATA] Gerundete cm; Datenbankangabe mit Quellenverweis.
+    age: 90, // [BERECHNET] Geboren 1930-08-25; Alter beim Tod am 2020-10-31
+    strength: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 97, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q123351
+  {
+    name: "Michael Caine",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 188, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 93, // [BERECHNET] Geboren 1933-03-14; Stand 2026-10-16
+    strength: 30, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 83, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q83492
+  {
+    name: "Gary Oldman",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 174, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 68, // [BERECHNET] Geboren 1958-03-21; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q28493
+  {
+    name: "Ralph Fiennes",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 180, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 63, // [BERECHNET] Geboren 1962-12-22; Stand 2026-10-16
+    strength: 58, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q58444
+  {
+    name: "Liam Neeson",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 193, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 74, // [BERECHNET] Geboren 1952-06-07; Stand 2026-10-16
+    strength: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q165518
+  {
+    name: "Ewan McGregor",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 177, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 55, // [BERECHNET] Geboren 1971-03-31; Stand 2026-10-16
+    strength: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q192812
+  {
+    name: "Hayden Christensen",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 183, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 45, // [BERECHNET] Geboren 1981-04-19; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q44467
+  {
+    name: "Orlando Bloom",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 180, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 49, // [BERECHNET] Geboren 1977-01-13; Stand 2026-10-16
+    strength: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 98, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q483771
+  {
+    name: "Elijah Wood",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 168, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 45, // [BERECHNET] Geboren 1981-01-28; Stand 2026-10-16
+    strength: 48, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q4547
+  {
+    name: "Daniel Craig",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 178, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 58, // [BERECHNET] Geboren 1968-03-02; Stand 2026-10-16
+    strength: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q81520
+  {
+    name: "Pierce Brosnan",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 186, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 73, // [BERECHNET] Geboren 1953-05-16; Stand 2026-10-16
+    strength: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 98, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q294647
+  {
+    name: "Mads Mikkelsen",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 183, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 60, // [BERECHNET] Geboren 1965-11-22; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q23547
+  {
+    name: "Bryan Cranston",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 180, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 70, // [BERECHNET] Geboren 1956-03-07; Stand 2026-10-16
+    strength: 51, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q296843
+  {
+    name: "Andrew Lincoln",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 178, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 53, // [BERECHNET] Geboren 1973-09-14; Stand 2026-10-16
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q503545
+  {
+    name: "Norman Reedus",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 179, // [RICHTWERT] Wikidata-Angabe ohne Quellenverweis; unbestaetigt.
+    age: 57, // [BERECHNET] Geboren 1969-01-06; Stand 2026-10-16
+    strength: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+  // Biografiedaten: https://www.wikidata.org/wiki/Q342665
+  {
+    name: "Jeffrey Dean Morgan",
+    category: "schauspieler",
+    kills: null, // Fuer diese Kategorie nicht anwendbar.
+    height: 185, // [SCHAETZUNG] Groessenrichtwert in cm; nicht gesichert.
+    age: 60, // [BERECHNET] Geboren 1966-04-22; Stand 2026-10-16
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 96, // [SUBJEKTIVE SPIELWERTUNG]
+  },
+
+  // Fassung: Rebels
+  {
+    name: "Zeb Orrelios",
+    category: "star-wars",
+    kills: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 210, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 70, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Rebels
+  {
+    name: "Agent Kallus",
+    category: "star-wars",
+    kills: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 196, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 76, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Mandalorian
+  {
+    name: "Gilad Pellaeon",
+    category: "star-wars",
+    kills: 10, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 60, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 46, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 66, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 57, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Rebels
+  {
+    name: "Gar Saxon",
+    category: "star-wars",
+    kills: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 190, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 66, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Rebels
+  {
+    name: "Ursa Wren",
+    category: "star-wars",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Rebels; Klon, kalendarisches Alter
+  {
+    name: "Commander Wolffe",
+    category: "star-wars",
+    kills: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 28, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Rebels; Klon, kalendarisches Alter
+  {
+    name: "Captain Gregor",
+    category: "star-wars",
+    kills: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 28, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Die Rache der Sith; Klon, kalendarisches Alter
+  {
+    name: "Commander Gree",
+    category: "star-wars",
+    kills: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 13, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Clone Wars; Klon, kalendarisches Alter
+  {
+    name: "Commander Bly",
+    category: "star-wars",
+    kills: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 13, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor
+  {
+    name: "Maarva Andor",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 165, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 73, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 28, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 56, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor
+  {
+    name: "Kleya Marki",
+    category: "star-wars",
+    kills: 8, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 165, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 63, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 68, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor; Droidenalter als Spielwert
+  {
+    name: "B2EMO",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 70, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 18, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Clone Wars; Klon, kalendarisches Alter
+  {
+    name: "Jesse",
+    category: "star-wars",
+    kills: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 13, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Bad Batch
+  {
+    name: "Nala Se",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 220, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 60, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 25, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 46, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Angriff der Klonkrieger
+  {
+    name: "Lama Su",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 229, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 70, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 28, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 40, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Angriff der Klonkrieger
+  {
+    name: "Taun We",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 213, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 20, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 52, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Clone Wars
+  {
+    name: "Admiral Yularen",
+    category: "star-wars",
+    kills: 5, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 182, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 56, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 61, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Rogue One
+  {
+    name: "Admiral Raddus",
+    category: "star-wars",
+    kills: 5, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 65, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 52, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 48, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Die dunkle Bedrohung
+  {
+    name: "Captain Panaka",
+    category: "star-wars",
+    kills: 10, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 78, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Angriff der Klonkrieger
+  {
+    name: "Captain Typho",
+    category: "star-wars",
+    kills: 8, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 65, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 77, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eine neue Hoffnung
+  {
+    name: "Beru Lars",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 165, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 47, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 37, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 72, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 70, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Die dunkle Bedrohung
+  {
+    name: "Sio Bibble",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 65, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 27, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 55, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Die Rueckkehr der Jedi-Ritter
+  {
+    name: "Bib Fortuna",
+    category: "star-wars",
+    kills: 2, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 55, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 40, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 28, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Die Rueckkehr der Jedi-Ritter
+  {
+    name: "Salacious B. Crumb",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 70, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 17, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 43, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 35, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Die Rueckkehr der Jedi-Ritter
+  {
+    name: "Max Rebo",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 150, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 28, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 63, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 65, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Der Aufstieg Skywalkers
+  {
+    name: "Babu Frik",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 22, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 85, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 15, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Der Aufstieg Skywalkers
+  {
+    name: "Zorii Bliss",
+    category: "star-wars",
+    kills: 12, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 163, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 88, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Der Aufstieg Skywalkers
+  {
+    name: "Jannah",
+    category: "star-wars",
+    kills: 10, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 167, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Solo
+  {
+    name: "Qi'ra",
+    category: "star-wars",
+    kills: 18, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 157, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 31, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Solo
+  {
+    name: "Tobias Beckett",
+    category: "star-wars",
+    kills: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 76, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Solo
+  {
+    name: "Dryden Vos",
+    category: "star-wars",
+    kills: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 191, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 79, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Solo; Droidenalter als Spielwert
+  {
+    name: "L3-37",
+    category: "star-wars",
+    kills: 6, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 62, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 64, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Solo
+  {
+    name: "Val",
+    category: "star-wars",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 160, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 82, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Solo
+  {
+    name: "Rio Durant",
+    category: "star-wars",
+    kills: 10, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 125, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 66, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 67, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Mandalorian
+  {
+    name: "Cobb Vanth",
+    category: "star-wars",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Mandalorian
+  {
+    name: "Peli Motto",
+    category: "star-wars",
+    kills: 2, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 160, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 45, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 61, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Mandalorian
+  {
+    name: "Die Waffenschmiedin",
+    category: "star-wars",
+    kills: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Mandalorian
+  {
+    name: "Paz Vizsla",
+    category: "star-wars",
+    kills: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 196, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor
+  {
+    name: "Dedra Meero",
+    category: "star-wars",
+    kills: 1, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 165, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 44, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 74, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor
+  {
+    name: "Syril Karn",
+    category: "star-wars",
+    kills: 3, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 56, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 72, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor
+  {
+    name: "Kino Loy",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 173, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 63, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 60, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Andor
+  {
+    name: "Bix Caleen",
+    category: "star-wars",
+    kills: 4, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 51, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Jedi Survivor; kanonisches Spiel
+  {
+    name: "Cal Kestis",
+    category: "star-wars",
+    kills: 150, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 23, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Jedi Survivor; kanonisches Spiel
+  {
+    name: "Merrin",
+    category: "star-wars",
+    kills: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 23, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Jedi Survivor; kanonisches Spiel
+  {
+    name: "Cere Junda",
+    category: "star-wars",
+    kills: 80, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Jedi Survivor; kanonisches Spiel
+  {
+    name: "Greez Dritus",
+    category: "star-wars",
+    kills: 2, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 120, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 40, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 52, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Jedi Survivor; kanonisches Spiel; Droidenalter als Spielwert
+  {
+    name: "BD-1",
+    category: "star-wars",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 43, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 15, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Jedi Fallen Order; kanonisches Spiel
+  {
+    name: "Trilla Suduri",
+    category: "star-wars",
+    kills: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Thunderbolts
+  {
+    name: "Sentry",
+    category: "marvel",
+    kills: 10, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Falcon and the Winter Soldier
+  {
+    name: "U.S. Agent",
+    category: "marvel",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 188, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Captain America Brave New World; verwandelte Gestalt
+  {
+    name: "Red Hulk",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 250, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 80, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 52, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Wakanda Forever; mit Ruestung
+  {
+    name: "Ironheart",
+    category: "marvel",
+    kills: 5, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 19, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 85, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Doctor Strange in the Multiverse of Madness
+  {
+    name: "America Chavez",
+    category: "marvel",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 165, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 14, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Thor Ragnarok
+  {
+    name: "Korg",
+    category: "marvel",
+    kills: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 239, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 800, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 65, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Spider-Man 2; Raimi-Filme
+  {
+    name: "Mary Jane Watson",
+    category: "marvel",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 35, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Fantastic Four First Steps; kosmische Groesse und Alter als abstrakte Spielwerte
+  {
+    name: "Galactus",
+    category: "marvel",
+    kills: 1000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 20000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 1000000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 55, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Guardians of the Galaxy Vol 2; menschliche Erscheinungsform; kosmisches Alter als Spielwert
+  {
+    name: "Ego",
+    category: "marvel",
+    kills: 150, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 1000000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 76, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Guardians of the Galaxy
+  {
+    name: "Ronan",
+    category: "marvel",
+    kills: 70, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 196, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 60, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 52, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Thor The Dark World
+  {
+    name: "Malekith",
+    category: "marvel",
+    kills: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 5000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 44, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Thor The Dark World; verwandelte Gestalt
+  {
+    name: "Kurse",
+    category: "marvel",
+    kills: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 240, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 5000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 97, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 32, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Thor Ragnarok; Riesenform; Groesse und Alter als Spielwerte
+  {
+    name: "Surtur",
+    category: "marvel",
+    kills: 150, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 100000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 45, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Doctor Strange
+  {
+    name: "Die Älteste",
+    category: "marvel",
+    kills: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 179, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 500, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 70, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Doctor Strange
+  {
+    name: "Kaecilius",
+    category: "marvel",
+    kills: 25, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 78, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Doctor Strange; kosmische Gestalt; Groesse und Alter als abstrakte Spielwerte
+  {
+    name: "Dormammu",
+    category: "marvel",
+    kills: 1000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 1000000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 1000000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 40, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Doctor Strange; MCU-Fassung
+  {
+    name: "Baron Mordo",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Shang-Chi and the Legend of the Ten Rings
+  {
+    name: "Wenwu",
+    category: "marvel",
+    kills: 100, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 1000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Shang-Chi and the Legend of the Ten Rings
+  {
+    name: "Xu Xialing",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 168, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 28, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Shang-Chi and the Legend of the Ten Rings
+  {
+    name: "Trevor Slattery",
+    category: "marvel",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 173, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 70, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 25, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 68, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 80, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 56, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Shang-Chi and the Legend of the Ten Rings
+  {
+    name: "Death Dealer",
+    category: "marvel",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 75, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 76, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Sersi",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 175, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Ikaris",
+    category: "marvel",
+    kills: 100, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 93, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Thena",
+    category: "marvel",
+    kills: 100, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 169, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Kingo",
+    category: "marvel",
+    kills: 60, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 174, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 84, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Gilgamesh",
+    category: "marvel",
+    kills: 90, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 180, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 98, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 79, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Makkari",
+    category: "marvel",
+    kills: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 157, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 89, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Druig",
+    category: "marvel",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Phastos",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 188, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 99, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 74, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; Alter als Spielwert anhand des Aufenthalts auf der Erde
+  {
+    name: "Ajak",
+    category: "marvel",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 157, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 7000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 95, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 90, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Eternals; kosmische Groesse und Alter als abstrakte Spielwerte
+  {
+    name: "Arishem",
+    category: "marvel",
+    kills: 1000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 20000000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 1000000, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 40, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Avengers
+  {
+    name: "Maria Hill",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 173, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 67, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 92, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Agents of SHIELD; menschliche Fassung
+  {
+    name: "Phil Coulson",
+    category: "marvel",
+    kills: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 175, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 71, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 78, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Agent Carter; junge erwachsene Fassung
+  {
+    name: "Peggy Carter",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 169, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 74, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 93, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 95, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Falcon and the Winter Soldier
+  {
+    name: "Sharon Carter",
+    category: "marvel",
+    kills: 12, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 173, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 73, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 88, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 81, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 91, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Avengers Endgame; Rescue-Ruestung
+  {
+    name: "Pepper Potts",
+    category: "marvel",
+    kills: 10, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 175, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 48, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 89, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Spider-Man No Way Home
+  {
+    name: "Happy Hogan",
+    category: "marvel",
+    kills: 5, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 185, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 60, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 77, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 87, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 77, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Ant-Man; spaetere Filmfassung
+  {
+    name: "Hank Pym",
+    category: "marvel",
+    kills: 15, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 75, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 69, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 100, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 74, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Ant-Man and the Wasp; spaetere Filmfassung
+  {
+    name: "Janet van Dyne",
+    category: "marvel",
+    kills: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 171, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 70, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 96, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 87, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Ant-Man
+  {
+    name: "Luis",
+    category: "marvel",
+    kills: 2, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 40, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 55, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 76, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Spider-Man No Way Home; Michelle Jones-Watson
+  {
+    name: "MJ",
+    category: "marvel",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 178, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 18, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 35, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 90, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 92, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Spider-Man No Way Home
+  {
+    name: "Ned Leeds",
+    category: "marvel",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 165, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 18, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 32, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: The Amazing Spider-Man 2; keine Spider-Gwen-Fassung
+  {
+    name: "Gwen Stacy",
+    category: "marvel",
+    kills: 0, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 168, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 20, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 37, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 94, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 91, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Daredevil; Netflix-Fassung
+  {
+    name: "Elektra",
+    category: "marvel",
+    kills: 45, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 170, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 30, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 85, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 83, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 86, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 94, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+  // Fassung: Daredevil; Benjamin Poindexter
+  {
+    name: "Bullseye",
+    category: "marvel",
+    kills: 50, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    height: 183, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    age: 35, // [SPIEL-SCHAETZUNG] Kein gesicherter exakter Kanonwert.
+    strength: 79, // [SUBJEKTIVE SPIELWERTUNG]
+    intelligence: 82, // [SUBJEKTIVE SPIELWERTUNG]
+    fame: 84, // [SUBJEKTIVE SPIELWERTUNG]
+    attractiveness: 80, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+  },
+
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Newt Scamander","category":"harry-potter","kills":0,"height":184,"age":35,"strength":84,"intelligence":96,"fame":91,"attractiveness":86},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Tina Goldstein","category":"harry-potter","kills":0,"height":180,"age":31,"strength":85,"intelligence":90,"fame":85,"attractiveness":87},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Queenie Goldstein","category":"harry-potter","kills":0,"height":168,"age":29,"strength":77,"intelligence":88,"fame":84,"attractiveness":91},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Jacob Kowalski","category":"harry-potter","kills":0,"height":165,"age":32,"strength":29,"intelligence":74,"fame":87,"attractiveness":72},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Gellert Grindelwald","category":"harry-potter","kills":40,"height":183,"age":49,"strength":99,"intelligence":98,"fame":95,"attractiveness":87},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Credence Barebone","category":"harry-potter","kills":5,"height":180,"age":31,"strength":96,"intelligence":66,"fame":86,"attractiveness":65},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Theseus Scamander","category":"harry-potter","kills":5,"height":187,"age":44,"strength":88,"intelligence":88,"fame":79,"attractiveness":87},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Leta Lestrange","category":"harry-potter","kills":1,"height":157,"age":31,"strength":83,"intelligence":87,"fame":80,"attractiveness":89},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Yusuf Kama","category":"harry-potter","kills":2,"height":178,"age":48,"strength":80,"intelligence":85,"fame":72,"attractiveness":73},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Bunty Broadacre","category":"harry-potter","kills":0,"height":160,"age":30,"strength":68,"intelligence":83,"fame":70,"attractiveness":73},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Eulalie Hicks","category":"harry-potter","kills":0,"height":183,"age":35,"strength":88,"intelligence":94,"fame":75,"attractiveness":85},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Seraphina Picquery","category":"harry-potter","kills":0,"height":168,"age":34,"strength":89,"intelligence":92,"fame":76,"attractiveness":85},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Nicolas Flamel","category":"harry-potter","kills":0,"height":175,"age":600,"strength":86,"intelligence":99,"fame":85,"attractiveness":48},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Vinda Rosier","category":"harry-potter","kills":3,"height":165,"age":30,"strength":81,"intelligence":84,"fame":72,"attractiveness":86},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Abernathy","category":"harry-potter","kills":1,"height":178,"age":30,"strength":67,"intelligence":68,"fame":65,"attractiveness":58},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Mary Lou Barebone","category":"harry-potter","kills":0,"height":160,"age":45,"strength":22,"intelligence":53,"fame":66,"attractiveness":36},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Modesty Barebone","category":"harry-potter","kills":0,"height":130,"age":8,"strength":8,"intelligence":64,"fame":57,"attractiveness":65},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Gnarlak","category":"harry-potter","kills":0,"height":115,"age":80,"strength":38,"intelligence":81,"fame":65,"attractiveness":38},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Anton Vogel","category":"harry-potter","kills":0,"height":187,"age":45,"strength":70,"intelligence":86,"fame":64,"attractiveness":63},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Vicência Santos","category":"harry-potter","kills":0,"height":177,"age":40,"strength":78,"intelligence":91,"fame":64,"attractiveness":81},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Helmut","category":"harry-potter","kills":2,"height":185,"age":30,"strength":77,"intelligence":74,"fame":58,"attractiveness":71},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Liu Tao","category":"harry-potter","kills":0,"height":178,"age":50,"strength":74,"intelligence":88,"fame":60,"attractiveness":64},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Teddy (Niffler)","category":"harry-potter","kills":0,"height":35,"age":8,"strength":15,"intelligence":76,"fame":87,"attractiveness":94},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Pickett","category":"harry-potter","kills":0,"height":20,"age":5,"strength":8,"intelligence":73,"fame":84,"attractiveness":87},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Frank (Donnervogel)","category":"harry-potter","kills":0,"height":350,"age":30,"strength":94,"intelligence":65,"fame":77,"attractiveness":94},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Dougal (Demiguise)","category":"harry-potter","kills":0,"height":90,"age":20,"strength":29,"intelligence":86,"fame":69,"attractiveness":85},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Zouwu","category":"harry-potter","kills":0,"height":300,"age":15,"strength":91,"intelligence":55,"fame":71,"attractiveness":95},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Qilin","category":"harry-potter","kills":0,"height":60,"age":0,"strength":12,"intelligence":87,"fame":73,"attractiveness":92},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Erumpent","category":"harry-potter","kills":0,"height":250,"age":20,"strength":90,"intelligence":30,"fame":64,"attractiveness":61},
+  // Phantastische Tierwesen: Filmfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Sturzfalter","category":"harry-potter","kills":0,"height":70,"age":5,"strength":71,"intelligence":56,"fame":69,"attractiveness":89},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Rhaenyra Targaryen","category":"game-of-thrones","kills":1,"height":171,"age":35,"strength":53,"intelligence":85,"fame":96,"attractiveness":90},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Daemon Targaryen","category":"game-of-thrones","kills":100,"height":182,"age":49,"strength":89,"intelligence":84,"fame":96,"attractiveness":91},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Alicent Hightower","category":"game-of-thrones","kills":0,"height":166,"age":35,"strength":28,"intelligence":85,"fame":93,"attractiveness":89},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Viserys I Targaryen","category":"game-of-thrones","kills":0,"height":180,"age":52,"strength":32,"intelligence":78,"fame":91,"attractiveness":65},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Otto Hightower","category":"game-of-thrones","kills":0,"height":188,"age":60,"strength":38,"intelligence":95,"fame":90,"attractiveness":63},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Corlys Velaryon","category":"game-of-thrones","kills":40,"height":191,"age":67,"strength":77,"intelligence":92,"fame":90,"attractiveness":78},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Rhaenys Targaryen","category":"game-of-thrones","kills":1,"height":171,"age":55,"strength":56,"intelligence":91,"fame":88,"attractiveness":84},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Criston Cole","category":"game-of-thrones","kills":35,"height":183,"age":43,"strength":93,"intelligence":70,"fame":91,"attractiveness":88},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Aemond Targaryen","category":"game-of-thrones","kills":5,"height":180,"age":18,"strength":85,"intelligence":83,"fame":94,"attractiveness":88},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Aegon II Targaryen","category":"game-of-thrones","kills":3,"height":178,"age":20,"strength":48,"intelligence":58,"fame":92,"attractiveness":72},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Helaena Targaryen","category":"game-of-thrones","kills":0,"height":170,"age":18,"strength":25,"intelligence":87,"fame":85,"attractiveness":83},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Daeron Targaryen","category":"game-of-thrones","kills":5,"height":175,"age":16,"strength":66,"intelligence":78,"fame":75,"attractiveness":80},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Jacaerys Velaryon","category":"game-of-thrones","kills":0,"height":178,"age":16,"strength":61,"intelligence":84,"fame":86,"attractiveness":85},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Lucerys Velaryon","category":"game-of-thrones","kills":0,"height":170,"age":14,"strength":34,"intelligence":72,"fame":82,"attractiveness":78},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Joffrey Velaryon","category":"game-of-thrones","kills":0,"height":140,"age":6,"strength":10,"intelligence":62,"fame":67,"attractiveness":70},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Baela Targaryen","category":"game-of-thrones","kills":1,"height":165,"age":16,"strength":64,"intelligence":81,"fame":83,"attractiveness":87},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Rhaena Targaryen","category":"game-of-thrones","kills":0,"height":168,"age":16,"strength":30,"intelligence":79,"fame":78,"attractiveness":83},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Laenor Velaryon","category":"game-of-thrones","kills":15,"height":185,"age":32,"strength":73,"intelligence":72,"fame":81,"attractiveness":81},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Laena Velaryon","category":"game-of-thrones","kills":0,"height":170,"age":27,"strength":48,"intelligence":79,"fame":80,"attractiveness":84},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Mysaria","category":"game-of-thrones","kills":0,"height":170,"age":35,"strength":33,"intelligence":94,"fame":83,"attractiveness":84},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Larys Strong","category":"game-of-thrones","kills":0,"height":178,"age":36,"strength":18,"intelligence":96,"fame":86,"attractiveness":50},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Harwin Strong","category":"game-of-thrones","kills":10,"height":189,"age":33,"strength":94,"intelligence":72,"fame":83,"attractiveness":86},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Lyonel Strong","category":"game-of-thrones","kills":0,"height":183,"age":55,"strength":55,"intelligence":94,"fame":78,"attractiveness":58},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Vaemond Velaryon","category":"game-of-thrones","kills":5,"height":185,"age":50,"strength":67,"intelligence":68,"fame":73,"attractiveness":66},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Erryk Cargyll","category":"game-of-thrones","kills":10,"height":193,"age":32,"strength":88,"intelligence":78,"fame":75,"attractiveness":78},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Arryk Cargyll","category":"game-of-thrones","kills":10,"height":191,"age":32,"strength":88,"intelligence":77,"fame":75,"attractiveness":78},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Addam of Hull","category":"game-of-thrones","kills":5,"height":185,"age":20,"strength":67,"intelligence":82,"fame":83,"attractiveness":86},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Alyn of Hull","category":"game-of-thrones","kills":10,"height":185,"age":28,"strength":77,"intelligence":85,"fame":80,"attractiveness":84},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Hugh Hammer","category":"game-of-thrones","kills":10,"height":188,"age":40,"strength":95,"intelligence":74,"fame":84,"attractiveness":75},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Ulf White","category":"game-of-thrones","kills":2,"height":180,"age":45,"strength":47,"intelligence":57,"fame":82,"attractiveness":51},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Alys Rivers","category":"game-of-thrones","kills":0,"height":170,"age":40,"strength":43,"intelligence":96,"fame":85,"attractiveness":82},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Simon Strong","category":"game-of-thrones","kills":0,"height":183,"age":65,"strength":27,"intelligence":86,"fame":77,"attractiveness":57},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Orwyle","category":"game-of-thrones","kills":0,"height":180,"age":45,"strength":21,"intelligence":94,"fame":70,"attractiveness":65},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Gerardys","category":"game-of-thrones","kills":0,"height":175,"age":55,"strength":18,"intelligence":94,"fame":65,"attractiveness":48},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Gwayne Hightower","category":"game-of-thrones","kills":15,"height":185,"age":30,"strength":80,"intelligence":78,"fame":78,"attractiveness":83},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Ormund Hightower","category":"game-of-thrones","kills":25,"height":185,"age":40,"strength":76,"intelligence":83,"fame":77,"attractiveness":80},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Roderick Dustin","category":"game-of-thrones","kills":60,"height":185,"age":60,"strength":86,"intelligence":80,"fame":74,"attractiveness":59},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Torrhen Manderly","category":"game-of-thrones","kills":10,"height":170,"age":50,"strength":55,"intelligence":82,"fame":65,"attractiveness":56},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Borros Baratheon","category":"game-of-thrones","kills":10,"height":185,"age":45,"strength":78,"intelligence":58,"fame":74,"attractiveness":53},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Cregan Stark","category":"game-of-thrones","kills":15,"height":185,"age":21,"strength":83,"intelligence":87,"fame":85,"attractiveness":87},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Aemma Arryn","category":"game-of-thrones","kills":0,"height":163,"age":28,"strength":22,"intelligence":78,"fame":74,"attractiveness":83},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Oscar Tully","category":"game-of-thrones","kills":1,"height":172,"age":15,"strength":40,"intelligence":86,"fame":76,"attractiveness":76},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Tyland Lannister","category":"game-of-thrones","kills":0,"height":183,"age":40,"strength":40,"intelligence":91,"fame":78,"attractiveness":72},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Jason Lannister","category":"game-of-thrones","kills":10,"height":183,"age":40,"strength":67,"intelligence":64,"fame":73,"attractiveness":72},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Jeyne Arryn","category":"game-of-thrones","kills":0,"height":165,"age":35,"strength":30,"intelligence":88,"fame":68,"attractiveness":78},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Alfred Broome","category":"game-of-thrones","kills":15,"height":180,"age":50,"strength":76,"intelligence":77,"fame":65,"attractiveness":53},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Mellos","category":"game-of-thrones","kills":0,"height":173,"age":70,"strength":12,"intelligence":87,"fame":67,"attractiveness":40},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Blut","category":"game-of-thrones","kills":8,"height":190,"age":40,"strength":89,"intelligence":51,"fame":71,"attractiveness":32},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Käse","category":"game-of-thrones","kills":1,"height":175,"age":35,"strength":28,"intelligence":62,"fame":72,"attractiveness":35},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Vhagar","category":"game-of-thrones","kills":1200,"height":2000,"age":182,"strength":100,"intelligence":58,"fame":95,"attractiveness":81},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Caraxes","category":"game-of-thrones","kills":500,"height":1000,"age":70,"strength":95,"intelligence":65,"fame":94,"attractiveness":92},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Syrax","category":"game-of-thrones","kills":50,"height":600,"age":32,"strength":85,"intelligence":58,"fame":90,"attractiveness":91},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Meleys","category":"game-of-thrones","kills":400,"height":1000,"age":90,"strength":95,"intelligence":64,"fame":89,"attractiveness":94},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Sunfyre","category":"game-of-thrones","kills":100,"height":650,"age":22,"strength":88,"intelligence":60,"fame":91,"attractiveness":99},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Seasmoke","category":"game-of-thrones","kills":150,"height":700,"age":35,"strength":88,"intelligence":65,"fame":85,"attractiveness":91},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Vermax","category":"game-of-thrones","kills":20,"height":400,"age":16,"strength":73,"intelligence":55,"fame":81,"attractiveness":84},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Arrax","category":"game-of-thrones","kills":0,"height":300,"age":14,"strength":63,"intelligence":50,"fame":80,"attractiveness":86},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Moondancer","category":"game-of-thrones","kills":20,"height":350,"age":16,"strength":72,"intelligence":59,"fame":82,"attractiveness":91},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Vermithor","category":"game-of-thrones","kills":700,"height":1600,"age":100,"strength":98,"intelligence":61,"fame":91,"attractiveness":88},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Silverwing","category":"game-of-thrones","kills":200,"height":1400,"age":95,"strength":95,"intelligence":64,"fame":87,"attractiveness":95},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Dreamfyre","category":"game-of-thrones","kills":50,"height":1000,"age":100,"strength":91,"intelligence":60,"fame":80,"attractiveness":93},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Tessarion","category":"game-of-thrones","kills":100,"height":600,"age":18,"strength":84,"intelligence":62,"fame":83,"attractiveness":97},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Harrold Westerling","category":"game-of-thrones","kills":20,"height":188,"age":55,"strength":86,"intelligence":83,"fame":77,"attractiveness":70},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Lyman Beesbury","category":"game-of-thrones","kills":0,"height":173,"age":70,"strength":19,"intelligence":84,"fame":69,"attractiveness":43},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Sharako Lohar","category":"game-of-thrones","kills":30,"height":183,"age":35,"strength":81,"intelligence":78,"fame":75,"attractiveness":76},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Alysanne Blackwood","category":"game-of-thrones","kills":12,"height":170,"age":20,"strength":75,"intelligence":82,"fame":74,"attractiveness":80},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Luthor Largent","category":"game-of-thrones","kills":25,"height":185,"age":40,"strength":85,"intelligence":70,"fame":68,"attractiveness":61},
+  // House of the Dragon: Serienfassung.
+  // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
+  {"name":"Sheepstealer","category":"game-of-thrones","kills":100,"height":900,"age":70,"strength":93,"intelligence":52,"fame":80,"attractiveness":63},
 ];
