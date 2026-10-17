@@ -19,6 +19,7 @@ export const categories = [
   { id: "jurassic", name: "Jurassic Park / World", emoji: "🦖" },
   { id: "elden-ring", name: "Elden Ring", emoji: "💍" },
   { id: "resident-evil", name: "Resident Evil", emoji: "☣️" },
+  { id: "animationsfilme", name: "Animationsfilme", emoji: "🎬" },
   { id: "schauspielerinnen", name: "Schauspielerinnen", emoji: "💃" },
   { id: "schauspieler", name: "Schauspieler", emoji: "🎬" },
   { id: "fussballer", name: "Fußballer", emoji: "⚽" },
@@ -35,6 +36,7 @@ export const spyCategories = categories.filter(category =>
 // „Fertig“ bezeichnet die abgeschlossene Charakterauswahl.
 // Filme bleibt ausdrücklich offen.
 export const completedCategoryIds = new Set<string>([
+  "animationsfilme",
   "resident-evil",
   "game-of-thrones", "dc", "harry-potter", "fluch-der-karibik",
   "herr-der-ringe", "hobbit", "the-boys",   "the-walking-dead",

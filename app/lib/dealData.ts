@@ -14,6 +14,7 @@ export type DealCharacter = {
   | "jurassic"
   | "elden-ring"
   | "resident-evil"
+  | "animationsfilme"
   | "schauspielerinnen"
   | "schauspieler"
   | "fussballer"
@@ -15864,6 +15865,972 @@ export const dealCharacters: DealCharacter[] = [
   "fame": 78,
   "attractiveness": null,
   "attractivenessNotApplicable": true
+}
+  ]),
+
+  // ANIMATIONSFILME: Dragons, Shrek, Kater, Ice Age 1–5.
+  ...defineDealCharacters([
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Hicks",
+  "category": "animationsfilme",
+  "kills": 15,
+  "height": 185,
+  "age": 21,
+  "strength": 58,
+  "intelligence": 96,
+  "fame": 96,
+  "attractiveness": 88
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Ohnezahn",
+  "category": "animationsfilme",
+  "kills": 100,
+  "height": 175,
+  "age": 21,
+  "strength": 94,
+  "intelligence": 90,
+  "fame": 100,
+  "attractiveness": 95
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Astrid",
+  "category": "animationsfilme",
+  "kills": 12,
+  "height": 175,
+  "age": 21,
+  "strength": 77,
+  "intelligence": 88,
+  "fame": 94,
+  "attractiveness": 94
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Sturmpfeil",
+  "category": "animationsfilme",
+  "kills": 35,
+  "height": 180,
+  "age": 20,
+  "strength": 81,
+  "intelligence": 72,
+  "fame": 85,
+  "attractiveness": 84
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Rotzbakke",
+  "category": "animationsfilme",
+  "kills": 5,
+  "height": 180,
+  "age": 22,
+  "strength": 72,
+  "intelligence": 53,
+  "fame": 82,
+  "attractiveness": 72
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Hakenzahn",
+  "category": "animationsfilme",
+  "kills": 40,
+  "height": 220,
+  "age": 24,
+  "strength": 87,
+  "intelligence": 58,
+  "fame": 83,
+  "attractiveness": 74
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Fischbein",
+  "category": "animationsfilme",
+  "kills": 2,
+  "height": 185,
+  "age": 22,
+  "strength": 65,
+  "intelligence": 94,
+  "fame": 83,
+  "attractiveness": 68
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Fleischklops",
+  "category": "animationsfilme",
+  "kills": 15,
+  "height": 140,
+  "age": 24,
+  "strength": 79,
+  "intelligence": 65,
+  "fame": 82,
+  "attractiveness": 85
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Raffnuss",
+  "category": "animationsfilme",
+  "kills": 4,
+  "height": 175,
+  "age": 21,
+  "strength": 61,
+  "intelligence": 58,
+  "fame": 81,
+  "attractiveness": 76
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Taffnuss",
+  "category": "animationsfilme",
+  "kills": 4,
+  "height": 185,
+  "age": 21,
+  "strength": 62,
+  "intelligence": 54,
+  "fame": 81,
+  "attractiveness": 67
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Kotz und Würg",
+  "category": "animationsfilme",
+  "kills": 35,
+  "height": 230,
+  "age": 24,
+  "strength": 85,
+  "intelligence": 62,
+  "fame": 83,
+  "attractiveness": 72
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Haudrauf",
+  "category": "animationsfilme",
+  "kills": 80,
+  "height": 205,
+  "age": 50,
+  "strength": 92,
+  "intelligence": 78,
+  "fame": 90,
+  "attractiveness": 74
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Grobian",
+  "category": "animationsfilme",
+  "kills": 35,
+  "height": 190,
+  "age": 55,
+  "strength": 79,
+  "intelligence": 85,
+  "fame": 87,
+  "attractiveness": 60
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Valka",
+  "category": "animationsfilme",
+  "kills": 20,
+  "height": 180,
+  "age": 42,
+  "strength": 71,
+  "intelligence": 93,
+  "fame": 88,
+  "attractiveness": 87
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Wolkenspringer",
+  "category": "animationsfilme",
+  "kills": 65,
+  "height": 450,
+  "age": 70,
+  "strength": 95,
+  "intelligence": 82,
+  "fame": 83,
+  "attractiveness": 86
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Schädelbrecher",
+  "category": "animationsfilme",
+  "kills": 45,
+  "height": 240,
+  "age": 35,
+  "strength": 91,
+  "intelligence": 72,
+  "fame": 76,
+  "attractiveness": 71
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Tagschatten",
+  "category": "animationsfilme",
+  "kills": 35,
+  "height": 170,
+  "age": 21,
+  "strength": 90,
+  "intelligence": 87,
+  "fame": 91,
+  "attractiveness": 98
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Eret",
+  "category": "animationsfilme",
+  "kills": 15,
+  "height": 190,
+  "age": 25,
+  "strength": 83,
+  "intelligence": 76,
+  "fame": 78,
+  "attractiveness": 88
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Drago",
+  "category": "animationsfilme",
+  "kills": 150,
+  "height": 200,
+  "age": 55,
+  "strength": 90,
+  "intelligence": 84,
+  "fame": 83,
+  "attractiveness": 39
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Grimmel",
+  "category": "animationsfilme",
+  "kills": 100,
+  "height": 185,
+  "age": 60,
+  "strength": 67,
+  "intelligence": 96,
+  "fame": 82,
+  "attractiveness": 36
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Roter Tod",
+  "category": "animationsfilme",
+  "kills": 500,
+  "height": 9000,
+  "age": 500,
+  "strength": 100,
+  "intelligence": 54,
+  "fame": 85,
+  "attractiveness": 24
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Dragos Bewilderbeast",
+  "category": "animationsfilme",
+  "kills": 300,
+  "height": 4500,
+  "age": 200,
+  "strength": 100,
+  "intelligence": 67,
+  "fame": 80,
+  "attractiveness": 44
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Dagur",
+  "category": "animationsfilme",
+  "kills": 35,
+  "height": 190,
+  "age": 26,
+  "strength": 86,
+  "intelligence": 72,
+  "fame": 72,
+  "attractiveness": 75
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Heather",
+  "category": "animationsfilme",
+  "kills": 12,
+  "height": 175,
+  "age": 21,
+  "strength": 78,
+  "intelligence": 88,
+  "fame": 70,
+  "attractiveness": 90
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Viggo",
+  "category": "animationsfilme",
+  "kills": 40,
+  "height": 190,
+  "age": 45,
+  "strength": 74,
+  "intelligence": 98,
+  "fame": 68,
+  "attractiveness": 69
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Shrek",
+  "category": "animationsfilme",
+  "kills": 15,
+  "height": 220,
+  "age": 35,
+  "strength": 94,
+  "intelligence": 76,
+  "fame": 100,
+  "attractiveness": 73
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Fiona",
+  "category": "animationsfilme",
+  "kills": 5,
+  "height": 200,
+  "age": 30,
+  "strength": 88,
+  "intelligence": 88,
+  "fame": 98,
+  "attractiveness": 91
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Esel",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 130,
+  "age": 25,
+  "strength": 38,
+  "intelligence": 65,
+  "fame": 99,
+  "attractiveness": 83
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Drachendame",
+  "category": "animationsfilme",
+  "kills": 20,
+  "height": 1500,
+  "age": 150,
+  "strength": 98,
+  "intelligence": 75,
+  "fame": 92,
+  "attractiveness": 82
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Der gestiefelte Kater",
+  "category": "animationsfilme",
+  "kills": 40,
+  "height": 65,
+  "age": 12,
+  "strength": 72,
+  "intelligence": 89,
+  "fame": 100,
+  "attractiveness": 96
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Lord Farquaad",
+  "category": "animationsfilme",
+  "kills": 10,
+  "height": 140,
+  "age": 45,
+  "strength": 29,
+  "intelligence": 82,
+  "fame": 94,
+  "attractiveness": 31
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Prinz Charming",
+  "category": "animationsfilme",
+  "kills": 2,
+  "height": 185,
+  "age": 30,
+  "strength": 62,
+  "intelligence": 61,
+  "fame": 92,
+  "attractiveness": 92
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Gute Fee",
+  "category": "animationsfilme",
+  "kills": 8,
+  "height": 170,
+  "age": 60,
+  "strength": 93,
+  "intelligence": 95,
+  "fame": 94,
+  "attractiveness": 67
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "König Harold",
+  "category": "animationsfilme",
+  "kills": 2,
+  "height": 175,
+  "age": 65,
+  "strength": 42,
+  "intelligence": 86,
+  "fame": 86,
+  "attractiveness": 61
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Königin Lillian",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 170,
+  "age": 60,
+  "strength": 61,
+  "intelligence": 85,
+  "fame": 85,
+  "attractiveness": 78
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Artie",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 175,
+  "age": 16,
+  "strength": 35,
+  "intelligence": 78,
+  "fame": 77,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Rumpelstilzchen",
+  "category": "animationsfilme",
+  "kills": 3,
+  "height": 130,
+  "age": 45,
+  "strength": 88,
+  "intelligence": 91,
+  "fame": 88,
+  "attractiveness": 26
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Lebkuchenmann",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 20,
+  "age": 10,
+  "strength": 22,
+  "intelligence": 82,
+  "fame": 95,
+  "attractiveness": 87
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Pinocchio",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 110,
+  "age": 10,
+  "strength": 27,
+  "intelligence": 67,
+  "fame": 94,
+  "attractiveness": null,
+  "attractivenessNotApplicable": true
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Großer böser Wolf",
+  "category": "animationsfilme",
+  "kills": 1,
+  "height": 190,
+  "age": 45,
+  "strength": 69,
+  "intelligence": 72,
+  "fame": 86,
+  "attractiveness": 59
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Doris",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 190,
+  "age": 40,
+  "strength": 72,
+  "intelligence": 77,
+  "fame": 77,
+  "attractiveness": 64
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Mabel",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 185,
+  "age": 42,
+  "strength": 67,
+  "intelligence": 71,
+  "fame": 65,
+  "attractiveness": 56
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Merlin",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 170,
+  "age": 85,
+  "strength": 89,
+  "intelligence": 86,
+  "fame": 78,
+  "attractiveness": 40
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Mongo",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 2000,
+  "age": 1,
+  "strength": 99,
+  "intelligence": 31,
+  "fame": 82,
+  "attractiveness": 78
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Kitty Samtpfote",
+  "category": "animationsfilme",
+  "kills": 15,
+  "height": 60,
+  "age": 10,
+  "strength": 70,
+  "intelligence": 93,
+  "fame": 92,
+  "attractiveness": 97
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Perrito",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 35,
+  "age": 3,
+  "strength": 18,
+  "intelligence": 76,
+  "fame": 94,
+  "attractiveness": 98
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Tod",
+  "category": "animationsfilme",
+  "kills": 1000,
+  "height": 190,
+  "age": 1000,
+  "strength": 100,
+  "intelligence": 98,
+  "fame": 98,
+  "attractiveness": 81
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Goldi",
+  "category": "animationsfilme",
+  "kills": 2,
+  "height": 170,
+  "age": 20,
+  "strength": 64,
+  "intelligence": 80,
+  "fame": 85,
+  "attractiveness": 89
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Papa Bär",
+  "category": "animationsfilme",
+  "kills": 5,
+  "height": 280,
+  "age": 45,
+  "strength": 94,
+  "intelligence": 67,
+  "fame": 81,
+  "attractiveness": 66
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Mama Bär",
+  "category": "animationsfilme",
+  "kills": 3,
+  "height": 250,
+  "age": 42,
+  "strength": 89,
+  "intelligence": 87,
+  "fame": 82,
+  "attractiveness": 77
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Baby Bär",
+  "category": "animationsfilme",
+  "kills": 1,
+  "height": 220,
+  "age": 18,
+  "strength": 84,
+  "intelligence": 58,
+  "fame": 82,
+  "attractiveness": 80
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Humpty Alexander Dumpty",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 85,
+  "age": 25,
+  "strength": 35,
+  "intelligence": 95,
+  "fame": 87,
+  "attractiveness": 45
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Jack",
+  "category": "animationsfilme",
+  "kills": 8,
+  "height": 205,
+  "age": 45,
+  "strength": 83,
+  "intelligence": 58,
+  "fame": 73,
+  "attractiveness": 30
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Jill",
+  "category": "animationsfilme",
+  "kills": 8,
+  "height": 195,
+  "age": 42,
+  "strength": 85,
+  "intelligence": 64,
+  "fame": 73,
+  "attractiveness": 34
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Großer Jack Horner",
+  "category": "animationsfilme",
+  "kills": 30,
+  "height": 220,
+  "age": 40,
+  "strength": 91,
+  "intelligence": 78,
+  "fame": 92,
+  "attractiveness": 28
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Mama Luna",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 155,
+  "age": 70,
+  "strength": 27,
+  "intelligence": 72,
+  "fame": 76,
+  "attractiveness": 60
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Manni",
+  "category": "animationsfilme",
+  "kills": 12,
+  "height": 340,
+  "age": 30,
+  "strength": 97,
+  "intelligence": 85,
+  "fame": 100,
+  "attractiveness": 83
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Sid",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 150,
+  "age": 25,
+  "strength": 32,
+  "intelligence": 44,
+  "fame": 100,
+  "attractiveness": 75
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Diego",
+  "category": "animationsfilme",
+  "kills": 150,
+  "height": 120,
+  "age": 25,
+  "strength": 89,
+  "intelligence": 88,
+  "fame": 99,
+  "attractiveness": 92
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Scrat",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 50,
+  "age": 15,
+  "strength": 43,
+  "intelligence": 49,
+  "fame": 100,
+  "attractiveness": 93
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Ellie",
+  "category": "animationsfilme",
+  "kills": 3,
+  "height": 310,
+  "age": 28,
+  "strength": 93,
+  "intelligence": 86,
+  "fame": 93,
+  "attractiveness": 89
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Crash",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 45,
+  "age": 20,
+  "strength": 28,
+  "intelligence": 46,
+  "fame": 89,
+  "attractiveness": 78
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Eddie",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 45,
+  "age": 20,
+  "strength": 28,
+  "intelligence": 45,
+  "fame": 89,
+  "attractiveness": 78
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Peaches",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 280,
+  "age": 18,
+  "strength": 81,
+  "intelligence": 76,
+  "fame": 86,
+  "attractiveness": 88
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Buck",
+  "category": "animationsfilme",
+  "kills": 35,
+  "height": 65,
+  "age": 30,
+  "strength": 72,
+  "intelligence": 91,
+  "fame": 95,
+  "attractiveness": 86
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Scratte",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 50,
+  "age": 14,
+  "strength": 38,
+  "intelligence": 83,
+  "fame": 85,
+  "attractiveness": 95
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Shira",
+  "category": "animationsfilme",
+  "kills": 80,
+  "height": 110,
+  "age": 24,
+  "strength": 86,
+  "intelligence": 87,
+  "fame": 85,
+  "attractiveness": 94
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Granny",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 130,
+  "age": 80,
+  "strength": 35,
+  "intelligence": 74,
+  "fame": 88,
+  "attractiveness": 53
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Captain Gutt",
+  "category": "animationsfilme",
+  "kills": 25,
+  "height": 200,
+  "age": 40,
+  "strength": 89,
+  "intelligence": 85,
+  "fame": 87,
+  "attractiveness": 42
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Flynn",
+  "category": "animationsfilme",
+  "kills": 5,
+  "height": 180,
+  "age": 25,
+  "strength": 83,
+  "intelligence": 47,
+  "fame": 75,
+  "attractiveness": 67
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Silas",
+  "category": "animationsfilme",
+  "kills": 2,
+  "height": 90,
+  "age": 20,
+  "strength": 36,
+  "intelligence": 73,
+  "fame": 64,
+  "attractiveness": 51
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Squint",
+  "category": "animationsfilme",
+  "kills": 3,
+  "height": 45,
+  "age": 25,
+  "strength": 40,
+  "intelligence": 63,
+  "fame": 71,
+  "attractiveness": 44
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Louis",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 30,
+  "age": 18,
+  "strength": 17,
+  "intelligence": 80,
+  "fame": 70,
+  "attractiveness": 82
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Julian",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 320,
+  "age": 20,
+  "strength": 87,
+  "intelligence": 68,
+  "fame": 75,
+  "attractiveness": 84
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Francine",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 145,
+  "age": 25,
+  "strength": 29,
+  "intelligence": 76,
+  "fame": 65,
+  "attractiveness": 86
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Shangri Llama",
+  "category": "animationsfilme",
+  "kills": 0,
+  "height": 190,
+  "age": 50,
+  "strength": 44,
+  "intelligence": 81,
+  "fame": 74,
+  "attractiveness": 79
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Soto",
+  "category": "animationsfilme",
+  "kills": 100,
+  "height": 125,
+  "age": 30,
+  "strength": 91,
+  "intelligence": 88,
+  "fame": 86,
+  "attractiveness": 68
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Zeke",
+  "category": "animationsfilme",
+  "kills": 60,
+  "height": 100,
+  "age": 20,
+  "strength": 75,
+  "intelligence": 43,
+  "fame": 70,
+  "attractiveness": 39
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Lenny",
+  "category": "animationsfilme",
+  "kills": 70,
+  "height": 115,
+  "age": 25,
+  "strength": 83,
+  "intelligence": 59,
+  "fame": 66,
+  "attractiveness": 50
+},
+  // Animationsfassung; saemtliche Zahlen sind geschaetzte Spielwerte.
+{
+  "name": "Oscar",
+  "category": "animationsfilme",
+  "kills": 75,
+  "height": 110,
+  "age": 25,
+  "strength": 80,
+  "intelligence": 72,
+  "fame": 66,
+  "attractiveness": 55
 }
   ]),
 ];

@@ -45,6 +45,7 @@ type ArenaPick = {
 };
 
 const categoryNames: Record<string, string> = {
+  "animationsfilme": "🎬 Animationsfilme",
   "resident-evil": "☣️ Resident Evil",
   "elden-ring": "💍 Elden Ring",
   "star-wars": "⭐ Star Wars",

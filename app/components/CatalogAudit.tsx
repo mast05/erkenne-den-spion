@@ -29,6 +29,12 @@ export default function CatalogAudit() {
         Spielschätzungen; unsichere Größen und Altersangaben sind in den Daten
         als Schätzwerte markiert. Kinderfiguren werden nicht nach Attraktivität gewertet.
       </p>
+      <p className="mt-2 text-xs text-slate-500">
+        Animationsfilme: Zahlen sind geschätzte Spielwerte, keine bestätigten
+        Kanonangaben. Größe bei Vierbeinern meint die Körperhöhe.
+        Hicks und seine Freunde verwenden Erwachsenenprofile aus Film 3;
+        Fiona ihre Ogerform. Artie und Pinocchio haben keine Attraktivitätswertung.
+      </p>
       <div className="mt-5 space-y-3">
         {categories.map(category => {
           const entries = dealCharacters.filter(entry => entry.category === category.id);
