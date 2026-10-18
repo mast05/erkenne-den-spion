@@ -1,5 +1,6 @@
 import { dealCharacters, type DealGameMode } from "../lib/dealData";
-import { categories, getMissingModes } from "../lib/catalog";
+import { categories, getMissingModes, spyCategories } from "../lib/catalog";
+import { getCharacterTips } from "../lib/spyHints";
 
 const labels: Partial<Record<DealGameMode, string>> = {
   runes: "Runen (NG)", bossDifficulty: "Boss-Schwierigkeit", magicPower: "Magische Macht",
@@ -40,6 +41,9 @@ export default function CatalogAudit() {
           const entries = dealCharacters.filter(entry => entry.category === category.id);
           const unknown = entries.map(entry => ({ entry, modes: getMissingModes(entry) }))
             .filter(item => item.modes.length > 0);
+          const missingTips = spyCategories.some(c => c.id === category.id)
+            ? entries.filter(entry => getCharacterTips(entry.name, entry.category).length < 3)
+            : null;
           const counts = new Map<DealGameMode, number>();
           for (const item of unknown) for (const mode of item.modes) {
             counts.set(mode, (counts.get(mode) ?? 0) + 1);
@@ -52,6 +56,12 @@ export default function CatalogAudit() {
                   {unknown.length ? `${unknown.length} mit fehlenden Werten` : "Alle Spielwerte vorhanden"}
                 </span>
               </summary>
+              {missingTips !== null && (
+                <p className={`mt-3 text-sm ${missingTips.length ? "text-amber-300" : "text-emerald-400"}`}>
+                  Spion-Tipps: {entries.length - missingTips.length}/{entries.length} Einträge mit je 3 Tipps
+                  {missingTips.length > 0 && <span className="block">Fehlen bei: {missingTips.map(entry => entry.name).join(", ")}</span>}
+                </p>
+              )}
               {unknown.length > 0 ? (
                 <>
                   <p className="mt-3 text-sm text-amber-200">

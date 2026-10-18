@@ -567,7 +567,9 @@ export default function SilhouetteGamePage() {
 
         if (previousStageKeyRef.current !== stageKey) {
           previousStageKeyRef.current = stageKey;
-          setSelectedGuess("");
+          if (activeRoundIdRef.current !== (currentRound?.id ?? null)) {
+            setSelectedGuess("");
+          }
           setLastGuessCorrect(null);
           setLastPoints(0);
           setError("");
@@ -1206,7 +1208,7 @@ export default function SilhouetteGamePage() {
                 onChange={(event) =>
                   setSelectedGuess(event.target.value)
                 }
-                disabled={guessing || secondsLeft <= 0}
+                disabled={guessing}
                 aria-label="Charakter auswählen"
                 className="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-4 text-base outline-none focus:border-violet-500"
               >
