@@ -1,5 +1,7 @@
 "use client";
 
+import CharacterPicker from "../../components/CharacterPicker";
+
 import Image from "next/image";
 import { getCharacterImage } from "../../lib/catalog";
 
@@ -1231,43 +1233,14 @@ export default function WhoGamePage() {
                     </p>
                   </div>
 
-                  <select
-                    value={
-                      selectedGuess
-                    }
-                    onChange={(
-                      event
-                    ) =>
-                      setSelectedGuess(
-                        event.target
-                          .value
-                      )
-                    }
-                    className="mt-5 w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-4 text-base outline-none focus:border-cyan-500"
-                  >
-                    <option value="">
-                      Figur auswählen...
-                    </option>
-
-                    {availableCharacters.map(
-                      (
-                        character
-                      ) => (
-                        <option
-                          key={
-                            character
-                          }
-                          value={
-                            character
-                          }
-                        >
-                          {
-                            character
-                          }
-                        </option>
-                      )
-                    )}
-                  </select>
+                  <CharacterPicker
+                    key={`${game.id}:${currentTurnPlayerId}`}
+                    characters={availableCharacters}
+                    value={selectedGuess}
+                    onChange={setSelectedGuess}
+                    disabled={guessing}
+                    className="mt-5"
+                  />
 
                   <div className="mt-4 grid grid-cols-2 gap-3">
                     <button

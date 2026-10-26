@@ -1,5 +1,7 @@
 "use client";
 
+import CharacterPicker from "../components/CharacterPicker";
+
 import Image from "next/image";
 import SpyQuestionRounds from "../components/SpyQuestionRounds";
 import { getCharacterImage, categoryNames } from "../lib/catalog";
@@ -1002,20 +1004,14 @@ async function submitImposterGuess() {
     Wenn du dir sicher bist, kannst du die Figur direkt erraten.
   </p>
 
-  <select
+  <CharacterPicker
+    key={`${roundId}:${category}`}
+    characters={availableCharacters}
     value={imposterGuess}
-    onChange={(e) => setImposterGuess(e.target.value)}
+    onChange={setImposterGuess}
     disabled={guessLocked || submittingGuess}
-    className="mt-4 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white disabled:cursor-not-allowed disabled:opacity-40"
-  >
-    <option value="">Figur auswählen...</option>
-
-    {availableCharacters.map((character) => (
-      <option key={character} value={character}>
-        {character}
-      </option>
-    ))}
-  </select>
+    className="mt-4"
+  />
   <button
   onClick={submitImposterGuess}
   disabled={!imposterGuess || submittingGuess || guessLocked}

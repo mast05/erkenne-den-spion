@@ -75,7 +75,13 @@ export function getCharacterValue(character: DealCharacter, mode: string): numbe
   if (!getApplicableModes(character.category).includes(mode as DealGameMode)) return null;
   if (character.category === "elden-ring" && ["runes", "bossDifficulty"].includes(mode) && character.isBoss !== true) return null;
   const value = character[mode as DealGameMode];
-  return typeof value === "number" && Number.isFinite(value) && value >= 0 ? value : null;
+  if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return null;
+  if (mode === "height" && value === 0) return null;
+  if (mode === "attractiveness" && (value < 1 || value > 100)) return null;
+  if (mode === "imdb" && (value < 1 || value > 10)) return null;
+  if (["strength", "intelligence", "fame", "bossDifficulty", "magicPower", "watchRate"].includes(mode) && value > 100) return null;
+  if (["kills", "goals", "assists", "titles", "awards", "clAppearances", "internationalCaps", "runes"].includes(mode) && !Number.isInteger(value)) return null;
+  return value;
 }
 
 export function getPlayablePool(mode: DealGameMode, category?: string) {
@@ -87,10 +93,21 @@ export function getPlayablePool(mode: DealGameMode, category?: string) {
 }
 
 export function getDealPool(mode: DealGameMode) {
-  const pool = getPlayablePool(mode);
+  const pool = getPlayablePool(mode).filter(entry =>
+    mode === "attractiveness" ||
+    !["schauspieler", "schauspielerinnen"].includes(entry.category)
+  );
   const counts = new Map<string, number>();
   for (const entry of pool) counts.set(entry.category, (counts.get(entry.category) ?? 0) + 1);
   return pool.filter(entry => (counts.get(entry.category) ?? 0) >= 20);
+}
+
+export function getDealCategories(mode: DealGameMode) {
+  const pool = getDealPool(mode);
+  return categories.flatMap(category => {
+    const count = pool.filter(entry => entry.category === category.id).length;
+    return count ? [{ ...category, count }] : [];
+  });
 }
 
 export function getDealCategoryCount(mode: DealGameMode) {

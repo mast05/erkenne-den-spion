@@ -1,5 +1,7 @@
 "use client";
 
+import CharacterPicker from "../../components/CharacterPicker";
+
 import Image from "next/image";
 import { getCharacterImage } from "../../lib/catalog";
 
@@ -1203,28 +1205,13 @@ export default function SilhouetteGamePage() {
           !alreadyCorrect &&
           !guessedThisStage && (
             <div className="mx-auto mt-6 max-w-md rounded-3xl border border-slate-800 bg-slate-900 p-5">
-              <select
+              <CharacterPicker
+                key={`${game.id}:${round.id}`}
+                characters={availableCharacters}
                 value={selectedGuess}
-                onChange={(event) =>
-                  setSelectedGuess(event.target.value)
-                }
+                onChange={setSelectedGuess}
                 disabled={guessing}
-                aria-label="Charakter auswählen"
-                className="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-4 text-base outline-none focus:border-violet-500"
-              >
-                <option value="">
-                  Charakter auswählen...
-                </option>
-
-                {availableCharacters.map((character) => (
-                  <option
-                    key={character}
-                    value={character}
-                  >
-                    {character}
-                  </option>
-                ))}
-              </select>
+              />
 
               <button
                 type="button"

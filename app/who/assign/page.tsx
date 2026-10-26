@@ -1,5 +1,7 @@
 "use client";
 
+import { filterCharacterNames } from "../../lib/characterSearch";
+
 import Image from "next/image";
 import { getCharacterImage } from "../../lib/catalog";
 
@@ -74,6 +76,8 @@ export default function WhoAssignPage() {
     selectedCharacter,
     setSelectedCharacter,
   ] = useState("");
+
+  const [searchQuery, setSearchQuery] = useState("");
 
   const [submitted, setSubmitted] =
     useState(false);
@@ -553,8 +557,22 @@ export default function WhoAssignPage() {
           </p>
         </div>
 
+        <label className="mx-auto mt-8 block max-w-md text-sm font-bold text-slate-300">
+          Figur suchen
+          <input
+            type="search"
+            value={searchQuery}
+            onChange={event => setSearchQuery(event.target.value)}
+            disabled={submitting}
+            placeholder="Name eingeben …"
+            className="mt-2 w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-4 text-base text-white outline-none focus:border-cyan-500"
+          />
+        </label>
+        {filterCharacterNames(characters, searchQuery).length === 0 && (
+          <p className="mt-4 text-center text-slate-400">Keine passende Figur gefunden.</p>
+        )}
         <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5">
-          {characters.map(
+          {filterCharacterNames(characters, searchQuery).map(
             (character) => {
               const selected =
                 selectedCharacter ===

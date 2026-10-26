@@ -1,5 +1,7 @@
 "use client";
 
+import DealCatalog from "../../components/DealCatalog";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
@@ -435,6 +437,8 @@ export default function DealLobbyPage() {
                 );
               })}
             </div>
+
+            <DealCatalog mode={selectedMode} />
 
             <div className="mt-6 rounded-2xl bg-slate-900 p-5">
               <p className="text-sm text-slate-400">

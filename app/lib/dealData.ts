@@ -1,3 +1,8 @@
+// KATALOGPRUEFUNG 2026-10-26
+// Geprueft: Pflichtfelder und Zahlenskalen. Kein Nachweis aller Kanonangaben.
+// Ratings sind subjektiv; unbelegte Zahlen bleiben unbestaetigte Spielangaben.
+// QUELLENHINWEIS: vorhandener Verweis, hier nicht unabhaengig bestaetigt.
+
 export type DealCharacter = {
   name: string;
   category:
@@ -265,7 +270,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 74,
     intelligence: 60,
     fame: 97,
-    attractiveness: 90,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Han Solo",
@@ -293,7 +298,7 @@ export const dealCharacters: DealCharacter[] = [
     name: "Kylo Ren",
     category: "star-wars",
     kills: 20,
-    height: 189, // [BELEGT] DK Character Encyclopedia; Groesse in cm; DK: Star Wars Character Encyclopedia, Updated and Expanded
+    height: 189, // [QUELLENHINWEIS] DK Character Encyclopedia; Groesse in cm; DK: Star Wars Character Encyclopedia, Updated and Expanded
     age: 30, // Episode IX; Kanon-Geburtsjahr 5 ABY.
     strength: 92,
     intelligence: 80,
@@ -732,7 +737,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 22,
     intelligence: 86,
     fame: 93,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Snoke",
@@ -750,7 +755,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 25,
     height: 178,
-    age: 27, // [BELEGT] Dawn of Rebellion Visual Guide laut Kanon-Wiki: 27 in Andor Staffel 1; widerspricht altem Rogue-One-Guide; https://starwars.fandom.com/wiki/Cassian_Jeron_Andor
+    age: 27, // [QUELLENHINWEIS] Dawn of Rebellion Visual Guide laut Kanon-Wiki: 27 in Andor Staffel 1; widerspricht altem Rogue-One-Guide; https://starwars.fandom.com/wiki/Cassian_Jeron_Andor
     strength: 76,
     intelligence: 92,
     fame: 90,
@@ -776,7 +781,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 83,
     intelligence: 93,
     fame: 88,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "General Hux",
@@ -794,7 +799,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 5,
     height: 124,
-    age: 1007, // [BELEGT] Rise of Skywalker Visual Dictionary laut Kanon-Wiki: geboren 1007 Jahre vor Starkiller-Vorfall in Episode VII; https://starwars.fandom.com/wiki/Maz_Kanata
+    age: 1007, // [QUELLENHINWEIS] Rise of Skywalker Visual Dictionary laut Kanon-Wiki: geboren 1007 Jahre vor Starkiller-Vorfall in Episode VII; https://starwars.fandom.com/wiki/Maz_Kanata
     strength: 58,
     intelligence: 96,
     fame: 86,
@@ -919,7 +924,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 86,
     intelligence: 84,
     fame: 80,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Saw Gerrera",
@@ -941,7 +946,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 38,
     intelligence: 89,
     fame: 79,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Hondo Ohnaka",
@@ -959,7 +964,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "star-wars",
     kills: 20,
     height: 173,
-    age: 52, // [BELEGT] Rogue One Ultimate Visual Guide laut Kanon-Wiki: 52 bei der Mission; https://starwars.fandom.com/wiki/Chirrut_%C3%8Emwe
+    age: 52, // [QUELLENHINWEIS] Rogue One Ultimate Visual Guide laut Kanon-Wiki: 52 bei der Mission; https://starwars.fandom.com/wiki/Chirrut_%C3%8Emwe
     strength: 78,
     intelligence: 88,
     fame: 78,
@@ -1031,7 +1036,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 85,
     intelligence: 91,
     fame: 86,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Nien Nunb",
@@ -1059,7 +1064,7 @@ export const dealCharacters: DealCharacter[] = [
     name: "Großinquisitor",
     category: "star-wars",
     kills: 30,
-    height: 198, // [BELEGT] Rebels: Head-to-Head; laut Jedipedia; https://www.jedipedia.net/wiki/Gro%C3%9Finquisitor_%28Pau%E2%80%99aner%29
+    height: 198, // [QUELLENHINWEIS] Rebels: Head-to-Head; laut Jedipedia; https://www.jedipedia.net/wiki/Gro%C3%9Finquisitor_%28Pau%E2%80%99aner%29
     age: 50, // [SCHAETZUNG] Rebels, Staffel 1; Jahre, kein gesicherter exakter Kanonwert
     strength: 90,
     intelligence: 92,
@@ -1163,7 +1168,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 52,
     intelligence: 84,
     fame: 84,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Fives",
@@ -1224,8 +1229,8 @@ export const dealCharacters: DealCharacter[] = [
     name: "Baze Malbus",
     category: "star-wars",
     kills: 35,
-    height: 180, // [BELEGT] Kanon-Wiki nennt 1.80 m mit Databank-Verweis; 180 cm; https://starwars.fandom.com/wiki/Baze_Malbus
-    age: 53, // [BELEGT] Rogue One Ultimate Visual Guide laut Kanon-Wiki: 53 bei der Mission; https://starwars.fandom.com/wiki/Baze_Malbus
+    height: 180, // [QUELLENHINWEIS] Kanon-Wiki nennt 1.80 m mit Databank-Verweis; 180 cm; https://starwars.fandom.com/wiki/Baze_Malbus
+    age: 53, // [QUELLENHINWEIS] Rogue One Ultimate Visual Guide laut Kanon-Wiki: 53 bei der Mission; https://starwars.fandom.com/wiki/Baze_Malbus
     strength: 83,
     intelligence: 79,
     fame: 81,
@@ -1235,7 +1240,7 @@ export const dealCharacters: DealCharacter[] = [
     name: "Bodhi Rook",
     category: "star-wars",
     kills: 5,
-    height: 172, // [BELEGT] Kanon-Wiki nennt 1.72 m mit Databank-Verweis; 172 cm; https://starwars.fandom.com/wiki/Bodhi_Rook
+    height: 172, // [QUELLENHINWEIS] Kanon-Wiki nennt 1.72 m mit Databank-Verweis; 172 cm; https://starwars.fandom.com/wiki/Bodhi_Rook
     age: 25, // [SCHAETZUNG] Rogue One; Jahre, kein gesicherter exakter Kanonwert
     strength: 55,
     intelligence: 81,
@@ -1262,7 +1267,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 78,
     intelligence: 89,
     fame: 80,
-    attractiveness: 76,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   ]),
   ...defineDealCharacters([
@@ -1917,7 +1922,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 83,
     intelligence: 78,
     fame: 87,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Remy LeBeau – Channing Tatum; Deadpool & Wolverine (2024)
   {
@@ -2033,11 +2038,11 @@ export const dealCharacters: DealCharacter[] = [
     category: "marvel",
     kills: 45,
     height: 140, // [SCHAETZUNG] Logan; junge Laura, nicht erwachsene Deadpool-&-Wolverine-Fassung; angenaeherte Bildschirmgestalt in cm
-    age: 11, // [BELEGT] Logan: Regisseur James Mangold beschreibt Laura als elfjaehrig; https://www.firstshowing.net/2017/interview-logan-director-james-mangold-on-making-unique-movies/
+    age: 11, // [QUELLENHINWEIS] Logan: Regisseur James Mangold beschreibt Laura als elfjaehrig; https://www.firstshowing.net/2017/interview-logan-director-james-mangold-on-making-unique-movies/
     strength: 85,
     intelligence: 78,
     fame: 84,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Max Dillon – Jamie Foxx; The Amazing Spider-Man 2 / No Way Home
   {
@@ -2189,11 +2194,11 @@ export const dealCharacters: DealCharacter[] = [
     category: "marvel",
     kills: 5,
     height: 165, // [SCHAETZUNG] Black Panther, erster Film; angenaeherte Bildschirmgestalt in cm
-    age: 16, // [BELEGT] Black Panther (erster Film); Produzent Nate Moore; Produzent Nate Moore, Black-Panther-Interview: Shuri ist 16
+    age: 16, // [QUELLENHINWEIS] Black Panther (erster Film); Produzent Nate Moore; Produzent Nate Moore, Black-Panther-Interview: Shuri ist 16
     strength: 88,
     intelligence: 98,
     fame: 88,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Danai Gurira; Black Panther-Filme
   {
@@ -2325,7 +2330,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 85,
     intelligence: 83,
     fame: 85,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Kathryn Hahn; WandaVision / Agatha All Along
   {
@@ -2471,7 +2476,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 79,
     intelligence: 82,
     fame: 86,
-    attractiveness: 88,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Dobby",
@@ -2504,7 +2509,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 76,
     intelligence: 83,
     fame: 95,
-    attractiveness: 82,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Fred Weasley",
@@ -2537,7 +2542,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 82,
     intelligence: 84,
     fame: 91,
-    attractiveness: 85,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Harry Potter",
@@ -2548,7 +2553,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 90,
     intelligence: 88,
     fame: 100,
-    attractiveness: 80,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Hermine Granger",
@@ -2592,7 +2597,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 75,
     intelligence: 89,
     fame: 91,
-    attractiveness: 84,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Minerva McGonagall",
@@ -2625,7 +2630,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 82,
     intelligence: 82,
     fame: 91,
-    attractiveness: 72,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Peter Pettigrew",
@@ -2768,7 +2773,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 81,
   intelligence: 86,
   fame: 86,
-  attractiveness: 92,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 {
   name: "Cho Chang",
@@ -2779,7 +2784,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 73,
   intelligence: 84,
   fame: 82,
-  attractiveness: 86,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 {
   name: "Narcissa Malfoy",
@@ -2923,7 +2928,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 46,
     intelligence: 86,
     fame: 81,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 25,
   },
   // Hauself; Der Orden des Phönix / Die Heiligtümer des Todes – Teil 1
   {
@@ -2935,7 +2941,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 75,
     intelligence: 73,
     fame: 81,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 12,
   },
   // Shirley Henderson; Die Kammer des Schreckens / Der Feuerkelch
   {
@@ -2943,11 +2950,11 @@ export const dealCharacters: DealCharacter[] = [
     category: "harry-potter",
     kills: 0,
     height: 150, // [SCHAETZUNG] Alter bei ihrem Tod; Geisterjahre nicht addiert; angenaeherte Bildschirmgestalt in cm
-    age: 14, // [BELEGT] Harry-Potter-Wiki: 14 beim Tod; kein addiertes Geisteralter; https://harrypotter.fandom.com/de/wiki/Myrte_Warren
+    age: 14, // [QUELLENHINWEIS] Harry-Potter-Wiki: 14 beim Tod; kein addiertes Geisteralter; https://harrypotter.fandom.com/de/wiki/Myrte_Warren
     strength: 38,
     intelligence: 66,
     fame: 86,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Richard Griffiths; Harry-Potter-Filmreihe
   {
@@ -2983,7 +2990,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 39,
     intelligence: 43,
     fame: 83,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Domhnall Gleeson; Die Heiligtümer des Todes – Teil 1–2
   {
@@ -3019,7 +3026,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 73,
     intelligence: 69,
     fame: 81,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Alfred Enoch; Harry-Potter-Filmreihe
   {
@@ -3031,7 +3038,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 71,
     intelligence: 76,
     fame: 77,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Jessie Cave; Der Halbblutprinz / Die Heiligtümer des Todes – Teil 2
   {
@@ -3043,7 +3050,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 61,
     intelligence: 66,
     fame: 79,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Rita Skeeter – Miranda Richardson; Der Feuerkelch
   {
@@ -3051,7 +3058,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "harry-potter",
     kills: 0,
     height: 165, // [SCHAETZUNG] Feuerkelch; angenaeherte Bildschirmgestalt in cm
-    age: 43, // [BELEGT] Feuerkelch; Buch, Kapitel 18; Harry Potter und der Feuerkelch, Kapitel 18
+    age: 43, // [QUELLENHINWEIS] Feuerkelch; Buch, Kapitel 18; Harry Potter und der Feuerkelch, Kapitel 18
     strength: 61,
     intelligence: 86,
     fame: 82,
@@ -3079,7 +3086,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 24,
     intelligence: 65,
     fame: 94,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Jamie Waylett; Harry-Potter-Filmreihe
   {
@@ -3091,7 +3098,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 65,
     intelligence: 35,
     fame: 78,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Buckbeak – Hippogreif; Der Gefangene von Askaban
   {
@@ -3103,7 +3110,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 79,
     intelligence: 55,
     fame: 88,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Josh Herdman; Harry-Potter-Filmreihe
   {
@@ -3115,7 +3122,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 69,
     intelligence: 39,
     fame: 79,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Weitere Harry-Potter-Filmfiguren (75 insgesamt)
@@ -3177,7 +3184,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 71,
     intelligence: 76,
     fame: 78,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 82,
   },
   // Louis Cordice; Der Halbblutprinz / Die Heiligtümer des Todes – Teil 2
   {
@@ -3189,7 +3197,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 67,
     intelligence: 77,
     fame: 66,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Scarlett Byrne; Der Halbblutprinz
   {
@@ -3201,7 +3209,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 57,
     intelligence: 65,
     fame: 69,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Luke Youngblood; Der Stein der Weisen / Die Kammer des Schreckens
   {
@@ -3213,7 +3221,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 58,
     intelligence: 73,
     fame: 71,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Hugh Mitchell; Die Kammer des Schreckens
   {
@@ -3225,7 +3233,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 40,
     intelligence: 64,
     fame: 73,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Tante Marge – Pam Ferris; Der Gefangene von Askaban
   {
@@ -3249,7 +3257,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 31,
     intelligence: 75,
     fame: 82,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 60,
   },
   // Bill Nighy; Die Heiligtümer des Todes – Teil 1
   {
@@ -3510,7 +3519,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 68,
     intelligence: 88,
     fame: 96,
-    attractiveness: 80,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Shazam",
@@ -3521,7 +3530,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 99,
     intelligence: 72,
     fame: 91,
-    attractiveness: 78,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Supergirl",
@@ -3786,7 +3795,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 100,
     intelligence: 24,
     fame: 88,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 8,
   },
   // Ciarán Hinds; Zack Snyder’s Justice League
   {
@@ -3798,7 +3808,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 98,
     intelligence: 76,
     fame: 85,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 20,
   },
   // Kristen Wiig; Wonder Woman 1984
   {
@@ -3810,7 +3821,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 93,
     intelligence: 86,
     fame: 83,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 68,
   },
   // Pedro Pascal; Wonder Woman 1984
   {
@@ -3834,7 +3846,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 99,
     intelligence: 94,
     fame: 84,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 65,
   },
   // Patrick Wilson; Aquaman / Aquaman and the Lost Kingdom
   {
@@ -3990,7 +4003,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 94,
     intelligence: 29,
     fame: 87,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 35,
   },
   // Joel Kinnaman; Suicide Squad / The Suicide Squad
   {
@@ -4050,7 +4064,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 85,
     intelligence: 54,
     fame: 84,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 15,
   },
   // Cara Delevingne; Suicide Squad
   {
@@ -4058,11 +4073,12 @@ export const dealCharacters: DealCharacter[] = [
     category: "dc",
     kills: 20,
     height: 173, // [SCHAETZUNG] Suicide Squad; Alter des Hexengeistes, nicht June Moone; angenaeherte Bildschirmgestalt in cm
-    age: 6313, // [BELEGT] Suicide-Squad-Filmpromo nennt 6313 Years Young; Hexengeist, nicht June Moone; https://www.popisms.com/TelevisionCommercial/127071/Suicide-Squad-Commercial-2016
+    age: 6313, // [QUELLENHINWEIS] Suicide-Squad-Filmpromo nennt 6313 Years Young; Hexengeist, nicht June Moone; https://www.popisms.com/TelevisionCommercial/127071/Suicide-Squad-Commercial-2016
     strength: 98,
     intelligence: 87,
     fame: 81,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 84,
   },
   // Karen Fukuhara; Suicide Squad
   {
@@ -4134,7 +4150,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 97,
     intelligence: 74,
     fame: 85,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Jason Todd – Curran Walters; Titans
   {
@@ -4146,7 +4162,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 77,
     intelligence: 78,
     fame: 88,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 86,
   },
   // Conor Leslie; Titans
   {
@@ -4322,11 +4339,11 @@ export const dealCharacters: DealCharacter[] = [
     category: "dc",
     kills: 0,
     height: 155, // [SCHAETZUNG] Stargirl, Staffel 1; angenaeherte Bildschirmgestalt in cm
-    age: 15, // [BELEGT] Stargirl, Staffel 1; Serienversion laut DC Database; DC Database: Courtney Whitmore, Stargirl TV Series
+    age: 15, // [QUELLENHINWEIS] Stargirl, Staffel 1; Serienversion laut DC Database; DC Database: Courtney Whitmore, Stargirl TV Series
     strength: 81,
     intelligence: 72,
     fame: 77,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // John Henry Irons – Wole Parks; Superman & Lois
   {
@@ -4350,7 +4367,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 95,
     intelligence: 100,
     fame: 87,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 40,
   },
   // Liam Neeson; Batman Begins
   {
@@ -4386,19 +4404,20 @@ export const dealCharacters: DealCharacter[] = [
     strength: 94,
     intelligence: 78,
     fame: 83,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 25,
   },
   // Cliff Steele – Brendan Fraser / Riley Shanahan; Doom Patrol
   {
     name: "Robotman",
     category: "dc",
     kills: 5,
-    height: 198, // [BELEGT] Doom-Patrol-Serienfassung laut DC Database: 6 Fuss 6 Zoll, auf 198 cm gerundet; https://dc.fandom.com/wiki/Clifford_Steele_(Doom_Patrol_TV_Series)
+    height: 198, // [QUELLENHINWEIS] Doom-Patrol-Serienfassung laut DC Database: 6 Fuss 6 Zoll, auf 198 cm gerundet; https://dc.fandom.com/wiki/Clifford_Steele_(Doom_Patrol_TV_Series)
     age: 60, // [SCHAETZUNG] Doom Patrol; Roboterkoerper, Cliff Steeles Lebensalter; Jahre, kein gesicherter exakter Kanonwert
     strength: 84,
     intelligence: 61,
     fame: 76,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   // Larry Trainor – Matt Bomer / Matthew Zuk; Doom Patrol
   {
@@ -4410,7 +4429,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 88,
     intelligence: 81,
     fame: 71,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 45,
   },
   // Diane Guerrero; Doom Patrol
   {
@@ -4510,7 +4530,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 96,
     intelligence: 51,
     fame: 89,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Mark Strong; Green Lantern (2011)
@@ -4523,7 +4543,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 94,
     intelligence: 93,
     fame: 86,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 58,
   },
 
   // Adrian Chase – Freddie Stroma; Peacemaker
@@ -4966,7 +4987,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 35,
     intelligence: 96,
     fame: 91,
-    attractiveness: 68,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Brienne von Tarth",
@@ -5343,7 +5364,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 23,
     intelligence: 40,
     fame: 98,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Mark Addy; Game of Thrones (HBO)
@@ -5382,7 +5403,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 20,
     intelligence: 44,
     fame: 89,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Nell Tiger Free; Game of Thrones (HBO)
@@ -5395,7 +5416,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 15,
     intelligence: 58,
     fame: 77,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Kerry Ingram; Game of Thrones (HBO)
@@ -5408,7 +5429,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 10,
     intelligence: 77,
     fame: 84,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Finn Jones; Game of Thrones (HBO)
@@ -5564,7 +5585,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 17,
     intelligence: 35,
     fame: 81,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Natalia Tena; Game of Thrones (HBO)
@@ -5590,7 +5611,8 @@ export const dealCharacters: DealCharacter[] = [
     strength: 68,
     intelligence: 79,
     fame: 83,
-    attractiveness: 0,
+    // [SPIELWERT] Subjektive Bewertung, kein belegter Messwert.
+    attractiveness: 76,
   },
 
   // Thomas Brodie-Sangster; Game of Thrones (HBO)
@@ -5603,7 +5625,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 14,
     intelligence: 88,
     fame: 82,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Tom Wlaschiha; Game of Thrones (HBO)
@@ -5677,11 +5699,11 @@ export const dealCharacters: DealCharacter[] = [
     category: "game-of-thrones",
     kills: 1,
     height: 150, // [SCHAETZUNG] Staffel 6; junge Seriengestalt; angenaeherte Bildschirmgestalt in cm
-    age: 10, // [BELEGT] Game of Thrones, Staffel 5; laut Serienwiki; Game of Thrones Wiki: Lyanna Mormont, Staffel 5
+    age: 10, // [QUELLENHINWEIS] Game of Thrones, Staffel 6; laut Serienwiki; Game of Thrones Wiki: Lyanna Mormont
     strength: 38,
     intelligence: 86,
     fame: 91,
-    attractiveness: 0,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
 
   // Ian McElhinney; Game of Thrones (HBO)
@@ -5742,7 +5764,7 @@ export const dealCharacters: DealCharacter[] = [
     category: "game-of-thrones",
     kills: 0,
     height: 183, // [SCHAETZUNG] Staffel 5; Seriengestalt; angenaeherte Bildschirmgestalt in cm
-    age: 104, // [BELEGT] Game of Thrones, Staffel 5; laut Serienwiki; Game of Thrones Wiki: Aemon, Staffel 5
+    age: 104, // [QUELLENHINWEIS] Game of Thrones, Staffel 5; laut Serienwiki; Game of Thrones Wiki: Aemon, Staffel 5
     strength: 5,
     intelligence: 97,
     fame: 88,
@@ -6477,7 +6499,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 68,
   intelligence: 82,
   fame: 82,
-  attractiveness: 70,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 {
   name: "Great Goblin",
@@ -6712,7 +6734,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 98,
     intelligence: 73,
     fame: 89,
-    attractiveness: 62,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Lamplighter",
@@ -6921,7 +6943,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 87,
   intelligence: 80,
   fame: 82,
-  attractiveness: 65,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 {
   name: "Ezekiel",
@@ -7035,7 +7057,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 68,
     intelligence: 82,
     fame: 96,
-    attractiveness: 75,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Shane Walsh",
@@ -7334,7 +7356,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 30,
   intelligence: 67,
   fame: 71,
-  attractiveness: 70,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 
   // =========================
@@ -7393,7 +7415,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 42,
     intelligence: 91,
     fame: 88,
-    attractiveness: 72,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Tim Murphy",
@@ -7404,7 +7426,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 38,
     intelligence: 82,
     fame: 87,
-    attractiveness: 65,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Dennis Nedry",
@@ -7492,7 +7514,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 48,
     intelligence: 84,
     fame: 89,
-    attractiveness: 76,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Zach Mitchell",
@@ -7503,7 +7525,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 61,
     intelligence: 78,
     fame: 85,
-    attractiveness: 78,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Gray Mitchell",
@@ -7514,7 +7536,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 40,
     intelligence: 89,
     fame: 87,
-    attractiveness: 66,
+    attractiveness: null, attractivenessNotApplicable: true,
   },
   {
     name: "Barry Sembène",
@@ -7657,7 +7679,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 34,
   intelligence: 65,
   fame: 45,
-  attractiveness: 72,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 {
   name: "Billy Brennan",
@@ -7701,7 +7723,7 @@ export const dealCharacters: DealCharacter[] = [
   strength: 37,
   intelligence: 71,
   fame: 52,
-  attractiveness: 68,
+  attractiveness: null, attractivenessNotApplicable: true,
 },
 {
   name: "Eddie Carr",
@@ -10761,7 +10783,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 43, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 69, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 78, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
   {
     name: "Denise Cloyd",
@@ -10783,7 +10805,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 18, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 47, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 86, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
   {
     name: "Lizzie Samuels",
@@ -10794,7 +10816,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 25, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 42, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 83, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
   {
     name: "Mika Samuels",
@@ -10805,7 +10827,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 20, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 61, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 74, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
   {
     name: "Deanna Monroe",
@@ -10838,7 +10860,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 53, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 57, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 77, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
   {
     name: "Leah Shaw",
@@ -10937,7 +10959,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 20, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 60, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 70, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
 
   // Filmfassung: Ein neues Zeitalter
@@ -13224,7 +13246,7 @@ export const dealCharacters: DealCharacter[] = [
     strength: 92, // [SUBJEKTIVE SPIELWERTUNG]
     intelligence: 70, // [SUBJEKTIVE SPIELWERTUNG]
     fame: 82, // [SUBJEKTIVE SPIELWERTUNG]
-    attractiveness: 75, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
+    attractiveness: null, attractivenessNotApplicable: true, // [SUBJEKTIVE SPIELWERTUNG] Optik/Charakterdesign.
   },
   // Fassung: Thor Ragnarok
   {
@@ -13759,7 +13781,7 @@ export const dealCharacters: DealCharacter[] = [
   {"name":"Mary Lou Barebone","category":"harry-potter","kills":0,"height":160,"age":45,"strength":22,"intelligence":53,"fame":66,"attractiveness":36},
   // Phantastische Tierwesen: Filmfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Modesty Barebone","category":"harry-potter","kills":0,"height":130,"age":8,"strength":8,"intelligence":64,"fame":57,"attractiveness":65},
+  {"name":"Modesty Barebone","category":"harry-potter","kills":0,"height":130,"age":8,"strength":8,"intelligence":64,"fame":57,"attractiveness":null, attractivenessNotApplicable: true},
   // Phantastische Tierwesen: Filmfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
   {"name":"Gnarlak","category":"harry-potter","kills":0,"height":115,"age":80,"strength":38,"intelligence":81,"fame":65,"attractiveness":38},
@@ -13834,22 +13856,22 @@ export const dealCharacters: DealCharacter[] = [
   {"name":"Helaena Targaryen","category":"game-of-thrones","kills":0,"height":170,"age":18,"strength":25,"intelligence":87,"fame":85,"attractiveness":83},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Daeron Targaryen","category":"game-of-thrones","kills":5,"height":175,"age":16,"strength":66,"intelligence":78,"fame":75,"attractiveness":80},
+  {"name":"Daeron Targaryen","category":"game-of-thrones","kills":5,"height":175,"age":16,"strength":66,"intelligence":78,"fame":75,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Jacaerys Velaryon","category":"game-of-thrones","kills":0,"height":178,"age":16,"strength":61,"intelligence":84,"fame":86,"attractiveness":85},
+  {"name":"Jacaerys Velaryon","category":"game-of-thrones","kills":0,"height":178,"age":16,"strength":61,"intelligence":84,"fame":86,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Lucerys Velaryon","category":"game-of-thrones","kills":0,"height":170,"age":14,"strength":34,"intelligence":72,"fame":82,"attractiveness":78},
+  {"name":"Lucerys Velaryon","category":"game-of-thrones","kills":0,"height":170,"age":14,"strength":34,"intelligence":72,"fame":82,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Joffrey Velaryon","category":"game-of-thrones","kills":0,"height":140,"age":6,"strength":10,"intelligence":62,"fame":67,"attractiveness":70},
+  {"name":"Joffrey Velaryon","category":"game-of-thrones","kills":0,"height":140,"age":6,"strength":10,"intelligence":62,"fame":67,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Baela Targaryen","category":"game-of-thrones","kills":1,"height":165,"age":16,"strength":64,"intelligence":81,"fame":83,"attractiveness":87},
+  {"name":"Baela Targaryen","category":"game-of-thrones","kills":1,"height":165,"age":16,"strength":64,"intelligence":81,"fame":83,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Rhaena Targaryen","category":"game-of-thrones","kills":0,"height":168,"age":16,"strength":30,"intelligence":79,"fame":78,"attractiveness":83},
+  {"name":"Rhaena Targaryen","category":"game-of-thrones","kills":0,"height":168,"age":16,"strength":30,"intelligence":79,"fame":78,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
   {"name":"Laenor Velaryon","category":"game-of-thrones","kills":15,"height":185,"age":32,"strength":73,"intelligence":72,"fame":81,"attractiveness":81},
@@ -13924,7 +13946,7 @@ export const dealCharacters: DealCharacter[] = [
   {"name":"Aemma Arryn","category":"game-of-thrones","kills":0,"height":163,"age":28,"strength":22,"intelligence":78,"fame":74,"attractiveness":83},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
-  {"name":"Oscar Tully","category":"game-of-thrones","kills":1,"height":172,"age":15,"strength":40,"intelligence":86,"fame":76,"attractiveness":76},
+  {"name":"Oscar Tully","category":"game-of-thrones","kills":1,"height":172,"age":15,"strength":40,"intelligence":86,"fame":76,"attractiveness":null, attractivenessNotApplicable: true},
   // House of the Dragon: Serienfassung.
   // Kills/cm/Alter: SPIEL-SCHAETZUNG. Wertungen: subjektiv; Optik = Design.
   {"name":"Tyland Lannister","category":"game-of-thrones","kills":0,"height":183,"age":40,"strength":40,"intelligence":91,"fame":78,"attractiveness":72},
